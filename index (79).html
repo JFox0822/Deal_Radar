@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>🔥 DealRadar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1c1c28;
+    --border: #2a2a3a;
+    --accent: #ff4d00;
+    --accent2: #ff9500;
+    --green: #00e676;
+    --blue: #448aff;
+    --text: #f0f0f5;
+    --muted: #8888aa;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --radius: 12px;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: calc(16px + var(--safe-top)) 20px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+
+  .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .logo-text {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .logo-badge {
+    background: var(--accent);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .updated-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    background: var(--surface2);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
+
+  .btn-icon {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .btn-icon:hover { background: var(--border); }
+  .btn-icon.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+  /* ── Layout ── */
+  .app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 16px calc(40px + var(--safe-bottom));
+  }
+
+  /* ── Filters Bar ── */
+  .filters-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  .search-wrap {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+
+  .search-wrap .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 1rem;
+    pointer-events: none;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: var(--radius);
+    padding: 10px 12px 10px 36px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"]:focus { border-color: var(--accent); }
+  input[type="text"]::placeholder { color: var(--muted); }
+
+  .cat-chips {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+  /* ── Stats row ── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    text-align: center;
+  }
+
+  .stat-val {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Deal Cards ── */
+  .deals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .deal-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: start;
+    transition: border-color 0.15s, transform 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .deal-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--accent);
+    transform: scaleY(0);
+    transition: transform 0.15s;
+    transform-origin: bottom;
+  }
+
+  .deal-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .deal-card:hover::before { transform: scaleY(1); }
+
+  .deal-card.hot::before { transform: scaleY(1); background: var(--accent); }
+  .deal-card.hot { border-color: rgba(255,77,0,0.3); }
+
+  .deal-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .retailer-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--surface2);
+    color: var(--blue);
+    border: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .cat-tag {
+    font-size: 0.68rem;
+    color: var(--muted);
+    padding: 2px 7px;
+    background: var(--surface2);
+    border-radius: 4px;
+  }
+
+  .source-tag {
+    font-size: 0.65rem;
+    color: var(--muted);
+  }
+
+  .deal-title {
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .deal-desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .deal-time {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  .deal-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    min-width: 70px;
+  }
+
+  .discount-badge {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--green);
+    line-height: 1;
+  }
+
+  .discount-badge.unknown {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--muted);
+    letter-spacing: 0;
+  }
+
+  .score-ring {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .score-ring.high { border-color: var(--green); color: var(--green); }
+  .score-ring.med  { border-color: var(--accent2); color: var(--accent2); }
+  .score-ring.low  { border-color: var(--muted); color: var(--muted); }
+
+  .wishlist-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 2px;
+    transition: transform 0.15s;
+    line-height: 1;
+  }
+  .wishlist-btn:hover { transform: scale(1.2); }
+  .wishlist-btn.saved { filter: saturate(2); }
+
+  /* ── Empty / Loading ── */
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .empty .icon { font-size: 3rem; margin-bottom: 12px; }
+  .empty p { font-size: 0.9rem; }
+
+  .loading-bar {
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent));
+    background-size: 200% 100%;
+    animation: shimmer 1.2s linear infinite;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+  /* ── Wishlist Panel ── */
+  .panel-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 200;
+    backdrop-filter: blur(4px);
+  }
+  .panel-overlay.open { display: flex; align-items: flex-end; }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px calc(24px + var(--safe-bottom));
+    max-height: 80dvh;
+    overflow-y: auto;
+    animation: slideUp 0.25s ease;
+  }
+  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .panel-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .close-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 50%;
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .wishlist-add {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .wishlist-add input {
+    flex: 1;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    border: none;
+    color: white;
+    border-radius: var(--radius);
+    padding: 10px 18px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:hover { opacity: 0.85; }
+
+  .wishlist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wishlist-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .wishlist-item span {
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+
+  .del-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    transition: color 0.1s;
+  }
+  .del-btn:hover { color: var(--accent); }
+
+  /* ── SMS Panel ── */
+  .sms-section {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .sms-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .sms-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  .sms-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sms-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .sms-note {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 10px;
+    line-height: 1.5;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+  }
+
+  .sms-note a { color: var(--blue); }
+
+  .status-msg {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: none;
+  }
+  .status-msg.ok { background: rgba(0,230,118,0.1); color: var(--green); display: block; }
+  .status-msg.err { background: rgba(255,77,0,0.1); color: var(--accent); display: block; }
+
+  /* ── Saved deals tab ── */
+  .tab-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: none;
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+  }
+  .tab.active { background: var(--surface2); color: var(--text); }
+
+  /* ── Price Lookup Tab ── */
+  #priceLookupSection { display: none; }
+  #priceLookupSection.active { display: block; }
+
+  .lookup-wrap {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .lookup-wrap input { flex: 1; padding-left: 16px; }
+
+  .retailer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .retailer-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, transform 0.1s;
+  }
+  .retailer-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+
+  .retailer-info { display: flex; align-items: center; gap: 10px; }
+  .retailer-emoji { font-size: 1.4rem; line-height: 1; }
+  .retailer-name { font-weight: 600; font-size: 0.9rem; }
+  .retailer-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+  .retailer-arrow { color: var(--muted); font-size: 1rem; }
+
+  .history-section {
+    margin-top: 4px;
+  }
+
+  .history-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--muted);
+  }
+
+  .history-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .history-link {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: border-color 0.15s;
+  }
+  .history-link:hover { border-color: var(--blue); }
+  .history-link .hl-icon { font-size: 1.2rem; }
+  .history-link .hl-desc { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+
+  .ai-summary-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    position: relative;
+  }
+  .ai-summary-box .ai-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ai-summary-box .ai-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .ai-summary-box .ai-text.placeholder { color: var(--muted); }
+
+  .lookup-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  .lookup-empty .icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+  .ai-loading {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 0.8s ease-in-out infinite alternate;
+  }
+  @keyframes pulse { from { opacity: 0.3; } to { opacity: 1; } }
+
+  /* ── Spec Comparison Table ── */
+  .spec-section {
+    margin-top: 20px;
+  }
+
+  .spec-header {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .spec-loading {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  .spec-table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    min-width: 480px;
+  }
+
+  .spec-table th {
+    background: var(--surface2);
+    padding: 10px 14px;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  .spec-table th.brand-col {
+    color: var(--text);
+    min-width: 110px;
+  }
+
+  .spec-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+    line-height: 1.4;
+  }
+
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .spec-table tr:hover td { background: var(--surface2); }
+
+  .spec-table td:first-child {
+    font-weight: 600;
+    color: var(--accent2);
+    white-space: nowrap;
+  }
+
+  .spec-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+  .spec-badge.best  { background: rgba(0,230,118,0.15); color: var(--green); }
+  .spec-badge.good  { background: rgba(68,138,255,0.15); color: var(--blue); }
+  .spec-badge.value { background: rgba(255,149,0,0.15); color: var(--accent2); }
+
+  .spec-note {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .spec-error {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-text">DEALRADAR</span>
+      <span class="logo-badge">LIVE</span>
+    </div>
+    <div class="header-right">
+      <span class="updated-tag" id="updatedTag">Loading...</span>
+      <button class="btn-icon" onclick="openPanel()">⚙ Wishlist & SMS</button>
+    </div>
+  </div>
+</header>
+
+<div class="app">
+
+  <!-- Stats -->
+  <div class="stats-row" id="statsRow">
+    <div class="stat-card"><div class="stat-val" id="statTotal">—</div><div class="stat-label">Live Deals</div></div>
+    <div class="stat-card"><div class="stat-val" id="statHot">—</div><div class="stat-label">🔥 30%+ Off</div></div>
+    <div class="stat-card"><div class="stat-val" id="statWish">—</div><div class="stat-label">Wishlist Hits</div></div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tab-row">
+    <button class="tab active" onclick="setTab('all', this)">All Deals</button>
+    <button class="tab" onclick="setTab('wishlist', this)">💾 Wishlist</button>
+    <button class="tab" onclick="setTab('saved', this)">⭐ Saved</button>
+    <button class="tab" onclick="setTab('lookup', this)">🔎 Price Lookup</button>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-bar">
+    <div class="search-wrap">
+      <span class="icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search deals..." oninput="renderDeals()">
+    </div>
+  </div>
+  <div class="cat-chips" id="catChips" style="margin-bottom:16px;"></div>
+
+  <!-- Loading -->
+  <div id="loadingBar" class="loading-bar"></div>
+
+  <!-- Deals -->
+  <div class="deals-grid" id="dealsGrid"></div>
+
+  <!-- Price Lookup Tab -->
+  <div id="priceLookupSection">
+    <div class="lookup-wrap">
+      <input type="text" id="lookupInput" placeholder="Search any product (e.g. DeWalt drill, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')doLookup()">
+      <button class="btn-primary" onclick="doLookup()">Search</button>
+    </div>
+
+    <div id="lookupResults">
+      <div class="lookup-empty">
+        <div class="icon">🛒</div>
+        <p>Type a product above to compare prices<br>across all your favorite retailers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wishlist / SMS Panel -->
+<div class="panel-overlay" id="panelOverlay" onclick="closePanel(event)">
+  <div class="panel">
+    <div class="panel-header">
+      <span class="panel-title">WISHLIST & ALERTS</span>
+      <button class="close-btn" onclick="closePanel()">✕</button>
+    </div>
+
+    <div class="wishlist-add">
+      <input type="text" id="wishInput" placeholder="Add keyword (e.g. DeWalt, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')addWishItem()">
+      <button class="btn-primary" onclick="addWishItem()">Add</button>
+    </div>
+
+    <div class="wishlist-items" id="wishlistItems"></div>
+
+    <!-- SMS Section -->
+    <div class="sms-section">
+      <div class="sms-title">SMS ALERTS</div>
+      <div class="sms-sub">Get a text when a wishlist item drops 20%+ off. Uses the free Textbelt API (1 free SMS/day, or pay-as-you-go). You'll run the notifier script locally or via GitHub Actions.</div>
+
+      <div class="sms-fields">
+        <div>
+          <label class="sms-label">Your Phone Number</label>
+          <input type="text" id="smsPhone" placeholder="+17165550000" style="width:100%">
+        </div>
+        <div>
+          <label class="sms-label">Textbelt API Key</label>
+          <input type="text" id="smsKey" placeholder="textbelt (free) or your paid key">
+        </div>
+        <button class="btn-primary" onclick="saveSmsConfig()">💾 Save Config</button>
+        <button class="btn-icon" onclick="testSms()" style="justify-content:center;">📱 Send Test SMS</button>
+        <div class="status-msg" id="smsStatus"></div>
+      </div>
+
+      <div class="sms-note">
+        📋 <strong>Free setup:</strong> Use key <code>textbelt</code> for 1 free SMS/day, or get a paid key at
+        <a href="https://textbelt.com" target="_blank">textbelt.com</a> (~$10 for 1,000 texts).
+        Add <code>TEXTBELT_KEY</code> and <code>SMS_PHONE</code> as GitHub Actions secrets to enable automatic alerts on every fetch.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+const CATEGORIES = [
+  "Electronics & Tech", "Tools & Hardware", "Home & Garden",
+  "Outdoor & Lawn", "Sporting Goods", "Clothing & Shoes"
+];
+
+let allDeals = [];
+let activeCategories = new Set();
+let savedDeals = new Set(JSON.parse(localStorage.getItem('savedDeals') || '[]'));
+let wishlist = JSON.parse(localStorage.getItem('wishlist') || '["dewalt","makita","ego","big green egg","ipad","monitor"]');
+let smsConfig = JSON.parse(localStorage.getItem('smsConfig') || '{}');
+let currentTab = 'all';
+
+// ── Boot ───────────────────────────────────────────────────────────────────
+async function init() {
+  buildCatChips();
+  renderWishlist();
+  loadSmsConfig();
+
+  try {
+    const resp = await fetch('deals.json?t=' + Date.now());
+    const data = await resp.json();
+    allDeals = data.deals || [];
+    document.getElementById('updatedTag').textContent = data.updated || 'Unknown';
+    document.getElementById('loadingBar').style.display = 'none';
+    updateStats();
+    renderDeals();
+  } catch (e) {
+    document.getElementById('loadingBar').style.display = 'none';
+    document.getElementById('dealsGrid').innerHTML = `
+      <div class="empty">
+        <div class="icon">📡</div>
+        <p>No deals loaded yet.<br>Run <code>fetch_deals.py</code> to generate <code>deals.json</code>.</p>
+      </div>`;
+  }
+}
+
+// ── Category chips ─────────────────────────────────────────────────────────
+function buildCatChips() {
+  const wrap = document.getElementById('catChips');
+  wrap.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.textContent = catIcon(cat) + ' ' + cat;
+    chip.onclick = () => {
+      if (activeCategories.has(cat)) activeCategories.delete(cat);
+      else activeCategories.add(cat);
+      chip.classList.toggle('active');
+      renderDeals();
+    };
+    wrap.appendChild(chip);
+  });
+}
+
+function catIcon(cat) {
+  const map = {
+    "Electronics & Tech": "⚡",
+    "Tools & Hardware": "🔧",
+    "Home & Garden": "🌿",
+    "Outdoor & Lawn": "🌲",
+    "Sporting Goods": "💪",
+    "Clothing & Shoes": "👟",
+  };
+  return map[cat] || "🏷";
+}
+
+// ── Deal score (simple heuristic) ─────────────────────────────────────────
+function dealScore(deal) {
+  let score = 50;
+  if (deal.discount >= 50) score += 30;
+  else if (deal.discount >= 30) score += 20;
+  else if (deal.discount >= 20) score += 10;
+  const retailers = ["amazon", "best buy", "walmart", "target", "lowe", "home depot"];
+  if (retailers.some(r => (deal.retailer || '').toLowerCase().includes(r))) score += 15;
+  // wishlist match = extra signal
+  if (wishlistMatch(deal)) score += 20;
+  return Math.min(score, 99);
+}
+
+function scoreClass(s) {
+  if (s >= 80) return 'high';
+  if (s >= 60) return 'med';
+  return 'low';
+}
+
+// ── Wishlist match ─────────────────────────────────────────────────────────
+function wishlistMatch(deal) {
+  const text = `${deal.title} ${deal.description}`.toLowerCase();
+  return wishlist.some(kw => text.includes(kw.toLowerCase()));
+}
+
+// ── Filter + render ────────────────────────────────────────────────────────
+function renderDeals() {
+  const query = document.getElementById('searchInput').value.toLowerCase().trim();
+  let filtered = allDeals;
+
+  if (currentTab === 'wishlist') {
+    filtered = filtered.filter(wishlistMatch);
+  } else if (currentTab === 'saved') {
+    filtered = filtered.filter(d => savedDeals.has(d.id));
+  }
+
+  if (activeCategories.size > 0) {
+    filtered = filtered.filter(d => activeCategories.has(d.category));
+  }
+
+  if (query) {
+    filtered = filtered.filter(d =>
+      `${d.title} ${d.description} ${d.retailer} ${d.category}`.toLowerCase().includes(query)
+    );
+  }
+
+  const grid = document.getElementById('dealsGrid');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="empty"><div class="icon">🔎</div><p>No deals match your filters right now.<br>Try broadening your search or check back soon.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = '';
+  filtered.forEach(deal => {
+    const score = dealScore(deal);
+    const isHot = deal.discount >= 30 || wishlistMatch(deal);
+    const isSaved = savedDeals.has(deal.id);
+
+    const card = document.createElement('a');
+    card.className = `deal-card fade-in${isHot ? ' hot' : ''}`;
+    card.href = deal.link;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+
+    const discHTML = deal.discount
+      ? `<div class="discount-badge">${deal.discount}%<br><span style="font-size:0.7rem;font-family:var(--font-mono);letter-spacing:0">OFF</span></div>`
+      : `<div class="discount-badge unknown">DEAL</div>`;
+
+    card.innerHTML = `
+      <div>
+        <div class="deal-meta">
+          <span class="retailer-tag">${deal.retailer || 'Various'}</span>
+          <span class="cat-tag">${catIcon(deal.category)} ${deal.category}</span>
+          <span class="source-tag">via ${deal.source}</span>
+          ${wishlistMatch(deal) ? '<span style="font-size:0.7rem;background:rgba(255,149,0,0.15);color:var(--accent2);padding:2px 7px;border-radius:4px;font-weight:600;">⭐ WISHLIST</span>' : ''}
+        </div>
+        <div class="deal-title">${deal.title}</div>
+        ${deal.description ? `<div class="deal-desc">${deal.description}</div>` : ''}
+        <div class="deal-time">${deal.date_display}</div>
+      </div>
+      <div class="deal-right">
+        ${discHTML}
+        <div class="score-ring ${scoreClass(score)}" title="Deal score">${score}</div>
+        <button class="wishlist-btn ${isSaved ? 'saved' : ''}" data-id="${deal.id}" onclick="toggleSave(event, '${deal.id}')">
+          ${isSaved ? '⭐' : '☆'}
+        </button>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+function toggleSave(e, id) {
+  e.preventDefault();
+  e.stopPropagation();
+  if (savedDeals.has(id)) savedDeals.delete(id);
+  else savedDeals.add(id);
+  localStorage.setItem('savedDeals', JSON.stringify([...savedDeals]));
+  renderDeals();
+}
+
+function setTab(tab, el) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+
+  const isLookup = tab === 'lookup';
+  document.getElementById('priceLookupSection').classList.toggle('active', isLookup);
+  document.getElementById('dealsGrid').style.display = isLookup ? 'none' : '';
+  document.getElementById('statsRow').style.display = isLookup ? 'none' : '';
+  document.getElementById('catChips').style.display = isLookup ? 'none' : '';
+  document.querySelector('.filters-bar').style.display = isLookup ? 'none' : '';
+
+  if (!isLookup) renderDeals();
+  else setTimeout(() => document.getElementById('lookupInput').focus(), 50);
+}
+
+// ── Price Lookup ───────────────────────────────────────────────────────────
+const RETAILERS = [
+  { name: 'Amazon',         emoji: '📦', searchUrl: q => `https://www.amazon.com/s?k=${q}`,                              sub: 'Prime + price history via CCC' },
+  { name: 'Walmart',        emoji: '🔵', searchUrl: q => `https://www.walmart.com/search?q=${q}`,                        sub: 'Free 2-day on $35+' },
+  { name: 'Best Buy',       emoji: '💙', searchUrl: q => `https://www.bestbuy.com/site/searchpage.jsp?st=${q}`,          sub: 'Price match guarantee' },
+  { name: 'Target',         emoji: '🎯', searchUrl: q => `https://www.target.com/s?searchTerm=${q}`,                     sub: 'RedCard saves 5%' },
+  { name: "Lowe's",         emoji: '🏠', searchUrl: q => `https://www.lowes.com/search?searchTerm=${q}`,                 sub: 'Tools, hardware, garden' },
+  { name: 'Home Depot',     emoji: '🔨', searchUrl: q => `https://www.homedepot.com/s/${q}`,                             sub: 'Pro desk + rental' },
+  { name: 'Harbor Freight', emoji: '🛠', searchUrl: q => `https://www.harborfreight.com/catalogsearch/result/?q=${q}`,   sub: 'Budget tools, frequent coupons' },
+  { name: 'Ace Hardware',   emoji: '🔑', searchUrl: q => `https://www.acehardware.com/departments?query=${q}`,           sub: 'Local pickup, niche hardware' },
+];
+
+async function doLookup() {
+  const raw = document.getElementById('lookupInput').value.trim();
+  if (!raw) return;
+  const q = encodeURIComponent(raw);
+  const container = document.getElementById('lookupResults');
+
+  container.innerHTML = `
+    <div class="ai-summary-box fade-in">
+      <div class="ai-label"><span class="ai-loading"></span> AI PRICE SUMMARY</div>
+      <div class="ai-text placeholder">Analyzing "${raw}"...</div>
+    </div>
+
+    <div style="font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--muted);margin-bottom:10px;margin-top:4px;">SHOP NOW</div>
+    <div class="retailer-grid fade-in">
+      ${RETAILERS.map(r => `
+        <a class="retailer-card" href="${r.searchUrl(q)}" target="_blank" rel="noopener">
+          <div class="retailer-info">
+            <span class="retailer-emoji">${r.emoji}</span>
+            <div>
+              <div class="retailer-name">${r.name}</div>
+              <div class="retailer-sub">${r.sub}</div>
+            </div>
+          </div>
+          <span class="retailer-arrow">→</span>
+        </a>`).join('')}
+    </div>
+
+    <div class="spec-section fade-in">
+      <div class="spec-header">📋 BRAND SPEC COMPARISON</div>
+      <div id="specTableArea">
+        <div class="spec-loading"><span class="ai-loading"></span> Building spec comparison for "${raw}"...</div>
+      </div>
+    </div>
+
+    <div class="history-section fade-in" style="margin-top:20px;">
+      <div class="history-title">PRICE HISTORY</div>
+      <div class="history-links">
+        <a class="history-link" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
+          <span class="hl-icon">🐪</span>
+          <div><div>CamelCamelCamel — Amazon Price History</div><div class="hl-desc">Free 90-day charts, all-time lows, price drop alerts</div></div>
+          <span style="margin-left:auto;color:var(--muted)">→</span>
+        </a>
+        <a class="history-link" href="https://www.google.com/search?q=${q}+price+comparison&tbm=shop" target="_blank" rel="noopener">
+          <span class="hl-icon">🛍</span>
+          <div><div>Google Shopping — Compare All Retailers</div><div class="hl-desc">Live prices across dozens of stores at once</div></div>
+          <span style="margin-left:auto;color:var(--muted)">→</span>
+        </a>
+        <a class="history-link" href="https://keepa.com/#!search/1-${q}" target="_blank" rel="noopener">
+          <span class="hl-icon">📊</span>
+          <div><div>Keepa — Detailed Amazon Price Charts</div><div class="hl-desc">5B+ products tracked, hourly updates, sales rank</div></div>
+          <span style="margin-left:auto;color:var(--muted)">→</span>
+        </a>
+        <a class="history-link" href="https://pricehistory.app/search?q=${q}" target="_blank" rel="noopener">
+          <span class="hl-icon">📈</span>
+          <div><div>PriceHistory.app — Multi-Retailer History</div><div class="hl-desc">Amazon, Flipkart & more with lowest-ever tracker</div></div>
+          <span style="margin-left:auto;color:var(--muted)">→</span>
+        </a>
+      </div>
+    </div>`;
+
+  // Fire both AI calls in parallel
+  const [summaryResult, specResult] = await Promise.allSettled([
+    fetchAISummary(raw),
+    fetchSpecTable(raw)
+  ]);
+
+  // Render summary
+  const summaryBox = container.querySelector('.ai-text');
+  const summaryLabel = container.querySelector('.ai-label');
+  if (summaryResult.status === 'fulfilled' && summaryResult.value) {
+    summaryBox.classList.remove('placeholder');
+    summaryBox.textContent = summaryResult.value;
+    summaryLabel.innerHTML = '✦ AI PRICE SUMMARY';
+  } else {
+    summaryBox.textContent = 'AI summary unavailable — use the links below to compare prices.';
+    summaryLabel.innerHTML = '✦ AI PRICE SUMMARY';
+  }
+
+  // Render spec table
+  const specArea = document.getElementById('specTableArea');
+  if (specResult.status === 'fulfilled' && specResult.value) {
+    renderSpecTable(specArea, specResult.value, raw);
+  } else {
+    specArea.innerHTML = `<div class="spec-error">Spec comparison unavailable for this search. Try a more specific product type (e.g. "20V cordless drill" or "65 inch 4K TV").</div>`;
+  }
+}
+
+async function fetchAISummary(raw) {
+  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 1000,
+      messages: [{
+        role: 'user',
+        content: `You are a deal-hunting assistant. The user searched for: "${raw}".
+
+Give a concise 3–5 sentence shopping brief covering:
+1. Typical price range to expect
+2. Which retailer (Amazon, Walmart, Best Buy, Target, Lowe's, Home Depot, Harbor Freight, Ace Hardware) usually has the best price or selection
+3. Buying tips — best time of year, models to prioritize, red flags to avoid
+4. Whether price history tracking via CamelCamelCamel is worth it for this product type
+
+Be direct, specific, and practical. No fluff.`
+      }]
+    })
+  });
+  const data = await resp.json();
+  return data.content?.find(b => b.type === 'text')?.text || null;
+}
+
+async function fetchSpecTable(raw) {
+  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 1000,
+      messages: [{
+        role: 'user',
+        content: `The user is shopping for: "${raw}".
+
+Return ONLY a JSON object (no markdown, no backticks, no explanation) with this exact structure:
+{
+  "product": "clean product category name",
+  "specs": ["spec1", "spec2", "spec3", ...],
+  "brands": [
+    {
+      "name": "Brand Model Name",
+      "tier": "best|good|value",
+      "values": ["val1", "val2", "val3", ...],
+      "price": "$XX–$XX",
+      "verdict": "one sentence why to buy or avoid"
+    }
+  ],
+  "note": "one sentence caveat about specs or pricing accuracy"
+}
+
+Rules:
+- Include 3–6 top brands/models for this product category
+- Include 5–8 relevant spec columns (most important specs for buying decisions)
+- tier: "best" = premium pick, "good" = solid mid-range, "value" = budget
+- values array must match specs array length exactly
+- price should be approximate current retail range
+- If the search is too vague to compare (e.g. just "tools"), return {"error": "too_vague"}
+- If it's not a product (e.g. "hello"), return {"error": "not_a_product"}`
+      }]
+    })
+  });
+  const data = await resp.json();
+  const text = data.content?.find(b => b.type === 'text')?.text || '';
+  const clean = text.replace(/```json|```/g, '').trim();
+  const parsed = JSON.parse(clean);
+  if (parsed.error) return null;
+  return parsed;
+}
+
+function renderSpecTable(container, spec, raw) {
+  const tierBadge = t => {
+    if (t === 'best')  return '<span class="spec-badge best">BEST</span>';
+    if (t === 'good')  return '<span class="spec-badge good">SOLID</span>';
+    if (t === 'value') return '<span class="spec-badge value">VALUE</span>';
+    return '';
+  };
+
+  const headers = ['Brand / Model', 'Price', ...spec.specs, 'Verdict'];
+
+  const html = `
+    <div class="spec-table-wrap fade-in">
+      <table class="spec-table">
+        <thead>
+          <tr>
+            ${headers.map((h, i) => `<th${i === 0 ? ' class="brand-col"' : ''}>${h}</th>`).join('')}
+          </tr>
+        </thead>
+        <tbody>
+          ${spec.brands.map(b => `
+            <tr>
+              <td>${tierBadge(b.tier)} ${b.name}</td>
+              <td style="white-space:nowrap;color:var(--green);font-family:var(--font-mono);font-size:0.78rem;">${b.price || '—'}</td>
+              ${(b.values || []).map(v => `<td>${v || '—'}</td>`).join('')}
+              <td style="color:var(--muted);font-size:0.78rem;max-width:180px;">${b.verdict || ''}</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>
+    ${spec.note ? `<div class="spec-note">⚠ ${spec.note}</div>` : ''}`;
+
+  container.innerHTML = html;
+}
+
+function updateStats() {
+  document.getElementById('statTotal').textContent = allDeals.length;
+  document.getElementById('statHot').textContent = allDeals.filter(d => d.discount >= 30).length;
+  document.getElementById('statWish').textContent = allDeals.filter(wishlistMatch).length;
+}
+
+// ── Wishlist management ────────────────────────────────────────────────────
+function renderWishlist() {
+  const container = document.getElementById('wishlistItems');
+  container.innerHTML = '';
+  if (wishlist.length === 0) {
+    container.innerHTML = `<div style="color:var(--muted);font-size:0.85rem;text-align:center;padding:20px">No keywords yet. Add something above!</div>`;
+    return;
+  }
+  wishlist.forEach((kw, i) => {
+    const item = document.createElement('div');
+    item.className = 'wishlist-item';
+    item.innerHTML = `
+      <span>🔍 ${kw}</span>
+      <button class="del-btn" onclick="removeWish(${i})">✕</button>
+    `;
+    container.appendChild(item);
+  });
+}
+
+function addWishItem() {
+  const val = document.getElementById('wishInput').value.trim();
+  if (!val) return;
+  wishlist.push(val);
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  document.getElementById('wishInput').value = '';
+  renderWishlist();
+  updateStats();
+  renderDeals();
+}
+
+function removeWish(i) {
+  wishlist.splice(i, 1);
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  renderWishlist();
+  updateStats();
+  renderDeals();
+}
+
+// ── SMS ────────────────────────────────────────────────────────────────────
+function loadSmsConfig() {
+  if (smsConfig.phone) document.getElementById('smsPhone').value = smsConfig.phone;
+  if (smsConfig.key) document.getElementById('smsKey').value = smsConfig.key;
+}
+
+function saveSmsConfig() {
+  smsConfig = {
+    phone: document.getElementById('smsPhone').value.trim(),
+    key: document.getElementById('smsKey').value.trim(),
+  };
+  localStorage.setItem('smsConfig', JSON.stringify(smsConfig));
+  showStatus('ok', '✅ Saved! Add these as GitHub Secrets to enable auto-alerts.');
+}
+
+async function testSms() {
+  const phone = document.getElementById('smsPhone').value.trim();
+  const key = document.getElementById('smsKey').value.trim() || 'textbelt';
+  if (!phone) { showStatus('err', 'Enter a phone number first.'); return; }
+
+  showStatus('ok', 'Sending test SMS...');
+  try {
+    const res = await fetch('https://textbelt.com/text', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phone, message: '🔥 DealRadar test alert! Your deal tracker is live.', key }),
+    });
+    const data = await res.json();
+    if (data.success) showStatus('ok', '✅ Text sent! Check your phone.');
+    else showStatus('err', `❌ Failed: ${data.error || 'Unknown error'}`);
+  } catch (e) {
+    showStatus('err', '❌ Network error sending SMS.');
+  }
+}
+
+function showStatus(type, msg) {
+  const el = document.getElementById('smsStatus');
+  el.className = `status-msg ${type}`;
+  el.textContent = msg;
+}
+
+// ── Panel ──────────────────────────────────────────────────────────────────
+function openPanel() {
+  document.getElementById('panelOverlay').classList.add('open');
+}
+function closePanel(e) {
+  if (!e || e.target === document.getElementById('panelOverlay')) {
+    document.getElementById('panelOverlay').classList.remove('open');
+  }
+}
+
+// ── Go ─────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
