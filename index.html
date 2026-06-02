@@ -8,1128 +8,936 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0c0c0e;
-  --card: #141416;
-  --card2: #1a1a1e;
-  --border: #252528;
-  --border2: #2e2e33;
-  --fire: #ff3d00;
-  --fire2: #ff7043;
-  --gold: #ffc107;
-  --green: #00e676;
-  --blue: #40c4ff;
-  --purple: #b388ff;
-  --text: #f5f5f7;
-  --sub: #999aaa;
-  --dim: #555566;
-  --r: 10px;
-  --ff: 'Archivo', sans-serif;
-  --ffd: 'Archivo Black', sans-serif;
-  --ffm: 'JetBrains Mono', monospace;
+  --bg:#0c0c0e; --card:#141416; --card2:#1c1c20; --border:#252528; --border2:#2e2e35;
+  --fire:#ff3d00; --gold:#ffc107; --green:#00e676; --blue:#40c4ff; --purple:#b388ff;
+  --text:#f0f0f5; --sub:#8888aa; --dim:#44445a;
+  --r:10px; --ff:'Archivo',sans-serif; --ffd:'Archivo Black',sans-serif; --ffm:'JetBrains Mono',monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--ff);min-height:100dvh;overflow-x:hidden}
 
 /* NAV */
 nav{
-  position:sticky;top:0;z-index:200;
-  background:rgba(12,12,14,0.92);
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(16px);
-  padding:0 16px;
-  display:flex;align-items:center;gap:0;
-  height:56px;
+  position:sticky;top:0;z-index:300;height:52px;
+  background:rgba(12,12,14,0.95);border-bottom:1px solid var(--border);
+  backdrop-filter:blur(16px);display:flex;align-items:center;padding:0 14px;gap:8px;
 }
-.nav-brand{
-  font-family:var(--ffd);font-size:1.15rem;letter-spacing:1px;
-  color:var(--fire);margin-right:auto;display:flex;align-items:center;gap:8px;
-}
-.nav-brand span{
-  background:var(--fire);color:#fff;font-family:var(--ffm);
-  font-size:0.55rem;padding:2px 5px;border-radius:3px;letter-spacing:1px;
-}
-.nav-tabs{display:flex;gap:2px}
-.nav-tab{
-  padding:8px 18px;border-radius:8px;border:none;background:none;
-  color:var(--sub);font-family:var(--ff);font-size:0.88rem;font-weight:500;
-  cursor:pointer;transition:all .15s;white-space:nowrap;
-}
+.nav-logo{font-family:var(--ffd);font-size:1.05rem;letter-spacing:1px;color:var(--fire);margin-right:auto;display:flex;align-items:center;gap:6px}
+.nav-live{background:var(--fire);color:#fff;font-family:var(--ffm);font-size:.5rem;padding:2px 5px;border-radius:3px;letter-spacing:1px}
+.nav-tab{padding:7px 14px;border-radius:8px;border:none;background:none;color:var(--sub);font-family:var(--ff);font-size:.82rem;font-weight:500;cursor:pointer;transition:all .15s;white-space:nowrap}
 .nav-tab:hover{color:var(--text);background:var(--card2)}
 .nav-tab.active{color:var(--text);background:var(--card2)}
+.nav-gear{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem;margin-left:4px}
 
 /* PAGES */
-.page{display:none;padding:16px;max-width:960px;margin:0 auto;padding-bottom:60px}
+.page{display:none;max-width:680px;margin:0 auto;padding:14px 12px 80px}
 .page.active{display:block}
 
-/* ── PAGE 1: DEALS ── */
-
-/* Top bar */
-.deals-topbar{
-  display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;
+/* ══ DEALS PAGE ══ */
+.topbar{display:flex;gap:8px;margin-bottom:10px;align-items:center}
+.search-field{
+  flex:1;position:relative;
 }
-.search-box{
-  flex:1;min-width:200px;position:relative;
+.search-field input{
+  width:100%;background:var(--card);border:1px solid var(--border2);color:var(--text);
+  border-radius:var(--r);padding:9px 12px 9px 34px;font-family:var(--ff);font-size:.88rem;outline:none;transition:border-color .15s;
 }
-.search-box input{
-  width:100%;background:var(--card);border:1px solid var(--border2);
-  color:var(--text);border-radius:var(--r);padding:11px 14px 11px 38px;
-  font-family:var(--ff);font-size:0.9rem;outline:none;transition:border-color .15s;
-}
-.search-box input:focus{border-color:var(--fire)}
-.search-box input::placeholder{color:var(--dim)}
-.search-box .si{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:.95rem;pointer-events:none}
+.search-field input:focus{border-color:var(--fire)}
+.search-field input::placeholder{color:var(--dim)}
+.search-field .si{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:.85rem;pointer-events:none}
 
-.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
-
-/* Category dropdown */
-.dd-wrap{position:relative}
+/* Dropdown */
+.dd{position:relative}
 .dd-btn{
-  display:flex;align-items:center;gap:6px;
+  display:flex;align-items:center;gap:5px;white-space:nowrap;
   background:var(--card);border:1px solid var(--border2);color:var(--text);
-  border-radius:var(--r);padding:9px 14px;font-family:var(--ff);font-size:0.85rem;
-  font-weight:500;cursor:pointer;transition:border-color .15s;white-space:nowrap;
+  border-radius:var(--r);padding:9px 12px;font-family:var(--ff);font-size:.82rem;font-weight:500;cursor:pointer;transition:border-color .15s;
 }
-.dd-btn:hover,.dd-btn.open{border-color:var(--fire);color:var(--fire)}
-.dd-caret{font-size:.6rem;transition:transform .15s}
+.dd-btn:hover,.dd-btn.open{border-color:var(--fire)}
+.dd-caret{font-size:.55rem;color:var(--sub);transition:transform .15s}
 .dd-btn.open .dd-caret{transform:rotate(180deg)}
 .dd-menu{
-  display:none;position:absolute;top:calc(100% + 6px);left:0;
+  display:none;position:absolute;top:calc(100% + 5px);right:0;min-width:180px;
   background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
-  min-width:220px;z-index:100;overflow:hidden;
-  box-shadow:0 8px 32px rgba(0,0,0,.5);
+  z-index:200;box-shadow:0 8px 28px rgba(0,0,0,.6);overflow:hidden;
 }
 .dd-menu.open{display:block}
-.dd-item{
-  padding:10px 16px;cursor:pointer;font-size:0.88rem;
-  display:flex;align-items:center;gap:8px;transition:background .1s;
-}
-.dd-item:hover{background:var(--card2)}
-.dd-item.active{color:var(--fire)}
-.dd-item .check{margin-left:auto;color:var(--fire);font-size:.8rem;opacity:0}
-.dd-item.active .check{opacity:1}
+.ddi{padding:9px 14px;cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:space-between;transition:background .1s}
+.ddi:hover{background:var(--card2)}
+.ddi.active{color:var(--fire)}
+.ddi .chk{color:var(--fire);font-size:.75rem;opacity:0}
+.ddi.active .chk{opacity:1}
 
-/* Sort dropdown */
-.sort-btn{
-  display:flex;align-items:center;gap:6px;
-  background:var(--card);border:1px solid var(--border2);color:var(--sub);
-  border-radius:var(--r);padding:9px 14px;font-family:var(--ff);font-size:0.85rem;
-  cursor:pointer;transition:all .15s;white-space:nowrap;
-}
-.sort-btn:hover{border-color:var(--border2);color:var(--text)}
-
-/* Stats */
-.stats-row{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;
-}
+/* Stats row — compact */
+.stats{display:flex;gap:8px;margin-bottom:10px}
 .stat{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  padding:12px 14px;text-align:center;
+  flex:1;background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:10px 10px 8px;text-align:center;
 }
-.stat-val{font-family:var(--ffd);font-size:1.6rem;color:var(--fire);line-height:1}
-.stat-lbl{font-size:0.68rem;color:var(--sub);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+.stat-v{font-family:var(--ffd);font-size:1.3rem;color:var(--fire);line-height:1}
+.stat-l{font-size:.62rem;color:var(--sub);text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
 
-/* Quick links to retailer clearance/deals pages */
-.quick-links{
-  display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;
+/* Retailer links — collapsible row */
+.retailer-row{margin-bottom:10px}
+.retailer-toggle{
+  background:none;border:none;color:var(--sub);font-family:var(--ff);font-size:.75rem;
+  cursor:pointer;display:flex;align-items:center;gap:5px;padding:2px 0;
 }
-.ql{
-  display:flex;align-items:center;gap:5px;
+.retailer-toggle:hover{color:var(--text)}
+.retailer-pills{display:none;flex-wrap:wrap;gap:5px;margin-top:7px}
+.retailer-pills.open{display:flex}
+.rp{
+  display:flex;align-items:center;gap:4px;
   background:var(--card);border:1px solid var(--border);border-radius:20px;
-  padding:5px 12px;font-size:0.75rem;font-weight:500;color:var(--sub);
+  padding:4px 10px;font-size:.72rem;font-weight:500;color:var(--sub);
   text-decoration:none;transition:all .15s;white-space:nowrap;
 }
-.ql:hover{border-color:var(--gold);color:var(--gold)}
-.ql-dot{width:6px;height:6px;border-radius:50%}
+.rp:hover{border-color:var(--gold);color:var(--gold)}
+.rp-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
 
-/* Deal cards */
-.deals-list{display:flex;flex-direction:column;gap:8px}
+/* Deal cards — structured like PricePeek */
+.deals-feed{display:flex;flex-direction:column;gap:10px}
+
 .deal-card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  padding:14px 16px;display:grid;grid-template-columns:1fr auto;
-  gap:14px;align-items:start;text-decoration:none;color:inherit;
-  transition:border-color .15s,transform .1s;position:relative;overflow:hidden;
-  cursor:pointer;
+  overflow:hidden;text-decoration:none;color:inherit;display:block;
+  transition:border-color .15s,transform .1s;position:relative;
 }
-.deal-card::after{
-  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
-  background:var(--fire);transform:scaleY(0);transition:transform .15s;
-  transform-origin:bottom;
+.deal-card:hover{border-color:rgba(255,61,0,.4);transform:translateY(-1px)}
+.deal-card.wishlist-hit{border-color:rgba(255,193,7,.3)}
+
+.dc-top{padding:12px 14px 10px;display:flex;gap:12px;align-items:flex-start}
+.dc-img{
+  width:72px;height:72px;border-radius:8px;background:var(--card2);
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  font-size:1.8rem;border:1px solid var(--border);overflow:hidden;
 }
-.deal-card:hover{border-color:rgba(255,61,0,.4);transform:translateX(2px)}
-.deal-card:hover::after{transform:scaleY(1)}
-.deal-card.featured{border-color:rgba(255,193,7,.25)}
-.deal-card.featured::after{background:var(--gold);transform:scaleY(1)}
+.dc-img img{width:100%;height:100%;object-fit:cover}
 
-.deal-top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
-.tag{
-  font-family:var(--ffm);font-size:0.62rem;font-weight:600;
-  padding:2px 7px;border-radius:4px;text-transform:uppercase;letter-spacing:.4px;
+.dc-body{flex:1;min-width:0}
+.dc-meta{display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin-bottom:5px}
+.badge{font-family:var(--ffm);font-size:.58rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px}
+.b-retailer{background:rgba(64,196,255,.1);color:var(--blue);border:1px solid rgba(64,196,255,.2)}
+.b-cat{background:rgba(255,255,255,.05);color:var(--sub)}
+.b-wish{background:rgba(255,193,7,.12);color:var(--gold);border:1px solid rgba(255,193,7,.2)}
+.b-flash{background:rgba(255,61,0,.12);color:var(--fire);border:1px solid rgba(255,61,0,.2)}
+.b-src{font-size:.62rem;color:var(--dim)}
+
+.dc-title{font-size:.9rem;font-weight:600;line-height:1.35;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dc-desc{font-size:.75rem;color:var(--sub);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+.dc-bottom{
+  border-top:1px solid var(--border);padding:8px 14px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  background:rgba(0,0,0,.15);
 }
-.tag-retailer{background:rgba(64,196,255,.1);color:var(--blue);border:1px solid rgba(64,196,255,.2)}
-.tag-cat{background:rgba(255,255,255,.05);color:var(--sub)}
-.tag-src{color:var(--dim);font-size:0.65rem}
-.tag-wish{background:rgba(255,193,7,.12);color:var(--gold);border:1px solid rgba(255,193,7,.2)}
-.tag-flash{background:rgba(255,61,0,.12);color:var(--fire);border:1px solid rgba(255,61,0,.2);animation:flashpulse 2s ease infinite}
-@keyframes flashpulse{0%,100%{opacity:1}50%{opacity:.6}}
-
-.deal-title{font-size:0.92rem;font-weight:600;line-height:1.4;margin-bottom:4px}
-.deal-desc{font-size:0.78rem;color:var(--sub);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.deal-time{font-family:var(--ffm);font-size:0.62rem;color:var(--dim);margin-top:6px}
-
-.deal-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:64px}
-.disc{font-family:var(--ffd);font-size:1.5rem;color:var(--green);line-height:1;text-align:right}
-.disc small{font-size:.65rem;font-family:var(--ffm);color:var(--sub);display:block;line-height:1.2;text-align:right}
-.score{
-  width:34px;height:34px;border-radius:50%;border:2px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--ffm);font-size:0.68rem;font-weight:600;
+.dc-price{display:flex;align-items:baseline;gap:8px}
+.dc-save{
+  background:rgba(0,230,118,.1);border:1px solid rgba(0,230,118,.2);
+  color:var(--green);font-family:var(--ffd);font-size:1rem;
+  padding:2px 10px;border-radius:6px;line-height:1.3;
 }
-.score.s-hi{border-color:var(--green);color:var(--green)}
-.score.s-md{border-color:var(--gold);color:var(--gold)}
-.score.s-lo{border-color:var(--dim);color:var(--dim)}
-.save-btn{background:none;border:none;font-size:1.1rem;cursor:pointer;padding:2px;transition:transform .15s;line-height:1}
-.save-btn:hover{transform:scale(1.3)}
+.dc-save small{font-size:.6rem;font-family:var(--ffm);font-weight:400;display:block;line-height:1;opacity:.8}
+.dc-time{font-family:var(--ffm);font-size:.6rem;color:var(--dim)}
+.dc-actions{display:flex;align-items:center;gap:8px}
+.dc-score{width:30px;height:30px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;font-family:var(--ffm);font-size:.62rem;font-weight:700}
+.sc-hi{border-color:var(--green);color:var(--green)}
+.sc-md{border-color:var(--gold);color:var(--gold)}
+.sc-lo{border-color:var(--dim);color:var(--dim)}
+.dc-star{background:none;border:none;font-size:1rem;cursor:pointer;padding:2px;transition:transform .15s;line-height:1}
+.dc-star:hover{transform:scale(1.3)}
 
-/* Empty */
-.empty{text-align:center;padding:60px 20px;color:var(--sub)}
-.empty .ei{font-size:2.5rem;margin-bottom:12px}
-.empty p{font-size:.88rem}
-
-/* Loading */
-.lbar{height:2px;background:linear-gradient(90deg,var(--fire),var(--gold),var(--fire));background-size:200%;animation:ls 1.2s linear infinite;border-radius:2px;margin-bottom:16px}
+.lbar{height:2px;background:linear-gradient(90deg,var(--fire),var(--gold),var(--fire));background-size:200%;animation:ls 1.2s linear infinite;border-radius:2px;margin-bottom:10px}
 @keyframes ls{0%{background-position:200% 0}100%{background-position:-200% 0}}
 
-/* ── PAGE 2: LOOKUP ── */
+.empty{text-align:center;padding:50px 20px;color:var(--sub)}
+.empty .ei{font-size:2.2rem;margin-bottom:10px}
+.empty p{font-size:.85rem}
 
-.lookup-hero{
-  text-align:center;padding:32px 0 24px;
-}
-.lookup-hero h1{font-family:var(--ffd);font-size:2rem;letter-spacing:1px;margin-bottom:6px}
-.lookup-hero p{color:var(--sub);font-size:.9rem}
+/* ══ LOOKUP PAGE ══ */
+.lu-hero{padding:24px 0 20px;text-align:center}
+.lu-hero h1{font-family:var(--ffd);font-size:1.7rem;letter-spacing:1px;margin-bottom:4px}
+.lu-hero p{font-size:.82rem;color:var(--sub)}
 
-.ac-wrap{position:relative;max-width:580px;margin:0 auto 28px}
+.ac-wrap{position:relative;margin-bottom:20px}
 .ac-wrap input{
-  width:100%;background:var(--card);border:2px solid var(--border2);
-  color:var(--text);border-radius:var(--r);padding:14px 18px 14px 44px;
-  font-family:var(--ff);font-size:1rem;font-weight:500;outline:none;
-  transition:border-color .15s;
+  width:100%;background:var(--card);border:2px solid var(--border2);color:var(--text);
+  border-radius:var(--r);padding:13px 16px 13px 42px;font-family:var(--ff);font-size:.95rem;
+  font-weight:500;outline:none;transition:border-color .15s;
 }
 .ac-wrap input:focus{border-color:var(--fire)}
 .ac-wrap input::placeholder{color:var(--dim)}
-.ac-wrap .aci{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:1.1rem;pointer-events:none}
-.ac-dropdown{
+.ac-wrap .aci{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:1rem;pointer-events:none}
+.ac-dd{
   display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;
   background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
-  z-index:100;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.6);max-height:320px;overflow-y:auto;
+  z-index:200;box-shadow:0 8px 32px rgba(0,0,0,.7);max-height:300px;overflow-y:auto;
 }
-.ac-dropdown.open{display:block}
-.ac-group-label{
-  font-family:var(--ffm);font-size:.62rem;color:var(--dim);
-  padding:10px 14px 4px;text-transform:uppercase;letter-spacing:.5px;
-}
-.ac-item{
-  padding:11px 14px;cursor:pointer;display:flex;align-items:center;gap:10px;
-  transition:background .1s;font-size:.9rem;
-}
-.ac-item:hover,.ac-item.highlighted{background:var(--card2)}
-.ac-item .ac-icon{font-size:1.1rem;width:24px;text-align:center}
-.ac-item .ac-name{font-weight:500}
-.ac-item .ac-cat{font-size:.72rem;color:var(--sub);margin-top:1px}
-.ac-item .ac-arrow{margin-left:auto;color:var(--dim)}
+.ac-dd.open{display:block}
+.ac-gl{font-family:var(--ffm);font-size:.58rem;color:var(--dim);padding:8px 12px 3px;text-transform:uppercase;letter-spacing:.5px}
+.ac-item{padding:10px 12px;cursor:pointer;display:flex;align-items:center;gap:10px;transition:background .1s;font-size:.88rem}
+.ac-item:hover,.ac-item.hl{background:var(--card2)}
+.ac-item .ac-ic{font-size:1rem;width:22px;text-align:center}
+.ac-item .ac-nm{font-weight:500}
+.ac-item .ac-ct{font-size:.7rem;color:var(--sub)}
+.ac-item .ac-arr{margin-left:auto;color:var(--dim);font-size:.8rem}
 
 /* Lookup results */
-#lookupResults .section-title{
-  font-family:var(--ffd);font-size:.85rem;letter-spacing:1.5px;
-  color:var(--sub);text-transform:uppercase;margin-bottom:10px;margin-top:20px;
-}
+.lu-section{font-family:var(--ffd);font-size:.72rem;letter-spacing:1.5px;color:var(--sub);text-transform:uppercase;margin:18px 0 8px}
 
-/* AI summary */
-.ai-box{
-  background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
-  padding:16px;margin-bottom:4px;
-}
-.ai-label{
-  font-family:var(--ffm);font-size:.62rem;color:var(--fire);
-  text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;
-  display:flex;align-items:center;gap:6px;
-}
-.ai-text{font-size:.88rem;line-height:1.65;color:var(--text)}
-.ai-text.ph{color:var(--dim)}
+.ai-box{background:var(--card);border:1px solid var(--border2);border-radius:var(--r);padding:14px}
+.ai-lbl{font-family:var(--ffm);font-size:.6rem;color:var(--fire);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.ai-body{font-size:.85rem;line-height:1.65;color:var(--text)}
+.ai-body.ph{color:var(--dim)}
 
-/* Retailer grid */
-.retailer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-.rc{
+/* Retailer grid 2-col */
+.ret-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.ret-card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  padding:12px 14px;display:flex;align-items:center;gap:10px;
+  padding:11px 13px;display:flex;align-items:center;gap:9px;
   text-decoration:none;color:var(--text);transition:border-color .15s,transform .1s;
 }
-.rc:hover{border-color:rgba(255,61,0,.4);transform:translateY(-1px)}
-.rc-emoji{font-size:1.3rem}
-.rc-name{font-size:.85rem;font-weight:600}
-.rc-sub{font-size:.7rem;color:var(--sub);margin-top:1px}
-.rc-arr{margin-left:auto;color:var(--dim)}
+.ret-card:hover{border-color:rgba(255,61,0,.35);transform:translateY(-1px)}
+.ret-card .re{font-size:1.2rem}
+.ret-card .rn{font-size:.82rem;font-weight:600}
+.ret-card .rs{font-size:.67rem;color:var(--sub);margin-top:1px}
+.ret-card .ra{margin-left:auto;color:var(--dim);font-size:.8rem}
 
 /* Spec table */
 .spec-wrap{overflow-x:auto;border-radius:var(--r);border:1px solid var(--border)}
-table.specs{width:100%;border-collapse:collapse;font-size:.8rem;min-width:560px}
-table.specs th{
-  background:var(--card2);padding:10px 14px;text-align:left;
-  font-family:var(--ffm);font-size:.62rem;color:var(--sub);
-  border-bottom:1px solid var(--border);white-space:nowrap;font-weight:600;letter-spacing:.3px;
+table.sp{width:100%;border-collapse:collapse;font-size:.78rem;min-width:520px}
+table.sp th{
+  background:var(--card2);padding:9px 12px;text-align:left;
+  font-family:var(--ffm);font-size:.58rem;color:var(--sub);border-bottom:1px solid var(--border);
+  white-space:nowrap;font-weight:600;letter-spacing:.3px;
 }
-table.specs th.brand-h{color:var(--text);min-width:130px}
-table.specs td{
-  padding:10px 14px;border-bottom:1px solid var(--border);
-  vertical-align:top;line-height:1.4;
-}
-table.specs tr:last-child td{border-bottom:none}
-table.specs tr{cursor:pointer;transition:background .1s}
-table.specs tr:hover td{background:var(--card2)}
-table.specs tr.selected td{background:rgba(255,61,0,.07)}
-table.specs td:first-child{white-space:nowrap}
-.tier-badge{
-  display:inline-block;padding:1px 6px;border-radius:3px;
-  font-family:var(--ffm);font-size:.6rem;font-weight:700;margin-right:4px;
-}
-.tier-pro   {background:rgba(0,230,118,.12);color:var(--green)}
-.tier-mid   {background:rgba(64,196,255,.12);color:var(--blue)}
-.tier-value {background:rgba(255,193,7,.12);color:var(--gold)}
-.tier-budget{background:rgba(255,255,255,.06);color:var(--dim)}
-.price-cell{color:var(--green);font-family:var(--ffm);font-size:.75rem;white-space:nowrap}
-.where-cell{color:var(--blue);font-size:.75rem;white-space:nowrap}
+table.sp th.bh{color:var(--text);min-width:120px}
+table.sp td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle;line-height:1.4}
+table.sp tr:last-child td{border-bottom:none}
+table.sp tbody tr{cursor:pointer;transition:background .1s}
+table.sp tbody tr:hover td{background:var(--card2)}
+table.sp tbody tr.sel td{background:rgba(255,61,0,.07)}
+table.sp td:first-child{white-space:nowrap}
+.tb{display:inline-block;padding:1px 5px;border-radius:3px;font-family:var(--ffm);font-size:.58rem;font-weight:700;margin-right:3px}
+.tb-pro   {background:rgba(0,230,118,.12);color:var(--green)}
+.tb-mid   {background:rgba(64,196,255,.12);color:var(--blue)}
+.tb-value {background:rgba(255,193,7,.12);color:var(--gold)}
+.tb-budget{background:rgba(255,255,255,.06);color:var(--dim)}
+.pc{color:var(--green);font-family:var(--ffm);font-size:.72rem;white-space:nowrap}
+.wc{color:var(--blue);font-size:.72rem;white-space:nowrap}
 
-/* Selected brand panel */
-.brand-panel{
+.spec-note{font-size:.68rem;color:var(--dim);font-style:italic;margin-top:6px}
+.spec-skel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:10px;color:var(--sub);font-size:.85rem}
+.spec-err{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:14px;color:var(--sub);font-size:.82rem;text-align:center}
+
+/* Brand panel */
+.bp{
   background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
-  padding:18px;margin-top:14px;animation:fadeUp .25s ease;
+  padding:16px;margin-top:10px;animation:fu .2s ease;
 }
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.bp-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;gap:12px}
-.bp-name{font-family:var(--ffd);font-size:1.15rem}
-.bp-price{font-family:var(--ffd);font-size:1.4rem;color:var(--green)}
-.bp-close{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.8rem}
-.bp-links{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
-.bp-link{
+@keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.bp-hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px;gap:10px}
+.bp-name{font-family:var(--ffd);font-size:1.05rem}
+.bp-where{font-size:.72rem;color:var(--sub);margin-top:2px}
+.bp-price{font-family:var(--ffd);font-size:1.3rem;color:var(--green);white-space:nowrap}
+.bp-x{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:6px;padding:3px 9px;cursor:pointer;font-size:.75rem}
+.bp-links{display:flex;flex-direction:column;gap:7px;margin-bottom:12px}
+.bpl{
   display:flex;align-items:center;gap:10px;
   background:var(--card2);border:1px solid var(--border);border-radius:var(--r);
-  padding:12px 14px;text-decoration:none;color:var(--text);
-  font-size:.85rem;font-weight:500;transition:border-color .15s;
+  padding:11px 13px;text-decoration:none;color:var(--text);font-size:.83rem;font-weight:500;
+  transition:border-color .15s;
 }
-.bp-link:hover{border-color:var(--fire)}
-.bp-link .bpl-icon{font-size:1.2rem}
-.bp-link .bpl-sub{font-size:.7rem;color:var(--sub);margin-top:2px}
-.bp-link .bpl-arr{margin-left:auto;color:var(--dim)}
-.bp-verdict{
-  background:var(--card2);border-left:3px solid var(--fire);border-radius:0 8px 8px 0;
-  padding:12px 14px;font-size:.85rem;color:var(--sub);line-height:1.6;
-}
+.bpl:hover{border-color:var(--fire)}
+.bpl .bi{font-size:1.1rem}
+.bpl .bs{font-size:.68rem;color:var(--sub);margin-top:1px}
+.bpl .ba{margin-left:auto;color:var(--dim);font-size:.8rem}
+.bp-verdict{background:var(--card2);border-left:3px solid var(--fire);border-radius:0 8px 8px 0;padding:10px 12px;font-size:.82rem;color:var(--sub);line-height:1.55}
 
 /* History links */
-.history-links{display:flex;flex-direction:column;gap:8px}
+.hl-list{display:flex;flex-direction:column;gap:7px}
 .hl{
   display:flex;align-items:center;gap:10px;
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  padding:12px 14px;text-decoration:none;color:var(--text);font-size:.85rem;font-weight:500;
-  transition:border-color .15s;
+  padding:11px 13px;text-decoration:none;color:var(--text);font-size:.83rem;font-weight:500;transition:border-color .15s;
 }
 .hl:hover{border-color:var(--blue)}
-.hl-icon{font-size:1.1rem}
-.hl-sub{font-size:.7rem;color:var(--sub);margin-top:2px}
-.hl-arr{margin-left:auto;color:var(--dim)}
+.hl .hi{font-size:1.05rem}
+.hl .hs{font-size:.68rem;color:var(--sub);margin-top:1px}
+.hl .ha{margin-left:auto;color:var(--dim);font-size:.8rem}
 
-/* Panel overlay */
-.panel-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:300;backdrop-filter:blur(4px);align-items:flex-end}
-.panel-overlay.open{display:flex}
+/* Panel */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:400;backdrop-filter:blur(4px);align-items:flex-end}
+.overlay.open{display:flex}
 .panel{
-  background:var(--card);border:1px solid var(--border2);border-radius:16px 16px 0 0;
-  width:100%;max-width:960px;margin:0 auto;
-  padding:24px 20px calc(24px + env(safe-area-inset-bottom));
-  max-height:80dvh;overflow-y:auto;animation:slideUp .25s ease;
+  background:var(--card);border:1px solid var(--border2);border-radius:14px 14px 0 0;
+  width:100%;max-width:680px;margin:0 auto;
+  padding:22px 18px calc(22px + env(safe-area-inset-bottom));max-height:82dvh;overflow-y:auto;
+  animation:su .22s ease;
 }
-@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.panel-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-.panel-title{font-family:var(--ffd);font-size:1.3rem;letter-spacing:1px}
-.close-btn{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem}
-
-/* Wishlist in panel */
-.wish-add{display:flex;gap:8px;margin-bottom:14px}
-.wish-add input{flex:1;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:10px 14px;font-family:var(--ff);font-size:.9rem;outline:none}
-.wish-add input:focus{border-color:var(--fire)}
-.btn-fire{background:var(--fire);border:none;color:#fff;border-radius:var(--r);padding:10px 18px;font-family:var(--ff);font-weight:700;font-size:.88rem;cursor:pointer;white-space:nowrap;transition:opacity .15s}
-.btn-fire:hover{opacity:.85}
-.wish-list{display:flex;flex-direction:column;gap:7px}
-.wi{background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.wi span{font-size:.88rem;font-weight:500}
-.wi-del{background:none;border:none;color:var(--dim);cursor:pointer;font-size:.9rem;padding:2px 6px;border-radius:5px;transition:color .1s}
-.wi-del:hover{color:var(--fire)}
-
-/* SMS section */
-.sms-sec{margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
-.sms-title{font-family:var(--ffd);font-size:1rem;letter-spacing:1px;margin-bottom:4px}
-.sms-sub{font-size:.75rem;color:var(--sub);margin-bottom:12px;line-height:1.5}
-.sms-fields{display:flex;flex-direction:column;gap:9px}
-.field-label{font-size:.7rem;color:var(--sub);margin-bottom:3px;display:block;text-transform:uppercase;letter-spacing:.5px}
-.field-input{width:100%;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:10px 14px;font-family:var(--ff);font-size:.9rem;outline:none}
-.field-input:focus{border-color:var(--fire)}
-.btn-outline{background:none;border:1px solid var(--border2);color:var(--sub);border-radius:var(--r);padding:9px 16px;font-family:var(--ff);font-size:.85rem;cursor:pointer;transition:all .15s;width:100%}
-.btn-outline:hover{border-color:var(--fire);color:var(--fire)}
-.sms-note{font-size:.7rem;color:var(--dim);margin-top:10px;background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;line-height:1.5}
+@keyframes su{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.panel-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.panel-title{font-family:var(--ffd);font-size:1.1rem;letter-spacing:1px}
+.px{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.8rem}
+.wa{display:flex;gap:7px;margin-bottom:12px}
+.wa input{flex:1;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:9px 12px;font-family:var(--ff);font-size:.88rem;outline:none}
+.wa input:focus{border-color:var(--fire)}
+.btn-fire{background:var(--fire);border:none;color:#fff;border-radius:var(--r);padding:9px 16px;font-family:var(--ff);font-weight:700;font-size:.85rem;cursor:pointer;white-space:nowrap}
+.wish-items{display:flex;flex-direction:column;gap:6px}
+.wi{background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.wi span{font-size:.85rem;font-weight:500}
+.wd{background:none;border:none;color:var(--dim);cursor:pointer;font-size:.85rem;padding:2px 6px;border-radius:5px;transition:color .1s}
+.wd:hover{color:var(--fire)}
+.sms-sec{margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+.sms-ttl{font-family:var(--ffd);font-size:.9rem;letter-spacing:1px;margin-bottom:3px}
+.sms-sub{font-size:.72rem;color:var(--sub);margin-bottom:10px;line-height:1.5}
+.sms-fields{display:flex;flex-direction:column;gap:8px}
+.fl{font-size:.65rem;color:var(--sub);margin-bottom:3px;display:block;text-transform:uppercase;letter-spacing:.4px}
+.fi{width:100%;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:9px 12px;font-family:var(--ff);font-size:.88rem;outline:none}
+.fi:focus{border-color:var(--fire)}
+.btn-out{background:none;border:1px solid var(--border2);color:var(--sub);border-radius:var(--r);padding:8px 14px;font-family:var(--ff);font-size:.82rem;cursor:pointer;transition:all .15s;width:100%}
+.btn-out:hover{border-color:var(--fire);color:var(--fire)}
+.sms-note{font-size:.68rem;color:var(--dim);margin-top:8px;background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:9px 11px;line-height:1.5}
 .sms-note a{color:var(--blue)}
-.status-msg{font-size:.78rem;padding:8px 12px;border-radius:8px;margin-top:6px;display:none}
-.status-msg.ok{background:rgba(0,230,118,.1);color:var(--green);display:block}
-.status-msg.err{background:rgba(255,61,0,.1);color:var(--fire);display:block}
+.sm{font-size:.75rem;padding:7px 11px;border-radius:7px;margin-top:5px;display:none}
+.sm.ok{background:rgba(0,230,118,.1);color:var(--green);display:block}
+.sm.err{background:rgba(255,61,0,.1);color:var(--fire);display:block}
 
-/* Pulse loader */
-.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fire);animation:p .8s ease-in-out infinite alternate}
+/* Pulse */
+.pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--fire);animation:p .8s ease-in-out infinite alternate}
 @keyframes p{from{opacity:.3}to{opacity:1}}
-.fade-up{animation:fadeUp .3s ease}
 
-/* Spec loading skeleton */
-.spec-skel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;display:flex;align-items:center;gap:10px;color:var(--sub);font-size:.88rem}
-.spec-err{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px;color:var(--sub);font-size:.85rem;text-align:center}
-.spec-note-txt{font-size:.7rem;color:var(--dim);font-style:italic;margin-top:8px}
-
-@media(max-width:500px){
-  .stats-row{grid-template-columns:repeat(2,1fr)}
-  .retailer-grid{grid-template-columns:1fr}
-  .nav-tab{padding:8px 12px;font-size:.8rem}
-}
+@media(max-width:420px){.ret-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-brand">DEALRADAR <span>LIVE</span></div>
-  <div class="nav-tabs">
-    <button class="nav-tab active" onclick="showPage('deals',this)">🔥 Deals</button>
-    <button class="nav-tab" onclick="showPage('lookup',this)">🔎 Price Lookup</button>
-  </div>
-  <button class="btn-outline" style="margin-left:12px;padding:6px 12px;font-size:.78rem;border-radius:8px" onclick="openPanel()">⚙</button>
+  <div class="nav-logo">DEALRADAR <span class="nav-live">LIVE</span></div>
+  <button class="nav-tab active" onclick="showPage('deals',this)">🔥 Deals</button>
+  <button class="nav-tab" onclick="showPage('lookup',this)">🔎 Lookup</button>
+  <div class="nav-gear" onclick="openPanel()">⚙️</div>
 </nav>
 
-<!-- ══════════════ PAGE 1: DEALS ══════════════ -->
+<!-- ══ DEALS ══ -->
 <div class="page active" id="page-deals">
 
-  <div style="height:14px"></div>
-
   <!-- Stats -->
-  <div class="stats-row" id="statsRow">
-    <div class="stat"><div class="stat-val" id="sTotal">—</div><div class="stat-lbl">Live Deals</div></div>
-    <div class="stat"><div class="stat-val" id="sHot">—</div><div class="stat-lbl">🔥 30%+ Off</div></div>
-    <div class="stat"><div class="stat-val" id="sWish">—</div><div class="stat-lbl">⭐ Wishlist</div></div>
-    <div class="stat"><div class="stat-val" id="sUpdated" style="font-size:.7rem;color:var(--sub);font-family:var(--ffm)">—</div><div class="stat-lbl">Last Refresh</div></div>
+  <div style="height:10px"></div>
+  <div class="stats">
+    <div class="stat"><div class="stat-v" id="sTotal">—</div><div class="stat-l">Deals</div></div>
+    <div class="stat"><div class="stat-v" id="sHot">—</div><div class="stat-l">🔥 30%+</div></div>
+    <div class="stat"><div class="stat-v" id="sWish">—</div><div class="stat-l">⭐ Wishlist</div></div>
+    <div class="stat"><div class="stat-v" id="sTime" style="font-size:.65rem;color:var(--sub);font-family:var(--ffm)">—</div><div class="stat-l">Refreshed</div></div>
   </div>
 
-  <!-- Quick links to retailer clearance/sale pages -->
-  <div style="font-family:var(--ffd);font-size:.75rem;letter-spacing:1.5px;color:var(--dim);text-transform:uppercase;margin-bottom:6px">🛒 Retailer Deals & Clearance</div>
-  <div class="quick-links">
-    <a class="ql" href="https://www.amazon.com/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#ff9900"></span>Amazon Deals</a>
-    <a class="ql" href="https://www.amazon.com/gp/goldbox" target="_blank" rel="noopener"><span class="ql-dot" style="background:#ff9900"></span>Amazon Flash</a>
-    <a class="ql" href="https://www.walmart.com/shop/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#0071ce"></span>Walmart Deals</a>
-    <a class="ql" href="https://www.walmart.com/browse/rollbacks" target="_blank" rel="noopener"><span class="ql-dot" style="background:#0071ce"></span>Walmart Rollbacks</a>
-    <a class="ql" href="https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c" target="_blank" rel="noopener"><span class="ql-dot" style="background:#003087"></span>Best Buy DOTD</a>
-    <a class="ql" href="https://www.bestbuy.com/site/electronics/clearance-open-box/pcmcat218200050001.c" target="_blank" rel="noopener"><span class="ql-dot" style="background:#003087"></span>Best Buy Clearance</a>
-    <a class="ql" href="https://www.target.com/c/target-deals/-/N-4xtgt" target="_blank" rel="noopener"><span class="ql-dot" style="background:#cc0000"></span>Target Circle Deals</a>
-    <a class="ql" href="https://www.target.com/c/clearance/-/N-5q0ga" target="_blank" rel="noopener"><span class="ql-dot" style="background:#cc0000"></span>Target Clearance</a>
-    <a class="ql" href="https://www.lowes.com/l/deals.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's Deals</a>
-    <a class="ql" href="https://www.lowes.com/l/deal-of-the-day.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's DOTD</a>
-    <a class="ql" href="https://www.lowes.com/l/clearance.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's Clearance</a>
-    <a class="ql" href="https://www.homedepot.com/daily-deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#f96302"></span>Home Depot DOTD</a>
-    <a class="ql" href="https://www.homedepot.com/b/Special-Values-Clearance/N-5yc1vZar4y" target="_blank" rel="noopener"><span class="ql-dot" style="background:#f96302"></span>Home Depot Clearance</a>
-    <a class="ql" href="https://www.harborfreight.com/coupons" target="_blank" rel="noopener"><span class="ql-dot" style="background:#d32f2f"></span>Harbor Freight Coupons</a>
-    <a class="ql" href="https://www.acehardware.com/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#e53935"></span>Ace Hardware Deals</a>
+  <!-- Collapsible retailer links -->
+  <div class="retailer-row">
+    <button class="retailer-toggle" onclick="toggleRetailers(this)">🛒 Retailer Deals & Clearance ▾</button>
+    <div class="retailer-pills" id="retailerPills">
+      <a class="rp" href="https://www.amazon.com/deals" target="_blank"><span class="rp-dot" style="background:#ff9900"></span>Amazon Deals</a>
+      <a class="rp" href="https://www.amazon.com/gp/goldbox" target="_blank"><span class="rp-dot" style="background:#ff9900"></span>Amazon Flash</a>
+      <a class="rp" href="https://www.walmart.com/shop/deals" target="_blank"><span class="rp-dot" style="background:#0071ce"></span>Walmart Deals</a>
+      <a class="rp" href="https://www.walmart.com/browse/rollbacks" target="_blank"><span class="rp-dot" style="background:#0071ce"></span>Rollbacks</a>
+      <a class="rp" href="https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c" target="_blank"><span class="rp-dot" style="background:#003087"></span>Best Buy DOTD</a>
+      <a class="rp" href="https://www.bestbuy.com/site/electronics/clearance-open-box/pcmcat218200050001.c" target="_blank"><span class="rp-dot" style="background:#003087"></span>BB Clearance</a>
+      <a class="rp" href="https://www.target.com/c/target-deals/-/N-4xtgt" target="_blank"><span class="rp-dot" style="background:#cc0000"></span>Target Deals</a>
+      <a class="rp" href="https://www.target.com/c/clearance/-/N-5q0ga" target="_blank"><span class="rp-dot" style="background:#cc0000"></span>Target Clearance</a>
+      <a class="rp" href="https://www.lowes.com/l/deals.html" target="_blank"><span class="rp-dot" style="background:#004990"></span>Lowe's Deals</a>
+      <a class="rp" href="https://www.lowes.com/l/deal-of-the-day.html" target="_blank"><span class="rp-dot" style="background:#004990"></span>Lowe's DOTD</a>
+      <a class="rp" href="https://www.lowes.com/l/clearance.html" target="_blank"><span class="rp-dot" style="background:#004990"></span>Lowe's Clearance</a>
+      <a class="rp" href="https://www.homedepot.com/daily-deals" target="_blank"><span class="rp-dot" style="background:#f96302"></span>HD Daily Deals</a>
+      <a class="rp" href="https://www.homedepot.com/b/Special-Values-Clearance/N-5yc1vZar4y" target="_blank"><span class="rp-dot" style="background:#f96302"></span>HD Clearance</a>
+      <a class="rp" href="https://www.harborfreight.com/coupons" target="_blank"><span class="rp-dot" style="background:#d32f2f"></span>HF Coupons</a>
+      <a class="rp" href="https://www.acehardware.com/deals" target="_blank"><span class="rp-dot" style="background:#e53935"></span>Ace Deals</a>
+    </div>
   </div>
 
   <!-- Filters -->
-  <div class="filter-row">
-    <div class="search-box" style="flex:1;min-width:180px">
+  <div class="topbar">
+    <div class="search-field">
       <span class="si">🔍</span>
       <input type="text" id="dealSearch" placeholder="Search deals..." oninput="renderDeals()">
     </div>
-
-    <!-- Category dropdown -->
-    <div class="dd-wrap" id="catDd">
-      <button class="dd-btn" onclick="toggleDd('catDd')" id="catDdBtn">
-        <span id="catDdLabel">All Categories</span>
-        <span class="dd-caret">▼</span>
-      </button>
-      <div class="dd-menu" id="catDdMenu">
-        <div class="dd-item active" data-cat="" onclick="selectCat(this,'')">
-          All Categories <span class="check">✓</span>
-        </div>
-        <div class="dd-item" data-cat="Electronics & Tech" onclick="selectCat(this,'Electronics & Tech')">⚡ Electronics & Tech <span class="check">✓</span></div>
-        <div class="dd-item" data-cat="Tools & Hardware" onclick="selectCat(this,'Tools & Hardware')">🔧 Tools & Hardware <span class="check">✓</span></div>
-        <div class="dd-item" data-cat="Home & Garden" onclick="selectCat(this,'Home & Garden')">🌿 Home & Garden <span class="check">✓</span></div>
-        <div class="dd-item" data-cat="Outdoor & Lawn" onclick="selectCat(this,'Outdoor & Lawn')">🌲 Outdoor & Lawn <span class="check">✓</span></div>
-        <div class="dd-item" data-cat="Sporting Goods" onclick="selectCat(this,'Sporting Goods')">💪 Sporting Goods <span class="check">✓</span></div>
-        <div class="dd-item" data-cat="Clothing & Shoes" onclick="selectCat(this,'Clothing & Shoes')">👟 Clothing & Shoes <span class="check">✓</span></div>
+    <div class="dd" id="ddCat">
+      <button class="dd-btn" onclick="toggleDd('ddCat')"><span id="lCat">All</span><span class="dd-caret">▼</span></button>
+      <div class="dd-menu">
+        <div class="ddi active" onclick="setCat(this,'')">All Categories<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Electronics & Tech')">⚡ Electronics<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Tools & Hardware')">🔧 Tools<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Home & Garden')">🌿 Home & Garden<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Outdoor & Lawn')">🌲 Outdoor<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Sporting Goods')">💪 Sports<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setCat(this,'Clothing & Shoes')">👟 Clothing<span class="chk">✓</span></div>
       </div>
     </div>
-
-    <!-- Sort dropdown -->
-    <div class="dd-wrap" id="sortDd">
-      <button class="dd-btn" onclick="toggleDd('sortDd')" id="sortDdBtn">
-        <span id="sortDdLabel">Sort: Newest</span>
-        <span class="dd-caret">▼</span>
-      </button>
-      <div class="dd-menu" id="sortDdMenu">
-        <div class="dd-item active" onclick="selectSort(this,'newest','Sort: Newest')">Newest First <span class="check">✓</span></div>
-        <div class="dd-item" onclick="selectSort(this,'discount','Sort: Best Discount')">Best Discount <span class="check">✓</span></div>
-        <div class="dd-item" onclick="selectSort(this,'score','Sort: Deal Score')">Deal Score <span class="check">✓</span></div>
-        <div class="dd-item" onclick="selectSort(this,'wishlist','Sort: Wishlist Hits')">Wishlist Hits First <span class="check">✓</span></div>
+    <div class="dd" id="ddSort">
+      <button class="dd-btn" onclick="toggleDd('ddSort')"><span id="lSort">Newest</span><span class="dd-caret">▼</span></button>
+      <div class="dd-menu" style="right:0">
+        <div class="ddi active" onclick="setSort(this,'newest','Newest')">Newest<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setSort(this,'discount','Best %')">Best Discount<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setSort(this,'score','Top Score')">Deal Score<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setSort(this,'wishlist','Wishlist')">Wishlist First<span class="chk">✓</span></div>
       </div>
     </div>
-
-    <!-- Filter: min discount -->
-    <div class="dd-wrap" id="discDd">
-      <button class="dd-btn" onclick="toggleDd('discDd')" id="discDdBtn">
-        <span id="discDdLabel">20%+ Off</span>
-        <span class="dd-caret">▼</span>
-      </button>
-      <div class="dd-menu" id="discDdMenu">
-        <div class="dd-item" onclick="selectDisc(this,0,'Any Discount')">Any Discount <span class="check">✓</span></div>
-        <div class="dd-item active" onclick="selectDisc(this,20,'20%+ Off')">20%+ Off <span class="check">✓</span></div>
-        <div class="dd-item" onclick="selectDisc(this,30,'30%+ Off')">30%+ Off <span class="check">✓</span></div>
-        <div class="dd-item" onclick="selectDisc(this,50,'50%+ Off')">50%+ Off <span class="check">✓</span></div>
+    <div class="dd" id="ddDisc">
+      <button class="dd-btn" onclick="toggleDd('ddDisc')"><span id="lDisc">20%+</span><span class="dd-caret">▼</span></button>
+      <div class="dd-menu" style="right:0">
+        <div class="ddi" onclick="setDisc(this,0,'Any')">Any Discount<span class="chk">✓</span></div>
+        <div class="ddi active" onclick="setDisc(this,20,'20%+')">20%+ Off<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setDisc(this,30,'30%+')">30%+ Off<span class="chk">✓</span></div>
+        <div class="ddi" onclick="setDisc(this,50,'50%+')">50%+ Off<span class="chk">✓</span></div>
       </div>
     </div>
   </div>
 
-  <div id="loadingBar" class="lbar"></div>
-  <div class="deals-list" id="dealsList"></div>
+  <div id="loadBar" class="lbar"></div>
+  <div class="deals-feed" id="dealsFeed"></div>
 </div>
 
-<!-- ══════════════ PAGE 2: LOOKUP ══════════════ -->
+<!-- ══ LOOKUP ══ -->
 <div class="page" id="page-lookup">
-  <div class="lookup-hero">
+  <div class="lu-hero">
     <h1>PRICE LOOKUP</h1>
-    <p>Search any product to compare brands, specs, and prices</p>
+    <p>Search any product — compare brands, specs & prices</p>
   </div>
 
   <div class="ac-wrap">
     <span class="aci">🔍</span>
-    <input type="text" id="lookupInput" placeholder="Try &quot;impact drill&quot;, &quot;leaf blower&quot;, &quot;65 inch TV&quot;..."
-      oninput="acInput(this.value)" onkeydown="acKeydown(event)" autocomplete="off">
-    <div class="ac-dropdown" id="acDropdown"></div>
+    <input type="text" id="luInput" placeholder='Try "impact drill", "leaf blower", "65 inch TV"...'
+      oninput="acInput(this.value)" onkeydown="acKey(event)" autocomplete="off">
+    <div class="ac-dd" id="acDd"></div>
   </div>
 
-  <div id="lookupResults"></div>
+  <div id="luResults"></div>
 </div>
 
-<!-- ══════════════ SETTINGS PANEL ══════════════ -->
-<div class="panel-overlay" id="panelOverlay" onclick="closePanel(event)">
+<!-- ══ PANEL ══ -->
+<div class="overlay" id="overlay" onclick="closePanel(event)">
   <div class="panel">
     <div class="panel-hdr">
       <span class="panel-title">WISHLIST & ALERTS</span>
-      <button class="close-btn" onclick="closePanel()">✕</button>
+      <button class="px" onclick="closePanel()">✕</button>
     </div>
-    <div class="wish-add">
-      <input type="text" id="wishInput" placeholder="Add keyword (e.g. DeWalt, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')addWish()">
+    <div class="wa">
+      <input type="text" id="wishIn" placeholder="Add keyword (e.g. DeWalt, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')addWish()">
       <button class="btn-fire" onclick="addWish()">Add</button>
     </div>
-    <div class="wish-list" id="wishList"></div>
+    <div class="wish-items" id="wishItems"></div>
     <div class="sms-sec">
-      <div class="sms-title">SMS ALERTS</div>
-      <div class="sms-sub">Get a text when a wishlist item drops. Uses Textbelt (1 free SMS/day, or pay-as-you-go).</div>
+      <div class="sms-ttl">SMS ALERTS</div>
+      <div class="sms-sub">Get a text when wishlist items drop. Uses Textbelt (1 free/day).</div>
       <div class="sms-fields">
-        <div><label class="field-label">Phone Number</label><input class="field-input" id="smsPhone" placeholder="+17165550000"></div>
-        <div><label class="field-label">Textbelt API Key</label><input class="field-input" id="smsKey" placeholder="textbelt (free) or your paid key"></div>
-        <button class="btn-fire" onclick="saveSms()">💾 Save Config</button>
-        <button class="btn-outline" onclick="testSms()">📱 Send Test SMS</button>
-        <div class="status-msg" id="smsStatus"></div>
+        <div><label class="fl">Phone Number</label><input class="fi" id="smsPhone" placeholder="+17165550000"></div>
+        <div><label class="fl">Textbelt API Key</label><input class="fi" id="smsKey" placeholder="textbelt (free) or paid key"></div>
+        <button class="btn-fire" onclick="saveSms()">💾 Save</button>
+        <button class="btn-out" onclick="testSms()">📱 Send Test SMS</button>
+        <div class="sm" id="smsMsg"></div>
       </div>
-      <div class="sms-note">Use key <code>textbelt</code> for 1 free SMS/day, or get a paid key at <a href="https://textbelt.com" target="_blank">textbelt.com</a> (~$10 for 1,000 texts).</div>
+      <div class="sms-note">Use <code>textbelt</code> for 1 free SMS/day, or get paid key at <a href="https://textbelt.com" target="_blank">textbelt.com</a>.</div>
     </div>
   </div>
 </div>
 
 <script>
-// ═══════════════════════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════════════════════
-let allDeals = [];
-let activeCat = '';
-let activeSort = 'newest';
-let activeMinDisc = 20;
-let savedDeals = new Set(JSON.parse(localStorage.getItem('dr_saved') || '[]'));
-let wishlist = JSON.parse(localStorage.getItem('dr_wish') || '["dewalt","makita","ego","big green egg","ipad","monitor"]');
-let smsConfig = JSON.parse(localStorage.getItem('dr_sms') || '{}');
+// ─── STATE ───────────────────────────────────────────────────────────
+let allDeals=[], activeCat='', activeSort='newest', activeDisc=20;
+let saved = new Set(JSON.parse(localStorage.getItem('dr_saved')||'[]'));
+let wishlist = JSON.parse(localStorage.getItem('dr_wish')||'["dewalt","makita","ego","ipad","monitor"]');
+let smsConf = JSON.parse(localStorage.getItem('dr_sms')||'{}');
+let currentSpec=null, acIdx=-1, acList=[];
 
-// ═══════════════════════════════════════════════════════
-// BOOT
-// ═══════════════════════════════════════════════════════
-async function boot() {
-  renderWishlist();
-  loadSmsConfig();
+// ─── BOOT ────────────────────────────────────────────────────────────
+async function boot(){
+  renderWish(); loadSms();
   try {
-    const r = await fetch('deals.json?t=' + Date.now());
+    const r = await fetch('deals.json?t='+Date.now());
     const d = await r.json();
-    allDeals = d.deals || [];
-    const t = d.updated || '';
-    document.getElementById('sUpdated').textContent = t.replace(' UTC','').split(' ')[1] || t;
-    document.getElementById('loadingBar').style.display = 'none';
-    updateStats();
-    renderDeals();
-  } catch(e) {
-    document.getElementById('loadingBar').style.display = 'none';
-    document.getElementById('dealsList').innerHTML = `<div class="empty"><div class="ei">📡</div><p>No deals yet. Run <code>fetch_deals.py</code> to generate <code>deals.json</code>.</p></div>`;
+    allDeals = d.deals||[];
+    const t = (d.updated||'').split(' ');
+    document.getElementById('sTime').textContent = t[1]||t[0]||'—';
+    document.getElementById('loadBar').style.display='none';
+    updateStats(); renderDeals();
+  } catch(e){
+    document.getElementById('loadBar').style.display='none';
+    document.getElementById('dealsFeed').innerHTML=`<div class="empty"><div class="ei">📡</div><p>No deals yet.<br>Run <code>fetch_deals.py</code> to generate <code>deals.json</code>.</p></div>`;
   }
 }
 
-// ═══════════════════════════════════════════════════════
-// PAGE SWITCHING
-// ═══════════════════════════════════════════════════════
-function showPage(id, el) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
+// ─── PAGE NAV ────────────────────────────────────────────────────────
+function showPage(id,el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
   el.classList.add('active');
-  closeAllDds();
+  closeAllDd();
 }
 
-// ═══════════════════════════════════════════════════════
-// DROPDOWN HELPERS
-// ═══════════════════════════════════════════════════════
-function toggleDd(id) {
-  const wrap = document.getElementById(id);
-  const menu = wrap.querySelector('.dd-menu');
-  const btn  = wrap.querySelector('.dd-btn');
-  const isOpen = menu.classList.contains('open');
-  closeAllDds();
-  if (!isOpen) { menu.classList.add('open'); btn.classList.add('open'); }
+// ─── DROPDOWNS ───────────────────────────────────────────────────────
+function toggleDd(id){
+  const wrap=document.getElementById(id);
+  const menu=wrap.querySelector('.dd-menu');
+  const btn=wrap.querySelector('.dd-btn');
+  const was=menu.classList.contains('open');
+  closeAllDd();
+  if(!was){menu.classList.add('open');btn.classList.add('open');}
 }
-function closeAllDds() {
-  document.querySelectorAll('.dd-menu').forEach(m => m.classList.remove('open'));
-  document.querySelectorAll('.dd-btn').forEach(b => b.classList.remove('open'));
+function closeAllDd(){
+  document.querySelectorAll('.dd-menu').forEach(m=>m.classList.remove('open'));
+  document.querySelectorAll('.dd-btn').forEach(b=>b.classList.remove('open'));
 }
-document.addEventListener('click', e => {
-  if (!e.target.closest('.dd-wrap')) closeAllDds();
-});
+document.addEventListener('click',e=>{if(!e.target.closest('.dd'))closeAllDd();});
 
-function selectCat(el, cat) {
-  activeCat = cat;
-  document.getElementById('catDdLabel').textContent = cat || 'All Categories';
-  document.querySelectorAll('#catDdMenu .dd-item').forEach(i => i.classList.toggle('active', i.dataset.cat === cat));
-  closeAllDds();
-  renderDeals();
+function setCat(el,v){
+  activeCat=v;
+  document.getElementById('lCat').textContent=v?v.split(' ')[0]:'All';
+  el.closest('.dd-menu').querySelectorAll('.ddi').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');closeAllDd();renderDeals();
 }
-function selectSort(el, val, label) {
-  activeSort = val;
-  document.getElementById('sortDdLabel').textContent = label;
-  document.querySelectorAll('#sortDdMenu .dd-item').forEach(i => i.classList.remove('active'));
-  el.classList.add('active');
-  closeAllDds();
-  renderDeals();
+function setSort(el,v,lbl){
+  activeSort=v;document.getElementById('lSort').textContent=lbl;
+  el.closest('.dd-menu').querySelectorAll('.ddi').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');closeAllDd();renderDeals();
 }
-function selectDisc(el, val, label) {
-  activeMinDisc = val;
-  document.getElementById('discDdLabel').textContent = label;
-  document.querySelectorAll('#discDdMenu .dd-item').forEach(i => i.classList.remove('active'));
-  el.classList.add('active');
-  closeAllDds();
-  renderDeals();
+function setDisc(el,v,lbl){
+  activeDisc=v;document.getElementById('lDisc').textContent=lbl;
+  el.closest('.dd-menu').querySelectorAll('.ddi').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');closeAllDd();renderDeals();
 }
 
-// ═══════════════════════════════════════════════════════
-// DEALS
-// ═══════════════════════════════════════════════════════
-const RETAILERS_MAP = { amazon:'Amazon',walmart:'Walmart','best buy':'Best Buy',target:'Target',"lowe's":'Lowes','home depot':'Home Depot','harbor freight':'Harbor Freight','ace hardware':'Ace' };
-
-function dealScore(d) {
-  let s = 50;
-  if (d.discount >= 50) s += 30;
-  else if (d.discount >= 30) s += 20;
-  else if (d.discount >= 20) s += 10;
-  const good = ['amazon','best buy','walmart','target','lowe','home depot'];
-  if (good.some(r => (d.retailer||'').toLowerCase().includes(r))) s += 10;
-  if (wishMatch(d)) s += 20;
-  return Math.min(s, 99);
-}
-function wishMatch(d) {
-  const txt = `${d.title} ${d.description}`.toLowerCase();
-  return wishlist.some(k => txt.includes(k.toLowerCase()));
+function toggleRetailers(btn){
+  const pills=document.getElementById('retailerPills');
+  pills.classList.toggle('open');
+  btn.textContent = pills.classList.contains('open')
+    ? '🛒 Retailer Deals & Clearance ▴'
+    : '🛒 Retailer Deals & Clearance ▾';
 }
 
-function renderDeals() {
-  const q = document.getElementById('dealSearch').value.toLowerCase().trim();
-  let deals = [...allDeals];
+// ─── DEALS ───────────────────────────────────────────────────────────
+const CAT_ICON={'Electronics & Tech':'⚡','Tools & Hardware':'🔧','Home & Garden':'🌿','Outdoor & Lawn':'🌲','Sporting Goods':'💪','Clothing & Shoes':'👟'};
 
-  // filter category
-  if (activeCat) deals = deals.filter(d => d.category === activeCat);
-  // filter discount
-  if (activeMinDisc > 0) deals = deals.filter(d => d.discount >= activeMinDisc || !d.discount);
-  // filter search
-  if (q) deals = deals.filter(d => `${d.title} ${d.description} ${d.retailer} ${d.category}`.toLowerCase().includes(q));
+function dealScore(d){
+  let s=50;
+  if((d.discount||0)>=50)s+=30; else if((d.discount||0)>=30)s+=20; else if((d.discount||0)>=20)s+=10;
+  const good=['amazon','best buy','walmart','target','lowe','home depot'];
+  if(good.some(r=>(d.retailer||'').toLowerCase().includes(r)))s+=10;
+  if(wMatch(d))s+=20;
+  return Math.min(s,99);
+}
+function wMatch(d){
+  const txt=`${d.title} ${d.description}`.toLowerCase();
+  return wishlist.some(k=>txt.includes(k.toLowerCase()));
+}
 
-  // sort
-  if (activeSort === 'discount')  deals.sort((a,b) => (b.discount||0) - (a.discount||0));
-  else if (activeSort === 'score') deals.sort((a,b) => dealScore(b) - dealScore(a));
-  else if (activeSort === 'wishlist') deals.sort((a,b) => wishMatch(b) - wishMatch(a));
-  else deals.sort((a,b) => (b.date_iso||'') > (a.date_iso||'') ? 1 : -1);
+function renderDeals(){
+  const q=document.getElementById('dealSearch').value.toLowerCase().trim();
+  let deals=[...allDeals];
+  if(activeCat) deals=deals.filter(d=>d.category===activeCat);
+  if(activeDisc>0) deals=deals.filter(d=>(d.discount||0)>=activeDisc);
+  if(q) deals=deals.filter(d=>`${d.title} ${d.description} ${d.retailer} ${d.category}`.toLowerCase().includes(q));
+  if(activeSort==='discount') deals.sort((a,b)=>(b.discount||0)-(a.discount||0));
+  else if(activeSort==='score') deals.sort((a,b)=>dealScore(b)-dealScore(a));
+  else if(activeSort==='wishlist') deals.sort((a,b)=>wMatch(b)-wMatch(a));
+  else deals.sort((a,b)=>(b.date_iso||'')>(a.date_iso||'')?1:-1);
 
-  const list = document.getElementById('dealsList');
-  if (!deals.length) {
-    list.innerHTML = `<div class="empty"><div class="ei">🔎</div><p>No deals match your filters right now.</p></div>`;
-    return;
-  }
+  const feed=document.getElementById('dealsFeed');
+  if(!deals.length){feed.innerHTML=`<div class="empty"><div class="ei">🔎</div><p>No deals match your filters.</p></div>`;return;}
 
-  list.innerHTML = '';
-  deals.forEach(d => {
-    const sc = dealScore(d);
-    const scCls = sc >= 80 ? 's-hi' : sc >= 60 ? 's-md' : 's-lo';
-    const isSaved = savedDeals.has(d.id);
-    const isWish = wishMatch(d);
-    const isFlash = (d.discount||0) >= 50;
+  feed.innerHTML='';
+  deals.forEach(d=>{
+    const sc=dealScore(d);
+    const scCls=sc>=80?'sc-hi':sc>=60?'sc-md':'sc-lo';
+    const isSaved=saved.has(d.id);
+    const isWish=wMatch(d);
+    const isFlash=(d.discount||0)>=50;
+    const icon=CAT_ICON[d.category]||'🏷';
 
-    const card = document.createElement('a');
-    card.className = `deal-card fade-up${isWish ? ' featured' : ''}`;
-    card.href = d.link || '#';
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
-    card.innerHTML = `
-      <div>
-        <div class="deal-top">
-          <span class="tag tag-retailer">${d.retailer||'Various'}</span>
-          <span class="tag tag-cat">${d.category||''}</span>
-          ${isFlash ? '<span class="tag tag-flash">⚡ FLASH</span>' : ''}
-          ${isWish  ? '<span class="tag tag-wish">⭐ WISHLIST</span>' : ''}
-          <span class="tag-src">via ${d.source||''}</span>
+    const card=document.createElement('a');
+    card.className='deal-card'+(isWish?' wishlist-hit':'');
+    card.href=d.link||'#';
+    card.target='_blank';
+    card.rel='noopener noreferrer';
+    card.innerHTML=`
+      <div class="dc-top">
+        <div class="dc-img">${icon}</div>
+        <div class="dc-body">
+          <div class="dc-meta">
+            <span class="badge b-retailer">${d.retailer||'Various'}</span>
+            <span class="badge b-cat">${d.category||''}</span>
+            ${isFlash?'<span class="badge b-flash">⚡ FLASH</span>':''}
+            ${isWish?'<span class="badge b-wish">⭐ WISHLIST</span>':''}
+            <span class="b-src">via ${d.source||''}</span>
+          </div>
+          <div class="dc-title">${d.title}</div>
+          ${d.description?`<div class="dc-desc">${d.description}</div>`:''}
         </div>
-        <div class="deal-title">${d.title}</div>
-        ${d.description ? `<div class="deal-desc">${d.description}</div>` : ''}
-        <div class="deal-time">${d.date_display||''}</div>
       </div>
-      <div class="deal-right">
-        ${d.discount ? `<div class="disc">${d.discount}%<small>OFF</small></div>` : '<div class="disc" style="font-size:.75rem;color:var(--sub)">DEAL</div>'}
-        <div class="score ${scCls}">${sc}</div>
-        <button class="save-btn" onclick="toggleSave(event,'${d.id}')">${isSaved ? '⭐' : '☆'}</button>
+      <div class="dc-bottom">
+        <div class="dc-price">
+          ${d.discount?`<div class="dc-save">${d.discount}%<small>OFF</small></div>`:'<div class="dc-save" style="color:var(--sub);font-size:.72rem;background:none;border:none">DEAL</div>'}
+          <span class="dc-time">${d.date_display||''}</span>
+        </div>
+        <div class="dc-actions">
+          <div class="dc-score ${scCls}">${sc}</div>
+          <button class="dc-star" onclick="toggleSave(event,'${d.id}')">${isSaved?'⭐':'☆'}</button>
+        </div>
       </div>`;
-    list.appendChild(card);
+    feed.appendChild(card);
   });
 }
 
-function toggleSave(e, id) {
-  e.preventDefault(); e.stopPropagation();
-  if (savedDeals.has(id)) savedDeals.delete(id); else savedDeals.add(id);
-  localStorage.setItem('dr_saved', JSON.stringify([...savedDeals]));
+function toggleSave(e,id){
+  e.preventDefault();e.stopPropagation();
+  if(saved.has(id))saved.delete(id);else saved.add(id);
+  localStorage.setItem('dr_saved',JSON.stringify([...saved]));
   renderDeals();
 }
 
-function updateStats() {
-  document.getElementById('sTotal').textContent = allDeals.length;
-  document.getElementById('sHot').textContent = allDeals.filter(d => (d.discount||0) >= 30).length;
-  document.getElementById('sWish').textContent = allDeals.filter(wishMatch).length;
+function updateStats(){
+  document.getElementById('sTotal').textContent=allDeals.length;
+  document.getElementById('sHot').textContent=allDeals.filter(d=>(d.discount||0)>=30).length;
+  document.getElementById('sWish').textContent=allDeals.filter(wMatch).length;
 }
 
-// ═══════════════════════════════════════════════════════
-// AUTOCOMPLETE PRODUCT CATALOG
-// ═══════════════════════════════════════════════════════
-const PRODUCTS = [
-  { name:'Impact Driver', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Impact Drill', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Cordless Drill', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Hammer Drill', cat:'Tools & Hardware', icon:'🔨' },
-  { name:'Rotary Hammer', cat:'Tools & Hardware', icon:'🔨' },
-  { name:'Circular Saw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Miter Saw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Table Saw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Jigsaw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Reciprocating Saw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Track Saw', cat:'Tools & Hardware', icon:'🪚' },
-  { name:'Oscillating Multi-Tool', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Brad Nailer', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Finish Nailer', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Framing Nailer', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Crown Stapler', cat:'Tools & Hardware', icon:'🔩' },
-  { name:'Random Orbital Sander', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Belt Sander', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Detail Sander', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Air Compressor', cat:'Tools & Hardware', icon:'💨' },
-  { name:'Pressure Washer', cat:'Tools & Hardware', icon:'💦' },
-  { name:'Wet/Dry Vacuum', cat:'Tools & Hardware', icon:'🧹' },
-  { name:'Angle Grinder', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Die Grinder', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Heat Gun', cat:'Tools & Hardware', icon:'🔥' },
-  { name:'Rotary Tool', cat:'Tools & Hardware', icon:'🔧' },
-  { name:'Laser Level', cat:'Tools & Hardware', icon:'📐' },
-  { name:'Stud Finder', cat:'Tools & Hardware', icon:'🔍' },
-  { name:'Work Light', cat:'Tools & Hardware', icon:'💡' },
-  { name:'Tool Bag', cat:'Tools & Hardware', icon:'🧰' },
-  { name:'Tool Chest', cat:'Tools & Hardware', icon:'🗄' },
-  { name:'Leaf Blower', cat:'Outdoor & Lawn', icon:'🍃' },
-  { name:'String Trimmer', cat:'Outdoor & Lawn', icon:'🌿' },
-  { name:'Lawn Mower', cat:'Outdoor & Lawn', icon:'🌱' },
-  { name:'Riding Mower', cat:'Outdoor & Lawn', icon:'🚜' },
-  { name:'Zero Turn Mower', cat:'Outdoor & Lawn', icon:'🚜' },
-  { name:'Chainsaw', cat:'Outdoor & Lawn', icon:'🪵' },
-  { name:'Pole Saw', cat:'Outdoor & Lawn', icon:'🪵' },
-  { name:'Hedge Trimmer', cat:'Outdoor & Lawn', icon:'✂️' },
-  { name:'Edger', cat:'Outdoor & Lawn', icon:'🌿' },
-  { name:'Tiller', cat:'Outdoor & Lawn', icon:'⛏' },
-  { name:'Snow Blower', cat:'Outdoor & Lawn', icon:'❄️' },
-  { name:'Aerator', cat:'Outdoor & Lawn', icon:'🌱' },
-  { name:'Generator', cat:'Outdoor & Lawn', icon:'⚡' },
-  { name:'Portable Power Station', cat:'Outdoor & Lawn', icon:'🔋' },
-  { name:'Lawn Sprinkler', cat:'Outdoor & Lawn', icon:'💦' },
-  { name:'Gas Grill', cat:'Home & Garden', icon:'🔥' },
-  { name:'Pellet Grill', cat:'Home & Garden', icon:'🔥' },
-  { name:'Kamado Grill', cat:'Home & Garden', icon:'🔥' },
-  { name:'Electric Smoker', cat:'Home & Garden', icon:'💨' },
-  { name:'Fire Pit', cat:'Home & Garden', icon:'🔥' },
-  { name:'Patio Furniture', cat:'Home & Garden', icon:'🪑' },
-  { name:'Shed', cat:'Home & Garden', icon:'🏠' },
-  { name:'Garage Cabinet', cat:'Home & Garden', icon:'🗄' },
-  { name:'Workbench', cat:'Home & Garden', icon:'🪵' },
-  { name:'Raised Garden Bed', cat:'Home & Garden', icon:'🌱' },
-  { name:'Cordless Vacuum', cat:'Home & Garden', icon:'🧹' },
-  { name:'Robot Vacuum', cat:'Home & Garden', icon:'🤖' },
-  { name:'Air Purifier', cat:'Home & Garden', icon:'💨' },
-  { name:'Dehumidifier', cat:'Home & Garden', icon:'💧' },
-  { name:'Portable Air Conditioner', cat:'Home & Garden', icon:'❄️' },
-  { name:'Space Heater', cat:'Home & Garden', icon:'🔥' },
-  { name:'Smart Thermostat', cat:'Electronics & Tech', icon:'🌡' },
-  { name:'Smart Lock', cat:'Electronics & Tech', icon:'🔐' },
-  { name:'Security Camera', cat:'Electronics & Tech', icon:'📷' },
-  { name:'Video Doorbell', cat:'Electronics & Tech', icon:'🔔' },
-  { name:'4K TV', cat:'Electronics & Tech', icon:'📺' },
-  { name:'OLED TV', cat:'Electronics & Tech', icon:'📺' },
-  { name:'Monitor', cat:'Electronics & Tech', icon:'🖥' },
-  { name:'Ultrawide Monitor', cat:'Electronics & Tech', icon:'🖥' },
-  { name:'Laptop', cat:'Electronics & Tech', icon:'💻' },
-  { name:'Tablet', cat:'Electronics & Tech', icon:'📱' },
-  { name:'iPad', cat:'Electronics & Tech', icon:'📱' },
-  { name:'Wireless Earbuds', cat:'Electronics & Tech', icon:'🎧' },
-  { name:'Headphones', cat:'Electronics & Tech', icon:'🎧' },
-  { name:'Bluetooth Speaker', cat:'Electronics & Tech', icon:'🔊' },
-  { name:'Soundbar', cat:'Electronics & Tech', icon:'🔊' },
-  { name:'CPU', cat:'Electronics & Tech', icon:'⚙️' },
-  { name:'GPU / Graphics Card', cat:'Electronics & Tech', icon:'🎮' },
-  { name:'SSD', cat:'Electronics & Tech', icon:'💾' },
-  { name:'External Hard Drive', cat:'Electronics & Tech', icon:'💾' },
-  { name:'WiFi Router', cat:'Electronics & Tech', icon:'📡' },
-  { name:'Mesh WiFi System', cat:'Electronics & Tech', icon:'📡' },
-  { name:'NAS Storage', cat:'Electronics & Tech', icon:'🗄' },
-  { name:'Mechanical Keyboard', cat:'Electronics & Tech', icon:'⌨️' },
-  { name:'Gaming Mouse', cat:'Electronics & Tech', icon:'🖱' },
-  { name:'Treadmill', cat:'Sporting Goods', icon:'🏃' },
-  { name:'Exercise Bike', cat:'Sporting Goods', icon:'🚴' },
-  { name:'Rowing Machine', cat:'Sporting Goods', icon:'🚣' },
-  { name:'Elliptical', cat:'Sporting Goods', icon:'💪' },
-  { name:'Adjustable Dumbbells', cat:'Sporting Goods', icon:'🏋️' },
-  { name:'Kettlebell', cat:'Sporting Goods', icon:'🏋️' },
-  { name:'Weight Bench', cat:'Sporting Goods', icon:'🏋️' },
-  { name:'Kayak', cat:'Sporting Goods', icon:'🛶' },
-  { name:'Paddleboard', cat:'Sporting Goods', icon:'🏄' },
-  { name:'Hiking Boots', cat:'Clothing & Shoes', icon:'🥾' },
-  { name:'Running Shoes', cat:'Clothing & Shoes', icon:'👟' },
-  { name:'Work Boots', cat:'Clothing & Shoes', icon:'🥾' },
+// ─── AUTOCOMPLETE CATALOG ────────────────────────────────────────────
+const PRODUCTS=[
+  {name:'Impact Driver',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Impact Drill',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Cordless Drill',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Hammer Drill',cat:'Tools & Hardware',icon:'🔨'},
+  {name:'Rotary Hammer',cat:'Tools & Hardware',icon:'🔨'},
+  {name:'Circular Saw',cat:'Tools & Hardware',icon:'🪚'},
+  {name:'Miter Saw',cat:'Tools & Hardware',icon:'🪚'},
+  {name:'Table Saw',cat:'Tools & Hardware',icon:'🪚'},
+  {name:'Jigsaw',cat:'Tools & Hardware',icon:'🪚'},
+  {name:'Reciprocating Saw',cat:'Tools & Hardware',icon:'🪚'},
+  {name:'Oscillating Multi-Tool',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Brad Nailer',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Finish Nailer',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Framing Nailer',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Crown Stapler',cat:'Tools & Hardware',icon:'🔩'},
+  {name:'Random Orbital Sander',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Belt Sander',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Air Compressor',cat:'Tools & Hardware',icon:'💨'},
+  {name:'Pressure Washer',cat:'Tools & Hardware',icon:'💦'},
+  {name:'Wet Dry Vacuum',cat:'Tools & Hardware',icon:'🧹'},
+  {name:'Angle Grinder',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Heat Gun',cat:'Tools & Hardware',icon:'🔥'},
+  {name:'Rotary Tool',cat:'Tools & Hardware',icon:'🔧'},
+  {name:'Laser Level',cat:'Tools & Hardware',icon:'📐'},
+  {name:'Work Light',cat:'Tools & Hardware',icon:'💡'},
+  {name:'Tool Chest',cat:'Tools & Hardware',icon:'🗄'},
+  {name:'Workbench',cat:'Tools & Hardware',icon:'🪵'},
+  {name:'Leaf Blower',cat:'Outdoor & Lawn',icon:'🍃'},
+  {name:'Cordless Leaf Blower',cat:'Outdoor & Lawn',icon:'🍃'},
+  {name:'Backpack Leaf Blower',cat:'Outdoor & Lawn',icon:'🍃'},
+  {name:'String Trimmer',cat:'Outdoor & Lawn',icon:'🌿'},
+  {name:'Lawn Mower',cat:'Outdoor & Lawn',icon:'🌱'},
+  {name:'Self Propelled Mower',cat:'Outdoor & Lawn',icon:'🌱'},
+  {name:'Riding Mower',cat:'Outdoor & Lawn',icon:'🚜'},
+  {name:'Zero Turn Mower',cat:'Outdoor & Lawn',icon:'🚜'},
+  {name:'Chainsaw',cat:'Outdoor & Lawn',icon:'🪵'},
+  {name:'Pole Saw',cat:'Outdoor & Lawn',icon:'🪵'},
+  {name:'Hedge Trimmer',cat:'Outdoor & Lawn',icon:'✂️'},
+  {name:'Snow Blower',cat:'Outdoor & Lawn',icon:'❄️'},
+  {name:'Generator',cat:'Outdoor & Lawn',icon:'⚡'},
+  {name:'Portable Power Station',cat:'Outdoor & Lawn',icon:'🔋'},
+  {name:'Gas Grill',cat:'Home & Garden',icon:'🔥'},
+  {name:'Pellet Grill',cat:'Home & Garden',icon:'🔥'},
+  {name:'Kamado Grill',cat:'Home & Garden',icon:'🔥'},
+  {name:'Electric Smoker',cat:'Home & Garden',icon:'💨'},
+  {name:'Fire Pit',cat:'Home & Garden',icon:'🔥'},
+  {name:'Patio Furniture Set',cat:'Home & Garden',icon:'🪑'},
+  {name:'Cordless Vacuum',cat:'Home & Garden',icon:'🧹'},
+  {name:'Robot Vacuum',cat:'Home & Garden',icon:'🤖'},
+  {name:'Air Purifier',cat:'Home & Garden',icon:'💨'},
+  {name:'Dehumidifier',cat:'Home & Garden',icon:'💧'},
+  {name:'Space Heater',cat:'Home & Garden',icon:'🔥'},
+  {name:'Smart Thermostat',cat:'Electronics & Tech',icon:'🌡'},
+  {name:'Smart Lock',cat:'Electronics & Tech',icon:'🔐'},
+  {name:'Security Camera',cat:'Electronics & Tech',icon:'📷'},
+  {name:'Video Doorbell',cat:'Electronics & Tech',icon:'🔔'},
+  {name:'4K TV',cat:'Electronics & Tech',icon:'📺'},
+  {name:'OLED TV',cat:'Electronics & Tech',icon:'📺'},
+  {name:'Monitor',cat:'Electronics & Tech',icon:'🖥'},
+  {name:'Ultrawide Monitor',cat:'Electronics & Tech',icon:'🖥'},
+  {name:'Gaming Monitor',cat:'Electronics & Tech',icon:'🖥'},
+  {name:'Laptop',cat:'Electronics & Tech',icon:'💻'},
+  {name:'Gaming Laptop',cat:'Electronics & Tech',icon:'💻'},
+  {name:'Tablet',cat:'Electronics & Tech',icon:'📱'},
+  {name:'iPad',cat:'Electronics & Tech',icon:'📱'},
+  {name:'Wireless Earbuds',cat:'Electronics & Tech',icon:'🎧'},
+  {name:'Headphones',cat:'Electronics & Tech',icon:'🎧'},
+  {name:'Bluetooth Speaker',cat:'Electronics & Tech',icon:'🔊'},
+  {name:'Soundbar',cat:'Electronics & Tech',icon:'🔊'},
+  {name:'GPU Graphics Card',cat:'Electronics & Tech',icon:'🎮'},
+  {name:'SSD',cat:'Electronics & Tech',icon:'💾'},
+  {name:'WiFi Router',cat:'Electronics & Tech',icon:'📡'},
+  {name:'Mesh WiFi System',cat:'Electronics & Tech',icon:'📡'},
+  {name:'Mechanical Keyboard',cat:'Electronics & Tech',icon:'⌨️'},
+  {name:'Treadmill',cat:'Sporting Goods',icon:'🏃'},
+  {name:'Exercise Bike',cat:'Sporting Goods',icon:'🚴'},
+  {name:'Rowing Machine',cat:'Sporting Goods',icon:'🚣'},
+  {name:'Elliptical',cat:'Sporting Goods',icon:'💪'},
+  {name:'Adjustable Dumbbells',cat:'Sporting Goods',icon:'🏋️'},
+  {name:'Kayak',cat:'Sporting Goods',icon:'🛶'},
+  {name:'Hiking Boots',cat:'Clothing & Shoes',icon:'🥾'},
+  {name:'Running Shoes',cat:'Clothing & Shoes',icon:'👟'},
+  {name:'Work Boots',cat:'Clothing & Shoes',icon:'🥾'},
 ];
 
-let acIndex = -1;
-let acFiltered = [];
+function acInput(val){
+  const dd=document.getElementById('acDd');
+  if(!val.trim()){dd.classList.remove('open');acList=[];return;}
+  const q=val.toLowerCase();
+  acList=PRODUCTS.filter(p=>p.name.toLowerCase().includes(q)).slice(0,10);
+  if(!acList.length){dd.classList.remove('open');return;}
 
-function acInput(val) {
-  const dd = document.getElementById('acDropdown');
-  if (!val.trim()) { dd.classList.remove('open'); acFiltered = []; return; }
-  const q = val.toLowerCase();
-  acFiltered = PRODUCTS.filter(p => p.name.toLowerCase().includes(q)).slice(0, 12);
-  if (!acFiltered.length) { dd.classList.remove('open'); return; }
+  const groups={};
+  acList.forEach(p=>{(groups[p.cat]=groups[p.cat]||[]).push(p);});
 
-  // Group by category
-  const groups = {};
-  acFiltered.forEach(p => { (groups[p.cat] = groups[p.cat]||[]).push(p); });
-
-  let html = '';
-  Object.entries(groups).forEach(([cat, items]) => {
-    html += `<div class="ac-group-label">${cat}</div>`;
-    items.forEach((p, i) => {
-      html += `<div class="ac-item" onclick="selectProduct('${p.name.replace(/'/g,"\\'")}')">
-        <span class="ac-icon">${p.icon}</span>
-        <div><div class="ac-name">${highlight(p.name, val)}</div></div>
-        <span class="ac-arrow">→</span>
+  let html='';
+  Object.entries(groups).forEach(([cat,items])=>{
+    html+=`<div class="ac-gl">${cat}</div>`;
+    items.forEach(p=>{
+      const hi=p.name.replace(new RegExp(`(${val})`, 'gi'),'<strong style="color:var(--fire)">$1</strong>');
+      html+=`<div class="ac-item" onclick="pickProduct('${p.name.replace(/'/g,"\\'")}')">
+        <span class="ac-ic">${p.icon}</span>
+        <div><div class="ac-nm">${hi}</div></div>
+        <span class="ac-arr">→</span>
       </div>`;
     });
   });
-
-  dd.innerHTML = html;
+  dd.innerHTML=html;
   dd.classList.add('open');
-  acIndex = -1;
+  acIdx=-1;
 }
 
-function highlight(text, q) {
-  const i = text.toLowerCase().indexOf(q.toLowerCase());
-  if (i < 0) return text;
-  return text.slice(0,i) + `<strong style="color:var(--fire)">${text.slice(i,i+q.length)}</strong>` + text.slice(i+q.length);
-}
-
-function acKeydown(e) {
-  const dd = document.getElementById('acDropdown');
-  const items = dd.querySelectorAll('.ac-item');
-  if (e.key === 'ArrowDown')  { acIndex = Math.min(acIndex+1, items.length-1); highlightAc(items); e.preventDefault(); }
-  else if (e.key === 'ArrowUp') { acIndex = Math.max(acIndex-1, -1); highlightAc(items); e.preventDefault(); }
-  else if (e.key === 'Enter') {
-    if (acIndex >= 0 && acFiltered[acIndex]) selectProduct(acFiltered[acIndex].name);
-    else if (document.getElementById('lookupInput').value.trim()) doLookup(document.getElementById('lookupInput').value.trim());
+function acKey(e){
+  const dd=document.getElementById('acDd');
+  const items=dd.querySelectorAll('.ac-item');
+  if(e.key==='ArrowDown'){acIdx=Math.min(acIdx+1,items.length-1);hlAc(items);e.preventDefault();}
+  else if(e.key==='ArrowUp'){acIdx=Math.max(acIdx-1,-1);hlAc(items);e.preventDefault();}
+  else if(e.key==='Enter'){
+    if(acIdx>=0&&acList[acIdx])pickProduct(acList[acIdx].name);
+    else{const v=document.getElementById('luInput').value.trim();if(v)doLookup(v);}
     e.preventDefault();
   }
-  else if (e.key === 'Escape') { dd.classList.remove('open'); }
+  else if(e.key==='Escape')dd.classList.remove('open');
 }
+function hlAc(items){items.forEach((el,i)=>el.classList.toggle('hl',i===acIdx));}
 
-function highlightAc(items) {
-  items.forEach((el, i) => el.classList.toggle('highlighted', i === acIndex));
-}
-
-function selectProduct(name) {
-  document.getElementById('lookupInput').value = name;
-  document.getElementById('acDropdown').classList.remove('open');
+function pickProduct(name){
+  document.getElementById('luInput').value=name;
+  document.getElementById('acDd').classList.remove('open');
   doLookup(name);
 }
 
-// ═══════════════════════════════════════════════════════
-// LOOKUP
-// ═══════════════════════════════════════════════════════
-const RETAILERS = [
-  { name:'Amazon',         emoji:'📦', searchUrl: q=>`https://www.amazon.com/s?k=${q}`,                            sub:'Prime shipping + price history' },
-  { name:'Walmart',        emoji:'🔵', searchUrl: q=>`https://www.walmart.com/search?q=${q}`,                      sub:'Free 2-day on $35+' },
-  { name:'Best Buy',       emoji:'💙', searchUrl: q=>`https://www.bestbuy.com/site/searchpage.jsp?st=${q}`,        sub:'Price match guarantee' },
-  { name:'Target',         emoji:'🎯', searchUrl: q=>`https://www.target.com/s?searchTerm=${q}`,                   sub:'RedCard 5% off' },
-  { name:"Lowe's",         emoji:'🏠', searchUrl: q=>`https://www.lowes.com/search?searchTerm=${q}`,               sub:'Tools, hardware, garden' },
-  { name:'Home Depot',     emoji:'🔨', searchUrl: q=>`https://www.homedepot.com/s/${q}`,                           sub:'Pro desk + tool rental' },
-  { name:'Harbor Freight', emoji:'🛠', searchUrl: q=>`https://www.harborfreight.com/catalogsearch/result/?q=${q}`, sub:'Budget tools + coupons' },
-  { name:'Ace Hardware',   emoji:'🔑', searchUrl: q=>`https://www.acehardware.com/departments?query=${q}`,         sub:'Local pickup, niche hardware' },
+// ─── LOOKUP ──────────────────────────────────────────────────────────
+const RETS=[
+  {name:'Amazon',e:'📦',url:q=>`https://www.amazon.com/s?k=${q}`,sub:'Prime + price history'},
+  {name:'Walmart',e:'🔵',url:q=>`https://www.walmart.com/search?q=${q}`,sub:'Free 2-day on $35+'},
+  {name:'Best Buy',e:'💙',url:q=>`https://www.bestbuy.com/site/searchpage.jsp?st=${q}`,sub:'Price match guarantee'},
+  {name:'Target',e:'🎯',url:q=>`https://www.target.com/s?searchTerm=${q}`,sub:'RedCard 5% off'},
+  {name:"Lowe's",e:'🏠',url:q=>`https://www.lowes.com/search?searchTerm=${q}`,sub:'Tools, hardware, garden'},
+  {name:'Home Depot',e:'🔨',url:q=>`https://www.homedepot.com/s/${q}`,sub:'Pro desk + tool rental'},
+  {name:'Harbor Freight',e:'🛠',url:q=>`https://www.harborfreight.com/catalogsearch/result/?q=${q}`,sub:'Budget tools + coupons'},
+  {name:'Ace Hardware',e:'🔑',url:q=>`https://www.acehardware.com/departments?query=${q}`,sub:'Local pickup'},
 ];
 
-let currentSpecData = null;
-let selectedBrandIdx = null;
+async function doLookup(raw){
+  if(!raw)return;
+  const q=encodeURIComponent(raw);
+  const res=document.getElementById('luResults');
+  currentSpec=null;
 
-async function doLookup(raw) {
-  if (!raw) return;
-  const q = encodeURIComponent(raw);
-  const res = document.getElementById('lookupResults');
-
-  res.innerHTML = `
-    <div class="section-title">AI SUMMARY</div>
-    <div class="ai-box fade-up">
-      <div class="ai-label"><span class="pulse"></span> Analyzing "${raw}"...</div>
-      <div class="ai-text ph">Building price summary...</div>
+  res.innerHTML=`
+    <div class="lu-section">AI SUMMARY</div>
+    <div class="ai-box">
+      <div class="ai-lbl"><span class="pulse"></span> Analyzing "${raw}"...</div>
+      <div class="ai-body ph" id="aiBody">Loading...</div>
     </div>
 
-    <div class="section-title">SHOP NOW</div>
-    <div class="retailer-grid fade-up">
-      ${RETAILERS.map(r=>`
-        <a class="rc" href="${r.searchUrl(q)}" target="_blank" rel="noopener">
-          <span class="rc-emoji">${r.emoji}</span>
-          <div><div class="rc-name">${r.name}</div><div class="rc-sub">${r.sub}</div></div>
-          <span class="rc-arr">→</span>
+    <div class="lu-section">SHOP NOW</div>
+    <div class="ret-grid">
+      ${RETS.map(r=>`
+        <a class="ret-card" href="${r.url(q)}" target="_blank" rel="noopener">
+          <span class="re">${r.e}</span>
+          <div><div class="rn">${r.name}</div><div class="rs">${r.sub}</div></div>
+          <span class="ra">→</span>
         </a>`).join('')}
     </div>
 
-    <div class="section-title">BRAND COMPARISON — click a row to see price history & buy link</div>
-    <div id="specArea"><div class="spec-skel"><span class="pulse"></span> Building spec comparison for "${raw}"...</div></div>
+    <div class="lu-section">BRAND COMPARISON — tap a row to see buy links & price history</div>
+    <div id="specArea"><div class="spec-skel"><span class="pulse"></span> Building spec comparison...</div></div>
     <div id="brandPanel"></div>
 
-    <div class="section-title">PRICE HISTORY TOOLS</div>
-    <div class="history-links fade-up">
+    <div class="lu-section">PRICE HISTORY TOOLS</div>
+    <div class="hl-list">
       <a class="hl" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
-        <span class="hl-icon">🐪</span><div><div>CamelCamelCamel</div><div class="hl-sub">Amazon 90-day history, all-time lows, alerts</div></div><span class="hl-arr">→</span>
+        <span class="hi">🐪</span><div><div>CamelCamelCamel</div><div class="hs">Amazon 90-day history & all-time lows</div></div><span class="ha">→</span>
       </a>
       <a class="hl" href="https://www.google.com/search?q=${q}+price+comparison&tbm=shop" target="_blank" rel="noopener">
-        <span class="hl-icon">🛍</span><div><div>Google Shopping</div><div class="hl-sub">Live prices across all retailers</div></div><span class="hl-arr">→</span>
+        <span class="hi">🛍</span><div><div>Google Shopping</div><div class="hs">Live prices across all retailers</div></div><span class="ha">→</span>
       </a>
       <a class="hl" href="https://keepa.com/#!search/1-${q}" target="_blank" rel="noopener">
-        <span class="hl-icon">📊</span><div><div>Keepa</div><div class="hl-sub">Detailed Amazon price charts, hourly data</div></div><span class="hl-arr">→</span>
+        <span class="hi">📊</span><div><div>Keepa</div><div class="hs">Detailed Amazon price charts</div></div><span class="ha">→</span>
       </a>
     </div>`;
 
-  currentSpecData = null;
-  selectedBrandIdx = null;
+  // Fire both API calls in parallel
+  const [sumR,specR]=await Promise.allSettled([fetchSum(raw),fetchSpec(raw)]);
 
-  const [sumR, specR] = await Promise.allSettled([fetchSummary(raw), fetchSpecs(raw)]);
-
-  // Update summary
-  const aiText = res.querySelector('.ai-text');
-  const aiLabel = res.querySelector('.ai-label');
-  if (sumR.status === 'fulfilled' && sumR.value) {
-    aiText.classList.remove('ph');
-    aiText.textContent = sumR.value;
-    aiLabel.innerHTML = '✦ AI PRICE SUMMARY';
+  // Summary
+  const aiBody=document.getElementById('aiBody');
+  const aiLbl=document.querySelector('.ai-lbl');
+  if(sumR.status==='fulfilled'&&sumR.value){
+    aiBody.classList.remove('ph');
+    aiBody.textContent=sumR.value;
+    aiLbl.innerHTML='✦ AI PRICE SUMMARY';
   } else {
-    aiText.textContent = 'Summary unavailable — use the links above to compare prices.';
-    aiLabel.innerHTML = '✦ AI PRICE SUMMARY';
+    aiBody.textContent='Summary unavailable — use the links above to compare prices.';
+    aiLbl.innerHTML='✦ AI PRICE SUMMARY';
   }
 
-  // Render spec table
-  const specArea = document.getElementById('specArea');
-  if (specR.status === 'fulfilled' && specR.value) {
-    currentSpecData = specR.value;
-    renderSpecTable(specArea, specR.value);
+  // Spec table
+  const specArea=document.getElementById('specArea');
+  if(specR.status==='fulfilled'&&specR.value){
+    currentSpec=specR.value;
+    renderSpec(specArea,specR.value);
   } else {
-    specArea.innerHTML = `<div class="spec-err">Spec comparison unavailable. Try a more specific product (e.g. "20V cordless drill" or "cordless leaf blower").</div>`;
+    specArea.innerHTML=`<div class="spec-err">Spec data unavailable. Try a more specific search like "cordless leaf blower" or "20V impact driver".</div>`;
   }
 }
 
-async function fetchSummary(raw) {
-  const r = await fetch('https://api.anthropic.com/v1/messages', {
-    method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      model:'claude-sonnet-4-20250514', max_tokens:500,
-      messages:[{role:'user', content:`Shopping brief for: "${raw}". Cover in 3–4 sentences: typical price range, best retailer (Amazon/Walmart/Best Buy/Target/Lowe's/Home Depot/Harbor Freight/Ace), top buying tips, best time of year to buy. Be direct, no fluff. Include Harbor Freight if relevant for budget options.`}]
+async function callClaude(prompt, maxTok=600){
+  const r=await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'anthropic-dangerous-direct-browser-access':'true'
+    },
+    body:JSON.stringify({
+      model:'claude-sonnet-4-20250514',
+      max_tokens:maxTok,
+      messages:[{role:'user',content:prompt}]
     })
   });
-  const d = await r.json();
-  return d.content?.find(b=>b.type==='text')?.text || null;
+  const d=await r.json();
+  return d.content?.find(b=>b.type==='text')?.text||null;
 }
 
-async function fetchSpecs(raw) {
-  const r = await fetch('https://api.anthropic.com/v1/messages', {
-    method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      model:'claude-sonnet-4-20250514', max_tokens:2000,
-      messages:[{role:'user', content:`Shopping for: "${raw}". Return ONLY valid JSON (no markdown/backticks):
-{
-  "product": "product name",
-  "specs": ["spec1","spec2",...],
-  "brands": [
-    {"name":"Brand Model","tier":"pro|mid|value|budget","values":["v1","v2",...],"price":"$XX–$XX","where":"Primary Retailer","verdict":"one sentence"}
-  ],
-  "note": "caveat"
-}
-RULES: Include ALL major brands — for power tools: DeWalt, Milwaukee, Makita, Metabo HPT, Bosch, Ridgid, Ryobi, Craftsman, Kobalt, Bauer, Hart, Skil, Worx, Black+Decker and any others. Tier: pro=professional, mid=prosumer, value=budget-friendly, budget=entry-level. 6–9 spec columns most important for purchase decisions. values[] length MUST equal specs[] length. price=approximate street price (tool only unless kit is standard). where=primary retailer. If too vague return {"error":"too_vague"}. If not a product return {"error":"not_a_product"}.`}]
-    })
-  });
-  const d = await r.json();
-  const txt = d.content?.find(b=>b.type==='text')?.text || '';
-  const parsed = JSON.parse(txt.replace(/```json|```/g,'').trim());
-  if (parsed.error) return null;
-  return parsed;
+async function fetchSum(raw){
+  return callClaude(`Shopping brief for: "${raw}". 3–4 sentences covering: typical price range, best retailer among Amazon/Walmart/Best Buy/Target/Lowe's/Home Depot/Harbor Freight/Ace Hardware, top buying tips, best time of year to buy. Be specific and direct. No fluff.`, 400);
 }
 
-function renderSpecTable(container, spec) {
-  const tierBadge = t => {
-    const map = {pro:'<span class="tier-badge tier-pro">PRO</span>',mid:'<span class="tier-badge tier-mid">MID</span>',value:'<span class="tier-badge tier-value">VALUE</span>',budget:'<span class="tier-badge tier-budget">BUDGET</span>'};
-    return map[t] || '';
-  };
-  const hdrs = ['Brand / Model','Price','Where to Buy',...spec.specs,'Verdict'];
-  let html = `<div class="spec-wrap fade-up"><table class="specs">
-    <thead><tr>${hdrs.map((h,i)=>`<th${i===0?' class="brand-h"':''}>${h}</th>`).join('')}</tr></thead>
-    <tbody>`;
-  spec.brands.forEach((b,i) => {
-    html += `<tr onclick="selectBrand(${i})">
-      <td>${tierBadge(b.tier)}${b.name}</td>
-      <td class="price-cell">${b.price||'—'}</td>
-      <td class="where-cell">${b.where||'—'}</td>
+async function fetchSpec(raw){
+  const txt=await callClaude(`Shopping for: "${raw}". Return ONLY valid JSON, no markdown, no backticks, no explanation:
+{"product":"name","specs":["s1","s2","s3","s4","s5","s6"],"brands":[{"name":"Brand Model","tier":"pro|mid|value|budget","values":["v1","v2","v3","v4","v5","v6"],"price":"$XX-$XX","where":"Retailer","verdict":"one sentence"}],"note":"caveat"}
+RULES: Include ALL major brands for this product type. Power tools: DeWalt, Milwaukee, Makita, Metabo HPT, Bosch, Ridgid, Ryobi, Craftsman, Kobalt, Bauer, Hart, Skil, Worx. Leaf blowers: EGO, Greenworks, Ryobi, DeWalt, Milwaukee, Makita, Worx, Toro, Husqvarna, Echo, Stihl, Craftsman, Hart, Black+Decker. TVs: Samsung, LG, Sony, TCL, Hisense, Vizio, Insignia. Include all relevant brands — do not limit to 3-6. Tier: pro=professional grade, mid=prosumer, value=budget-friendly, budget=entry-level. values[] length MUST equal specs[] length exactly. If too vague return {"error":"vague"}. If not a product return {"error":"nope"}.`, 2500);
+  if(!txt)return null;
+  const parsed=JSON.parse(txt.replace(/```json|```/g,'').trim());
+  return parsed.error?null:parsed;
+}
+
+function renderSpec(container,spec){
+  const tb=t=>{const m={pro:'<span class="tb tb-pro">PRO</span>',mid:'<span class="tb tb-mid">MID</span>',value:'<span class="tb tb-value">VALUE</span>',budget:'<span class="tb tb-budget">BUDGET</span>'};return m[t]||'';};
+  const hdrs=['Brand / Model','Price','Where',...spec.specs,'Verdict'];
+  let html=`<div class="spec-wrap"><table class="sp"><thead><tr>${hdrs.map((h,i)=>`<th${i===0?' class="bh"':''}>${h}</th>`).join('')}</tr></thead><tbody>`;
+  spec.brands.forEach((b,i)=>{
+    html+=`<tr onclick="pickBrand(${i})">
+      <td>${tb(b.tier)}${b.name}</td>
+      <td class="pc">${b.price||'—'}</td>
+      <td class="wc">${b.where||'—'}</td>
       ${(b.values||[]).map(v=>`<td>${v||'—'}</td>`).join('')}
-      <td style="color:var(--sub);font-size:.75rem;max-width:160px">${b.verdict||''}</td>
+      <td style="color:var(--sub);font-size:.72rem;max-width:140px">${b.verdict||''}</td>
     </tr>`;
   });
-  html += `</tbody></table></div>${spec.note?`<div class="spec-note-txt">⚠ ${spec.note}</div>`:''}`;
-  container.innerHTML = html;
+  html+=`</tbody></table></div>${spec.note?`<div class="spec-note">⚠ ${spec.note}</div>`:''}`;
+  container.innerHTML=html;
 }
 
-function selectBrand(idx) {
-  if (!currentSpecData) return;
-  const b = currentSpecData.brands[idx];
-  if (!b) return;
+function pickBrand(idx){
+  if(!currentSpec)return;
+  const b=currentSpec.brands[idx];
+  document.querySelectorAll('.sp tbody tr').forEach((r,i)=>r.classList.toggle('sel',i===idx));
+  const q=encodeURIComponent(b.name);
+  const where=b.where||'';
+  const extraLinks=[];
+  if(where.toLowerCase().includes('lowe'))extraLinks.push(`<a class="bpl" href="https://www.lowes.com/search?searchTerm=${q}" target="_blank"><span class="bi">🏠</span><div><div>Search Lowe's</div><div class="bs">Primary retailer</div></div><span class="ba">→</span></a>`);
+  if(where.toLowerCase().includes('home depot'))extraLinks.push(`<a class="bpl" href="https://www.homedepot.com/s/${q}" target="_blank"><span class="bi">🔨</span><div><div>Search Home Depot</div><div class="bs">Primary retailer</div></div><span class="ba">→</span></a>`);
+  if(where.toLowerCase().includes('harbor'))extraLinks.push(`<a class="bpl" href="https://www.harborfreight.com/catalogsearch/result/?q=${q}" target="_blank"><span class="bi">🛠</span><div><div>Search Harbor Freight</div><div class="bs">Primary retailer</div></div><span class="ba">→</span></a>`);
+  if(where.toLowerCase().includes('walmart'))extraLinks.push(`<a class="bpl" href="https://www.walmart.com/search?q=${q}" target="_blank"><span class="bi">🔵</span><div><div>Search Walmart</div><div class="bs">Primary retailer</div></div><span class="ba">→</span></a>`);
 
-  // Highlight row
-  document.querySelectorAll('.specs tbody tr').forEach((r,i) => r.classList.toggle('selected', i===idx));
-
-  const q = encodeURIComponent(b.name);
-  const panel = document.getElementById('brandPanel');
-  panel.innerHTML = `
-    <div class="brand-panel">
-      <div class="bp-header">
+  const panel=document.getElementById('brandPanel');
+  panel.innerHTML=`
+    <div class="bp">
+      <div class="bp-hdr">
         <div>
           <div class="bp-name">${b.name}</div>
-          <div style="color:var(--sub);font-size:.8rem;margin-top:2px">${b.where||''}</div>
+          <div class="bp-where">${where}</div>
         </div>
-        <div style="display:flex;align-items:center;gap:10px">
+        <div style="display:flex;align-items:center;gap:8px">
           <div class="bp-price">${b.price||''}</div>
-          <button class="bp-close" onclick="document.getElementById('brandPanel').innerHTML='';document.querySelectorAll('.specs tbody tr').forEach(r=>r.classList.remove('selected'))">✕</button>
+          <button class="bp-x" onclick="document.getElementById('brandPanel').innerHTML='';document.querySelectorAll('.sp tbody tr').forEach(r=>r.classList.remove('sel'))">✕</button>
         </div>
       </div>
-
       <div class="bp-links">
-        <a class="bp-link" href="https://www.amazon.com/s?k=${q}" target="_blank" rel="noopener">
-          <span class="bpl-icon">📦</span><div><div>Search Amazon</div><div class="bpl-sub">Compare prices + Prime shipping</div></div><span class="bpl-arr">→</span>
-        </a>
-        <a class="bp-link" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
-          <span class="bpl-icon">🐪</span><div><div>CamelCamelCamel — Price History</div><div class="bpl-sub">90-day Amazon price chart + all-time low</div></div><span class="bpl-arr">→</span>
-        </a>
-        <a class="bp-link" href="https://www.google.com/search?q=${q}+site:amazon.com+OR+site:lowes.com+OR+site:homedepot.com" target="_blank" rel="noopener">
-          <span class="bpl-icon">🛍</span><div><div>Compare Across Retailers</div><div class="bpl-sub">Google Shopping — live prices</div></div><span class="bpl-arr">→</span>
-        </a>
-        ${b.where && b.where.toLowerCase().includes('lowe') ? `<a class="bp-link" href="https://www.lowes.com/search?searchTerm=${q}" target="_blank" rel="noopener"><span class="bpl-icon">🏠</span><div><div>Search Lowe's</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
-        ${b.where && b.where.toLowerCase().includes('home depot') ? `<a class="bp-link" href="https://www.homedepot.com/s/${q}" target="_blank" rel="noopener"><span class="bpl-icon">🔨</span><div><div>Search Home Depot</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
-        ${b.where && b.where.toLowerCase().includes('harbor') ? `<a class="bp-link" href="https://www.harborfreight.com/catalogsearch/result/?q=${q}" target="_blank" rel="noopener"><span class="bpl-icon">🛠</span><div><div>Search Harbor Freight</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
+        <a class="bpl" href="https://www.amazon.com/s?k=${q}" target="_blank"><span class="bi">📦</span><div><div>Search Amazon</div><div class="bs">Check current price + Prime shipping</div></div><span class="ba">→</span></a>
+        <a class="bpl" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank"><span class="bi">🐪</span><div><div>Price History — CamelCamelCamel</div><div class="bs">90-day Amazon chart & all-time low</div></div><span class="ba">→</span></a>
+        <a class="bpl" href="https://www.google.com/search?q=${q}+buy+price&tbm=shop" target="_blank"><span class="bi">🛍</span><div><div>Google Shopping — All Retailers</div><div class="bs">Compare live prices everywhere</div></div><span class="ba">→</span></a>
+        ${extraLinks.join('')}
       </div>
-      ${b.verdict ? `<div class="bp-verdict">💬 ${b.verdict}</div>` : ''}
+      ${b.verdict?`<div class="bp-verdict">💬 ${b.verdict}</div>`:''}
     </div>`;
-  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 
-// ═══════════════════════════════════════════════════════
-// WISHLIST
-// ═══════════════════════════════════════════════════════
-function renderWishlist() {
-  const c = document.getElementById('wishList');
-  c.innerHTML = wishlist.length ? wishlist.map((k,i)=>`
-    <div class="wi"><span>🔍 ${k}</span><button class="wi-del" onclick="removeWish(${i})">✕</button></div>`).join('') :
-    `<div style="color:var(--dim);font-size:.85rem;text-align:center;padding:16px">No keywords yet.</div>`;
+// ─── WISHLIST ─────────────────────────────────────────────────────────
+function renderWish(){
+  const c=document.getElementById('wishItems');
+  c.innerHTML=wishlist.length
+    ?wishlist.map((k,i)=>`<div class="wi"><span>🔍 ${k}</span><button class="wd" onclick="rmWish(${i})">✕</button></div>`).join('')
+    :`<div style="color:var(--dim);font-size:.82rem;text-align:center;padding:14px">No keywords yet.</div>`;
 }
-function addWish() {
-  const v = document.getElementById('wishInput').value.trim();
-  if (!v) return;
-  wishlist.push(v);
-  localStorage.setItem('dr_wish', JSON.stringify(wishlist));
-  document.getElementById('wishInput').value = '';
-  renderWishlist(); updateStats(); renderDeals();
+function addWish(){
+  const v=document.getElementById('wishIn').value.trim();
+  if(!v)return;
+  wishlist.push(v);localStorage.setItem('dr_wish',JSON.stringify(wishlist));
+  document.getElementById('wishIn').value='';renderWish();updateStats();renderDeals();
 }
-function removeWish(i) {
-  wishlist.splice(i,1);
-  localStorage.setItem('dr_wish', JSON.stringify(wishlist));
-  renderWishlist(); updateStats(); renderDeals();
+function rmWish(i){
+  wishlist.splice(i,1);localStorage.setItem('dr_wish',JSON.stringify(wishlist));
+  renderWish();updateStats();renderDeals();
 }
 
-// ═══════════════════════════════════════════════════════
-// SMS
-// ═══════════════════════════════════════════════════════
-function loadSmsConfig() {
-  if (smsConfig.phone) document.getElementById('smsPhone').value = smsConfig.phone;
-  if (smsConfig.key)   document.getElementById('smsKey').value   = smsConfig.key;
+// ─── SMS ──────────────────────────────────────────────────────────────
+function loadSms(){
+  if(smsConf.phone)document.getElementById('smsPhone').value=smsConf.phone;
+  if(smsConf.key)document.getElementById('smsKey').value=smsConf.key;
 }
-function saveSms() {
-  smsConfig = { phone: document.getElementById('smsPhone').value.trim(), key: document.getElementById('smsKey').value.trim() };
-  localStorage.setItem('dr_sms', JSON.stringify(smsConfig));
-  showStatus('ok','✅ Saved!');
+function saveSms(){
+  smsConf={phone:document.getElementById('smsPhone').value.trim(),key:document.getElementById('smsKey').value.trim()};
+  localStorage.setItem('dr_sms',JSON.stringify(smsConf));showMsg('ok','✅ Saved!');
 }
-async function testSms() {
-  const phone = document.getElementById('smsPhone').value.trim();
-  const key   = document.getElementById('smsKey').value.trim() || 'textbelt';
-  if (!phone) { showStatus('err','Enter a phone number first.'); return; }
-  showStatus('ok','Sending...');
-  try {
-    const r = await fetch('https://textbelt.com/text',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone,message:'🔥 DealRadar test alert! Your deal tracker is live.',key})});
-    const d = await r.json();
-    d.success ? showStatus('ok','✅ Text sent!') : showStatus('err','❌ '+d.error);
-  } catch { showStatus('err','❌ Network error.'); }
+async function testSms(){
+  const phone=document.getElementById('smsPhone').value.trim();
+  const key=document.getElementById('smsKey').value.trim()||'textbelt';
+  if(!phone){showMsg('err','Enter a phone number first.');return;}
+  showMsg('ok','Sending...');
+  try{
+    const r=await fetch('https://textbelt.com/text',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone,message:'🔥 DealRadar test alert! Your deal tracker is live.',key})});
+    const d=await r.json();
+    d.success?showMsg('ok','✅ Text sent!'):showMsg('err','❌ '+d.error);
+  }catch{showMsg('err','❌ Network error.');}
 }
-function showStatus(t,m) {
-  const el = document.getElementById('smsStatus');
-  el.className = 'status-msg ' + t;
-  el.textContent = m;
-}
+function showMsg(t,m){const el=document.getElementById('smsMsg');el.className='sm '+t;el.textContent=m;}
 
-// ═══════════════════════════════════════════════════════
-// PANEL
-// ═══════════════════════════════════════════════════════
-function openPanel()  { document.getElementById('panelOverlay').classList.add('open'); }
-function closePanel(e){ if (!e || e.target===document.getElementById('panelOverlay')) document.getElementById('panelOverlay').classList.remove('open'); }
+// ─── PANEL ────────────────────────────────────────────────────────────
+function openPanel(){document.getElementById('overlay').classList.add('open');}
+function closePanel(e){if(!e||e.target===document.getElementById('overlay'))document.getElementById('overlay').classList.remove('open');}
 
-// ═══════════════════════════════════════════════════════
-// INIT
-// ═══════════════════════════════════════════════════════
+// ─── GO ───────────────────────────────────────────────────────────────
 boot();
 </script>
 </body>
