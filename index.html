@@ -3,1421 +3,1134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>🔥 DealRadar</title>
+<title>DealRadar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0a0a0f;
-    --surface: #13131a;
-    --surface2: #1c1c28;
-    --border: #2a2a3a;
-    --accent: #ff4d00;
-    --accent2: #ff9500;
-    --green: #00e676;
-    --blue: #448aff;
-    --text: #f0f0f5;
-    --muted: #8888aa;
-    --font-display: 'Bebas Neue', sans-serif;
-    --font-body: 'DM Sans', sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
-    --radius: 12px;
-    --safe-top: env(safe-area-inset-top, 0px);
-    --safe-bottom: env(safe-area-inset-bottom, 0px);
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font-body);
-    min-height: 100dvh;
-    overflow-x: hidden;
-  }
-
-  /* ── Header ── */
-  header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: calc(16px + var(--safe-top)) 20px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(12px);
-  }
-
-  .header-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    text-decoration: none;
-  }
-
-  .logo-text {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    letter-spacing: 2px;
-    color: var(--text);
-    line-height: 1;
-  }
-
-  .logo-badge {
-    background: var(--accent);
-    color: white;
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    font-weight: 600;
-    padding: 2px 6px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-  }
-
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .updated-tag {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--muted);
-    background: var(--surface2);
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-  }
-
-  .btn-icon {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: var(--radius);
-    padding: 8px 14px;
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-  }
-  .btn-icon:hover { background: var(--border); }
-  .btn-icon.active { background: var(--accent); border-color: var(--accent); color: white; }
-
-  /* ── Layout ── */
-  .app {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 16px calc(40px + var(--safe-bottom));
-  }
-
-  /* ── Filters Bar ── */
-  .filters-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-    align-items: center;
-  }
-
-  .search-wrap {
-    flex: 1;
-    min-width: 200px;
-    position: relative;
-  }
-
-  .search-wrap .icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted);
-    font-size: 1rem;
-    pointer-events: none;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: var(--radius);
-    padding: 10px 12px 10px 36px;
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    outline: none;
-    transition: border-color 0.15s;
-  }
-  input[type="text"]:focus { border-color: var(--accent); }
-  input[type="text"]::placeholder { color: var(--muted); }
-
-  .cat-chips {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-
-  .chip {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    border-radius: 20px;
-    padding: 5px 12px;
-    font-size: 0.78rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.15s;
-    white-space: nowrap;
-  }
-  .chip:hover { border-color: var(--accent); color: var(--text); }
-  .chip.active { background: var(--accent); border-color: var(--accent); color: white; }
-
-  /* ── Stats row ── */
-  .stats-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    text-align: center;
-  }
-
-  .stat-val {
-    font-family: var(--font-display);
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    color: var(--accent);
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-top: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  /* ── Deal Cards ── */
-  .deals-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .deal-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 12px;
-    align-items: start;
-    transition: border-color 0.15s, transform 0.1s;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .deal-card::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 3px;
-    background: var(--accent);
-    transform: scaleY(0);
-    transition: transform 0.15s;
-    transform-origin: bottom;
-  }
-
-  .deal-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-1px);
-  }
-  .deal-card:hover::before { transform: scaleY(1); }
-
-  .deal-card.hot::before { transform: scaleY(1); background: var(--accent); }
-  .deal-card.hot { border-color: rgba(255,77,0,0.3); }
-
-  .deal-meta {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 6px;
-  }
-
-  .retailer-tag {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    font-weight: 600;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: var(--surface2);
-    color: var(--blue);
-    border: 1px solid var(--border);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .cat-tag {
-    font-size: 0.68rem;
-    color: var(--muted);
-    padding: 2px 7px;
-    background: var(--surface2);
-    border-radius: 4px;
-  }
-
-  .source-tag {
-    font-size: 0.65rem;
-    color: var(--muted);
-  }
-
-  .deal-title {
-    font-size: 0.92rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: var(--text);
-    margin-bottom: 4px;
-  }
-
-  .deal-desc {
-    font-size: 0.78rem;
-    color: var(--muted);
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .deal-time {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-top: 6px;
-  }
-
-  .deal-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
-    min-width: 70px;
-  }
-
-  .discount-badge {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    color: var(--green);
-    line-height: 1;
-  }
-
-  .discount-badge.unknown {
-    font-size: 0.75rem;
-    font-family: var(--font-mono);
-    color: var(--muted);
-    letter-spacing: 0;
-  }
-
-  .score-ring {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 2px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 600;
-  }
-  .score-ring.high { border-color: var(--green); color: var(--green); }
-  .score-ring.med  { border-color: var(--accent2); color: var(--accent2); }
-  .score-ring.low  { border-color: var(--muted); color: var(--muted); }
-
-  .wishlist-btn {
-    background: none;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 2px;
-    transition: transform 0.15s;
-    line-height: 1;
-  }
-  .wishlist-btn:hover { transform: scale(1.2); }
-  .wishlist-btn.saved { filter: saturate(2); }
-
-  /* ── Empty / Loading ── */
-  .empty {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--muted);
-  }
-  .empty .icon { font-size: 3rem; margin-bottom: 12px; }
-  .empty p { font-size: 0.9rem; }
-
-  .loading-bar {
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent));
-    background-size: 200% 100%;
-    animation: shimmer 1.2s linear infinite;
-    border-radius: 2px;
-    margin-bottom: 20px;
-  }
-  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-
-  /* ── Wishlist Panel ── */
-  .panel-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 200;
-    backdrop-filter: blur(4px);
-  }
-  .panel-overlay.open { display: flex; align-items: flex-end; }
-
-  .panel {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-bottom: none;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px 20px calc(24px + var(--safe-bottom));
-    max-height: 80dvh;
-    overflow-y: auto;
-    animation: slideUp 0.25s ease;
-  }
-  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-
-  .panel-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  .panel-title {
-    font-family: var(--font-display);
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-  }
-  .close-btn {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: 50%;
-    width: 32px; height: 32px;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-
-  .wishlist-add {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-
-  .wishlist-add input {
-    flex: 1;
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    border: none;
-    color: white;
-    border-radius: var(--radius);
-    padding: 10px 18px;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: opacity 0.15s;
-  }
-  .btn-primary:hover { opacity: 0.85; }
-
-  .wishlist-items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .wishlist-item {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .wishlist-item span {
-    font-size: 0.88rem;
-    font-weight: 500;
-  }
-
-  .del-btn {
-    background: none;
-    border: none;
-    color: var(--muted);
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 2px 6px;
-    border-radius: 6px;
-    transition: color 0.1s;
-  }
-  .del-btn:hover { color: var(--accent); }
-
-  /* ── SMS Panel ── */
-  .sms-section {
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-  }
-
-  .sms-title {
-    font-family: var(--font-display);
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
-  }
-
-  .sms-sub {
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin-bottom: 14px;
-    line-height: 1.5;
-  }
-
-  .sms-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .sms-label {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 4px;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .sms-note {
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-top: 10px;
-    line-height: 1.5;
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 10px 14px;
-  }
-
-  .sms-note a { color: var(--blue); }
-
-  .status-msg {
-    font-size: 0.8rem;
-    margin-top: 8px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: none;
-  }
-  .status-msg.ok { background: rgba(0,230,118,0.1); color: var(--green); display: block; }
-  .status-msg.err { background: rgba(255,77,0,0.1); color: var(--accent); display: block; }
-
-  /* ── Saved deals tab ── */
-  .tab-row {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 16px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 4px;
-  }
-
-  .tab {
-    flex: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    background: none;
-    color: var(--muted);
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.15s;
-    text-align: center;
-  }
-  .tab.active { background: var(--surface2); color: var(--text); }
-
-  /* ── Price Lookup Tab ── */
-  #priceLookupSection { display: none; }
-  #priceLookupSection.active { display: block; }
-
-  .lookup-wrap {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-  .lookup-wrap input { flex: 1; padding-left: 16px; }
-
-  .retailer-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .retailer-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    text-decoration: none;
-    color: var(--text);
-    transition: border-color 0.15s, transform 0.1s;
-  }
-  .retailer-card:hover { border-color: var(--accent); transform: translateY(-1px); }
-
-  .retailer-info { display: flex; align-items: center; gap: 10px; }
-  .retailer-emoji { font-size: 1.4rem; line-height: 1; }
-  .retailer-name { font-weight: 600; font-size: 0.9rem; }
-  .retailer-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
-  .retailer-arrow { color: var(--muted); font-size: 1rem; }
-
-  .history-section {
-    margin-top: 4px;
-  }
-
-  .history-title {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    color: var(--muted);
-  }
-
-  .history-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .history-link {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: var(--text);
-    font-size: 0.88rem;
-    font-weight: 500;
-    transition: border-color 0.15s;
-  }
-  .history-link:hover { border-color: var(--blue); }
-  .history-link .hl-icon { font-size: 1.2rem; }
-  .history-link .hl-desc { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
-
-  .ai-summary-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    margin-bottom: 20px;
-    min-height: 80px;
-    position: relative;
-  }
-  .ai-summary-box .ai-label {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .ai-summary-box .ai-text {
-    font-size: 0.88rem;
-    line-height: 1.6;
-    color: var(--text);
-  }
-  .ai-summary-box .ai-text.placeholder { color: var(--muted); }
-
-  .lookup-empty {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--muted);
-    font-size: 0.88rem;
-  }
-  .lookup-empty .icon { font-size: 2.5rem; margin-bottom: 10px; }
-
-  .ai-loading {
-    display: inline-block;
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    animation: pulse 0.8s ease-in-out infinite alternate;
-  }
-  @keyframes pulse { from { opacity: 0.3; } to { opacity: 1; } }
-
-  /* ── Spec Comparison Table ── */
-  .spec-section {
-    margin-top: 20px;
-  }
-
-  .spec-header {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    color: var(--muted);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .spec-loading {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--muted);
-    font-size: 0.88rem;
-  }
-
-  .spec-table-wrap {
-    overflow-x: auto;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-  }
-
-  .spec-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.82rem;
-    min-width: 480px;
-  }
-
-  .spec-table th {
-    background: var(--surface2);
-    padding: 10px 14px;
-    text-align: left;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: var(--muted);
-    border-bottom: 1px solid var(--border);
-    white-space: nowrap;
-  }
-
-  .spec-table th.brand-col {
-    color: var(--text);
-    min-width: 110px;
-  }
-
-  .spec-table td {
-    padding: 9px 14px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text);
-    vertical-align: top;
-    line-height: 1.4;
-  }
-
-  .spec-table tr:last-child td { border-bottom: none; }
-
-  .spec-table tr:hover td { background: var(--surface2); }
-
-  .spec-table td:first-child {
-    font-weight: 600;
-    color: var(--accent2);
-    white-space: nowrap;
-  }
-
-  .spec-badge {
-    display: inline-block;
-    padding: 1px 6px;
-    border-radius: 4px;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 600;
-  }
-  .spec-badge.pro    { background: rgba(0,230,118,0.15);  color: var(--green); }
-  .spec-badge.mid    { background: rgba(68,138,255,0.15); color: var(--blue); }
-  .spec-badge.value  { background: rgba(255,149,0,0.15);  color: var(--accent2); }
-  .spec-badge.budget { background: rgba(136,136,170,0.15);color: var(--muted); }
-  /* fallbacks */
-  .spec-badge.best   { background: rgba(0,230,118,0.15);  color: var(--green); }
-  .spec-badge.good   { background: rgba(68,138,255,0.15); color: var(--blue); }
-
-  .spec-note {
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-top: 10px;
-    font-style: italic;
-  }
-
-  .spec-error {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    color: var(--muted);
-    font-size: 0.85rem;
-    text-align: center;
-  }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+:root {
+  --bg: #0c0c0e;
+  --card: #141416;
+  --card2: #1a1a1e;
+  --border: #252528;
+  --border2: #2e2e33;
+  --fire: #ff3d00;
+  --fire2: #ff7043;
+  --gold: #ffc107;
+  --green: #00e676;
+  --blue: #40c4ff;
+  --purple: #b388ff;
+  --text: #f5f5f7;
+  --sub: #999aaa;
+  --dim: #555566;
+  --r: 10px;
+  --ff: 'Archivo', sans-serif;
+  --ffd: 'Archivo Black', sans-serif;
+  --ffm: 'JetBrains Mono', monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--ff);min-height:100dvh;overflow-x:hidden}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(12,12,14,0.92);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(16px);
+  padding:0 16px;
+  display:flex;align-items:center;gap:0;
+  height:56px;
+}
+.nav-brand{
+  font-family:var(--ffd);font-size:1.15rem;letter-spacing:1px;
+  color:var(--fire);margin-right:auto;display:flex;align-items:center;gap:8px;
+}
+.nav-brand span{
+  background:var(--fire);color:#fff;font-family:var(--ffm);
+  font-size:0.55rem;padding:2px 5px;border-radius:3px;letter-spacing:1px;
+}
+.nav-tabs{display:flex;gap:2px}
+.nav-tab{
+  padding:8px 18px;border-radius:8px;border:none;background:none;
+  color:var(--sub);font-family:var(--ff);font-size:0.88rem;font-weight:500;
+  cursor:pointer;transition:all .15s;white-space:nowrap;
+}
+.nav-tab:hover{color:var(--text);background:var(--card2)}
+.nav-tab.active{color:var(--text);background:var(--card2)}
+
+/* PAGES */
+.page{display:none;padding:16px;max-width:960px;margin:0 auto;padding-bottom:60px}
+.page.active{display:block}
+
+/* ── PAGE 1: DEALS ── */
+
+/* Top bar */
+.deals-topbar{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;
+}
+.search-box{
+  flex:1;min-width:200px;position:relative;
+}
+.search-box input{
+  width:100%;background:var(--card);border:1px solid var(--border2);
+  color:var(--text);border-radius:var(--r);padding:11px 14px 11px 38px;
+  font-family:var(--ff);font-size:0.9rem;outline:none;transition:border-color .15s;
+}
+.search-box input:focus{border-color:var(--fire)}
+.search-box input::placeholder{color:var(--dim)}
+.search-box .si{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:.95rem;pointer-events:none}
+
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+
+/* Category dropdown */
+.dd-wrap{position:relative}
+.dd-btn{
+  display:flex;align-items:center;gap:6px;
+  background:var(--card);border:1px solid var(--border2);color:var(--text);
+  border-radius:var(--r);padding:9px 14px;font-family:var(--ff);font-size:0.85rem;
+  font-weight:500;cursor:pointer;transition:border-color .15s;white-space:nowrap;
+}
+.dd-btn:hover,.dd-btn.open{border-color:var(--fire);color:var(--fire)}
+.dd-caret{font-size:.6rem;transition:transform .15s}
+.dd-btn.open .dd-caret{transform:rotate(180deg)}
+.dd-menu{
+  display:none;position:absolute;top:calc(100% + 6px);left:0;
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
+  min-width:220px;z-index:100;overflow:hidden;
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+}
+.dd-menu.open{display:block}
+.dd-item{
+  padding:10px 16px;cursor:pointer;font-size:0.88rem;
+  display:flex;align-items:center;gap:8px;transition:background .1s;
+}
+.dd-item:hover{background:var(--card2)}
+.dd-item.active{color:var(--fire)}
+.dd-item .check{margin-left:auto;color:var(--fire);font-size:.8rem;opacity:0}
+.dd-item.active .check{opacity:1}
+
+/* Sort dropdown */
+.sort-btn{
+  display:flex;align-items:center;gap:6px;
+  background:var(--card);border:1px solid var(--border2);color:var(--sub);
+  border-radius:var(--r);padding:9px 14px;font-family:var(--ff);font-size:0.85rem;
+  cursor:pointer;transition:all .15s;white-space:nowrap;
+}
+.sort-btn:hover{border-color:var(--border2);color:var(--text)}
+
+/* Stats */
+.stats-row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;
+}
+.stat{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:12px 14px;text-align:center;
+}
+.stat-val{font-family:var(--ffd);font-size:1.6rem;color:var(--fire);line-height:1}
+.stat-lbl{font-size:0.68rem;color:var(--sub);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+
+/* Quick links to retailer clearance/deals pages */
+.quick-links{
+  display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;
+}
+.ql{
+  display:flex;align-items:center;gap:5px;
+  background:var(--card);border:1px solid var(--border);border-radius:20px;
+  padding:5px 12px;font-size:0.75rem;font-weight:500;color:var(--sub);
+  text-decoration:none;transition:all .15s;white-space:nowrap;
+}
+.ql:hover{border-color:var(--gold);color:var(--gold)}
+.ql-dot{width:6px;height:6px;border-radius:50%}
+
+/* Deal cards */
+.deals-list{display:flex;flex-direction:column;gap:8px}
+.deal-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:14px 16px;display:grid;grid-template-columns:1fr auto;
+  gap:14px;align-items:start;text-decoration:none;color:inherit;
+  transition:border-color .15s,transform .1s;position:relative;overflow:hidden;
+  cursor:pointer;
+}
+.deal-card::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--fire);transform:scaleY(0);transition:transform .15s;
+  transform-origin:bottom;
+}
+.deal-card:hover{border-color:rgba(255,61,0,.4);transform:translateX(2px)}
+.deal-card:hover::after{transform:scaleY(1)}
+.deal-card.featured{border-color:rgba(255,193,7,.25)}
+.deal-card.featured::after{background:var(--gold);transform:scaleY(1)}
+
+.deal-top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.tag{
+  font-family:var(--ffm);font-size:0.62rem;font-weight:600;
+  padding:2px 7px;border-radius:4px;text-transform:uppercase;letter-spacing:.4px;
+}
+.tag-retailer{background:rgba(64,196,255,.1);color:var(--blue);border:1px solid rgba(64,196,255,.2)}
+.tag-cat{background:rgba(255,255,255,.05);color:var(--sub)}
+.tag-src{color:var(--dim);font-size:0.65rem}
+.tag-wish{background:rgba(255,193,7,.12);color:var(--gold);border:1px solid rgba(255,193,7,.2)}
+.tag-flash{background:rgba(255,61,0,.12);color:var(--fire);border:1px solid rgba(255,61,0,.2);animation:flashpulse 2s ease infinite}
+@keyframes flashpulse{0%,100%{opacity:1}50%{opacity:.6}}
+
+.deal-title{font-size:0.92rem;font-weight:600;line-height:1.4;margin-bottom:4px}
+.deal-desc{font-size:0.78rem;color:var(--sub);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.deal-time{font-family:var(--ffm);font-size:0.62rem;color:var(--dim);margin-top:6px}
+
+.deal-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:64px}
+.disc{font-family:var(--ffd);font-size:1.5rem;color:var(--green);line-height:1;text-align:right}
+.disc small{font-size:.65rem;font-family:var(--ffm);color:var(--sub);display:block;line-height:1.2;text-align:right}
+.score{
+  width:34px;height:34px;border-radius:50%;border:2px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ffm);font-size:0.68rem;font-weight:600;
+}
+.score.s-hi{border-color:var(--green);color:var(--green)}
+.score.s-md{border-color:var(--gold);color:var(--gold)}
+.score.s-lo{border-color:var(--dim);color:var(--dim)}
+.save-btn{background:none;border:none;font-size:1.1rem;cursor:pointer;padding:2px;transition:transform .15s;line-height:1}
+.save-btn:hover{transform:scale(1.3)}
+
+/* Empty */
+.empty{text-align:center;padding:60px 20px;color:var(--sub)}
+.empty .ei{font-size:2.5rem;margin-bottom:12px}
+.empty p{font-size:.88rem}
+
+/* Loading */
+.lbar{height:2px;background:linear-gradient(90deg,var(--fire),var(--gold),var(--fire));background-size:200%;animation:ls 1.2s linear infinite;border-radius:2px;margin-bottom:16px}
+@keyframes ls{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ── PAGE 2: LOOKUP ── */
+
+.lookup-hero{
+  text-align:center;padding:32px 0 24px;
+}
+.lookup-hero h1{font-family:var(--ffd);font-size:2rem;letter-spacing:1px;margin-bottom:6px}
+.lookup-hero p{color:var(--sub);font-size:.9rem}
+
+.ac-wrap{position:relative;max-width:580px;margin:0 auto 28px}
+.ac-wrap input{
+  width:100%;background:var(--card);border:2px solid var(--border2);
+  color:var(--text);border-radius:var(--r);padding:14px 18px 14px 44px;
+  font-family:var(--ff);font-size:1rem;font-weight:500;outline:none;
+  transition:border-color .15s;
+}
+.ac-wrap input:focus{border-color:var(--fire)}
+.ac-wrap input::placeholder{color:var(--dim)}
+.ac-wrap .aci{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:1.1rem;pointer-events:none}
+.ac-dropdown{
+  display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
+  z-index:100;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.6);max-height:320px;overflow-y:auto;
+}
+.ac-dropdown.open{display:block}
+.ac-group-label{
+  font-family:var(--ffm);font-size:.62rem;color:var(--dim);
+  padding:10px 14px 4px;text-transform:uppercase;letter-spacing:.5px;
+}
+.ac-item{
+  padding:11px 14px;cursor:pointer;display:flex;align-items:center;gap:10px;
+  transition:background .1s;font-size:.9rem;
+}
+.ac-item:hover,.ac-item.highlighted{background:var(--card2)}
+.ac-item .ac-icon{font-size:1.1rem;width:24px;text-align:center}
+.ac-item .ac-name{font-weight:500}
+.ac-item .ac-cat{font-size:.72rem;color:var(--sub);margin-top:1px}
+.ac-item .ac-arrow{margin-left:auto;color:var(--dim)}
+
+/* Lookup results */
+#lookupResults .section-title{
+  font-family:var(--ffd);font-size:.85rem;letter-spacing:1.5px;
+  color:var(--sub);text-transform:uppercase;margin-bottom:10px;margin-top:20px;
+}
+
+/* AI summary */
+.ai-box{
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
+  padding:16px;margin-bottom:4px;
+}
+.ai-label{
+  font-family:var(--ffm);font-size:.62rem;color:var(--fire);
+  text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;
+  display:flex;align-items:center;gap:6px;
+}
+.ai-text{font-size:.88rem;line-height:1.65;color:var(--text)}
+.ai-text.ph{color:var(--dim)}
+
+/* Retailer grid */
+.retailer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.rc{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:12px 14px;display:flex;align-items:center;gap:10px;
+  text-decoration:none;color:var(--text);transition:border-color .15s,transform .1s;
+}
+.rc:hover{border-color:rgba(255,61,0,.4);transform:translateY(-1px)}
+.rc-emoji{font-size:1.3rem}
+.rc-name{font-size:.85rem;font-weight:600}
+.rc-sub{font-size:.7rem;color:var(--sub);margin-top:1px}
+.rc-arr{margin-left:auto;color:var(--dim)}
+
+/* Spec table */
+.spec-wrap{overflow-x:auto;border-radius:var(--r);border:1px solid var(--border)}
+table.specs{width:100%;border-collapse:collapse;font-size:.8rem;min-width:560px}
+table.specs th{
+  background:var(--card2);padding:10px 14px;text-align:left;
+  font-family:var(--ffm);font-size:.62rem;color:var(--sub);
+  border-bottom:1px solid var(--border);white-space:nowrap;font-weight:600;letter-spacing:.3px;
+}
+table.specs th.brand-h{color:var(--text);min-width:130px}
+table.specs td{
+  padding:10px 14px;border-bottom:1px solid var(--border);
+  vertical-align:top;line-height:1.4;
+}
+table.specs tr:last-child td{border-bottom:none}
+table.specs tr{cursor:pointer;transition:background .1s}
+table.specs tr:hover td{background:var(--card2)}
+table.specs tr.selected td{background:rgba(255,61,0,.07)}
+table.specs td:first-child{white-space:nowrap}
+.tier-badge{
+  display:inline-block;padding:1px 6px;border-radius:3px;
+  font-family:var(--ffm);font-size:.6rem;font-weight:700;margin-right:4px;
+}
+.tier-pro   {background:rgba(0,230,118,.12);color:var(--green)}
+.tier-mid   {background:rgba(64,196,255,.12);color:var(--blue)}
+.tier-value {background:rgba(255,193,7,.12);color:var(--gold)}
+.tier-budget{background:rgba(255,255,255,.06);color:var(--dim)}
+.price-cell{color:var(--green);font-family:var(--ffm);font-size:.75rem;white-space:nowrap}
+.where-cell{color:var(--blue);font-size:.75rem;white-space:nowrap}
+
+/* Selected brand panel */
+.brand-panel{
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
+  padding:18px;margin-top:14px;animation:fadeUp .25s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.bp-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;gap:12px}
+.bp-name{font-family:var(--ffd);font-size:1.15rem}
+.bp-price{font-family:var(--ffd);font-size:1.4rem;color:var(--green)}
+.bp-close{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.8rem}
+.bp-links{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.bp-link{
+  display:flex;align-items:center;gap:10px;
+  background:var(--card2);border:1px solid var(--border);border-radius:var(--r);
+  padding:12px 14px;text-decoration:none;color:var(--text);
+  font-size:.85rem;font-weight:500;transition:border-color .15s;
+}
+.bp-link:hover{border-color:var(--fire)}
+.bp-link .bpl-icon{font-size:1.2rem}
+.bp-link .bpl-sub{font-size:.7rem;color:var(--sub);margin-top:2px}
+.bp-link .bpl-arr{margin-left:auto;color:var(--dim)}
+.bp-verdict{
+  background:var(--card2);border-left:3px solid var(--fire);border-radius:0 8px 8px 0;
+  padding:12px 14px;font-size:.85rem;color:var(--sub);line-height:1.6;
+}
+
+/* History links */
+.history-links{display:flex;flex-direction:column;gap:8px}
+.hl{
+  display:flex;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:12px 14px;text-decoration:none;color:var(--text);font-size:.85rem;font-weight:500;
+  transition:border-color .15s;
+}
+.hl:hover{border-color:var(--blue)}
+.hl-icon{font-size:1.1rem}
+.hl-sub{font-size:.7rem;color:var(--sub);margin-top:2px}
+.hl-arr{margin-left:auto;color:var(--dim)}
+
+/* Panel overlay */
+.panel-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:300;backdrop-filter:blur(4px);align-items:flex-end}
+.panel-overlay.open{display:flex}
+.panel{
+  background:var(--card);border:1px solid var(--border2);border-radius:16px 16px 0 0;
+  width:100%;max-width:960px;margin:0 auto;
+  padding:24px 20px calc(24px + env(safe-area-inset-bottom));
+  max-height:80dvh;overflow-y:auto;animation:slideUp .25s ease;
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.panel-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.panel-title{font-family:var(--ffd);font-size:1.3rem;letter-spacing:1px}
+.close-btn{background:var(--card2);border:1px solid var(--border);color:var(--sub);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem}
+
+/* Wishlist in panel */
+.wish-add{display:flex;gap:8px;margin-bottom:14px}
+.wish-add input{flex:1;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:10px 14px;font-family:var(--ff);font-size:.9rem;outline:none}
+.wish-add input:focus{border-color:var(--fire)}
+.btn-fire{background:var(--fire);border:none;color:#fff;border-radius:var(--r);padding:10px 18px;font-family:var(--ff);font-weight:700;font-size:.88rem;cursor:pointer;white-space:nowrap;transition:opacity .15s}
+.btn-fire:hover{opacity:.85}
+.wish-list{display:flex;flex-direction:column;gap:7px}
+.wi{background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wi span{font-size:.88rem;font-weight:500}
+.wi-del{background:none;border:none;color:var(--dim);cursor:pointer;font-size:.9rem;padding:2px 6px;border-radius:5px;transition:color .1s}
+.wi-del:hover{color:var(--fire)}
+
+/* SMS section */
+.sms-sec{margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
+.sms-title{font-family:var(--ffd);font-size:1rem;letter-spacing:1px;margin-bottom:4px}
+.sms-sub{font-size:.75rem;color:var(--sub);margin-bottom:12px;line-height:1.5}
+.sms-fields{display:flex;flex-direction:column;gap:9px}
+.field-label{font-size:.7rem;color:var(--sub);margin-bottom:3px;display:block;text-transform:uppercase;letter-spacing:.5px}
+.field-input{width:100%;background:var(--card2);border:1px solid var(--border2);color:var(--text);border-radius:var(--r);padding:10px 14px;font-family:var(--ff);font-size:.9rem;outline:none}
+.field-input:focus{border-color:var(--fire)}
+.btn-outline{background:none;border:1px solid var(--border2);color:var(--sub);border-radius:var(--r);padding:9px 16px;font-family:var(--ff);font-size:.85rem;cursor:pointer;transition:all .15s;width:100%}
+.btn-outline:hover{border-color:var(--fire);color:var(--fire)}
+.sms-note{font-size:.7rem;color:var(--dim);margin-top:10px;background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;line-height:1.5}
+.sms-note a{color:var(--blue)}
+.status-msg{font-size:.78rem;padding:8px 12px;border-radius:8px;margin-top:6px;display:none}
+.status-msg.ok{background:rgba(0,230,118,.1);color:var(--green);display:block}
+.status-msg.err{background:rgba(255,61,0,.1);color:var(--fire);display:block}
+
+/* Pulse loader */
+.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fire);animation:p .8s ease-in-out infinite alternate}
+@keyframes p{from{opacity:.3}to{opacity:1}}
+.fade-up{animation:fadeUp .3s ease}
+
+/* Spec loading skeleton */
+.spec-skel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;display:flex;align-items:center;gap:10px;color:var(--sub);font-size:.88rem}
+.spec-err{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px;color:var(--sub);font-size:.85rem;text-align:center}
+.spec-note-txt{font-size:.7rem;color:var(--dim);font-style:italic;margin-top:8px}
+
+@media(max-width:500px){
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .retailer-grid{grid-template-columns:1fr}
+  .nav-tab{padding:8px 12px;font-size:.8rem}
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      <span class="logo-text">DEALRADAR</span>
-      <span class="logo-badge">LIVE</span>
-    </div>
-    <div class="header-right">
-      <span class="updated-tag" id="updatedTag">Loading...</span>
-      <button class="btn-icon" onclick="openPanel()">⚙ Wishlist & SMS</button>
-    </div>
+<nav>
+  <div class="nav-brand">DEALRADAR <span>LIVE</span></div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('deals',this)">🔥 Deals</button>
+    <button class="nav-tab" onclick="showPage('lookup',this)">🔎 Price Lookup</button>
   </div>
-</header>
+  <button class="btn-outline" style="margin-left:12px;padding:6px 12px;font-size:.78rem;border-radius:8px" onclick="openPanel()">⚙</button>
+</nav>
 
-<div class="app">
+<!-- ══════════════ PAGE 1: DEALS ══════════════ -->
+<div class="page active" id="page-deals">
+
+  <div style="height:14px"></div>
 
   <!-- Stats -->
   <div class="stats-row" id="statsRow">
-    <div class="stat-card"><div class="stat-val" id="statTotal">—</div><div class="stat-label">Live Deals</div></div>
-    <div class="stat-card"><div class="stat-val" id="statHot">—</div><div class="stat-label">🔥 30%+ Off</div></div>
-    <div class="stat-card"><div class="stat-val" id="statWish">—</div><div class="stat-label">Wishlist Hits</div></div>
+    <div class="stat"><div class="stat-val" id="sTotal">—</div><div class="stat-lbl">Live Deals</div></div>
+    <div class="stat"><div class="stat-val" id="sHot">—</div><div class="stat-lbl">🔥 30%+ Off</div></div>
+    <div class="stat"><div class="stat-val" id="sWish">—</div><div class="stat-lbl">⭐ Wishlist</div></div>
+    <div class="stat"><div class="stat-val" id="sUpdated" style="font-size:.7rem;color:var(--sub);font-family:var(--ffm)">—</div><div class="stat-lbl">Last Refresh</div></div>
   </div>
 
-  <!-- Tabs -->
-  <div class="tab-row">
-    <button class="tab active" onclick="setTab('all', this)">All Deals</button>
-    <button class="tab" onclick="setTab('wishlist', this)">💾 Wishlist</button>
-    <button class="tab" onclick="setTab('saved', this)">⭐ Saved</button>
-    <button class="tab" onclick="setTab('lookup', this)">🔎 Price Lookup</button>
+  <!-- Quick links to retailer clearance/sale pages -->
+  <div style="font-family:var(--ffd);font-size:.75rem;letter-spacing:1.5px;color:var(--dim);text-transform:uppercase;margin-bottom:6px">🛒 Retailer Deals & Clearance</div>
+  <div class="quick-links">
+    <a class="ql" href="https://www.amazon.com/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#ff9900"></span>Amazon Deals</a>
+    <a class="ql" href="https://www.amazon.com/gp/goldbox" target="_blank" rel="noopener"><span class="ql-dot" style="background:#ff9900"></span>Amazon Flash</a>
+    <a class="ql" href="https://www.walmart.com/shop/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#0071ce"></span>Walmart Deals</a>
+    <a class="ql" href="https://www.walmart.com/browse/rollbacks" target="_blank" rel="noopener"><span class="ql-dot" style="background:#0071ce"></span>Walmart Rollbacks</a>
+    <a class="ql" href="https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c" target="_blank" rel="noopener"><span class="ql-dot" style="background:#003087"></span>Best Buy DOTD</a>
+    <a class="ql" href="https://www.bestbuy.com/site/electronics/clearance-open-box/pcmcat218200050001.c" target="_blank" rel="noopener"><span class="ql-dot" style="background:#003087"></span>Best Buy Clearance</a>
+    <a class="ql" href="https://www.target.com/c/target-deals/-/N-4xtgt" target="_blank" rel="noopener"><span class="ql-dot" style="background:#cc0000"></span>Target Circle Deals</a>
+    <a class="ql" href="https://www.target.com/c/clearance/-/N-5q0ga" target="_blank" rel="noopener"><span class="ql-dot" style="background:#cc0000"></span>Target Clearance</a>
+    <a class="ql" href="https://www.lowes.com/l/deals.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's Deals</a>
+    <a class="ql" href="https://www.lowes.com/l/deal-of-the-day.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's DOTD</a>
+    <a class="ql" href="https://www.lowes.com/l/clearance.html" target="_blank" rel="noopener"><span class="ql-dot" style="background:#004990"></span>Lowe's Clearance</a>
+    <a class="ql" href="https://www.homedepot.com/daily-deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#f96302"></span>Home Depot DOTD</a>
+    <a class="ql" href="https://www.homedepot.com/b/Special-Values-Clearance/N-5yc1vZar4y" target="_blank" rel="noopener"><span class="ql-dot" style="background:#f96302"></span>Home Depot Clearance</a>
+    <a class="ql" href="https://www.harborfreight.com/coupons" target="_blank" rel="noopener"><span class="ql-dot" style="background:#d32f2f"></span>Harbor Freight Coupons</a>
+    <a class="ql" href="https://www.acehardware.com/deals" target="_blank" rel="noopener"><span class="ql-dot" style="background:#e53935"></span>Ace Hardware Deals</a>
   </div>
 
   <!-- Filters -->
-  <div class="filters-bar">
-    <div class="search-wrap">
-      <span class="icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Search deals..." oninput="renderDeals()">
-    </div>
-  </div>
-  <div class="cat-chips" id="catChips" style="margin-bottom:16px;"></div>
-
-  <!-- Loading -->
-  <div id="loadingBar" class="loading-bar"></div>
-
-  <!-- Deals -->
-  <div class="deals-grid" id="dealsGrid"></div>
-
-  <!-- Price Lookup Tab -->
-  <div id="priceLookupSection">
-    <div class="lookup-wrap">
-      <input type="text" id="lookupInput" placeholder="Search any product (e.g. DeWalt drill, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')doLookup()">
-      <button class="btn-primary" onclick="doLookup()">Search</button>
+  <div class="filter-row">
+    <div class="search-box" style="flex:1;min-width:180px">
+      <span class="si">🔍</span>
+      <input type="text" id="dealSearch" placeholder="Search deals..." oninput="renderDeals()">
     </div>
 
-    <div id="lookupResults">
-      <div class="lookup-empty">
-        <div class="icon">🛒</div>
-        <p>Type a product above to compare prices<br>across all your favorite retailers.</p>
+    <!-- Category dropdown -->
+    <div class="dd-wrap" id="catDd">
+      <button class="dd-btn" onclick="toggleDd('catDd')" id="catDdBtn">
+        <span id="catDdLabel">All Categories</span>
+        <span class="dd-caret">▼</span>
+      </button>
+      <div class="dd-menu" id="catDdMenu">
+        <div class="dd-item active" data-cat="" onclick="selectCat(this,'')">
+          All Categories <span class="check">✓</span>
+        </div>
+        <div class="dd-item" data-cat="Electronics & Tech" onclick="selectCat(this,'Electronics & Tech')">⚡ Electronics & Tech <span class="check">✓</span></div>
+        <div class="dd-item" data-cat="Tools & Hardware" onclick="selectCat(this,'Tools & Hardware')">🔧 Tools & Hardware <span class="check">✓</span></div>
+        <div class="dd-item" data-cat="Home & Garden" onclick="selectCat(this,'Home & Garden')">🌿 Home & Garden <span class="check">✓</span></div>
+        <div class="dd-item" data-cat="Outdoor & Lawn" onclick="selectCat(this,'Outdoor & Lawn')">🌲 Outdoor & Lawn <span class="check">✓</span></div>
+        <div class="dd-item" data-cat="Sporting Goods" onclick="selectCat(this,'Sporting Goods')">💪 Sporting Goods <span class="check">✓</span></div>
+        <div class="dd-item" data-cat="Clothing & Shoes" onclick="selectCat(this,'Clothing & Shoes')">👟 Clothing & Shoes <span class="check">✓</span></div>
+      </div>
+    </div>
+
+    <!-- Sort dropdown -->
+    <div class="dd-wrap" id="sortDd">
+      <button class="dd-btn" onclick="toggleDd('sortDd')" id="sortDdBtn">
+        <span id="sortDdLabel">Sort: Newest</span>
+        <span class="dd-caret">▼</span>
+      </button>
+      <div class="dd-menu" id="sortDdMenu">
+        <div class="dd-item active" onclick="selectSort(this,'newest','Sort: Newest')">Newest First <span class="check">✓</span></div>
+        <div class="dd-item" onclick="selectSort(this,'discount','Sort: Best Discount')">Best Discount <span class="check">✓</span></div>
+        <div class="dd-item" onclick="selectSort(this,'score','Sort: Deal Score')">Deal Score <span class="check">✓</span></div>
+        <div class="dd-item" onclick="selectSort(this,'wishlist','Sort: Wishlist Hits')">Wishlist Hits First <span class="check">✓</span></div>
+      </div>
+    </div>
+
+    <!-- Filter: min discount -->
+    <div class="dd-wrap" id="discDd">
+      <button class="dd-btn" onclick="toggleDd('discDd')" id="discDdBtn">
+        <span id="discDdLabel">20%+ Off</span>
+        <span class="dd-caret">▼</span>
+      </button>
+      <div class="dd-menu" id="discDdMenu">
+        <div class="dd-item" onclick="selectDisc(this,0,'Any Discount')">Any Discount <span class="check">✓</span></div>
+        <div class="dd-item active" onclick="selectDisc(this,20,'20%+ Off')">20%+ Off <span class="check">✓</span></div>
+        <div class="dd-item" onclick="selectDisc(this,30,'30%+ Off')">30%+ Off <span class="check">✓</span></div>
+        <div class="dd-item" onclick="selectDisc(this,50,'50%+ Off')">50%+ Off <span class="check">✓</span></div>
       </div>
     </div>
   </div>
+
+  <div id="loadingBar" class="lbar"></div>
+  <div class="deals-list" id="dealsList"></div>
 </div>
 
-<!-- Wishlist / SMS Panel -->
+<!-- ══════════════ PAGE 2: LOOKUP ══════════════ -->
+<div class="page" id="page-lookup">
+  <div class="lookup-hero">
+    <h1>PRICE LOOKUP</h1>
+    <p>Search any product to compare brands, specs, and prices</p>
+  </div>
+
+  <div class="ac-wrap">
+    <span class="aci">🔍</span>
+    <input type="text" id="lookupInput" placeholder="Try &quot;impact drill&quot;, &quot;leaf blower&quot;, &quot;65 inch TV&quot;..."
+      oninput="acInput(this.value)" onkeydown="acKeydown(event)" autocomplete="off">
+    <div class="ac-dropdown" id="acDropdown"></div>
+  </div>
+
+  <div id="lookupResults"></div>
+</div>
+
+<!-- ══════════════ SETTINGS PANEL ══════════════ -->
 <div class="panel-overlay" id="panelOverlay" onclick="closePanel(event)">
   <div class="panel">
-    <div class="panel-header">
+    <div class="panel-hdr">
       <span class="panel-title">WISHLIST & ALERTS</span>
       <button class="close-btn" onclick="closePanel()">✕</button>
     </div>
-
-    <div class="wishlist-add">
-      <input type="text" id="wishInput" placeholder="Add keyword (e.g. DeWalt, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')addWishItem()">
-      <button class="btn-primary" onclick="addWishItem()">Add</button>
+    <div class="wish-add">
+      <input type="text" id="wishInput" placeholder="Add keyword (e.g. DeWalt, iPad, lawn mower)..." onkeydown="if(event.key==='Enter')addWish()">
+      <button class="btn-fire" onclick="addWish()">Add</button>
     </div>
-
-    <div class="wishlist-items" id="wishlistItems"></div>
-
-    <!-- SMS Section -->
-    <div class="sms-section">
+    <div class="wish-list" id="wishList"></div>
+    <div class="sms-sec">
       <div class="sms-title">SMS ALERTS</div>
-      <div class="sms-sub">Get a text when a wishlist item drops 20%+ off. Uses the free Textbelt API (1 free SMS/day, or pay-as-you-go). You'll run the notifier script locally or via GitHub Actions.</div>
-
+      <div class="sms-sub">Get a text when a wishlist item drops. Uses Textbelt (1 free SMS/day, or pay-as-you-go).</div>
       <div class="sms-fields">
-        <div>
-          <label class="sms-label">Your Phone Number</label>
-          <input type="text" id="smsPhone" placeholder="+17165550000" style="width:100%">
-        </div>
-        <div>
-          <label class="sms-label">Textbelt API Key</label>
-          <input type="text" id="smsKey" placeholder="textbelt (free) or your paid key">
-        </div>
-        <button class="btn-primary" onclick="saveSmsConfig()">💾 Save Config</button>
-        <button class="btn-icon" onclick="testSms()" style="justify-content:center;">📱 Send Test SMS</button>
+        <div><label class="field-label">Phone Number</label><input class="field-input" id="smsPhone" placeholder="+17165550000"></div>
+        <div><label class="field-label">Textbelt API Key</label><input class="field-input" id="smsKey" placeholder="textbelt (free) or your paid key"></div>
+        <button class="btn-fire" onclick="saveSms()">💾 Save Config</button>
+        <button class="btn-outline" onclick="testSms()">📱 Send Test SMS</button>
         <div class="status-msg" id="smsStatus"></div>
       </div>
-
-      <div class="sms-note">
-        📋 <strong>Free setup:</strong> Use key <code>textbelt</code> for 1 free SMS/day, or get a paid key at
-        <a href="https://textbelt.com" target="_blank">textbelt.com</a> (~$10 for 1,000 texts).
-        Add <code>TEXTBELT_KEY</code> and <code>SMS_PHONE</code> as GitHub Actions secrets to enable automatic alerts on every fetch.
-      </div>
+      <div class="sms-note">Use key <code>textbelt</code> for 1 free SMS/day, or get a paid key at <a href="https://textbelt.com" target="_blank">textbelt.com</a> (~$10 for 1,000 texts).</div>
     </div>
   </div>
 </div>
 
 <script>
-// ── State ──────────────────────────────────────────────────────────────────
-const CATEGORIES = [
-  "Electronics & Tech", "Tools & Hardware", "Home & Garden",
-  "Outdoor & Lawn", "Sporting Goods", "Clothing & Shoes"
-];
-
+// ═══════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════
 let allDeals = [];
-let activeCategories = new Set();
-let savedDeals = new Set(JSON.parse(localStorage.getItem('savedDeals') || '[]'));
-let wishlist = JSON.parse(localStorage.getItem('wishlist') || '["dewalt","makita","ego","big green egg","ipad","monitor"]');
-let smsConfig = JSON.parse(localStorage.getItem('smsConfig') || '{}');
-let currentTab = 'all';
+let activeCat = '';
+let activeSort = 'newest';
+let activeMinDisc = 20;
+let savedDeals = new Set(JSON.parse(localStorage.getItem('dr_saved') || '[]'));
+let wishlist = JSON.parse(localStorage.getItem('dr_wish') || '["dewalt","makita","ego","big green egg","ipad","monitor"]');
+let smsConfig = JSON.parse(localStorage.getItem('dr_sms') || '{}');
 
-// ── Boot ───────────────────────────────────────────────────────────────────
-async function init() {
-  buildCatChips();
+// ═══════════════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════════════
+async function boot() {
   renderWishlist();
   loadSmsConfig();
-
   try {
-    const resp = await fetch('deals.json?t=' + Date.now());
-    const data = await resp.json();
-    allDeals = data.deals || [];
-    document.getElementById('updatedTag').textContent = data.updated || 'Unknown';
+    const r = await fetch('deals.json?t=' + Date.now());
+    const d = await r.json();
+    allDeals = d.deals || [];
+    const t = d.updated || '';
+    document.getElementById('sUpdated').textContent = t.replace(' UTC','').split(' ')[1] || t;
     document.getElementById('loadingBar').style.display = 'none';
     updateStats();
     renderDeals();
-  } catch (e) {
+  } catch(e) {
     document.getElementById('loadingBar').style.display = 'none';
-    document.getElementById('dealsGrid').innerHTML = `
-      <div class="empty">
-        <div class="icon">📡</div>
-        <p>No deals loaded yet.<br>Run <code>fetch_deals.py</code> to generate <code>deals.json</code>.</p>
-      </div>`;
+    document.getElementById('dealsList').innerHTML = `<div class="empty"><div class="ei">📡</div><p>No deals yet. Run <code>fetch_deals.py</code> to generate <code>deals.json</code>.</p></div>`;
   }
 }
 
-// ── Category chips ─────────────────────────────────────────────────────────
-function buildCatChips() {
-  const wrap = document.getElementById('catChips');
-  wrap.innerHTML = '';
-  CATEGORIES.forEach(cat => {
-    const chip = document.createElement('div');
-    chip.className = 'chip';
-    chip.textContent = catIcon(cat) + ' ' + cat;
-    chip.onclick = () => {
-      if (activeCategories.has(cat)) activeCategories.delete(cat);
-      else activeCategories.add(cat);
-      chip.classList.toggle('active');
-      renderDeals();
-    };
-    wrap.appendChild(chip);
-  });
+// ═══════════════════════════════════════════════════════
+// PAGE SWITCHING
+// ═══════════════════════════════════════════════════════
+function showPage(id, el) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  el.classList.add('active');
+  closeAllDds();
 }
 
-function catIcon(cat) {
-  const map = {
-    "Electronics & Tech": "⚡",
-    "Tools & Hardware": "🔧",
-    "Home & Garden": "🌿",
-    "Outdoor & Lawn": "🌲",
-    "Sporting Goods": "💪",
-    "Clothing & Shoes": "👟",
-  };
-  return map[cat] || "🏷";
+// ═══════════════════════════════════════════════════════
+// DROPDOWN HELPERS
+// ═══════════════════════════════════════════════════════
+function toggleDd(id) {
+  const wrap = document.getElementById(id);
+  const menu = wrap.querySelector('.dd-menu');
+  const btn  = wrap.querySelector('.dd-btn');
+  const isOpen = menu.classList.contains('open');
+  closeAllDds();
+  if (!isOpen) { menu.classList.add('open'); btn.classList.add('open'); }
+}
+function closeAllDds() {
+  document.querySelectorAll('.dd-menu').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.dd-btn').forEach(b => b.classList.remove('open'));
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.dd-wrap')) closeAllDds();
+});
+
+function selectCat(el, cat) {
+  activeCat = cat;
+  document.getElementById('catDdLabel').textContent = cat || 'All Categories';
+  document.querySelectorAll('#catDdMenu .dd-item').forEach(i => i.classList.toggle('active', i.dataset.cat === cat));
+  closeAllDds();
+  renderDeals();
+}
+function selectSort(el, val, label) {
+  activeSort = val;
+  document.getElementById('sortDdLabel').textContent = label;
+  document.querySelectorAll('#sortDdMenu .dd-item').forEach(i => i.classList.remove('active'));
+  el.classList.add('active');
+  closeAllDds();
+  renderDeals();
+}
+function selectDisc(el, val, label) {
+  activeMinDisc = val;
+  document.getElementById('discDdLabel').textContent = label;
+  document.querySelectorAll('#discDdMenu .dd-item').forEach(i => i.classList.remove('active'));
+  el.classList.add('active');
+  closeAllDds();
+  renderDeals();
 }
 
-// ── Deal score (simple heuristic) ─────────────────────────────────────────
-function dealScore(deal) {
-  let score = 50;
-  if (deal.discount >= 50) score += 30;
-  else if (deal.discount >= 30) score += 20;
-  else if (deal.discount >= 20) score += 10;
-  const retailers = ["amazon", "best buy", "walmart", "target", "lowe", "home depot"];
-  if (retailers.some(r => (deal.retailer || '').toLowerCase().includes(r))) score += 15;
-  // wishlist match = extra signal
-  if (wishlistMatch(deal)) score += 20;
-  return Math.min(score, 99);
+// ═══════════════════════════════════════════════════════
+// DEALS
+// ═══════════════════════════════════════════════════════
+const RETAILERS_MAP = { amazon:'Amazon',walmart:'Walmart','best buy':'Best Buy',target:'Target',"lowe's":'Lowes','home depot':'Home Depot','harbor freight':'Harbor Freight','ace hardware':'Ace' };
+
+function dealScore(d) {
+  let s = 50;
+  if (d.discount >= 50) s += 30;
+  else if (d.discount >= 30) s += 20;
+  else if (d.discount >= 20) s += 10;
+  const good = ['amazon','best buy','walmart','target','lowe','home depot'];
+  if (good.some(r => (d.retailer||'').toLowerCase().includes(r))) s += 10;
+  if (wishMatch(d)) s += 20;
+  return Math.min(s, 99);
+}
+function wishMatch(d) {
+  const txt = `${d.title} ${d.description}`.toLowerCase();
+  return wishlist.some(k => txt.includes(k.toLowerCase()));
 }
 
-function scoreClass(s) {
-  if (s >= 80) return 'high';
-  if (s >= 60) return 'med';
-  return 'low';
-}
-
-// ── Wishlist match ─────────────────────────────────────────────────────────
-function wishlistMatch(deal) {
-  const text = `${deal.title} ${deal.description}`.toLowerCase();
-  return wishlist.some(kw => text.includes(kw.toLowerCase()));
-}
-
-// ── Filter + render ────────────────────────────────────────────────────────
 function renderDeals() {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
-  let filtered = allDeals;
+  const q = document.getElementById('dealSearch').value.toLowerCase().trim();
+  let deals = [...allDeals];
 
-  if (currentTab === 'wishlist') {
-    filtered = filtered.filter(wishlistMatch);
-  } else if (currentTab === 'saved') {
-    filtered = filtered.filter(d => savedDeals.has(d.id));
-  }
+  // filter category
+  if (activeCat) deals = deals.filter(d => d.category === activeCat);
+  // filter discount
+  if (activeMinDisc > 0) deals = deals.filter(d => d.discount >= activeMinDisc || !d.discount);
+  // filter search
+  if (q) deals = deals.filter(d => `${d.title} ${d.description} ${d.retailer} ${d.category}`.toLowerCase().includes(q));
 
-  if (activeCategories.size > 0) {
-    filtered = filtered.filter(d => activeCategories.has(d.category));
-  }
+  // sort
+  if (activeSort === 'discount')  deals.sort((a,b) => (b.discount||0) - (a.discount||0));
+  else if (activeSort === 'score') deals.sort((a,b) => dealScore(b) - dealScore(a));
+  else if (activeSort === 'wishlist') deals.sort((a,b) => wishMatch(b) - wishMatch(a));
+  else deals.sort((a,b) => (b.date_iso||'') > (a.date_iso||'') ? 1 : -1);
 
-  if (query) {
-    filtered = filtered.filter(d =>
-      `${d.title} ${d.description} ${d.retailer} ${d.category}`.toLowerCase().includes(query)
-    );
-  }
-
-  const grid = document.getElementById('dealsGrid');
-
-  if (filtered.length === 0) {
-    grid.innerHTML = `<div class="empty"><div class="icon">🔎</div><p>No deals match your filters right now.<br>Try broadening your search or check back soon.</p></div>`;
+  const list = document.getElementById('dealsList');
+  if (!deals.length) {
+    list.innerHTML = `<div class="empty"><div class="ei">🔎</div><p>No deals match your filters right now.</p></div>`;
     return;
   }
 
-  grid.innerHTML = '';
-  filtered.forEach(deal => {
-    const score = dealScore(deal);
-    const isHot = deal.discount >= 30 || wishlistMatch(deal);
-    const isSaved = savedDeals.has(deal.id);
+  list.innerHTML = '';
+  deals.forEach(d => {
+    const sc = dealScore(d);
+    const scCls = sc >= 80 ? 's-hi' : sc >= 60 ? 's-md' : 's-lo';
+    const isSaved = savedDeals.has(d.id);
+    const isWish = wishMatch(d);
+    const isFlash = (d.discount||0) >= 50;
 
     const card = document.createElement('a');
-    card.className = `deal-card fade-in${isHot ? ' hot' : ''}`;
-    card.href = deal.link;
+    card.className = `deal-card fade-up${isWish ? ' featured' : ''}`;
+    card.href = d.link || '#';
     card.target = '_blank';
     card.rel = 'noopener noreferrer';
-
-    const discHTML = deal.discount
-      ? `<div class="discount-badge">${deal.discount}%<br><span style="font-size:0.7rem;font-family:var(--font-mono);letter-spacing:0">OFF</span></div>`
-      : `<div class="discount-badge unknown">DEAL</div>`;
-
     card.innerHTML = `
       <div>
-        <div class="deal-meta">
-          <span class="retailer-tag">${deal.retailer || 'Various'}</span>
-          <span class="cat-tag">${catIcon(deal.category)} ${deal.category}</span>
-          <span class="source-tag">via ${deal.source}</span>
-          ${wishlistMatch(deal) ? '<span style="font-size:0.7rem;background:rgba(255,149,0,0.15);color:var(--accent2);padding:2px 7px;border-radius:4px;font-weight:600;">⭐ WISHLIST</span>' : ''}
+        <div class="deal-top">
+          <span class="tag tag-retailer">${d.retailer||'Various'}</span>
+          <span class="tag tag-cat">${d.category||''}</span>
+          ${isFlash ? '<span class="tag tag-flash">⚡ FLASH</span>' : ''}
+          ${isWish  ? '<span class="tag tag-wish">⭐ WISHLIST</span>' : ''}
+          <span class="tag-src">via ${d.source||''}</span>
         </div>
-        <div class="deal-title">${deal.title}</div>
-        ${deal.description ? `<div class="deal-desc">${deal.description}</div>` : ''}
-        <div class="deal-time">${deal.date_display}</div>
+        <div class="deal-title">${d.title}</div>
+        ${d.description ? `<div class="deal-desc">${d.description}</div>` : ''}
+        <div class="deal-time">${d.date_display||''}</div>
       </div>
       <div class="deal-right">
-        ${discHTML}
-        <div class="score-ring ${scoreClass(score)}" title="Deal score">${score}</div>
-        <button class="wishlist-btn ${isSaved ? 'saved' : ''}" data-id="${deal.id}" onclick="toggleSave(event, '${deal.id}')">
-          ${isSaved ? '⭐' : '☆'}
-        </button>
-      </div>
-    `;
-
-    grid.appendChild(card);
+        ${d.discount ? `<div class="disc">${d.discount}%<small>OFF</small></div>` : '<div class="disc" style="font-size:.75rem;color:var(--sub)">DEAL</div>'}
+        <div class="score ${scCls}">${sc}</div>
+        <button class="save-btn" onclick="toggleSave(event,'${d.id}')">${isSaved ? '⭐' : '☆'}</button>
+      </div>`;
+    list.appendChild(card);
   });
 }
 
 function toggleSave(e, id) {
-  e.preventDefault();
-  e.stopPropagation();
-  if (savedDeals.has(id)) savedDeals.delete(id);
-  else savedDeals.add(id);
-  localStorage.setItem('savedDeals', JSON.stringify([...savedDeals]));
+  e.preventDefault(); e.stopPropagation();
+  if (savedDeals.has(id)) savedDeals.delete(id); else savedDeals.add(id);
+  localStorage.setItem('dr_saved', JSON.stringify([...savedDeals]));
   renderDeals();
 }
 
-function setTab(tab, el) {
-  currentTab = tab;
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-
-  const isLookup = tab === 'lookup';
-  document.getElementById('priceLookupSection').classList.toggle('active', isLookup);
-  document.getElementById('dealsGrid').style.display = isLookup ? 'none' : '';
-  document.getElementById('statsRow').style.display = isLookup ? 'none' : '';
-  document.getElementById('catChips').style.display = isLookup ? 'none' : '';
-  document.querySelector('.filters-bar').style.display = isLookup ? 'none' : '';
-
-  if (!isLookup) renderDeals();
-  else setTimeout(() => document.getElementById('lookupInput').focus(), 50);
+function updateStats() {
+  document.getElementById('sTotal').textContent = allDeals.length;
+  document.getElementById('sHot').textContent = allDeals.filter(d => (d.discount||0) >= 30).length;
+  document.getElementById('sWish').textContent = allDeals.filter(wishMatch).length;
 }
 
-// ── Price Lookup ───────────────────────────────────────────────────────────
-const RETAILERS = [
-  { name: 'Amazon',         emoji: '📦', searchUrl: q => `https://www.amazon.com/s?k=${q}`,                              sub: 'Prime + price history via CCC' },
-  { name: 'Walmart',        emoji: '🔵', searchUrl: q => `https://www.walmart.com/search?q=${q}`,                        sub: 'Free 2-day on $35+' },
-  { name: 'Best Buy',       emoji: '💙', searchUrl: q => `https://www.bestbuy.com/site/searchpage.jsp?st=${q}`,          sub: 'Price match guarantee' },
-  { name: 'Target',         emoji: '🎯', searchUrl: q => `https://www.target.com/s?searchTerm=${q}`,                     sub: 'RedCard saves 5%' },
-  { name: "Lowe's",         emoji: '🏠', searchUrl: q => `https://www.lowes.com/search?searchTerm=${q}`,                 sub: 'Tools, hardware, garden' },
-  { name: 'Home Depot',     emoji: '🔨', searchUrl: q => `https://www.homedepot.com/s/${q}`,                             sub: 'Pro desk + rental' },
-  { name: 'Harbor Freight', emoji: '🛠', searchUrl: q => `https://www.harborfreight.com/catalogsearch/result/?q=${q}`,   sub: 'Budget tools, frequent coupons' },
-  { name: 'Ace Hardware',   emoji: '🔑', searchUrl: q => `https://www.acehardware.com/departments?query=${q}`,           sub: 'Local pickup, niche hardware' },
+// ═══════════════════════════════════════════════════════
+// AUTOCOMPLETE PRODUCT CATALOG
+// ═══════════════════════════════════════════════════════
+const PRODUCTS = [
+  { name:'Impact Driver', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Impact Drill', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Cordless Drill', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Hammer Drill', cat:'Tools & Hardware', icon:'🔨' },
+  { name:'Rotary Hammer', cat:'Tools & Hardware', icon:'🔨' },
+  { name:'Circular Saw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Miter Saw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Table Saw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Jigsaw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Reciprocating Saw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Track Saw', cat:'Tools & Hardware', icon:'🪚' },
+  { name:'Oscillating Multi-Tool', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Brad Nailer', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Finish Nailer', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Framing Nailer', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Crown Stapler', cat:'Tools & Hardware', icon:'🔩' },
+  { name:'Random Orbital Sander', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Belt Sander', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Detail Sander', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Air Compressor', cat:'Tools & Hardware', icon:'💨' },
+  { name:'Pressure Washer', cat:'Tools & Hardware', icon:'💦' },
+  { name:'Wet/Dry Vacuum', cat:'Tools & Hardware', icon:'🧹' },
+  { name:'Angle Grinder', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Die Grinder', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Heat Gun', cat:'Tools & Hardware', icon:'🔥' },
+  { name:'Rotary Tool', cat:'Tools & Hardware', icon:'🔧' },
+  { name:'Laser Level', cat:'Tools & Hardware', icon:'📐' },
+  { name:'Stud Finder', cat:'Tools & Hardware', icon:'🔍' },
+  { name:'Work Light', cat:'Tools & Hardware', icon:'💡' },
+  { name:'Tool Bag', cat:'Tools & Hardware', icon:'🧰' },
+  { name:'Tool Chest', cat:'Tools & Hardware', icon:'🗄' },
+  { name:'Leaf Blower', cat:'Outdoor & Lawn', icon:'🍃' },
+  { name:'String Trimmer', cat:'Outdoor & Lawn', icon:'🌿' },
+  { name:'Lawn Mower', cat:'Outdoor & Lawn', icon:'🌱' },
+  { name:'Riding Mower', cat:'Outdoor & Lawn', icon:'🚜' },
+  { name:'Zero Turn Mower', cat:'Outdoor & Lawn', icon:'🚜' },
+  { name:'Chainsaw', cat:'Outdoor & Lawn', icon:'🪵' },
+  { name:'Pole Saw', cat:'Outdoor & Lawn', icon:'🪵' },
+  { name:'Hedge Trimmer', cat:'Outdoor & Lawn', icon:'✂️' },
+  { name:'Edger', cat:'Outdoor & Lawn', icon:'🌿' },
+  { name:'Tiller', cat:'Outdoor & Lawn', icon:'⛏' },
+  { name:'Snow Blower', cat:'Outdoor & Lawn', icon:'❄️' },
+  { name:'Aerator', cat:'Outdoor & Lawn', icon:'🌱' },
+  { name:'Generator', cat:'Outdoor & Lawn', icon:'⚡' },
+  { name:'Portable Power Station', cat:'Outdoor & Lawn', icon:'🔋' },
+  { name:'Lawn Sprinkler', cat:'Outdoor & Lawn', icon:'💦' },
+  { name:'Gas Grill', cat:'Home & Garden', icon:'🔥' },
+  { name:'Pellet Grill', cat:'Home & Garden', icon:'🔥' },
+  { name:'Kamado Grill', cat:'Home & Garden', icon:'🔥' },
+  { name:'Electric Smoker', cat:'Home & Garden', icon:'💨' },
+  { name:'Fire Pit', cat:'Home & Garden', icon:'🔥' },
+  { name:'Patio Furniture', cat:'Home & Garden', icon:'🪑' },
+  { name:'Shed', cat:'Home & Garden', icon:'🏠' },
+  { name:'Garage Cabinet', cat:'Home & Garden', icon:'🗄' },
+  { name:'Workbench', cat:'Home & Garden', icon:'🪵' },
+  { name:'Raised Garden Bed', cat:'Home & Garden', icon:'🌱' },
+  { name:'Cordless Vacuum', cat:'Home & Garden', icon:'🧹' },
+  { name:'Robot Vacuum', cat:'Home & Garden', icon:'🤖' },
+  { name:'Air Purifier', cat:'Home & Garden', icon:'💨' },
+  { name:'Dehumidifier', cat:'Home & Garden', icon:'💧' },
+  { name:'Portable Air Conditioner', cat:'Home & Garden', icon:'❄️' },
+  { name:'Space Heater', cat:'Home & Garden', icon:'🔥' },
+  { name:'Smart Thermostat', cat:'Electronics & Tech', icon:'🌡' },
+  { name:'Smart Lock', cat:'Electronics & Tech', icon:'🔐' },
+  { name:'Security Camera', cat:'Electronics & Tech', icon:'📷' },
+  { name:'Video Doorbell', cat:'Electronics & Tech', icon:'🔔' },
+  { name:'4K TV', cat:'Electronics & Tech', icon:'📺' },
+  { name:'OLED TV', cat:'Electronics & Tech', icon:'📺' },
+  { name:'Monitor', cat:'Electronics & Tech', icon:'🖥' },
+  { name:'Ultrawide Monitor', cat:'Electronics & Tech', icon:'🖥' },
+  { name:'Laptop', cat:'Electronics & Tech', icon:'💻' },
+  { name:'Tablet', cat:'Electronics & Tech', icon:'📱' },
+  { name:'iPad', cat:'Electronics & Tech', icon:'📱' },
+  { name:'Wireless Earbuds', cat:'Electronics & Tech', icon:'🎧' },
+  { name:'Headphones', cat:'Electronics & Tech', icon:'🎧' },
+  { name:'Bluetooth Speaker', cat:'Electronics & Tech', icon:'🔊' },
+  { name:'Soundbar', cat:'Electronics & Tech', icon:'🔊' },
+  { name:'CPU', cat:'Electronics & Tech', icon:'⚙️' },
+  { name:'GPU / Graphics Card', cat:'Electronics & Tech', icon:'🎮' },
+  { name:'SSD', cat:'Electronics & Tech', icon:'💾' },
+  { name:'External Hard Drive', cat:'Electronics & Tech', icon:'💾' },
+  { name:'WiFi Router', cat:'Electronics & Tech', icon:'📡' },
+  { name:'Mesh WiFi System', cat:'Electronics & Tech', icon:'📡' },
+  { name:'NAS Storage', cat:'Electronics & Tech', icon:'🗄' },
+  { name:'Mechanical Keyboard', cat:'Electronics & Tech', icon:'⌨️' },
+  { name:'Gaming Mouse', cat:'Electronics & Tech', icon:'🖱' },
+  { name:'Treadmill', cat:'Sporting Goods', icon:'🏃' },
+  { name:'Exercise Bike', cat:'Sporting Goods', icon:'🚴' },
+  { name:'Rowing Machine', cat:'Sporting Goods', icon:'🚣' },
+  { name:'Elliptical', cat:'Sporting Goods', icon:'💪' },
+  { name:'Adjustable Dumbbells', cat:'Sporting Goods', icon:'🏋️' },
+  { name:'Kettlebell', cat:'Sporting Goods', icon:'🏋️' },
+  { name:'Weight Bench', cat:'Sporting Goods', icon:'🏋️' },
+  { name:'Kayak', cat:'Sporting Goods', icon:'🛶' },
+  { name:'Paddleboard', cat:'Sporting Goods', icon:'🏄' },
+  { name:'Hiking Boots', cat:'Clothing & Shoes', icon:'🥾' },
+  { name:'Running Shoes', cat:'Clothing & Shoes', icon:'👟' },
+  { name:'Work Boots', cat:'Clothing & Shoes', icon:'🥾' },
 ];
 
-async function doLookup() {
-  const raw = document.getElementById('lookupInput').value.trim();
+let acIndex = -1;
+let acFiltered = [];
+
+function acInput(val) {
+  const dd = document.getElementById('acDropdown');
+  if (!val.trim()) { dd.classList.remove('open'); acFiltered = []; return; }
+  const q = val.toLowerCase();
+  acFiltered = PRODUCTS.filter(p => p.name.toLowerCase().includes(q)).slice(0, 12);
+  if (!acFiltered.length) { dd.classList.remove('open'); return; }
+
+  // Group by category
+  const groups = {};
+  acFiltered.forEach(p => { (groups[p.cat] = groups[p.cat]||[]).push(p); });
+
+  let html = '';
+  Object.entries(groups).forEach(([cat, items]) => {
+    html += `<div class="ac-group-label">${cat}</div>`;
+    items.forEach((p, i) => {
+      html += `<div class="ac-item" onclick="selectProduct('${p.name.replace(/'/g,"\\'")}')">
+        <span class="ac-icon">${p.icon}</span>
+        <div><div class="ac-name">${highlight(p.name, val)}</div></div>
+        <span class="ac-arrow">→</span>
+      </div>`;
+    });
+  });
+
+  dd.innerHTML = html;
+  dd.classList.add('open');
+  acIndex = -1;
+}
+
+function highlight(text, q) {
+  const i = text.toLowerCase().indexOf(q.toLowerCase());
+  if (i < 0) return text;
+  return text.slice(0,i) + `<strong style="color:var(--fire)">${text.slice(i,i+q.length)}</strong>` + text.slice(i+q.length);
+}
+
+function acKeydown(e) {
+  const dd = document.getElementById('acDropdown');
+  const items = dd.querySelectorAll('.ac-item');
+  if (e.key === 'ArrowDown')  { acIndex = Math.min(acIndex+1, items.length-1); highlightAc(items); e.preventDefault(); }
+  else if (e.key === 'ArrowUp') { acIndex = Math.max(acIndex-1, -1); highlightAc(items); e.preventDefault(); }
+  else if (e.key === 'Enter') {
+    if (acIndex >= 0 && acFiltered[acIndex]) selectProduct(acFiltered[acIndex].name);
+    else if (document.getElementById('lookupInput').value.trim()) doLookup(document.getElementById('lookupInput').value.trim());
+    e.preventDefault();
+  }
+  else if (e.key === 'Escape') { dd.classList.remove('open'); }
+}
+
+function highlightAc(items) {
+  items.forEach((el, i) => el.classList.toggle('highlighted', i === acIndex));
+}
+
+function selectProduct(name) {
+  document.getElementById('lookupInput').value = name;
+  document.getElementById('acDropdown').classList.remove('open');
+  doLookup(name);
+}
+
+// ═══════════════════════════════════════════════════════
+// LOOKUP
+// ═══════════════════════════════════════════════════════
+const RETAILERS = [
+  { name:'Amazon',         emoji:'📦', searchUrl: q=>`https://www.amazon.com/s?k=${q}`,                            sub:'Prime shipping + price history' },
+  { name:'Walmart',        emoji:'🔵', searchUrl: q=>`https://www.walmart.com/search?q=${q}`,                      sub:'Free 2-day on $35+' },
+  { name:'Best Buy',       emoji:'💙', searchUrl: q=>`https://www.bestbuy.com/site/searchpage.jsp?st=${q}`,        sub:'Price match guarantee' },
+  { name:'Target',         emoji:'🎯', searchUrl: q=>`https://www.target.com/s?searchTerm=${q}`,                   sub:'RedCard 5% off' },
+  { name:"Lowe's",         emoji:'🏠', searchUrl: q=>`https://www.lowes.com/search?searchTerm=${q}`,               sub:'Tools, hardware, garden' },
+  { name:'Home Depot',     emoji:'🔨', searchUrl: q=>`https://www.homedepot.com/s/${q}`,                           sub:'Pro desk + tool rental' },
+  { name:'Harbor Freight', emoji:'🛠', searchUrl: q=>`https://www.harborfreight.com/catalogsearch/result/?q=${q}`, sub:'Budget tools + coupons' },
+  { name:'Ace Hardware',   emoji:'🔑', searchUrl: q=>`https://www.acehardware.com/departments?query=${q}`,         sub:'Local pickup, niche hardware' },
+];
+
+let currentSpecData = null;
+let selectedBrandIdx = null;
+
+async function doLookup(raw) {
   if (!raw) return;
   const q = encodeURIComponent(raw);
-  const container = document.getElementById('lookupResults');
+  const res = document.getElementById('lookupResults');
 
-  container.innerHTML = `
-    <div class="ai-summary-box fade-in">
-      <div class="ai-label"><span class="ai-loading"></span> AI PRICE SUMMARY</div>
-      <div class="ai-text placeholder">Analyzing "${raw}"...</div>
+  res.innerHTML = `
+    <div class="section-title">AI SUMMARY</div>
+    <div class="ai-box fade-up">
+      <div class="ai-label"><span class="pulse"></span> Analyzing "${raw}"...</div>
+      <div class="ai-text ph">Building price summary...</div>
     </div>
 
-    <div style="font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;color:var(--muted);margin-bottom:10px;margin-top:4px;">SHOP NOW</div>
-    <div class="retailer-grid fade-in">
-      ${RETAILERS.map(r => `
-        <a class="retailer-card" href="${r.searchUrl(q)}" target="_blank" rel="noopener">
-          <div class="retailer-info">
-            <span class="retailer-emoji">${r.emoji}</span>
-            <div>
-              <div class="retailer-name">${r.name}</div>
-              <div class="retailer-sub">${r.sub}</div>
-            </div>
-          </div>
-          <span class="retailer-arrow">→</span>
+    <div class="section-title">SHOP NOW</div>
+    <div class="retailer-grid fade-up">
+      ${RETAILERS.map(r=>`
+        <a class="rc" href="${r.searchUrl(q)}" target="_blank" rel="noopener">
+          <span class="rc-emoji">${r.emoji}</span>
+          <div><div class="rc-name">${r.name}</div><div class="rc-sub">${r.sub}</div></div>
+          <span class="rc-arr">→</span>
         </a>`).join('')}
     </div>
 
-    <div class="spec-section fade-in">
-      <div class="spec-header">📋 BRAND SPEC COMPARISON</div>
-      <div id="specTableArea">
-        <div class="spec-loading"><span class="ai-loading"></span> Building spec comparison for "${raw}"...</div>
-      </div>
-    </div>
+    <div class="section-title">BRAND COMPARISON — click a row to see price history & buy link</div>
+    <div id="specArea"><div class="spec-skel"><span class="pulse"></span> Building spec comparison for "${raw}"...</div></div>
+    <div id="brandPanel"></div>
 
-    <div class="history-section fade-in" style="margin-top:20px;">
-      <div class="history-title">PRICE HISTORY</div>
-      <div class="history-links">
-        <a class="history-link" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
-          <span class="hl-icon">🐪</span>
-          <div><div>CamelCamelCamel — Amazon Price History</div><div class="hl-desc">Free 90-day charts, all-time lows, price drop alerts</div></div>
-          <span style="margin-left:auto;color:var(--muted)">→</span>
-        </a>
-        <a class="history-link" href="https://www.google.com/search?q=${q}+price+comparison&tbm=shop" target="_blank" rel="noopener">
-          <span class="hl-icon">🛍</span>
-          <div><div>Google Shopping — Compare All Retailers</div><div class="hl-desc">Live prices across dozens of stores at once</div></div>
-          <span style="margin-left:auto;color:var(--muted)">→</span>
-        </a>
-        <a class="history-link" href="https://keepa.com/#!search/1-${q}" target="_blank" rel="noopener">
-          <span class="hl-icon">📊</span>
-          <div><div>Keepa — Detailed Amazon Price Charts</div><div class="hl-desc">5B+ products tracked, hourly updates, sales rank</div></div>
-          <span style="margin-left:auto;color:var(--muted)">→</span>
-        </a>
-        <a class="history-link" href="https://pricehistory.app/search?q=${q}" target="_blank" rel="noopener">
-          <span class="hl-icon">📈</span>
-          <div><div>PriceHistory.app — Multi-Retailer History</div><div class="hl-desc">Amazon, Flipkart & more with lowest-ever tracker</div></div>
-          <span style="margin-left:auto;color:var(--muted)">→</span>
-        </a>
-      </div>
+    <div class="section-title">PRICE HISTORY TOOLS</div>
+    <div class="history-links fade-up">
+      <a class="hl" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
+        <span class="hl-icon">🐪</span><div><div>CamelCamelCamel</div><div class="hl-sub">Amazon 90-day history, all-time lows, alerts</div></div><span class="hl-arr">→</span>
+      </a>
+      <a class="hl" href="https://www.google.com/search?q=${q}+price+comparison&tbm=shop" target="_blank" rel="noopener">
+        <span class="hl-icon">🛍</span><div><div>Google Shopping</div><div class="hl-sub">Live prices across all retailers</div></div><span class="hl-arr">→</span>
+      </a>
+      <a class="hl" href="https://keepa.com/#!search/1-${q}" target="_blank" rel="noopener">
+        <span class="hl-icon">📊</span><div><div>Keepa</div><div class="hl-sub">Detailed Amazon price charts, hourly data</div></div><span class="hl-arr">→</span>
+      </a>
     </div>`;
 
-  // Fire both AI calls in parallel
-  const [summaryResult, specResult] = await Promise.allSettled([
-    fetchAISummary(raw),
-    fetchSpecTable(raw)
-  ]);
+  currentSpecData = null;
+  selectedBrandIdx = null;
 
-  // Render summary
-  const summaryBox = container.querySelector('.ai-text');
-  const summaryLabel = container.querySelector('.ai-label');
-  if (summaryResult.status === 'fulfilled' && summaryResult.value) {
-    summaryBox.classList.remove('placeholder');
-    summaryBox.textContent = summaryResult.value;
-    summaryLabel.innerHTML = '✦ AI PRICE SUMMARY';
+  const [sumR, specR] = await Promise.allSettled([fetchSummary(raw), fetchSpecs(raw)]);
+
+  // Update summary
+  const aiText = res.querySelector('.ai-text');
+  const aiLabel = res.querySelector('.ai-label');
+  if (sumR.status === 'fulfilled' && sumR.value) {
+    aiText.classList.remove('ph');
+    aiText.textContent = sumR.value;
+    aiLabel.innerHTML = '✦ AI PRICE SUMMARY';
   } else {
-    summaryBox.textContent = 'AI summary unavailable — use the links below to compare prices.';
-    summaryLabel.innerHTML = '✦ AI PRICE SUMMARY';
+    aiText.textContent = 'Summary unavailable — use the links above to compare prices.';
+    aiLabel.innerHTML = '✦ AI PRICE SUMMARY';
   }
 
   // Render spec table
-  const specArea = document.getElementById('specTableArea');
-  if (specResult.status === 'fulfilled' && specResult.value) {
-    renderSpecTable(specArea, specResult.value, raw);
+  const specArea = document.getElementById('specArea');
+  if (specR.status === 'fulfilled' && specR.value) {
+    currentSpecData = specR.value;
+    renderSpecTable(specArea, specR.value);
   } else {
-    specArea.innerHTML = `<div class="spec-error">Spec comparison unavailable for this search. Try a more specific product type (e.g. "20V cordless drill" or "65 inch 4K TV").</div>`;
+    specArea.innerHTML = `<div class="spec-err">Spec comparison unavailable. Try a more specific product (e.g. "20V cordless drill" or "cordless leaf blower").</div>`;
   }
 }
 
-async function fetchAISummary(raw) {
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+async function fetchSummary(raw) {
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 1000,
-      messages: [{
-        role: 'user',
-        content: `You are a deal-hunting assistant. The user searched for: "${raw}".
-
-Give a concise 3–5 sentence shopping brief covering:
-1. Typical price range to expect
-2. Which retailer (Amazon, Walmart, Best Buy, Target, Lowe's, Home Depot, Harbor Freight, Ace Hardware) usually has the best price or selection
-3. Buying tips — best time of year, models to prioritize, red flags to avoid
-4. Whether price history tracking via CamelCamelCamel is worth it for this product type
-
-Be direct, specific, and practical. No fluff.`
-      }]
+      model:'claude-sonnet-4-20250514', max_tokens:500,
+      messages:[{role:'user', content:`Shopping brief for: "${raw}". Cover in 3–4 sentences: typical price range, best retailer (Amazon/Walmart/Best Buy/Target/Lowe's/Home Depot/Harbor Freight/Ace), top buying tips, best time of year to buy. Be direct, no fluff. Include Harbor Freight if relevant for budget options.`}]
     })
   });
-  const data = await resp.json();
-  return data.content?.find(b => b.type === 'text')?.text || null;
+  const d = await r.json();
+  return d.content?.find(b=>b.type==='text')?.text || null;
 }
 
-async function fetchSpecTable(raw) {
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+async function fetchSpecs(raw) {
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 2000,
-      messages: [{
-        role: 'user',
-        content: `The user is shopping for: "${raw}".
-
-Return ONLY a JSON object (no markdown, no backticks, no explanation) with this exact structure:
+      model:'claude-sonnet-4-20250514', max_tokens:2000,
+      messages:[{role:'user', content:`Shopping for: "${raw}". Return ONLY valid JSON (no markdown/backticks):
 {
-  "product": "clean product category name",
-  "specs": ["spec1", "spec2", "spec3", ...],
+  "product": "product name",
+  "specs": ["spec1","spec2",...],
   "brands": [
-    {
-      "name": "Brand + specific model name",
-      "tier": "pro|mid|value|budget",
-      "values": ["val1", "val2", "val3", ...],
-      "price": "$XX–$XX",
-      "where": "Lowe's / Amazon / Home Depot / etc",
-      "verdict": "one sentence why to buy or avoid"
-    }
+    {"name":"Brand Model","tier":"pro|mid|value|budget","values":["v1","v2",...],"price":"$XX–$XX","where":"Primary Retailer","verdict":"one sentence"}
   ],
-  "note": "one sentence caveat about specs or pricing accuracy"
+  "note": "caveat"
 }
-
-Rules:
-- Include EVERY major brand that makes this product — do not limit to just 3–6. For power tools this means: DeWalt, Milwaukee, Makita, Ryobi, Ridgid, Metabo HPT, Bosch, Craftsman, Kobalt, Bauer, Hart, Skil, Worx, Black+Decker, Porter-Cable, and any others relevant
-- For each brand include their most popular/representative model for this product category
-- tier: "pro" = professional grade (DeWalt, Milwaukee, Makita), "mid" = solid prosumer (Ridgid, Metabo HPT, Bosch), "value" = good budget (Craftsman, Kobalt, Ryobi), "budget" = entry level (Bauer, Hart, Skil, Worx)
-- Include 6–9 spec columns most critical for buying decisions for this specific product type
-- values array must match specs array length exactly — use "—" if unknown
-- price is approximate street price range (tool only, no battery, unless kit is standard)
-- where: primary retailer where this brand is sold or easiest to find
-- If the search is too vague to compare (e.g. just "tools"), return {"error": "too_vague"}
-- If it's not a product, return {"error": "not_a_product"}`
-      }]
+RULES: Include ALL major brands — for power tools: DeWalt, Milwaukee, Makita, Metabo HPT, Bosch, Ridgid, Ryobi, Craftsman, Kobalt, Bauer, Hart, Skil, Worx, Black+Decker and any others. Tier: pro=professional, mid=prosumer, value=budget-friendly, budget=entry-level. 6–9 spec columns most important for purchase decisions. values[] length MUST equal specs[] length. price=approximate street price (tool only unless kit is standard). where=primary retailer. If too vague return {"error":"too_vague"}. If not a product return {"error":"not_a_product"}.`}]
     })
   });
-  const data = await resp.json();
-  const text = data.content?.find(b => b.type === 'text')?.text || '';
-  const clean = text.replace(/```json|```/g, '').trim();
-  const parsed = JSON.parse(clean);
+  const d = await r.json();
+  const txt = d.content?.find(b=>b.type==='text')?.text || '';
+  const parsed = JSON.parse(txt.replace(/```json|```/g,'').trim());
   if (parsed.error) return null;
   return parsed;
 }
 
-function renderSpecTable(container, spec, raw) {
+function renderSpecTable(container, spec) {
   const tierBadge = t => {
-    const map = {
-      pro:    '<span class="spec-badge pro">PRO</span>',
-      mid:    '<span class="spec-badge mid">MID</span>',
-      value:  '<span class="spec-badge value">VALUE</span>',
-      budget: '<span class="spec-badge budget">BUDGET</span>',
-      // fallbacks from old schema
-      best:   '<span class="spec-badge pro">BEST</span>',
-      good:   '<span class="spec-badge mid">SOLID</span>',
-    };
+    const map = {pro:'<span class="tier-badge tier-pro">PRO</span>',mid:'<span class="tier-badge tier-mid">MID</span>',value:'<span class="tier-badge tier-value">VALUE</span>',budget:'<span class="tier-badge tier-budget">BUDGET</span>'};
     return map[t] || '';
   };
-
-  const headers = ['Brand / Model', 'Price', 'Where to Buy', ...spec.specs, 'Verdict'];
-
-  const html = `
-    <div class="spec-table-wrap fade-in">
-      <table class="spec-table">
-        <thead>
-          <tr>
-            ${headers.map((h, i) => `<th${i === 0 ? ' class="brand-col"' : ''}>${h}</th>`).join('')}
-          </tr>
-        </thead>
-        <tbody>
-          ${spec.brands.map(b => `
-            <tr class="tier-${b.tier || 'value'}">
-              <td>${tierBadge(b.tier)} ${b.name}</td>
-              <td style="white-space:nowrap;color:var(--green);font-family:var(--font-mono);font-size:0.78rem;">${b.price || '—'}</td>
-              <td style="white-space:nowrap;font-size:0.78rem;color:var(--blue);">${b.where || '—'}</td>
-              ${(b.values || []).map(v => `<td>${v || '—'}</td>`).join('')}
-              <td style="color:var(--muted);font-size:0.78rem;max-width:180px;">${b.verdict || ''}</td>
-            </tr>`).join('')}
-        </tbody>
-      </table>
-    </div>
-    ${spec.note ? `<div class="spec-note">⚠ ${spec.note}</div>` : ''}`;
-
+  const hdrs = ['Brand / Model','Price','Where to Buy',...spec.specs,'Verdict'];
+  let html = `<div class="spec-wrap fade-up"><table class="specs">
+    <thead><tr>${hdrs.map((h,i)=>`<th${i===0?' class="brand-h"':''}>${h}</th>`).join('')}</tr></thead>
+    <tbody>`;
+  spec.brands.forEach((b,i) => {
+    html += `<tr onclick="selectBrand(${i})">
+      <td>${tierBadge(b.tier)}${b.name}</td>
+      <td class="price-cell">${b.price||'—'}</td>
+      <td class="where-cell">${b.where||'—'}</td>
+      ${(b.values||[]).map(v=>`<td>${v||'—'}</td>`).join('')}
+      <td style="color:var(--sub);font-size:.75rem;max-width:160px">${b.verdict||''}</td>
+    </tr>`;
+  });
+  html += `</tbody></table></div>${spec.note?`<div class="spec-note-txt">⚠ ${spec.note}</div>`:''}`;
   container.innerHTML = html;
 }
 
-function updateStats() {
-  document.getElementById('statTotal').textContent = allDeals.length;
-  document.getElementById('statHot').textContent = allDeals.filter(d => d.discount >= 30).length;
-  document.getElementById('statWish').textContent = allDeals.filter(wishlistMatch).length;
+function selectBrand(idx) {
+  if (!currentSpecData) return;
+  const b = currentSpecData.brands[idx];
+  if (!b) return;
+
+  // Highlight row
+  document.querySelectorAll('.specs tbody tr').forEach((r,i) => r.classList.toggle('selected', i===idx));
+
+  const q = encodeURIComponent(b.name);
+  const panel = document.getElementById('brandPanel');
+  panel.innerHTML = `
+    <div class="brand-panel">
+      <div class="bp-header">
+        <div>
+          <div class="bp-name">${b.name}</div>
+          <div style="color:var(--sub);font-size:.8rem;margin-top:2px">${b.where||''}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div class="bp-price">${b.price||''}</div>
+          <button class="bp-close" onclick="document.getElementById('brandPanel').innerHTML='';document.querySelectorAll('.specs tbody tr').forEach(r=>r.classList.remove('selected'))">✕</button>
+        </div>
+      </div>
+
+      <div class="bp-links">
+        <a class="bp-link" href="https://www.amazon.com/s?k=${q}" target="_blank" rel="noopener">
+          <span class="bpl-icon">📦</span><div><div>Search Amazon</div><div class="bpl-sub">Compare prices + Prime shipping</div></div><span class="bpl-arr">→</span>
+        </a>
+        <a class="bp-link" href="https://camelcamelcamel.com/search?sq=${q}" target="_blank" rel="noopener">
+          <span class="bpl-icon">🐪</span><div><div>CamelCamelCamel — Price History</div><div class="bpl-sub">90-day Amazon price chart + all-time low</div></div><span class="bpl-arr">→</span>
+        </a>
+        <a class="bp-link" href="https://www.google.com/search?q=${q}+site:amazon.com+OR+site:lowes.com+OR+site:homedepot.com" target="_blank" rel="noopener">
+          <span class="bpl-icon">🛍</span><div><div>Compare Across Retailers</div><div class="bpl-sub">Google Shopping — live prices</div></div><span class="bpl-arr">→</span>
+        </a>
+        ${b.where && b.where.toLowerCase().includes('lowe') ? `<a class="bp-link" href="https://www.lowes.com/search?searchTerm=${q}" target="_blank" rel="noopener"><span class="bpl-icon">🏠</span><div><div>Search Lowe's</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
+        ${b.where && b.where.toLowerCase().includes('home depot') ? `<a class="bp-link" href="https://www.homedepot.com/s/${q}" target="_blank" rel="noopener"><span class="bpl-icon">🔨</span><div><div>Search Home Depot</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
+        ${b.where && b.where.toLowerCase().includes('harbor') ? `<a class="bp-link" href="https://www.harborfreight.com/catalogsearch/result/?q=${q}" target="_blank" rel="noopener"><span class="bpl-icon">🛠</span><div><div>Search Harbor Freight</div><div class="bpl-sub">Primary retailer for this brand</div></div><span class="bpl-arr">→</span></a>` : ''}
+      </div>
+      ${b.verdict ? `<div class="bp-verdict">💬 ${b.verdict}</div>` : ''}
+    </div>`;
+  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
-// ── Wishlist management ────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// WISHLIST
+// ═══════════════════════════════════════════════════════
 function renderWishlist() {
-  const container = document.getElementById('wishlistItems');
-  container.innerHTML = '';
-  if (wishlist.length === 0) {
-    container.innerHTML = `<div style="color:var(--muted);font-size:0.85rem;text-align:center;padding:20px">No keywords yet. Add something above!</div>`;
-    return;
-  }
-  wishlist.forEach((kw, i) => {
-    const item = document.createElement('div');
-    item.className = 'wishlist-item';
-    item.innerHTML = `
-      <span>🔍 ${kw}</span>
-      <button class="del-btn" onclick="removeWish(${i})">✕</button>
-    `;
-    container.appendChild(item);
-  });
+  const c = document.getElementById('wishList');
+  c.innerHTML = wishlist.length ? wishlist.map((k,i)=>`
+    <div class="wi"><span>🔍 ${k}</span><button class="wi-del" onclick="removeWish(${i})">✕</button></div>`).join('') :
+    `<div style="color:var(--dim);font-size:.85rem;text-align:center;padding:16px">No keywords yet.</div>`;
 }
-
-function addWishItem() {
-  const val = document.getElementById('wishInput').value.trim();
-  if (!val) return;
-  wishlist.push(val);
-  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+function addWish() {
+  const v = document.getElementById('wishInput').value.trim();
+  if (!v) return;
+  wishlist.push(v);
+  localStorage.setItem('dr_wish', JSON.stringify(wishlist));
   document.getElementById('wishInput').value = '';
-  renderWishlist();
-  updateStats();
-  renderDeals();
+  renderWishlist(); updateStats(); renderDeals();
 }
-
 function removeWish(i) {
-  wishlist.splice(i, 1);
-  localStorage.setItem('wishlist', JSON.stringify(wishlist));
-  renderWishlist();
-  updateStats();
-  renderDeals();
+  wishlist.splice(i,1);
+  localStorage.setItem('dr_wish', JSON.stringify(wishlist));
+  renderWishlist(); updateStats(); renderDeals();
 }
 
-// ── SMS ────────────────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// SMS
+// ═══════════════════════════════════════════════════════
 function loadSmsConfig() {
   if (smsConfig.phone) document.getElementById('smsPhone').value = smsConfig.phone;
-  if (smsConfig.key) document.getElementById('smsKey').value = smsConfig.key;
+  if (smsConfig.key)   document.getElementById('smsKey').value   = smsConfig.key;
 }
-
-function saveSmsConfig() {
-  smsConfig = {
-    phone: document.getElementById('smsPhone').value.trim(),
-    key: document.getElementById('smsKey').value.trim(),
-  };
-  localStorage.setItem('smsConfig', JSON.stringify(smsConfig));
-  showStatus('ok', '✅ Saved! Add these as GitHub Secrets to enable auto-alerts.');
+function saveSms() {
+  smsConfig = { phone: document.getElementById('smsPhone').value.trim(), key: document.getElementById('smsKey').value.trim() };
+  localStorage.setItem('dr_sms', JSON.stringify(smsConfig));
+  showStatus('ok','✅ Saved!');
 }
-
 async function testSms() {
   const phone = document.getElementById('smsPhone').value.trim();
-  const key = document.getElementById('smsKey').value.trim() || 'textbelt';
-  if (!phone) { showStatus('err', 'Enter a phone number first.'); return; }
-
-  showStatus('ok', 'Sending test SMS...');
+  const key   = document.getElementById('smsKey').value.trim() || 'textbelt';
+  if (!phone) { showStatus('err','Enter a phone number first.'); return; }
+  showStatus('ok','Sending...');
   try {
-    const res = await fetch('https://textbelt.com/text', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone, message: '🔥 DealRadar test alert! Your deal tracker is live.', key }),
-    });
-    const data = await res.json();
-    if (data.success) showStatus('ok', '✅ Text sent! Check your phone.');
-    else showStatus('err', `❌ Failed: ${data.error || 'Unknown error'}`);
-  } catch (e) {
-    showStatus('err', '❌ Network error sending SMS.');
-  }
+    const r = await fetch('https://textbelt.com/text',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone,message:'🔥 DealRadar test alert! Your deal tracker is live.',key})});
+    const d = await r.json();
+    d.success ? showStatus('ok','✅ Text sent!') : showStatus('err','❌ '+d.error);
+  } catch { showStatus('err','❌ Network error.'); }
 }
-
-function showStatus(type, msg) {
+function showStatus(t,m) {
   const el = document.getElementById('smsStatus');
-  el.className = `status-msg ${type}`;
-  el.textContent = msg;
+  el.className = 'status-msg ' + t;
+  el.textContent = m;
 }
 
-// ── Panel ──────────────────────────────────────────────────────────────────
-function openPanel() {
-  document.getElementById('panelOverlay').classList.add('open');
-}
-function closePanel(e) {
-  if (!e || e.target === document.getElementById('panelOverlay')) {
-    document.getElementById('panelOverlay').classList.remove('open');
-  }
-}
+// ═══════════════════════════════════════════════════════
+// PANEL
+// ═══════════════════════════════════════════════════════
+function openPanel()  { document.getElementById('panelOverlay').classList.add('open'); }
+function closePanel(e){ if (!e || e.target===document.getElementById('panelOverlay')) document.getElementById('panelOverlay').classList.remove('open'); }
 
-// ── Go ─────────────────────────────────────────────────────────────────────
-init();
+// ═══════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════
+boot();
 </script>
 </body>
 </html>
