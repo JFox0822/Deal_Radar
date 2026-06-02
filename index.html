@@ -787,9 +787,13 @@
     font-size: 0.68rem;
     font-weight: 600;
   }
-  .spec-badge.best  { background: rgba(0,230,118,0.15); color: var(--green); }
-  .spec-badge.good  { background: rgba(68,138,255,0.15); color: var(--blue); }
-  .spec-badge.value { background: rgba(255,149,0,0.15); color: var(--accent2); }
+  .spec-badge.pro    { background: rgba(0,230,118,0.15);  color: var(--green); }
+  .spec-badge.mid    { background: rgba(68,138,255,0.15); color: var(--blue); }
+  .spec-badge.value  { background: rgba(255,149,0,0.15);  color: var(--accent2); }
+  .spec-badge.budget { background: rgba(136,136,170,0.15);color: var(--muted); }
+  /* fallbacks */
+  .spec-badge.best   { background: rgba(0,230,118,0.15);  color: var(--green); }
+  .spec-badge.good   { background: rgba(68,138,255,0.15); color: var(--blue); }
 
   .spec-note {
     font-size: 0.72rem;
@@ -1233,7 +1237,7 @@ async function fetchSpecTable(raw) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 1000,
+      max_tokens: 2000,
       messages: [{
         role: 'user',
         content: `The user is shopping for: "${raw}".
@@ -1244,10 +1248,11 @@ Return ONLY a JSON object (no markdown, no backticks, no explanation) with this 
   "specs": ["spec1", "spec2", "spec3", ...],
   "brands": [
     {
-      "name": "Brand Model Name",
-      "tier": "best|good|value",
+      "name": "Brand + specific model name",
+      "tier": "pro|mid|value|budget",
       "values": ["val1", "val2", "val3", ...],
       "price": "$XX–$XX",
+      "where": "Lowe's / Amazon / Home Depot / etc",
       "verdict": "one sentence why to buy or avoid"
     }
   ],
@@ -1255,13 +1260,15 @@ Return ONLY a JSON object (no markdown, no backticks, no explanation) with this 
 }
 
 Rules:
-- Include 3–6 top brands/models for this product category
-- Include 5–8 relevant spec columns (most important specs for buying decisions)
-- tier: "best" = premium pick, "good" = solid mid-range, "value" = budget
-- values array must match specs array length exactly
-- price should be approximate current retail range
+- Include EVERY major brand that makes this product — do not limit to just 3–6. For power tools this means: DeWalt, Milwaukee, Makita, Ryobi, Ridgid, Metabo HPT, Bosch, Craftsman, Kobalt, Bauer, Hart, Skil, Worx, Black+Decker, Porter-Cable, and any others relevant
+- For each brand include their most popular/representative model for this product category
+- tier: "pro" = professional grade (DeWalt, Milwaukee, Makita), "mid" = solid prosumer (Ridgid, Metabo HPT, Bosch), "value" = good budget (Craftsman, Kobalt, Ryobi), "budget" = entry level (Bauer, Hart, Skil, Worx)
+- Include 6–9 spec columns most critical for buying decisions for this specific product type
+- values array must match specs array length exactly — use "—" if unknown
+- price is approximate street price range (tool only, no battery, unless kit is standard)
+- where: primary retailer where this brand is sold or easiest to find
 - If the search is too vague to compare (e.g. just "tools"), return {"error": "too_vague"}
-- If it's not a product (e.g. "hello"), return {"error": "not_a_product"}`
+- If it's not a product, return {"error": "not_a_product"}`
       }]
     })
   });
@@ -1275,13 +1282,19 @@ Rules:
 
 function renderSpecTable(container, spec, raw) {
   const tierBadge = t => {
-    if (t === 'best')  return '<span class="spec-badge best">BEST</span>';
-    if (t === 'good')  return '<span class="spec-badge good">SOLID</span>';
-    if (t === 'value') return '<span class="spec-badge value">VALUE</span>';
-    return '';
+    const map = {
+      pro:    '<span class="spec-badge pro">PRO</span>',
+      mid:    '<span class="spec-badge mid">MID</span>',
+      value:  '<span class="spec-badge value">VALUE</span>',
+      budget: '<span class="spec-badge budget">BUDGET</span>',
+      // fallbacks from old schema
+      best:   '<span class="spec-badge pro">BEST</span>',
+      good:   '<span class="spec-badge mid">SOLID</span>',
+    };
+    return map[t] || '';
   };
 
-  const headers = ['Brand / Model', 'Price', ...spec.specs, 'Verdict'];
+  const headers = ['Brand / Model', 'Price', 'Where to Buy', ...spec.specs, 'Verdict'];
 
   const html = `
     <div class="spec-table-wrap fade-in">
@@ -1293,9 +1306,10 @@ function renderSpecTable(container, spec, raw) {
         </thead>
         <tbody>
           ${spec.brands.map(b => `
-            <tr>
+            <tr class="tier-${b.tier || 'value'}">
               <td>${tierBadge(b.tier)} ${b.name}</td>
               <td style="white-space:nowrap;color:var(--green);font-family:var(--font-mono);font-size:0.78rem;">${b.price || '—'}</td>
+              <td style="white-space:nowrap;font-size:0.78rem;color:var(--blue);">${b.where || '—'}</td>
               ${(b.values || []).map(v => `<td>${v || '—'}</td>`).join('')}
               <td style="color:var(--muted);font-size:0.78rem;max-width:180px;">${b.verdict || ''}</td>
             </tr>`).join('')}
