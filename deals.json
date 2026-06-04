@@ -1,12 +1,60 @@
 {
-  "updated": "2026-06-04 01:44 UTC",
-  "count": 50,
+  "updated": "2026-06-04 06:24 UTC",
+  "count": 46,
   "deals": [
     {
-      "id": "Slickdeals-693786",
+      "id": "Slickdeals-031088",
+      "title": "Skytech Azure 3 Plus PC: Ryzen 7 9800X3D, RX 9070 XT, 32GB RAM, 1TB SSD $1749 + Free S&H",
+      "description": "Skytech Gaming Azure 3 Plus Desktop PC, Ryzen 7 9800X3D, AMD RX 9070XT 16GB, 1TB Gen4 NVMe SSD, 32GB DDR5 RAM, 850W GOLD PSU, 360mm ARGB AIO, Win 11 - Walmart.com \n...",
+      "link": "https://slickdeals.net/f/19583583-skytech-azure-3-plus-gaming-pc-ryzen-7-9800x3d-rx-9070xt-32gb-ram-1tb-ssd-1749?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Walmart",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-04T05:02:31+00:00",
+      "date_display": "Jun 04, 05:02 AM"
+    },
+    {
+      "id": "Slickdeals-480991",
+      "title": "Select Home Depot Stores: RIDGID 5-Outlet Extension Cord Hub $3.30 (In-Store Purchase Only)",
+      "description": "Indoor/outdoor \n1875 maximum watts \n15 Amp - 120-Volt \nHeavy-duty rubber jacket and polycarbonate body for impact resistance \nConverts single grounded outlets to 5 grounded outlets \nOutlets spaced to.",
+      "link": "https://slickdeals.net/f/19591833-selected-store-5-outlet-extension-cord-hub-3-3?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Home Depot",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-06-04T03:24:12+00:00",
+      "date_display": "Jun 04, 03:24 AM"
+    },
+    {
+      "id": "Slickdeals-967678",
+      "title": "Avia Women's 5000 Performance Sneakers (Burgundy, Medium or Wide Width) $14",
+      "description": "https://www.walmart.com/ip/W-AV-5...hbdg=L1600",
+      "link": "https://slickdeals.net/f/19587369-14-fs-walmart-or-pick-up-avia-women-s-5000-performance-sneakers-wide-width-available-burgundy-color?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Walmart",
+      "category": "Sporting Goods",
+      "discount": null,
+      "date_iso": "2026-06-04T02:54:14+00:00",
+      "date_display": "Jun 04, 02:54 AM"
+    },
+    {
+      "id": "DealNews-620909",
+      "title": "PC & Office Accessories at Woot: Up to 83% off + free shipping w/ Prime",
+      "description": "Woot is offering tablets, laptops, desktops, monitors, keyboards, mice, headsets, and more. We've pictured this MSI Modern AM242TP AIO Desktop w/ 512GB SSD for $399.99 (at least $800 elsewhere.) Sale ",
+      "link": "https://www.dealnews.com/PC-Office-Accessories-at-Woot-Up-to-83-off-free-shipping-w-Prime/21837926.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 83,
+      "date_iso": "2026-06-04T02:17:16-04:00",
+      "date_display": "Jun 04, 02:17 AM"
+    },
+    {
+      "id": "Slickdeals-838954",
       "title": "Time and Tru Women\u2019s Sleeveless Knit Swing Dress (Select Sizes & Colors) from $6.15",
       "description": "Time and Tru Women\u2019s Sleeveless Knit Swing Dress, Sizes XS-XXXL for as low as $6.13. Price varies by size and color  \n \nhttps://www.walmart.com/ip/TT-SLV...7605866021",
-      "link": "https://slickdeals.net/f/19588326-time-and-tru-women-s-sleeveless-knit-swing-dress-sizes-xs-xxxl-6-13?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "link": "https://slickdeals.net/f/19588326-time-and-tru-women-s-sleeveless-knit-swing-dress-select-sizes-colors-from-6-15?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Walmart",
       "category": "Clothing & Shoes",
@@ -15,7 +63,7 @@
       "date_display": "Jun 04, 01:42 AM"
     },
     {
-      "id": "Slickdeals-229592",
+      "id": "Slickdeals-762790",
       "title": "RYOBI ONE+ 18V HP Brushless Brad Nailer w/ 2x 4.0 Ah Batts, 2.0 Ah Battery, & Charger $199 + Free S&H",
       "description": "Free shipping from Home Depot. \n \nIncludes: (2) PBP004 18V ONE+ 4Ah Lithium HIGH PERFORMANCE Batteries, PBP003 18V ONE+ 2Ah Lithium HIGH PERFORMANCE Battery, PCG002 18V ONE+ Charger, and Operator's...",
       "link": "https://slickdeals.net/f/19584822-ryobi-one-18v-high-performance-kit-w-2-4-0-ah-batteries-2-0-ah-battery-charger-free-one-hp-brushless-brad-nailer-199?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -27,7 +75,7 @@
       "date_display": "Jun 04, 01:18 AM"
     },
     {
-      "id": "Slickdeals-089819",
+      "id": "Slickdeals-192375",
       "title": "Select Stores: Ridgid 18V 1/2\" Impact Wrench Kit w/ 4.0 Ah Battery & Charger $97 (In-Store Only, Limited Stock)",
       "description": "Select Home Depots are clearing out this Ridgid 18V Cordless 1/2 in. Impact Wrench Kit with 4.0 Ah Battery and Charger. Currently priced as low as $12.00. Prices may vary by store. Price is good in...",
       "link": "https://slickdeals.net/f/19588551-ymmv-ridgid-18v-cordless-1-2-in-impact-wrench-kit-with-4-0-ah-battery-and-charger-97?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -39,7 +87,7 @@
       "date_display": "Jun 04, 12:11 AM"
     },
     {
-      "id": "Slickdeals-104515",
+      "id": "Slickdeals-092620",
       "title": "Reconditioned: Shark FlexBreeze Pedestal & Tabletop Fan $55 + Free S&H w/ Prime",
       "description": "*Woot!* [woot.com] has *Shark UH205 FlexBreeze Fan, 3 Speed *(Factory Reconditioned) for *$54.99*. \n*Shipping is free* for Amazon Prime Members (must login with your Amazon account and select a...",
       "link": "https://slickdeals.net/f/19568925-54-99-shark-uh205-flexbreeze-fan-3-speed-factory-reconditioned-at-woot?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -51,103 +99,7 @@
       "date_display": "Jun 03, 11:50 PM"
     },
     {
-      "id": "Slickdeals-104243",
-      "title": "Open Box: WOLFBOX MF50 Electric Air Duster Mini Blower Turbo Fan $20 + Free S&H",
-      "description": "Wolfbox_tech via eBay has Open Box: WOLFBOX MF50 Electric Air Duster-Mini Blower Turbo Fan on sale for 29.99 - $10 off when apply coupon code TECHMIDYEAR26A & FAVEDEAL20 = *$19.99*. shipping is free..",
-      "link": "https://slickdeals.net/f/19590603-open-box-wolfbox-mf50-electric-air-duster-mini-blower-turbo-fan-20-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Lowe",
-      "category": "Tools & Hardware",
-      "discount": 10,
-      "date_iso": "2026-06-03T23:34:32+00:00",
-      "date_display": "Jun 03, 11:34 PM"
-    },
-    {
-      "id": "Slickdeals-916249",
-      "title": "8-Pk 40 x 40cm Creality 3D Printer Filament Reusable Vacuum Storage Bags Kit $10.80 + Free S&H",
-      "description": "creality-3d_printer-store via eBay has *8-Pack 40 x 40cm Creality 3D Printer Filament Reusable Vacuum Storage Bags Kit* for $13.49 - 20% off with coupon code FAVEDEAL20 at checkout = *$10.79*....",
-      "link": "https://slickdeals.net/f/19589001-creality-3d-printer-filament-bags-8-reusable-40x40-cm-vacuum-storage-bags-10-79?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Various",
-      "category": "Home & Garden",
-      "discount": 20,
-      "date_iso": "2026-06-03T23:06:06+00:00",
-      "date_display": "Jun 03, 11:06 PM"
-    },
-    {
-      "id": "Slickdeals-942930",
-      "title": "1872-Pc LEGO Icons Back to The Future Time Machine Building Set $160 + Free S&H",
-      "description": "Amazon has *1872-Piece LEGO Icons Back to the Future Time Machine Building Set* (10300) for *$159.99*. *Shipping is free*. \n  \n Walmart has *1872-Piece LEGO Icons Back to the Future Time Machine...",
-      "link": "https://slickdeals.net/f/19590072-1872-pc-lego-icons-back-to-the-future-time-machine-building-set-160-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Outdoor & Lawn",
-      "discount": null,
-      "date_iso": "2026-06-03T22:38:06+00:00",
-      "date_display": "Jun 03, 10:38 PM"
-    },
-    {
-      "id": "Slickdeals-693818",
-      "title": "Banana Republic Factory Extra 50% Off Select Styles: Men's Athletic Travel Jeans $15 & More + Free S&H on $50+",
-      "description": "Banana Republic Factory [gapfactory.com] has *50% Off of Men's or Women's Sale Styles *(auto-applied in cart). Shipping is free on orders $50+ for rewards members (free to join [gap.com]). \n \nExample.",
-      "link": "https://slickdeals.net/f/19583205-banana-republic-factory-men-s-athletic-travel-jean-14-98-women-s-cozy-ribbed-knit-midi-dress-12-98-more-free-shipping-on-50?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Various",
-      "category": "Clothing & Shoes",
-      "discount": 50,
-      "date_iso": "2026-06-03T22:36:46+00:00",
-      "date_display": "Jun 03, 10:36 PM"
-    },
-    {
-      "id": "Slickdeals-468038",
-      "title": "Jockey Men's EverActive Mixed Media Jacket (black, L - 3XL) $9.80 + Free S&H",
-      "description": "Jockey [jockey.com] has *Men's Black EverActive Mixed Media Jacket * (L, XL, 2XL, 3XL) on sale for  $13.99 - 30% off with coupon code AMERICANA= *$9.79*. Shipping is free for Jockey Rewards members...",
-      "link": "https://slickdeals.net/f/19587885-jockey-men-s-everactive-mixed-media-jacket-9-79-black-various-sizes-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Various",
-      "category": "Clothing & Shoes",
-      "discount": 30,
-      "date_iso": "2026-06-03T22:06:50+00:00",
-      "date_display": "Jun 03, 10:06 PM"
-    },
-    {
-      "id": "Slickdeals-908853",
-      "title": "Tom Petty & the Heartbreakers: The Best Of Everything (2 CD Set) $10.90",
-      "description": "Amazon [amazon.com] has *Tom Petty & the Heartbreakers: The Best Of Everything *(2 CD Set) for *$10.91*. \n*Shipping is free* with Prime or on $35+ orders. \n \n*Price* \n*$9.07* lower (45% savings) than.",
-      "link": "https://slickdeals.net/f/19573020-10-91-tom-petty-the-heartbreakers-the-best-of-everything-2-cd-set-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-06-03T22:06:00+00:00",
-      "date_display": "Jun 03, 10:06 PM"
-    },
-    {
-      "id": "Slickdeals-398961",
-      "title": "14-Piece Craftsman Drill Bit Set w/ Gold Oxide Coating $10",
-      "description": "Amazon [amazon.com] has *14-Piece CRAFTSMAN Gold Oxide Drill Bit Set for Wood, Plastic, or Metal (CMAM2214)* for *$9.98*. Shipping is free w/ Prime or on $35+. \n \n \nProduct Description from...",
-      "link": "https://slickdeals.net/f/19590216-14-piece-craftsman-gold-oxide-drill-bit-set-for-wood-plastic-or-metal-cmam2214-9-98-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-06-03T21:54:04+00:00",
-      "date_display": "Jun 03, 09:54 PM"
-    },
-    {
-      "id": "Slickdeals-380215",
-      "title": "MODARI Portable Tire Inflator & Air Compressor w/ 160 PSI & Rechargeable Battery $15",
-      "description": "AUTU LIMITED via Amazon [amazon.com] has *MODARI Portable Tire Inflator & Air Compressor w/ 160 PSI, 45 L/Min & Rechargeable Battery* on sale for $29.98 - 50% off when you apply promo code R3J7EYOA...",
-      "link": "https://slickdeals.net/f/19587954-modari-portable-tire-inflator-air-compressor-w-160-psi-45-l-min-rechargeable-battery-14-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": 50,
-      "date_iso": "2026-06-03T21:44:43+00:00",
-      "date_display": "Jun 03, 09:44 PM"
-    },
-    {
-      "id": "DealNews Tools-296465",
+      "id": "DealNews Tools-184326",
       "title": "Valvoline High Mileage SAE 5W-30 Motor Oil 5-Quart Jug for $20 + free shipping w/ Prime",
       "description": "The\u00a0Valvoline High Mileage SAE 5W-30 Motor Oil 5-Quart Jug is $19.97 at Amazon. It's the best price we found by $12. Shipping is free with Prime. Buy Now at Amazon      Features     5W-30 synthetic bl",
       "link": "https://www.dealnews.com/Valvoline-High-Mileage-SAE-5-W-30-Motor-Oil-5-Quart-Jug-for-20-free-shipping-w-Prime/21837923.html?iref=rss-c238",
@@ -159,7 +111,7 @@
       "date_display": "Jun 03, 08:14 PM"
     },
     {
-      "id": "DealNews Tools-910703",
+      "id": "DealNews Tools-865267",
       "title": "Car Cup Holder Coaster Silicone Insert 4-Pack for $7 + free shipping w/ Prime",
       "description": "At Amazon, this cup holder coaster 4-pack is $6.99. That's a 30% savings. Several colors are available (Black pictured). Shipping is free with Prime.\u00a0 Buy Now at Amazon      Features     Silicone cons",
       "link": "https://www.dealnews.com/Car-Cup-Holder-Coaster-Silicone-Insert-4-Pack-for-7-free-shipping-w-Prime/21837921.html?iref=rss-c238",
@@ -171,7 +123,7 @@
       "date_display": "Jun 03, 07:56 PM"
     },
     {
-      "id": "DealNews-852804",
+      "id": "DealNews-636608",
       "title": "Nuetsa 8-Outet USB Surge Protector Power Strip w/ 6-Foot Cord for $14 + free shipping w/ Prime",
       "description": "This surge protector power strip is $13.99 at Amazon. That's a $4 savings. Shipping is free with Prime.\u00a0 Buy Now at Amazon      Features     8 AC outlets   4 USB ports (3x USB-A 2.4A, 1x USB-C 3A)   2",
       "link": "https://www.dealnews.com/Nuetsa-8-Outet-USB-Surge-Protector-Power-Strip-w-6-Foot-Cord-for-14-free-shipping-w-Prime/21837903.html?iref=rss-c142",
@@ -183,7 +135,7 @@
       "date_display": "Jun 03, 05:47 PM"
     },
     {
-      "id": "DealNews-432679",
+      "id": "DealNews-095342",
       "title": "Samsung Home Theater, Soundbar,  and Speaker Deals : Up to $400 off +  free shipping",
       "description": "Save on Samsung audio deals featuring discounts on soundbars, home theater systems, and wireless speakers. We've pictured the Samsung Q-Series HW-Q990F 11.1.4-Channel Soundbar System for $1,600 ($400 ",
       "link": "https://www.dealnews.com/Samsung-Home-Theater-Soundbar-and-Speaker-Deals-Up-to-400-off-free-shipping/21837609.html?iref=rss-c142",
@@ -195,7 +147,7 @@
       "date_display": "Jun 03, 03:24 PM"
     },
     {
-      "id": "DealNews-164605",
+      "id": "DealNews-473609",
       "title": "Mounting Dream Wall Mount for 32\" to 65\" TVs + $4.99 shipping",
       "description": "This TV wall mount is $38.98 at Amazon. That's $8 off and a buck less than our previous mentions. Shipping is free.\u00a0 Shop Now at Amazon      Features     Swivel and Tilt   Full Motion Bracket   Fits 1",
       "link": "https://www.dealnews.com/Mounting-Dream-Wall-Mount-for-32-to-65-TVs-4-99-shipping/21837591.html?iref=rss-c142",
@@ -207,7 +159,7 @@
       "date_display": "Jun 03, 02:20 PM"
     },
     {
-      "id": "DealNews-713423",
+      "id": "DealNews-822764",
       "title": "EcoFlow Certified Refurbished Deals at eBay + free shipping",
       "description": "EcoFlow's certified refurbished brand outlet on eBay has up to 50% off across 60-plus products, and an extra 30% off via the promo code \"POWERON\". The pictured Certified Refurb EcoFlow DELTA 2 Smart G",
       "link": "https://www.dealnews.com/Eco-Flow-Certified-Refurbished-Deals-at-eBay-free-shipping/21837579.html?iref=rss-c142",
@@ -219,7 +171,7 @@
       "date_display": "Jun 03, 01:17 PM"
     },
     {
-      "id": "DealNews-792088",
+      "id": "DealNews-922234",
       "title": "Hisense M7 Series 65\" 4K Mini LED UHD HDR Smart Google TV for $398 + free shipping",
       "description": "Walmart offers the Hisense M7 Series 65\" 4K Mini LED UHD HDR Smart Google TV for $399. That's a savings of $199. Shipping is free. Buy Now at Walmart      Features     HDR10+, Dolby Vision, Dolby Atmo",
       "link": "https://www.dealnews.com/products/Hisense/Hisense-M7-Series-65-4-K-Mini-LED-UHD-HDR-Smart-Google-TV/499004.html?iref=rss-c142",
@@ -231,7 +183,7 @@
       "date_display": "Jun 03, 11:38 AM"
     },
     {
-      "id": "DealNews Tools-380662",
+      "id": "DealNews Tools-938176",
       "title": "Kingfun 2\" x 120\" Car Tie-Down Straps 4-Pack + free shipping w/ Prime",
       "description": "At Amazon, get the Kingfun 2\" x 120\" Car Tie-Down Straps 4-Pack for $35. It's the best deal we could find by $45. The 4-pack includes 2\" x 120\" straps rated at a 3,333-lb safe working load and 10,000-",
       "link": "https://www.dealnews.com/Kingfun-2-x-120-Car-Tie-Down-Straps-4-Pack-free-shipping-w-Prime/21837547.html?iref=rss-c238",
@@ -243,7 +195,7 @@
       "date_display": "Jun 03, 11:31 AM"
     },
     {
-      "id": "DealNews Tools-001624",
+      "id": "DealNews Tools-320808",
       "title": "Windshield Sun Shade Umbrella + free shipping w/ Prime",
       "description": "At Amazon, get this\u00a0Windshield Sun Shade Umbrella for $8.38. It's the best deal we've seen for one of these windshield sun shades. Shipping is free for Prime members. Shop Now at Amazon",
       "link": "https://www.dealnews.com/Windshield-Sun-Shade-Umbrella-free-shipping-w-Prime/21837544.html?iref=rss-c238",
@@ -255,7 +207,7 @@
       "date_display": "Jun 03, 11:24 AM"
     },
     {
-      "id": "DealNews Tools-819585",
+      "id": "DealNews Tools-381766",
       "title": "10-Piece Tire Repair Kit + free shipping w/ Prime",
       "description": "At Amazon, get this\u00a010-Piece Tire Repair Kit for $4.48. It's the best price we could find by $4. Shipping is free for Prime members. Shop Now at Amazon",
       "link": "https://www.dealnews.com/10-Piece-Tire-Repair-Kit-free-shipping-w-Prime/21837539.html?iref=rss-c238",
@@ -267,7 +219,7 @@
       "date_display": "Jun 03, 11:19 AM"
     },
     {
-      "id": "DealNews-752482",
+      "id": "DealNews-994915",
       "title": "Electronics Early Prime Day Deals at Amazon: Up to 65% off + free shipping w/ Prime",
       "description": "As part of the lead-up to Amazon's Prime Day Sale, you can shop a large selection of early deals on electronics. Save on smart home devices, audio essentials, TVs, accessories, and more. Shipping is f",
       "link": "https://www.dealnews.com/Electronics-Early-Prime-Day-Deals-at-Amazon-Up-to-65-off-free-shipping-w-Prime/21837534.html?iref=rss-c142",
@@ -279,7 +231,7 @@
       "date_display": "Jun 03, 11:10 AM"
     },
     {
-      "id": "DealNews Tools-681088",
+      "id": "DealNews Tools-091550",
       "title": "Meifigno 360\u00b0 Rotating MagSafe Car Mount for Tesla for $12.20 + free shipping w/ Prime",
       "description": "Apply the promo code \"B8TRTRSF\" at Amazon to save an extra $12 on the Meifigno 360\u00b0 Rotating MagSafe Car Mount for Tesla. Buy Now at Amazon",
       "link": "https://www.dealnews.com/Meifigno-360-Rotating-Mag-Safe-Car-Mount-for-Tesla-for-12-20-free-shipping-w-Prime/21837533.html?iref=rss-c238",
@@ -291,7 +243,7 @@
       "date_display": "Jun 03, 11:10 AM"
     },
     {
-      "id": "DealNews Tools-650555",
+      "id": "DealNews Tools-812179",
       "title": "Coin Organizer for Car + free shipping w/ $25",
       "description": "At Amazon Haul, get this\u00a0Coin Organizer for Car for $5.24. It's the best price we could find by $3. Shipping is free on Amazon Haul orders of $25 or more. Shop Now at Amazon",
       "link": "https://www.dealnews.com/Coin-Organizer-for-Car-free-shipping-w-25/21837532.html?iref=rss-c238",
@@ -303,7 +255,7 @@
       "date_display": "Jun 03, 11:05 AM"
     },
     {
-      "id": "DealNews Tools-763306",
+      "id": "DealNews Tools-410950",
       "title": "Pencil Tire Pressure Gauge 2-Pack + free shipping w/ $25",
       "description": "At Amazon Haul, get this\u00a0Pencil Tire Pressure Gauge 2-Pack for $1.65. It's the best deal we've seen for this 2-pack. Shipping is free on Amazon Haul orders of $25 or more. Shop Now at Amazon",
       "link": "https://www.dealnews.com/Pencil-Tire-Pressure-Gauge-2-Pack-free-shipping-w-25/21837512.html?iref=rss-c238",
@@ -315,7 +267,7 @@
       "date_display": "Jun 03, 10:27 AM"
     },
     {
-      "id": "DealNews Tools-697753",
+      "id": "DealNews Tools-123999",
       "title": "Hanging Trunk Organizer + free shipping w/ $25",
       "description": "At Amazon Haul, get this\u00a0Hanging Trunk Organizer for $7.48. It's a great deal for a basic trunk organizer. Shipping is free on Amazon Haul orders of $25 or more. Shop Now at Amazon",
       "link": "https://www.dealnews.com/Hanging-Trunk-Organizer-free-shipping-w-25/21837498.html?iref=rss-c238",
@@ -327,7 +279,7 @@
       "date_display": "Jun 03, 09:56 AM"
     },
     {
-      "id": "DealNews-548625",
+      "id": "DealNews-691489",
       "title": "Refurb Apple Watch Series 7 GPS + Cellular Smartwatch for from $113 + free shipping",
       "description": "You can once again get the refurb 41mm model for $113 or the 45mm for $118 ($37 under Amazon's offer). That's within a buck and within $5, respectively, of the best price we've seen for them. They're ",
       "link": "https://www.dealnews.com/Refurb-Apple-Watch-Series-7-GPS-Cellular-Smartwatch-for-from-113-free-shipping/21837495.html?iref=rss-c142",
@@ -339,7 +291,7 @@
       "date_display": "Jun 03, 09:51 AM"
     },
     {
-      "id": "DealNews-199039",
+      "id": "DealNews-160150",
       "title": "Walmart Resold Flash Deals: Up to 65% off + free shipping w/ $35",
       "description": "New deals have  been added to the Walmart Resold section, where smartphones, smartwatches, and tablets from brands like Apple, HP, and Dell see big price drops. Free shipping applies over $35, otherwi",
       "link": "https://www.dealnews.com/Walmart-Resold-Flash-Deals-Up-to-65-off-free-shipping-w-35/21837484.html?iref=rss-c142",
@@ -351,7 +303,7 @@
       "date_display": "Jun 03, 09:19 AM"
     },
     {
-      "id": "DealNews-547990",
+      "id": "DealNews-725893",
       "title": "Electronics Deals at Walmart: Up to 53% off + free shipping w/ $35",
       "description": "Save on electronics deals at Walmart featuring discounts on TVs, laptops, and headphones. We've pictured the Samsung 75\" Class Crystal UHD U7900F 4K Smart TV for $448 ($201 off). Other notable deals i",
       "link": "https://www.dealnews.com/Electronics-Deals-at-Walmart-Up-to-53-off-free-shipping-w-35/21837479.html?iref=rss-c142",
@@ -363,7 +315,7 @@
       "date_display": "Jun 03, 09:10 AM"
     },
     {
-      "id": "DealNews-842976",
+      "id": "DealNews-080125",
       "title": "Amazon Devices Early Prime Day Deals: Up to 70% off + free shipping w/ Prime",
       "description": "Get deals on a large selection of early Prime Day deals on Amazon devices. Select models are at the best-ever prices we've seen. Shipping is free for Prime members. Shop Now at Amazon",
       "link": "https://www.dealnews.com/Amazon-Devices-Early-Prime-Day-Deals-Up-to-70-off-free-shipping-w-Prime/21837439.html?iref=rss-c142",
@@ -375,7 +327,7 @@
       "date_display": "Jun 03, 07:31 AM"
     },
     {
-      "id": "DealNews-828957",
+      "id": "DealNews-978357",
       "title": "Alexa Devices and TVs Early Prime Day Deals: Up to 25% off + free shipping w/ Prime",
       "description": "As part of the lead-up to Amazon's Prime Day Sale, you can shop early deals on a selection of Alexa-enabled devices and TVs. Brands include Sonos, Samsung, and Bose. Shipping is free for Prime members",
       "link": "https://www.dealnews.com/Alexa-Devices-and-TVs-Early-Prime-Day-Deals-Up-to-25-off-free-shipping-w-Prime/21837437.html?iref=rss-c142",
@@ -387,7 +339,7 @@
       "date_display": "Jun 03, 07:27 AM"
     },
     {
-      "id": "DealNews-704415",
+      "id": "DealNews-138267",
       "title": "eBay Father's Day Tech Deals + free shipping",
       "description": "Use promo code \"FAVEDEAL20\" to take 20% off the tech tech items in this eBay Father's Day sale section. A\u00a0maximum discount of $350 applies per order and and can be used twice per account. Some standou",
       "link": "https://www.dealnews.com/eBay-Fathers-Day-Tech-Deals-free-shipping/21837433.html?iref=rss-c142",
@@ -399,7 +351,7 @@
       "date_display": "Jun 03, 07:12 AM"
     },
     {
-      "id": "DealNews Tools-168752",
+      "id": "DealNews Tools-152367",
       "title": "TuTrackAI OBD 4G LTE GPS Vehicle Tracker for $84 + free shipping",
       "description": "For anyone who wants to track a vehicle without paying a recurring monthly fee, this OBD-port tracker uses 4G LTE to report location data through a one-time hardware purchase. It's currently $45 off t",
       "link": "https://www.dealnews.com/Tu-Track-AI-OBD-4-G-LTE-GPS-Vehicle-Tracker-for-84-free-shipping/21837430.html?iref=rss-c238",
@@ -411,7 +363,7 @@
       "date_display": "Jun 03, 07:05 AM"
     },
     {
-      "id": "DealNews-077491",
+      "id": "DealNews-786103",
       "title": "Best Buy Outlet Clearance + free shipping",
       "description": "You can take up to 95% off clearance, open-box, and refurbished items in the Best Buy Outlet today. Open-box laptops start at just $111, while appliances are up to 60% off, and TVs and cell phones are",
       "link": "https://www.dealnews.com/Best-Buy-Outlet-Clearance-free-shipping/21837427.html?iref=rss-c142",
@@ -423,7 +375,7 @@
       "date_display": "Jun 03, 07:03 AM"
     },
     {
-      "id": "DealNews-021259",
+      "id": "DealNews-687607",
       "title": "Best Buy Top World Cup Deals + free shipping",
       "description": "Best Buy's Top Deals page has lots of World Cup-ready deals, including TVs discounted up to 50% off, with the Hisense 98\" QD5 Hi-QLED 4K Smart Google TV at $2,300 (down from $3,599.99) and the Samsung",
       "link": "https://www.dealnews.com/Best-Buy-Top-World-Cup-Deals-free-shipping/21837425.html?iref=rss-c142",
@@ -435,7 +387,7 @@
       "date_display": "Jun 03, 07:00 AM"
     },
     {
-      "id": "DealNews Tools-317263",
+      "id": "DealNews Tools-991733",
       "title": "STP Super Concentrated Gas Treatment 5-oz. Bottle for $3 + free shipping w/ $35",
       "description": "Walmart offers the STP Super Concentrated Gas Treatment 5-oz. Bottle for $2.93. You'd pay $2 more elsewhere. Opt for pickup to avoid the $6.99 shipping charge (or get free shipping with orders of $35 ",
       "link": "https://www.dealnews.com/STP-Super-Concentrated-Gas-Treatment-5-oz-Bottle-for-3-free-shipping-w-35/21837423.html?iref=rss-c238",
@@ -447,7 +399,7 @@
       "date_display": "Jun 03, 06:53 AM"
     },
     {
-      "id": "DealNews Tools-184616",
+      "id": "DealNews Tools-237614",
       "title": "California Gold Mothers Clay Bar System for $24 + free shipping w/ $35",
       "description": "Walmart offers the California Gold Mothers Clay Bar System for $24. You'd pay $5 more elsewhere. Opt for pickup to avoid the $6.99 shipping charge (or get free shipping with orders of $35 or more).   ",
       "link": "https://www.dealnews.com/California-Gold-Mothers-Clay-Bar-System-for-24-free-shipping-w-35/21837417.html?iref=rss-c238",
@@ -459,7 +411,7 @@
       "date_display": "Jun 03, 06:36 AM"
     },
     {
-      "id": "DealNews-487715",
+      "id": "DealNews-584061",
       "title": "Jackery Explorer 300 290Wh Portable Power Station w/ 5M Extension Cord + free shipping",
       "description": "Use promo code \"29USAFFSS\" to drop the price. It makes for a total savings of $357 off. It runs on a LiFePO4 battery with a 290Wh nominal capacity.\u00a0 Shop Now at AliExpress      Features     290Wh nomi",
       "link": "https://www.dealnews.com/Jackery-Explorer-300-290-Wh-Portable-Power-Station-w-5-M-Extension-Cord-free-shipping/21837395.html?iref=rss-c142",
@@ -471,7 +423,7 @@
       "date_display": "Jun 03, 05:53 AM"
     },
     {
-      "id": "DealNews Tools-044437",
+      "id": "DealNews Tools-235754",
       "title": "Autel KM100 Universal Smart Fob & Key Programmer + free shipping",
       "description": "Use promo code \"USAFF40\" to drop the price. That makes for a total savings of $452 off. It supports Wi-Fi and Bluetooth connectivity and includes lifetime free updates. This deal ends June 11 at 2:59 ",
       "link": "https://www.dealnews.com/Autel-KM100-Universal-Smart-Fob-Key-Programmer-free-shipping/21837377.html?iref=rss-c238",
@@ -483,7 +435,7 @@
       "date_display": "Jun 03, 05:06 AM"
     },
     {
-      "id": "DealNews Tools-656952",
+      "id": "DealNews Tools-073961",
       "title": "Purolator PurolatorTECH Air Filter + free shipping w/ Prime",
       "description": "At Amazon, get the Purolator PurolatorTECH Air Filter for $6.82. It's the best price we could find by $8. It fits a wide range of Nissan and Subaru models, spanning model years from the early 1990s th",
       "link": "https://www.dealnews.com/Purolator-Purolator-TECH-Air-Filter-free-shipping-w-Prime/21837349.html?iref=rss-c238",
@@ -495,7 +447,7 @@
       "date_display": "Jun 03, 04:17 AM"
     },
     {
-      "id": "DealNews-597965",
+      "id": "DealNews-239787",
       "title": "Syntech USB C Female to USB Male Adapter 3-Pack for $6 + free shipping w/ Prime",
       "description": "Amazon offers the Syntech USB C Female to USB Male Adapter 3-Pack for $5.94. You'd pay $14 elsewhere. Prime members get free shipping. Buy Now at Amazon",
       "link": "https://www.dealnews.com/Syntech-USB-C-Female-to-USB-Male-Adapter-3-Pack-for-6-free-shipping-w-Prime/21837336.html?iref=rss-c142",
@@ -507,7 +459,7 @@
       "date_display": "Jun 03, 03:47 AM"
     },
     {
-      "id": "DealNews-943481",
+      "id": "DealNews-280296",
       "title": "VIZIO Quantum VQD65R-10 65\" 4K HDR QLED UHD Smart TV + free shipping",
       "description": "This VIZIO 65\" QLED is $170 off its regular price of $498 at Walmart. The TV supports WiFi 6, HDR, and up to 120fps at 1080p for gaming via Auto Low Latency Mode. Shop Now at Walmart",
       "link": "https://www.dealnews.com/VIZIO-Quantum-VQD65-R-10-65-4-K-HDR-QLED-UHD-Smart-TV-free-shipping/21837323.html?iref=rss-c142",
@@ -519,7 +471,7 @@
       "date_display": "Jun 03, 03:09 AM"
     },
     {
-      "id": "DealNews-235346",
+      "id": "DealNews-726326",
       "title": "Big Savings on Refurb iPhones & Apple Watches at Woot for From $50, iPhones from $90 + free shipping",
       "description": "Woot is offering refurbished scratch-and-dent Apple iPhones from $89.99 and Apple Watches from $49.99, including iPhone XR through iPhone 16 Plus models and Apple Watch Series 4 through Series 9 model",
       "link": "https://www.dealnews.com/Big-Savings-on-Refurb-iPhones-Apple-Watches-at-Woot-for-From-50-iPhones-from-90-free-shipping/21837317.html?iref=rss-c142",
@@ -531,7 +483,7 @@
       "date_display": "Jun 03, 02:39 AM"
     },
     {
-      "id": "DealNews Tools-287282",
+      "id": "DealNews Tools-751172",
       "title": "DNA Motoring 21\" Parking Stopper 2-Pack for $21 + free shipping w/ Prime",
       "description": "Amazon offers the DNA Motoring 21\" Parking Stopper 2-Pack for $20.99.  That's a $6 savings.  Prime members get free shipping. Buy Now at Amazon",
       "link": "https://www.dealnews.com/products/DNA-Motoring/21-Parking-Stopper-2-Pack/498992.html?iref=rss-c238",
@@ -543,7 +495,7 @@
       "date_display": "Jun 02, 08:28 PM"
     },
     {
-      "id": "DealNews Tools-461123",
+      "id": "DealNews Tools-269403",
       "title": "Armor All Heavy Duty 24-oz. Multi-Purpose Cleaner for $5.13 via Sub & Save + free shipping w/ Prime",
       "description": "Subscribe for this price on this Armor All multipurpose cleaner.  You'd pay around $8 at most local stores.  Shipping is free for Prime members. Buy Now at Amazon",
       "link": "https://www.dealnews.com/Armor-All-Heavy-Duty-24-oz-Multi-Purpose-Cleaner-for-5-13-via-Sub-Save-free-shipping-w-Prime/21837297.html?iref=rss-c238",
@@ -555,7 +507,7 @@
       "date_display": "Jun 02, 07:50 PM"
     },
     {
-      "id": "DealNews Tools-856701",
+      "id": "DealNews Tools-230245",
       "title": "Automotive Electrical Connector Separator for $3 + free shipping w/ Prime",
       "description": "Amazon offers this terminal removal tool for $2.99.  You'd pay around $5 elsewhere.  Prime members get free shipping. Buy Now at Amazon",
       "link": "https://www.dealnews.com/Automotive-Electrical-Connector-Separator-for-3-free-shipping-w-Prime/21837271.html?iref=rss-c238",
@@ -567,7 +519,7 @@
       "date_display": "Jun 02, 05:16 PM"
     },
     {
-      "id": "DealNews Tools-662246",
+      "id": "DealNews Tools-055591",
       "title": "Four Uncles 200cc Fluid Extractor & Fill Pump for $10 + free shipping w/ Prime",
       "description": "Amazon offers the Four Uncles 200cc Fluid Extractor & Fill Pump for $9.99.  That's a $5 low.  Prime members get free shipping. Buy Now at Amazon",
       "link": "https://www.dealnews.com/products/Four-Uncles-200-cc-Fluid-Extractor-Fill-Pump/498990.html?iref=rss-c238",
@@ -579,7 +531,7 @@
       "date_display": "Jun 02, 04:36 PM"
     },
     {
-      "id": "DealNews Tools-259766",
+      "id": "DealNews Tools-993224",
       "title": "Cobra RAD 350 Laser Radar Detector for $60 + free shipping",
       "description": "Amazon offers the Cobra RAD 350 Laser Radar Detector for $59.95.  That's a $19 low.  Shipping is free for Prime members. Buy Now at Amazon",
       "link": "https://www.dealnews.com/Cobra-RAD-350-Laser-Radar-Detector-for-60-free-shipping/21837258.html?iref=rss-c238",
@@ -591,7 +543,7 @@
       "date_display": "Jun 02, 04:17 PM"
     },
     {
-      "id": "DealNews Tools-708072",
+      "id": "DealNews Tools-809440",
       "title": "Amazon Autos for $1,500 Amazon Gift Card w/ car purchase",
       "description": "Prime members get a $1,500 Amazon gift card if you purchase or lease a car through Amazon Autos. This program currently has Hyundai cars available \u2014 buy at Amazon either with cash or with customized f",
       "link": "https://www.dealnews.com/Amazon-Autos-for-1-500-Amazon-Gift-Card-w-car-purchase/21837251.html?iref=rss-c238",
