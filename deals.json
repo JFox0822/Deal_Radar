@@ -1,9 +1,105 @@
 {
-  "updated": "2026-06-19 16:32 UTC",
-  "count": 51,
+  "updated": "2026-06-19 18:23 UTC",
+  "count": 54,
   "deals": [
     {
-      "id": "Slickdeals-881759",
+      "id": "Slickdeals-250434",
+      "title": "1800-lm Sofirn IF24 Pro Rechargeable EDC RGB Flashlight $17.55 + Free S&H",
+      "description": "On sale for $27.53. Total drops to $17.53 + tax after using $3 promo code MYUSDEAL3 or GSD03 and $7 store code GUSD07. Free shipping from US warehouse. \n \nThis is the *lowest price on record for this.",
+      "link": "https://slickdeals.net/f/19646271-sofirn-if24-pro-1800-lumen-rechargeable-edc-rgb-flashlight-free-s-h-17-53?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Lowe",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-06-19T18:04:55+00:00",
+      "date_display": "Jun 19, 06:04 PM"
+    },
+    {
+      "id": "Slickdeals-922071",
+      "title": "13.25\" Taylor Big and Bold Indoor Outdoor Wall Thermometer $10",
+      "description": "Amazon [amazon.com] has *Taylor Big and Bold Wall Thermometer, 13.25-inch, Black* for $16.49 - $7.01 when you 'clip' the coupon on product page = *$9.48*. \n*Shipping is free* with Prime or on $35+...",
+      "link": "https://slickdeals.net/f/19638855-ac-9-48-taylor-big-and-bold-wall-thermometer-13-25-inch-black-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Outdoor & Lawn",
+      "discount": null,
+      "date_iso": "2026-06-19T17:54:30+00:00",
+      "date_display": "Jun 19, 05:54 PM"
+    },
+    {
+      "id": "Slickdeals-805302",
+      "title": "Logitech G515 TKL Low Profile Wireless Kamisato Ayaka Edition Keyboard (Tactile) $70 + Free S&H",
+      "description": "Amazon [amazon.com] has *Logitech G515 TKL Low Profile Wireless Kamisato Ayaka Edition Keyboard *(Tactile) for *$69.99*. \n*Shipping is free*. \n \n****Deal history:*[LIST][*]*Frontpage Deal* at *$70*...",
+      "link": "https://slickdeals.net/f/19639827-69-99-logitech-g515-tkl-low-profile-wireless-kamisato-ayaka-edition-keyboard-tactile-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-19T17:40:39+00:00",
+      "date_display": "Jun 19, 05:40 PM"
+    },
+    {
+      "id": "Slickdeals-547729",
+      "title": "adidas Men's Terrex x Shmoofoil Skychaser GORE-TEX Hiking Shoes (Bliss Pink) $67.80 + Free S&H",
+      "description": "adidas via eBay [ebay.com] has adidas men Terrex x Shmoofoil Skychaser GORE-TEX Hiking Shoes on sale for $113 - 40% off when you apply promo code *ADIDASJUNE* at checkout = *$67.80*. Shipping is...",
+      "link": "https://slickdeals.net/f/19637838-adidas-men-terrex-x-shmoofoil-skychaser-gore-tex-hiking-shoes-68-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Various",
+      "category": "Sporting Goods",
+      "discount": 40,
+      "date_iso": "2026-06-19T17:36:00+00:00",
+      "date_display": "Jun 19, 05:36 PM"
+    },
+    {
+      "id": "Slickdeals-418313",
+      "title": "Lowepro DroneGuard BP 250 Backpack for DJI Mavic Pro/Air $50 + Free S&H",
+      "description": "*KEY FEATURES:* \n* Holds DJI Mavic Pro or Mavic Air \n* FormShell Molded Exterior \n* Holds Transmitter (Radio Controller) \n* Holds 7 Flight Batteries \n* Holds Flight Battery and Charger \n* CradleFit...",
+      "link": "https://slickdeals.net/f/19646817-lowepro-droneguard-bp-250-backpack-for-dji-mavic-pro-air-49-99?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Lowe",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-06-19T17:32:45+00:00",
+      "date_display": "Jun 19, 05:32 PM"
+    },
+    {
+      "id": "Slickdeals-016335",
+      "title": "9\" Accfly Wireless CarPlay / Android Auto Touch Display w/ HD Backup Camera $76 + Free S&H",
+      "description": "AccflyDirect via Amazon [amazon.com] has *9\" Accfly Wireless CarPlay/Android Auto Touchscreen Display w/ Built-In Netflix, YouTube, TikTok & HD Backup Camera* for $169.99 - 55% off when you enter...",
+      "link": "https://slickdeals.net/f/19644618-9-accfly-wireless-carplay-android-auto-touchscreen-display-w-built-in-netflix-youtube-tiktok-hd-backup-camera-75-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 55,
+      "date_iso": "2026-06-19T17:28:36+00:00",
+      "date_display": "Jun 19, 05:28 PM"
+    },
+    {
+      "id": "Slickdeals-691936",
+      "title": "Turok Trilogy Bundle (Nintendo Switch) $15",
+      "description": "Amazon [amazon.com] has *Turok Trilogy Bundle *(Nintendo Switch) for *$14.99*. \n*Shipping is free* with Prime or on $35+ orders. \n \namazon.com/dp/B0FFTLF3P3 [amazon.com] \n \nPlease report the deal if..",
+      "link": "https://slickdeals.net/f/19647942-14-99-turok-trilogy-bundle-nintendo-switch-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-19T16:49:21+00:00",
+      "date_display": "Jun 19, 04:49 PM"
+    },
+    {
+      "id": "Slickdeals-543346",
+      "title": "58\" Ace Hardware Steel Square or Round Digging Shovel w/ Wood Handle $20 + Free Pickup",
+      "description": "DIGGING SHOVEL \n \nhttps://www.acehardware.com/depar...ools/70018 \n \nTransfer Shovel \n \nhttps://www.acehardware.com/depar...ools/70024",
+      "link": "https://slickdeals.net/f/19644120-20-pick-up-ace-hardware-58-round-digging-or-square-transferring-shovel?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Ace Hardware",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-06-19T16:45:23+00:00",
+      "date_display": "Jun 19, 04:45 PM"
+    },
+    {
+      "id": "Slickdeals-998863",
       "title": "Pre-Order: Splatoon Raiders (Nintendo Switch 2) $49.95 + Free S&H",
       "description": "Amazon [amazon.com] has *Pre-Order: Splatoon Raiders *(Nintendo Switch 2) for *$49.94*. \n*Shipping is free*. \n \n*Price* \n*$10.05* lower (17% savings) than the list price of *$59.99* \n \n*Savings*...",
       "link": "https://slickdeals.net/f/19646067-49-94-pre-order-splatoon-raiders-nintendo-switch-2-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -15,9 +111,9 @@
       "date_display": "Jun 19, 04:27 PM"
     },
     {
-      "id": "Slickdeals-173762",
+      "id": "Slickdeals-829548",
       "title": "48A WOLFBOX J1772 NEMA 14-50 Hardwired Level 2 EV Charger w/ App + RFID $255.60 + Free S&H",
-      "description": "deal [amazon.com] \n \n$256 + Free S/H  w/ code *8PROTECTIONS*",
+      "description": "WOLFBOX AUTO via Amazon has *48A WOLFBOX J1772 NEMA 14-50 Hardwired Level 2 EV Charger w/ App + RFID* on sale for $425.99 - $170.40 (apply promo code 8PROTECTIONS at checkout) = *$255.59*. *Shipping..",
       "link": "https://slickdeals.net/f/19631910-48a-wolfbox-j1772-nema-14-50-hardwired-level-2-ev-charger-w-app-rfid-256-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Amazon",
@@ -27,67 +123,19 @@
       "date_display": "Jun 19, 04:18 PM"
     },
     {
-      "id": "Slickdeals-550325",
-      "title": "Tineco Floor ONE S5 Smart Cordless Wet Dry Vacuum Cleaner & Mop (Blue) $189.90 + Free S&H",
-      "description": "*TINECO via Amazon* [amazon.com] has the *Tineco Floor ONE S5 Smart Cordless Wet Dry Vacuum *on sale for $249 - when you enter code SDTCLMS5 = *$189.90. Shipping is free.* \n \n*About this...",
-      "link": "https://slickdeals.net/f/19631865-tineco-floor-one-s5-smart-cordless-wet-dry-vacuum-cleaner-mop-blue-189-90-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
-      "discount": null,
-      "date_iso": "2026-06-19T15:25:06+00:00",
-      "date_display": "Jun 19, 03:25 PM"
-    },
-    {
-      "id": "Slickdeals-916224",
-      "title": "Prime: WYZE Bulb Cam 2K HD Smart Light Bulb Security Camera w/ Color Night Vision $38 + Free S&H",
-      "description": "Amazon [amazon.com] has *WYZE Bulb Cam - 2K HD Smart Light Bulb Security Camera with Color Night Vision* for *$39.93*. \n*Shipping is free*. \n \n*Price* \n*$10.05* lower (20% savings) than the list...",
-      "link": "https://slickdeals.net/f/19634547-prime-37-98-wyze-bulb-cam-2k-hd-smart-light-bulb-security-camera-with-color-night-vision-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
+      "id": "DealNews-183555",
+      "title": "World Wide Stereo Sale : Up to 50% off +  free shipping",
+      "description": "Shop the World Wide Stereo sale and save on more than 1,800 TVs, headphones, home speakers, soundbars, turntables, receivers, car audio, and more. Brands on sale include Bose, Bowers & Wilkins, Audio-",
+      "link": "https://www.dealnews.com/World-Wide-Stereo-Sale-Up-to-50-off-free-shipping/21843332.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
       "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-06-19T15:19:43+00:00",
-      "date_display": "Jun 19, 03:19 PM"
-    },
-    {
-      "id": "Slickdeals-190017",
-      "title": "100' 1/4\" Starrey Drip Irrigation Watering System w/ 24-Pc Adjustable Nozzles $19.90",
-      "description": "Starrey via Amazon [amazon.com] has *100' 1/4\" Starrey Drip Irrigation Garden Watering System w/ 24-Piece 360\u00b0 Adjustable Copper Nozzles* on sale for $29.99 - 50% off when you enter the coupon code...",
-      "link": "https://slickdeals.net/f/19619994-100-1-4-starrey-drip-irrigation-watering-system-w-24-pc-adjustable-nozzles-19-90?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
       "discount": 50,
-      "date_iso": "2026-06-19T15:16:17+00:00",
-      "date_display": "Jun 19, 03:16 PM"
+      "date_iso": "2026-06-19T12:53:35-04:00",
+      "date_display": "Jun 19, 12:53 PM"
     },
     {
-      "id": "Slickdeals-661943",
-      "title": "Prime Members: ECOVACS Goat O1000 RTK Care Robot Lawn Mower $664 + Free S&H",
-      "description": "This popular Fontpage deal is still available. \n \nAmazon has for *Prime Members: ECOVACS Goat O1000 RTK Care Robot Lawn Mower* (850077202438) for *$664*. *Shipping is free*. \n \nThanks to community...",
-      "link": "https://slickdeals.net/f/19627494-ecovacs-goat-o1000-rtk-care-kit-robotic-lawn-mower-with-rtk-precision-navigation-no-perimeter-wire-smart-app-control-auto-mapping-multi-zone-management-for-664?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
-      "discount": null,
-      "date_iso": "2026-06-19T15:15:39+00:00",
-      "date_display": "Jun 19, 03:15 PM"
-    },
-    {
-      "id": "Slickdeals-658408",
-      "title": "10000-BTU HAUSHOF Portable Air Conditioner w/ Remote Control $180 + Free S&H",
-      "description": "GreatStar Tools via Amazon [amazon.com] has *HAUSHOF 10,000 BTU Portable Air Conditioner w/ Remote Control, 24-Hour Timer & Window Kit *(White) on sale for $299.99 - extra 40% off w/ code JKIV6WNI at.",
-      "link": "https://slickdeals.net/f/19636128-haushof-10-000-btu-portable-air-conditioner-w-remote-control-white-179-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": 40,
-      "date_iso": "2026-06-19T15:06:46+00:00",
-      "date_display": "Jun 19, 03:06 PM"
-    },
-    {
-      "id": "DealNews-369251",
+      "id": "DealNews-583528",
       "title": "JBL Speaker and Headphone Deals: Up to 45% off  + free shipping",
       "description": "Shop this JBL sale to save on headphones, Bluetooth speakers, party speakers, earbuds, and more. Deals include the JBL Live 770NC Wireless Headphones for $120 (down from $220), the JBL Charge 5 Portab",
       "link": "https://www.dealnews.com/JBL-Speaker-and-Headphone-Deals-Up-to-45-off-free-shipping/21843325.html?iref=rss-c142",
@@ -99,7 +147,7 @@
       "date_display": "Jun 19, 12:29 PM"
     },
     {
-      "id": "DealNews-059339",
+      "id": "DealNews-425645",
       "title": "Target Outlet Promo Code Sale at eBay: Up to 70% off + Extra 10% off + free shipping",
       "description": "Use promo code \"BULLSEYE10\" to take an extra 10% off at the Bullseye Outlet eBay storefront sale. The coupon code can be used once per buyer and has a max discount of $30. The code expires July 2. Sho",
       "link": "https://www.dealnews.com/Target-Outlet-Promo-Code-Sale-at-eBay-Up-to-70-off-Extra-10-off-free-shipping/21843316.html?iref=rss-c142",
@@ -111,7 +159,7 @@
       "date_display": "Jun 19, 12:08 PM"
     },
     {
-      "id": "DealNews-586503",
+      "id": "DealNews-245973",
       "title": "Bluetti AC70 1,000W 768Wh Portable Power Station for $256 + free shipping",
       "description": "Promo code \"MYUSAFF42\" drops this certified refurbished Bluetti AC70 power station to $256. You'd pay $23 more for a refurb today at eBay (and $75 more for a new model at Amazon). The AC70 runs on a L",
       "link": "https://www.dealnews.com/Bluetti-AC70-1-000-W-768-Wh-Portable-Power-Station-for-256-free-shipping/21843313.html?iref=rss-c142",
@@ -123,7 +171,7 @@
       "date_display": "Jun 19, 12:02 PM"
     },
     {
-      "id": "DealNews-846707",
+      "id": "DealNews-523719",
       "title": "JBL DA850 8-Channel Distribution Amplifier for $700  + free shipping",
       "description": "B&H Photo Video offers the JBL DA850 8-Channel Distribution Amplifier for $700 with free next-day shipping. That's $800 off and a substantial discount on this recently released multiroom audio solutio",
       "link": "https://www.dealnews.com/JBL-DA850-8-Channel-Distribution-Amplifier-for-700-free-shipping/21843299.html?iref=rss-c142",
@@ -135,7 +183,7 @@
       "date_display": "Jun 19, 11:26 AM"
     },
     {
-      "id": "DealNews Tools-589896",
+      "id": "DealNews Tools-377032",
       "title": "Avapow 4K WiFi Front & Rear Dash Cam w/ Hardware Kit & 64GB Card  for $50  +  free shipping",
       "description": "Amazon offers the Avapow 4K WiFi Front & Rear Dash Cam w/ Hardware Kit & 64GB Card  for $50. That's a huge $100 (or 67%) discount off the list price  Buy Now at Amazon      Features     low-voltage pr",
       "link": "https://www.dealnews.com/Avapow-4-K-Wi-Fi-Front-Rear-Dash-Cam-w-Hardware-Kit-64-GB-Card-for-50-free-shipping/21843295.html?iref=rss-c238",
@@ -147,7 +195,7 @@
       "date_display": "Jun 19, 11:20 AM"
     },
     {
-      "id": "DealNews-561232",
+      "id": "DealNews-361956",
       "title": "DJI Osmo 360 Camera with 8K Video for $357 + free shipping",
       "description": "Amazon offers the DJI Osmo 360 Camera with 8K Video for $357. Save $42 compared to the typical price on this high-resolution 360 action camera, featuring 105GB storage and 8K video capability. Buy Now",
       "link": "https://www.dealnews.com/DJI-Osmo-360-Camera-with-8-K-Video-for-357-free-shipping/21843291.html?iref=rss-c142",
@@ -159,7 +207,7 @@
       "date_display": "Jun 19, 11:07 AM"
     },
     {
-      "id": "DealNews-456990",
+      "id": "DealNews-667951",
       "title": "TryTalk 5K Vlogging Camera with 16X Zoom and Microphone for $117 + free shipping",
       "description": "Clip the 35% off coupon on the product page to save $82.99 compared to both typical and list prices. This camera offers features like 5K video capture and comes with essential accessories for vloggers",
       "link": "https://www.dealnews.com/Try-Talk-5-K-Vlogging-Camera-with-16-X-Zoom-and-Microphone-for-117-free-shipping/21843289.html?iref=rss-c142",
@@ -171,7 +219,7 @@
       "date_display": "Jun 19, 10:58 AM"
     },
     {
-      "id": "DealNews-462773",
+      "id": "DealNews-912837",
       "title": "Behringer BC110 Dynamic Vocal Microphone for $12.90 + free shipping w/ Prime",
       "description": "With a total savings of $32.15 compared to the typical price of $45.05, this deal includes a dynamic microphone with versatile jack compatibility and a long cable. Buy Now at Amazon      Features     ",
       "link": "https://www.dealnews.com/Behringer-BC110-Dynamic-Vocal-Microphone-for-12-90-free-shipping-w-Prime/21843286.html?iref=rss-c142",
@@ -183,7 +231,7 @@
       "date_display": "Jun 19, 10:50 AM"
     },
     {
-      "id": "DealNews-868122",
+      "id": "DealNews-852713",
       "title": "Sennheiser Momentum 4 Wireless Noise Cancelling Headphones for $220 + free shipping",
       "description": "Amazon offers the Sennheiser Momentum 4 Wireless Noise Cancelling Headphones for $220. That's $80 off list and the best price we could find. Free shipping applies.  Buy Now at Amazon      Features    ",
       "link": "https://www.dealnews.com/Sennheiser-Momentum-4-Wireless-Noise-Cancelling-Headphones-for-220-free-shipping/21843278.html?iref=rss-c142",
@@ -195,7 +243,7 @@
       "date_display": "Jun 19, 10:36 AM"
     },
     {
-      "id": "DealNews-098917",
+      "id": "DealNews-984270",
       "title": "The Best Amazon Prime Day 2026 Promo Code Deals: Up to 85% off + free shipping w/ Prime",
       "description": "Amazon's Prime Day 2026 starts June 23, 2026! Prime members can shop the best deals of the season on electronics, clothing, home goods, kitchen items, and much more through Friday, June 26, 2026.   Th",
       "link": "https://www.dealnews.com/The-Best-Amazon-Prime-Day-2026-Promo-Code-Deals-Up-to-85-off-free-shipping-w-Prime/21843276.html?iref=rss-c142",
@@ -207,7 +255,7 @@
       "date_display": "Jun 19, 10:32 AM"
     },
     {
-      "id": "DealNews-026853",
+      "id": "DealNews-526331",
       "title": "SmallRig 65.6\" Carbon Fiber Camera Monopod for $160 + free shipping",
       "description": "SmallRig's carbon fiber monopods are built for videographers and photographers who need a lightweight, rigid support option for run-and-gun shooting or long event coverage where a tripod isn't practic",
       "link": "https://www.dealnews.com/Small-Rig-65-6-Carbon-Fiber-Camera-Monopod-for-160-free-shipping/21843274.html?iref=rss-c142",
@@ -219,7 +267,7 @@
       "date_display": "Jun 19, 10:21 AM"
     },
     {
-      "id": "DealNews Tools-772576",
+      "id": "DealNews Tools-267401",
       "title": "303 Products Aerospace UV Protectant 1-Gallon Jug for $43 via Sub. & Save + free shipping",
       "description": "At Amazon, get this for 303 Products Aerospace UV Protectant 1-Gallon Jug when you clip the on-page coupon and check out with Subscribe & Save. It's the best price we could find by $14. The 1-gallon s",
       "link": "https://www.dealnews.com/303-Products-Aerospace-UV-Protectant-1-Gallon-Jug-for-43-via-Sub-Save-free-shipping/21843269.html?iref=rss-c238",
@@ -231,7 +279,7 @@
       "date_display": "Jun 19, 10:17 AM"
     },
     {
-      "id": "DealNews-812051",
+      "id": "DealNews-866629",
       "title": "SmallRig 35\" Octagon Softbox for Bowens Mount COB Lights for $60 + free shipping",
       "description": "Designed for Bowens mount COB lights specifically, this 35\" octagon softbox gives photographers and video creators a large, even light source that wraps around subjects more softly than a standard rec",
       "link": "https://www.dealnews.com/Small-Rig-35-Octagon-Softbox-for-Bowens-Mount-COB-Lights-for-60-free-shipping/21843268.html?iref=rss-c142",
@@ -243,7 +291,7 @@
       "date_display": "Jun 19, 10:16 AM"
     },
     {
-      "id": "DealNews-453950",
+      "id": "DealNews-621311",
       "title": "Apple AirPods Max 2 Wireless Over-Ear Headphones  for $500  + free shipping",
       "description": "The Apple AirPods Max 2 Wireless Headphones are  $49 off list  at Amazon. It's the best deal we've seen for these recently-released AirPods. The headphones feature up to 20 hours of battery life with ",
       "link": "https://www.dealnews.com/Apple-Air-Pods-Max-2-Wireless-Over-Ear-Headphones-for-500-free-shipping/21843262.html?iref=rss-c142",
@@ -255,7 +303,7 @@
       "date_display": "Jun 19, 10:10 AM"
     },
     {
-      "id": "DealNews Tools-365504",
+      "id": "DealNews Tools-137038",
       "title": "Motorcycle and Powersports Early Prime Day Deals at Amazon: Up to 43% off + free shipping w/ Prime",
       "description": "In this sale you'll find early Prime Day deals on a selection of motorcycle and powersports items. We've pictured this Electric Dirt Bike for $1,100 (45% off). Shipping is free for Prime members. Shop",
       "link": "https://www.dealnews.com/Motorcycle-and-Powersports-Early-Prime-Day-Deals-at-Amazon-Up-to-43-off-free-shipping-w-Prime/21843256.html?iref=rss-c238",
@@ -267,7 +315,7 @@
       "date_display": "Jun 19, 10:02 AM"
     },
     {
-      "id": "DealNews-634292",
+      "id": "DealNews-821739",
       "title": "Bose QuietComfort Earbuds II for $149 + free shipping",
       "description": "Amazon offers the Bose QuietComfort Earbuds II for $149. That's $130 off and tied with our mention from two weeks ago as the lowest price we've ever seen for these.  Buy Now at Amazon      Features   ",
       "link": "https://www.dealnews.com/Bose-Quiet-Comfort-Earbuds-II-for-149-free-shipping/21843255.html?iref=rss-c142",
@@ -279,7 +327,7 @@
       "date_display": "Jun 19, 10:02 AM"
     },
     {
-      "id": "DealNews-917042",
+      "id": "DealNews-504743",
       "title": "Hybrid ANC 120-Hour Bluetooth 6.0 Headphones  for $40 + free shipping",
       "description": "Amazon offers the Hybrid ANC 120-Hour Bluetooth 6.0 Headphones  for $71. Clip the $30 coupon on the product page to cut it to $41. That's $29 under our mention from last week and the lowest price ever",
       "link": "https://www.dealnews.com/Hybrid-ANC-120-Hour-Bluetooth-6-0-Headphones-for-40-free-shipping/21843248.html?iref=rss-c142",
@@ -291,7 +339,7 @@
       "date_display": "Jun 19, 09:42 AM"
     },
     {
-      "id": "DealNews-288238",
+      "id": "DealNews-101359",
       "title": "Klipsch Reference R-40PM Powered Bluetooth Bookshelf Speakers for $316 + free shipping",
       "description": "Best Buy offers the Klipsch Reference R-40PM Powered Bluetooth Bookshelf Speakers for $316. That's $234 off list and the best price we've ever seen. You'd pay $550 elsewhere. Free shipping applies.  B",
       "link": "https://www.dealnews.com/products/Klipsch/Klipsch-Reference-R-40-PM-Powered-Bluetooth-Bookshelf-Speakers/497779.html?iref=rss-c142",
@@ -303,7 +351,7 @@
       "date_display": "Jun 19, 09:34 AM"
     },
     {
-      "id": "DealNews-100516",
+      "id": "DealNews-386790",
       "title": "VELCRO Brand Cord Organizer 2-Pack for $5 + free shipping w/ Prime",
       "description": "At Amazon, get this VELCRO Brand Cord Organizer 2-Pack for $5.12. It's the best price we could find by $8. Shipping is free for Prime members. Buy Now at Amazon",
       "link": "https://www.dealnews.com/VELCRO-Brand-Cord-Organizer-2-Pack-for-5-free-shipping-w-Prime/21843237.html?iref=rss-c142",
@@ -315,7 +363,7 @@
       "date_display": "Jun 19, 09:23 AM"
     },
     {
-      "id": "DealNews-166887",
+      "id": "DealNews-478542",
       "title": "Lamtto 11\" Wireless CarPlay Screen for $90 + free shipping",
       "description": "Walmart has the LAMTTO 11\" Wireless CarPlay Screen for $90, which is $80 off the $170 list price. It connects wirelessly to your phone and mounts to your dash, giving older vehicles a large touchscree",
       "link": "https://www.dealnews.com/Lamtto-11-Wireless-Car-Play-Screen-for-90-free-shipping/21843232.html?iref=rss-c142",
@@ -327,7 +375,7 @@
       "date_display": "Jun 19, 09:18 AM"
     },
     {
-      "id": "DealNews-768294",
+      "id": "DealNews-992220",
       "title": "Sonance MAG6R In-Ceiling Speakers Pair for  $149  + free shipping",
       "description": "It's $600 off list and the best deal we could find.  Buy Now at Best Buy      Features     Handles up to 125W input power   6-1/2\" Glass fiber cone woofer   Pivoting silk-dome tweeter   45Hz - 20kHz f",
       "link": "https://www.dealnews.com/Sonance-MAG6-R-In-Ceiling-Speakers-Pair-for-149-free-shipping/21843217.html?iref=rss-c142",
@@ -339,7 +387,7 @@
       "date_display": "Jun 19, 08:51 AM"
     },
     {
-      "id": "DealNews-340528",
+      "id": "DealNews-174327",
       "title": "Kids Video Walkie Talkies 2-Pack for $13 + free shipping w/ Prime",
       "description": "Walkie talkies give kids a way to communicate across the house or yard without needing a phone, and this 2-pack covers the basics for sibling play or neighborhood use. At $13, that's 50% off the $27 l",
       "link": "https://www.dealnews.com/Kids-Video-Walkie-Talkies-2-Pack-for-13-free-shipping-w-Prime/21843211.html?iref=rss-c142",
@@ -351,7 +399,7 @@
       "date_display": "Jun 19, 08:42 AM"
     },
     {
-      "id": "DealNews-788493",
+      "id": "DealNews-649892",
       "title": "Vintage Record Player with Speakers for $30 + free shipping",
       "description": "Save $10 compared to the typical price on this vintage-style record player with modern features like wireless playback and built-in speakers, making it work for both vinyl and digital music lovers. Bu",
       "link": "https://www.dealnews.com/Vintage-Record-Player-with-Speakers-for-30-free-shipping/21843209.html?iref=rss-c142",
@@ -363,7 +411,7 @@
       "date_display": "Jun 19, 08:40 AM"
     },
     {
-      "id": "DealNews Tools-494149",
+      "id": "DealNews Tools-829076",
       "title": "Rexing R4-RD 1080p Dash Cam for $210 + free shipping",
       "description": "As one of its daily deals, Best Buy offers the Rexing R4-RD 1080p Dash Cam for $210. That's a savings of $90. It ships free. Buy Now at Best Buy      Features     170-degree field of view",
       "link": "https://www.dealnews.com/Rexing-R4-RD-1080-p-Dash-Cam-for-210-free-shipping/21843208.html?iref=rss-c238",
@@ -375,7 +423,7 @@
       "date_display": "Jun 19, 08:33 AM"
     },
     {
-      "id": "DealNews-191367",
+      "id": "DealNews-514731",
       "title": "Pioneer PN70-R851-26U 70\" 4K HDR LED UHD Smart Roku TV for $280 + free shipping",
       "description": "As one of its daily deals, Best Buy offers the Pioneer PN70-R851-26U 70\" 4K HDR LED UHD Smart Roku TV for $280. That's $230 off and the lowest price we've seen for it. Plus, it ships free. Buy Now at ",
       "link": "https://www.dealnews.com/products/Pioneer/Pioneer-PN70-R851-26-U-70-4-K-HDR-LED-UHD-Smart-Roku-TV/497801.html?iref=rss-c142",
@@ -387,7 +435,7 @@
       "date_display": "Jun 19, 07:41 AM"
     },
     {
-      "id": "DealNews Tools-477697",
+      "id": "DealNews Tools-946776",
       "title": "Retractable Ratchet Strap 2-Pack: 1-cent + free shipping w/ $25",
       "description": "Today only at Amazon Haul, get this Retractable Ratchet Strap 2-Pack for 1-cent. It's a great deal for a 2-pack of ratchet straps. Shipping is free on Amazon Haul orders of $25 or more. Shop Now at Am",
       "link": "https://www.dealnews.com/Retractable-Ratchet-Strap-2-Pack-1-cent-free-shipping-w-25/21843183.html?iref=rss-c238",
@@ -399,7 +447,7 @@
       "date_display": "Jun 19, 07:30 AM"
     },
     {
-      "id": "DealNews Tools-569245",
+      "id": "DealNews Tools-806345",
       "title": "Fortune Perfectus FSR602 All Season 175/65R15 84H Passenger Tire for $50 + free shipping",
       "description": "This Fortune Perfectus FSR602 tire is $49.95 at Walmart, down from $110. It's the best deal we could find by $20. The tire features an asymmetric tread pattern, four circumferential water-channeling g",
       "link": "https://www.dealnews.com/Fortune-Perfectus-FSR602-All-Season-175-65-R15-84-H-Passenger-Tire-for-50-free-shipping/21843153.html?iref=rss-c238",
@@ -411,7 +459,7 @@
       "date_display": "Jun 19, 06:28 AM"
     },
     {
-      "id": "DealNews-256164",
+      "id": "DealNews-040038",
       "title": "Charging Devices Clearance Sale at Woot: Up to 50% off + free shipping w/ Prime",
       "description": "Get deals on a large selection of charging devices in this clearance sale at Woot. We've pictured the RTOPS 3 in 1 Magnetic Wireless Charger for $13.99 (low by $3). Shipping is free for Prime members.",
       "link": "https://www.dealnews.com/Charging-Devices-Clearance-Sale-at-Woot-Up-to-50-off-free-shipping-w-Prime/21843142.html?iref=rss-c142",
@@ -423,7 +471,7 @@
       "date_display": "Jun 19, 06:09 AM"
     },
     {
-      "id": "DealNews-966975",
+      "id": "DealNews-107675",
       "title": "Woot Pre-Prime Day Deals: Up to 74% off  + free shipping w/ Prime",
       "description": "Woot's Pre-Prime Day Deals event features discounts of up to 74% off across tech, home, pet supplies, personal care, outdoor gear, and more. Highlights include the Countertop Kitchen Composter for $90",
       "link": "https://www.dealnews.com/Woot-Pre-Prime-Day-Deals-Up-to-74-off-free-shipping-w-Prime/21843127.html?iref=rss-c142",
@@ -435,7 +483,7 @@
       "date_display": "Jun 19, 05:25 AM"
     },
     {
-      "id": "DealNews-041486",
+      "id": "DealNews-648616",
       "title": "Tech Impressions Swivel Power Strip 2-Pack for $30 + $5.50 shipping",
       "description": "This 2-pack of Tech Impressions power strips costs just $30 today at HSN. Though shipping adds $5.50, it's still a good deal, working out at just $17.75 each. Amazon charges around $25 each for simila",
       "link": "https://www.dealnews.com/Tech-Impressions-Swivel-Power-Strip-2-Pack-for-30-5-50-shipping/21843115.html?iref=rss-c142",
@@ -447,7 +495,7 @@
       "date_display": "Jun 19, 04:44 AM"
     },
     {
-      "id": "DealNews Tools-064513",
+      "id": "DealNews Tools-433169",
       "title": "Cordless Car Cleaning Tool for $40 + free shipping",
       "description": "This cordless car cleaner is $39.84 at Amazon. That's a $15 savings. Shipping is free.\u00a0 Buy Now at Amazon      Features     Brushless motor with 3 adjustable power levels   LCD display   16.5' hose wi",
       "link": "https://www.dealnews.com/products/Cordless-Car-Cleaning-Tool/499397.html?iref=rss-c238",
@@ -459,7 +507,7 @@
       "date_display": "Jun 18, 07:05 PM"
     },
     {
-      "id": "DealNews Tools-552871",
+      "id": "DealNews Tools-219257",
       "title": "Garvee 51\" x 36\" Universal Roof Rack Basket for $84 w/ Prime + free shipping",
       "description": "Amazon offers this Garvee roof rack basket for $84.12. It's the best price we found by $19. Shipping is free.\u00a0 Buy Now at Amazon      Features     200-lb weight capacity   51\" x 36\" basket dimensions ",
       "link": "https://www.dealnews.com/products/Garvee/Garvee-51-x-36-Universal-Roof-Rack-Basket/499395.html?iref=rss-c238",
@@ -471,7 +519,7 @@
       "date_display": "Jun 18, 06:47 PM"
     },
     {
-      "id": "DealNews Tools-302483",
+      "id": "DealNews Tools-945753",
       "title": "Rain-X Early Prime Deals at Amazon: Up to 51% off w/ Prime + free shipping",
       "description": "Prime members save on select Rain-X wiper blades, cleaners, and repellents at Amazon. We've pictured the Rain-X 23-oz. Cerami-X Glass Cleaner + Water Repellent for $6.43 for Prime members ($1 off). Sh",
       "link": "https://www.dealnews.com/Rain-X-Early-Prime-Deals-at-Amazon-Up-to-51-off-w-Prime-free-shipping/21842455.html?iref=rss-c238",
@@ -483,7 +531,7 @@
       "date_display": "Jun 18, 06:39 PM"
     },
     {
-      "id": "DealNews Tools-874870",
+      "id": "DealNews Tools-123146",
       "title": "Rain-X 16-oz. Glass Treatment Trigger 2-Pack for $14 w/ Prime + free shipping",
       "description": "At Amazon, this 2-pack of Rain-X glass treatment drops to $13.59 for Prime members. That's a $2 savings. Shipping is free.\u00a0 Buy Now at Amazon      Features     16 fl oz per bottle   Pack of 2   Exteri",
       "link": "https://www.dealnews.com/products/Rain-X/Rain-X-16-oz-Glass-Treatment-Trigger-2-Pack/499394.html?iref=rss-c238",
@@ -495,7 +543,7 @@
       "date_display": "Jun 18, 06:32 PM"
     },
     {
-      "id": "DealNews Tools-280964",
+      "id": "DealNews Tools-106697",
       "title": "Elantrip 2-Pack Front Car Seat Covers for $38 w/ Prime + free shipping",
       "description": "This 2-pack of front seat covers is $38.24 at Amazon. It's the best price we found by $11. Shipping is free.\u00a0 Buy Now at Amazon      Features     2-pack front seat covers   Waterproof leather and tear",
       "link": "https://www.dealnews.com/products/Elantrip-2-Pack-Front-Car-Seat-Covers/499393.html?iref=rss-c238",
@@ -507,7 +555,7 @@
       "date_display": "Jun 18, 06:22 PM"
     },
     {
-      "id": "DealNews Tools-865588",
+      "id": "DealNews Tools-621473",
       "title": "OEDRO 5.8-Foot Tri-Fold Soft Tonneau Cover for 2019-2026 Silverado/Sierra 1500 for $159 + free shipping",
       "description": "At eBay, this tri-fold truck bed cover is $158.99. That's $37 less than you'd pay at Amazon. Shipping is free.\u00a0 Buy Now at eBay      Features     Fits 2019-2026 Chevy Silverado/GMC Sierra 1500 Crew Ca",
       "link": "https://www.dealnews.com/products/OEDRO-5-8-Foot-Tri-Fold-Soft-Tonneau-Cover-for-2019-2026-Silverado-Sierra-1500/499392.html?iref=rss-c238",
@@ -519,7 +567,7 @@
       "date_display": "Jun 18, 06:16 PM"
     },
     {
-      "id": "DealNews Tools-597688",
+      "id": "DealNews Tools-932760",
       "title": "Walmart Automotive Savings: Up to 89% off + free shipping w/ $35",
       "description": "Click the tabs at the top of the offers to browse deals on car care accessories, wheels, tools, motor oil, replacement parts, and more in this automotive sale.\u00a0 Shipping is free with orders of $35 or ",
       "link": "https://www.dealnews.com/Walmart-Automotive-Savings-Up-to-89-off-free-shipping-w-35/21842450.html?iref=rss-c238",
@@ -531,7 +579,7 @@
       "date_display": "Jun 18, 06:15 PM"
     },
     {
-      "id": "DealNews Tools-402179",
+      "id": "DealNews Tools-797769",
       "title": "Rain-X WeatherBeater 22\" Windshield Wiper Blades 2-Pack for $23 w/ Prime + free shipping w/ Prime",
       "description": "Amazon offers Prime members the Rain-X WeatherBeater 22\" Windshield Wiper Blades 2-Pack for $23.03. It's the best price we found by $5. Shipping is free for Prime members.\u00a0 Buy Now at Amazon      Feat",
       "link": "https://www.dealnews.com/products/Rain-X/Rain-X-Weather-Beater-22-Windshield-Wiper-Blades-2-Pack/499391.html?iref=rss-c238",
@@ -543,7 +591,7 @@
       "date_display": "Jun 18, 06:07 PM"
     },
     {
-      "id": "DealNews Tools-764826",
+      "id": "DealNews Tools-602805",
       "title": "Walmart Tire Savings for Deals from $43 + free shipping",
       "description": "You can shop Walmart for Rollbacks and deals on tires, with prices starting at $43. Brands include Goodyear, Bridgestone, Yokohama, Dunlop, Continental, Cooper, and Hankook. Plus, most ship for free t",
       "link": "https://www.dealnews.com/Walmart-Tire-Savings-for-Deals-from-43-free-shipping/21842448.html?iref=rss-c238",
@@ -555,7 +603,7 @@
       "date_display": "Jun 18, 06:03 PM"
     },
     {
-      "id": "DealNews-672630",
+      "id": "DealNews-626248",
       "title": "Amazon Echo Spot Smart Alarm Clock (2024) for $45 w/ Prime + free shipping",
       "description": "A Prime Early Deal, Amazon offers the Amazon Echo Spot Smart Alarm Clock (2024) for $44.99. That ties the best-ever price, and other major retailers charge $80. Shipping is free.\u00a0 Buy Now at Amazon   ",
       "link": "https://www.dealnews.com/Amazon-Echo-Spot-Smart-Alarm-Clock-2024-for-45-w-Prime-free-shipping/21842427.html?iref=rss-c142",
@@ -567,19 +615,7 @@
       "date_display": "Jun 18, 04:08 PM"
     },
     {
-      "id": "DealNews-658061",
-      "title": "SmallRig Foldable V Mount Battery Plate for Mirrorless/DSLR Cameras for $64 + free shipping",
-      "description": "Videographers and camera operators running V-mount batteries on their rigs will find this plate useful for keeping power organized without a bulky permanent setup, and it's currently $16 off the $80 l",
-      "link": "https://www.dealnews.com/Small-Rig-Foldable-V-Mount-Battery-Plate-for-Mirrorless-DSLR-Cameras-for-64-free-shipping/21842394.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 16,
-      "date_iso": "2026-06-18T12:41:06-04:00",
-      "date_display": "Jun 18, 12:41 PM"
-    },
-    {
-      "id": "DealNews Tools-064464",
+      "id": "DealNews Tools-981602",
       "title": "Botslab 4K 3-Channel Dash Cam for $121 + free shipping",
       "description": "Apply coupon code \"R7D7MCPB\" for a savings of $99. Buy Now at Amazon      Features     high-temperature-resistant super capacitor   170\u00b0 front + 120\u00b0 side + 150\u00b0 rear coverage   8-second pre-recording",
       "link": "https://www.dealnews.com/products/Botslab/Botslab-4-K-3-Channel-Dash-Cam/498923.html?iref=rss-c238",
@@ -591,7 +627,7 @@
       "date_display": "Jun 18, 11:38 AM"
     },
     {
-      "id": "DealNews Tools-211166",
+      "id": "DealNews Tools-573259",
       "title": "California Car Duster Detailing Kit for $26 + free shipping",
       "description": "Amazon offers The Original California Car Duster Detailing Kit for $26.32. It's the best price we found by $12. Shipping is free.\u00a0 Buy Now at Amazon      Features     Includes standard car duster and ",
       "link": "https://www.dealnews.com/products/California-Car-Duster-Detailing-Kit/499277.html?iref=rss-c238",
@@ -603,7 +639,7 @@
       "date_display": "Jun 17, 08:37 PM"
     },
     {
-      "id": "DealNews Tools-324877",
+      "id": "DealNews Tools-547117",
       "title": "Paffenery Ventilated Cooling Car Seat Cover for $80 + free shipping",
       "description": "This ventilated seat cover in Classic Black $79.99 at Amazon. That's $20 below the original price. Shipping is free.\u00a0 Buy Now at Amazon      Features     8 turbo cooling fans   3-level temperature adj",
       "link": "https://www.dealnews.com/products/Paffenery-Ventilated-Cooling-Car-Seat-Cover/499265.html?iref=rss-c238",
