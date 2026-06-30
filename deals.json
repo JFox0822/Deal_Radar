@@ -1,9 +1,93 @@
 {
-  "updated": "2026-06-30 19:19 UTC",
-  "count": 42,
+  "updated": "2026-06-30 21:14 UTC",
+  "count": 47,
   "deals": [
     {
-      "id": "Slickdeals-643738",
+      "id": "Slickdeals-546471",
+      "title": "2-Pack 12\" Kingbuy Metal Hanging Planter Basket w/ Coconut Liner $13.50 & More",
+      "description": "Kingbuy via Amazon [amazon.com] has *2-Pack 12\" Kingbuy Metal Hanging Planter Basket w/ Coconut Liner (Grid)* on sale for $26.98 - 50% off when you enter the coupon code IFETDQ7Z =*$13.49*. Shipping..",
+      "link": "https://slickdeals.net/f/19701996-2-pack-12-kingbuy-metal-hanging-planter-basket-w-coconut-liner-13-49-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": 50,
+      "date_iso": "2026-06-30T21:13:22+00:00",
+      "date_display": "Jun 30, 09:13 PM"
+    },
+    {
+      "id": "Slickdeals-737033",
+      "title": "It Takes Two Standard (Nintendo Switch Digital Code) $19.95 & More",
+      "description": "Amazon.com Services LLC via Amazon [amazon.com] has *It Takes Two Standard - Nintendo Switch [Digital Code]* for *$19.97*. \n*Shipping is free* with Prime or on $35+ orders.[list][*]The Legend of...",
+      "link": "https://slickdeals.net/f/19689015-19-97-it-takes-two-standard-nintendo-switch-digital-code-more-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-30T20:58:21+00:00",
+      "date_display": "Jun 30, 08:58 PM"
+    },
+    {
+      "id": "Slickdeals-497819",
+      "title": "The Legend of Zelda: Breath of the Wild Nintendo Switch 2 Upgrade Pack $7 (Digital Code)",
+      "description": "Amazon.com Services LLC via Amazon [amazon.com] has *The Legend of Zelda: Breath of the Wild \u2013 Nintendo Switch 2 Edition Upgrade Pack [Digital Code]* for *$6.99*. \n*Shipping is free* with Prime or on.",
+      "link": "https://slickdeals.net/f/19690386-the-legend-of-zelda-breath-of-the-wild-nintendo-switch-2-upgrade-pack-7-digital-code?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-30T20:47:55+00:00",
+      "date_display": "Jun 30, 08:47 PM"
+    },
+    {
+      "id": "Slickdeals-322013",
+      "title": "Logitech MK270 Wireless Keyboard & Mouse Combo $15.50",
+      "description": "Amazon [amazon.com] has *Logitech MK270 Wireless Keyboard and Mouse Combo for Windows* for $23.99 - $8.50 when you 'clip' the coupon on product page = *$15.49*. \n*Shipping is free* with Prime or on...",
+      "link": "https://slickdeals.net/f/19704735-ac-15-49-logitech-mk270-wireless-keyboard-and-mouse-combo-for-windows-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-30T20:07:55+00:00",
+      "date_display": "Jun 30, 08:07 PM"
+    },
+    {
+      "id": "Slickdeals-576605",
+      "title": "VELCRO 4'x2'' Roll Indoor/Outdoor Industrial Strength Tape (Black) $3.95",
+      "description": "Amazon [amazon.com] has *VELCRO 4'x2'' Roll Indoor/Outdoor Industrial Strength Tape* (Black) for *$3.97*. Shipping is free w/ Prime or on $35+. \n \nTarget [target.com] has *VELCRO 4'x2'' Roll...",
+      "link": "https://slickdeals.net/f/19704807-velcro-4-x2-roll-indoor-outdoor-industrial-strength-tape-black-3-97-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Outdoor & Lawn",
+      "discount": null,
+      "date_iso": "2026-06-30T19:59:17+00:00",
+      "date_display": "Jun 30, 07:59 PM"
+    },
+    {
+      "id": "Slickdeals-381978",
+      "title": "10\" Craftsman 20V Cordless String Trimmer w/ 2.0Ah Battery & Charger $49 + Free Pickup",
+      "description": "Ace Hardware has *10\" Craftsman 20V Max Cordless String Trimmer w/ 2.0Ah Battery & Charger* (CMCST915D1) on sale for *$49*. Select free store pickup where available. \n \nThanks to community member...",
+      "link": "https://slickdeals.net/f/19639620-craftsman-cmcst915d1-10-in-20-v-battery-string-trimmer-kit-2-0-ah-battery-charger-49?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Ace Hardware",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-06-30T19:55:26+00:00",
+      "date_display": "Jun 30, 07:55 PM"
+    },
+    {
+      "id": "Slickdeals-227486",
+      "title": "4-in-1 Fanttik Cruise V11 APEX Cordless Handheld Vacuum w/ 180\u00b0 Rotatable Handle $66 + Free S&H",
+      "description": "*Fanttik Innovation Direct via Amazon [amazon.com]* has *Fanttik Cruise V11 APEX 4-in-1 Cordless Handheld Vacuum w/ 145W Brushless Motor & AxLoop 180\u00b0 Rotatable Handle* for $119.99 - (*$54*) coupon...",
+      "link": "https://slickdeals.net/f/19649028-fanttik-cruise-v11-apex-4-in-1-cordless-handheld-vacuum-180-rotatable-handle-65-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": null,
+      "date_iso": "2026-06-30T19:44:04+00:00",
+      "date_display": "Jun 30, 07:44 PM"
+    },
+    {
+      "id": "Slickdeals-340164",
       "title": "5-Speed Fanttik F2 Master Mini Cordless Rotary Tool Kit w/ 35 Accessories & USB-C $50 + Free S&H",
       "description": "*Fanttik Innovation Direct via Amazon [amazon.com]* has *Fanttik F2 Master Mini Cordless Rotary Tool Kit w/ NeoPulse Motor, 5-Speed, 25,000 RPM & 35 Accessories* on sale for $63.99 - (*$10*) coupon...",
       "link": "https://slickdeals.net/f/19650639-fanttik-f2-master-mini-cordless-rotary-tool-kit-w-neopulse-motor-5-speed-25-000-rpm-35-accessories-53-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -15,7 +99,7 @@
       "date_display": "Jun 30, 07:19 PM"
     },
     {
-      "id": "Slickdeals-960815",
+      "id": "Slickdeals-794094",
       "title": "Fanttik Slim V8 Apex 4-in-1 Cordless Car Vacuum $52 + Free S&H",
       "description": "*Fanttik Innovation Direct via Amazon* [amazon.com] has the *Fanttik Slim V8 Apex 4-in-1 Cordless Car Vacuum *on sale for $77.99 - save an extra 15% using his link [amazon.com] - coupon code ODIFZABE.",
       "link": "https://slickdeals.net/f/19645767-fanttik-slim-v8-apex-4-in-1-cordless-car-vacuum-52-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -27,7 +111,7 @@
       "date_display": "Jun 30, 07:16 PM"
     },
     {
-      "id": "Slickdeals-128337",
+      "id": "Slickdeals-776688",
       "title": "6\" Seesii Mini Cordless Electric Hand Chainsaw w/ 2x 21V Batteries $19.70",
       "description": "Seesii-US via Amazon [amazon.com] has *6\" **Seesii Cordless Mini Handheld Electric Chainsaw w/ 2 Batteries* on sale for $33.99 - $14.28 off when you apply promo code SEESIIUS at checkout = *$19.71*...",
       "link": "https://slickdeals.net/f/19705191-6-seesii-cordless-mini-handheld-electric-chainsaw-w-2-batteries-19-71-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -39,43 +123,79 @@
       "date_display": "Jun 30, 06:35 PM"
     },
     {
-      "id": "Slickdeals-074785",
-      "title": "Bose SoundLink Flex Bluetooth Speaker (2nd Gen, Blue) $89 + Free S&H",
-      "description": "Amazon.com has Bose SoundLink Flex Bluetooth Speaker (2nd Gen) - Portable Outdoor Speaker with Hi-Fi Audio, Waterproof and Dustproof, USB-C, Up to 12 Hours Battery Life, Blue Dusk on sale for $89....",
-      "link": "https://slickdeals.net/f/19704972-bose-soundlink-flex-bluetooth-speaker-2nd-gen-blue-dusk-89-free-s-h-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
+      "id": "DealNews-657196",
+      "title": "Motorola 4th of July Smartphone Deals for  From $180 +  free shipping",
+      "description": "Shop Motorola's 4th of July sale and save on unlocked smartphones, with discounts on select razr, edge, and moto g models. We've pictured the moto g stylus 5G (2024) for $180 ($170 off). Other highlig",
+      "link": "https://www.dealnews.com/Motorola-4-th-of-July-Smartphone-Deals-for-From-180-free-shipping/21864424.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 170,
+      "date_iso": "2026-06-30T15:54:26-04:00",
+      "date_display": "Jun 30, 03:54 PM"
+    },
+    {
+      "id": "DealNews-366189",
+      "title": "Bose Summer Flash Sale : Up to 50% off +  free shipping",
+      "description": "Bose has extended its Summer Flash Sale with discounts of up to 50% on select headphones, earbuds, speakers, soundbars, and more. We've pictured the Bose QuietComfort Headphones for $179 ($180 off). O",
+      "link": "https://www.dealnews.com/Bose-Summer-Flash-Sale-Up-to-50-off-free-shipping/21864421.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 50,
+      "date_iso": "2026-06-30T15:45:39-04:00",
+      "date_display": "Jun 30, 03:45 PM"
+    },
+    {
+      "id": "DealNews-031336",
+      "title": "Ruggard Leda Memory Card Case for SD & microSD Cards  for $10  + free shipping",
+      "description": "Today only,  B&H Photo offers the Ruggard Leda Memory Card Case for SD & microSD Cards for $9.95 (was $19.95). That's a $10 savings and the lowest price we could find. Shipping is free.   Deal ends to",
+      "link": "https://www.dealnews.com/Ruggard-Leda-Memory-Card-Case-for-SD-micro-SD-Cards-for-10-free-shipping/21864419.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Lowe",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-30T15:34:42-04:00",
+      "date_display": "Jun 30, 03:34 PM"
+    },
+    {
+      "id": "DealNews-305989",
+      "title": "Manfrotto MVH502A Fluid Head & 546B Tripod System  for $370 +  free shipping",
+      "description": "Today only, B&H Photo offers the Manfrotto MVH502A Fluid Head and 546B Tripod System with Carrying Bag for $369.95 (was $769.95). That's a $400 savings and the lowest price we could find. Shipping is ",
+      "link": "https://www.dealnews.com/Manfrotto-MVH502-A-Fluid-Head-546-B-Tripod-System-for-370-free-shipping/21864416.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Lowe",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-06-30T15:32:21-04:00",
+      "date_display": "Jun 30, 03:32 PM"
+    },
+    {
+      "id": "DealNews-779444",
+      "title": "SynclaspX 10000mAh Rechargeable Belt Clip Waist Fan for $14 + free shipping w/ Prime",
+      "description": "This belt clip fan is $6 off its regular price at Amazon. The 10000mAh battery supports up to 24 hours of runtime and doubles as a power bank for phone charging. Buy Now at Amazon      Features     10",
+      "link": "https://www.dealnews.com/Synclasp-X-10000-m-Ah-Rechargeable-Belt-Clip-Waist-Fan-for-14-free-shipping-w-Prime/21864411.html?iref=rss-c142",
+      "source": "DealNews",
       "retailer": "Amazon",
       "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-06-30T17:51:24+00:00",
-      "date_display": "Jun 30, 05:51 PM"
+      "discount": 6,
+      "date_iso": "2026-06-30T15:23:43-04:00",
+      "date_display": "Jun 30, 03:23 PM"
     },
     {
-      "id": "Slickdeals-240094",
-      "title": "Split Fiction (PS5 / Xbox Series X / Switch 2) $32.50",
-      "description": "Best Buy has Split Fiction on sale for $32.49. Free store pick up or free shipping for My Best Buy Members. \n \nPlayStation 5 [bestbuy.com] \nXbox Series X [bestbuy.com] \nNintendo Switch 2...",
-      "link": "https://slickdeals.net/f/19699272-split-fiction-playstation-5-xbox-series-x-nintendo-switch-2-32-49-best-buy?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Best Buy",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-06-30T16:59:40+00:00",
-      "date_display": "Jun 30, 04:59 PM"
+      "id": "DealNews Tools-960430",
+      "title": "Orbit Single-Dial Digital Hose Watering Timer for $14 + free shipping w/ Prime",
+      "description": "The Orbit 62024 is $4 off its regular price. It runs on 3 AA batteries and supports watering intervals of 2 to 90 minutes, with scheduling options for daily, every other day, or every third day. Buy N",
+      "link": "https://www.dealnews.com/products/Orbit-Irrigation-Products/Orbit-Single-Dial-Digital-Hose-Watering-Timer/503440.html?iref=rss-c238",
+      "source": "DealNews Tools",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": 4,
+      "date_iso": "2026-06-30T15:21:16-04:00",
+      "date_display": "Jun 30, 03:21 PM"
     },
     {
-      "id": "Slickdeals-132447",
-      "title": "DeWALT 20V MAX XR Brushless Jigsaw w/ 20V/60V 9Ah FLEXVOLT Battery & Charger $229 + Free S&H",
-      "description": "Home Depot [homedepot.com] has *DeWALT 20V MAX XR Cordless Brushless Jigsaw w/ 9Ah Battery & Fast Charger *on sale for *$229*. *Shipping is free.* \nThis sale price matches the June 2026 *Frontpage...",
-      "link": "https://slickdeals.net/f/19703139-dewalt-20v-max-xr-cordless-brushless-jigsaw-w-9ah-battery-fast-charger-229-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Home Depot",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-06-30T16:34:41+00:00",
-      "date_display": "Jun 30, 04:34 PM"
-    },
-    {
-      "id": "DealNews Tools-897907",
+      "id": "DealNews Tools-475070",
       "title": "Red Devil 12-oz. Expanding Polyurethane Foam Sealant for $5 + free shipping w/ Prime",
       "description": "This Red Devil expanding foam sealant is down from $6.45. The 12-oz. aerosol can adheres to wood, concrete, cinder block, aluminum, and fiberglass, and cures to a sandable, paintable, and stainable fi",
       "link": "https://www.dealnews.com/Red-Devil-12-oz-Expanding-Polyurethane-Foam-Sealant-for-5-free-shipping-w-Prime/21864398.html?iref=rss-c238",
@@ -87,7 +207,7 @@
       "date_display": "Jun 30, 02:45 PM"
     },
     {
-      "id": "DealNews Tools-702451",
+      "id": "DealNews Tools-521828",
       "title": "Assorted Zip Ties 400-Pack for $6 + free shipping w/ Prime",
       "description": "Amazon offers this Assorted Zip Ties 400-Pack for $5.99. That's $1 off. You'll get four 100-packs in 4\", 6\", 8\", and 12\" sizes. Shipping is free for Prime members. Buy Now at Amazon      Features     ",
       "link": "https://www.dealnews.com/Assorted-Zip-Ties-400-Pack-for-6-free-shipping-w-Prime/21864392.html?iref=rss-c238",
@@ -99,7 +219,7 @@
       "date_display": "Jun 30, 02:30 PM"
     },
     {
-      "id": "DealNews-302508",
+      "id": "DealNews-757619",
       "title": "B&H Photo July 4th Deals: Up to 50% off + free shipping",
       "description": "The B&H Photo July 4th Deals include cameras, drones, audio, monitors, and more. We've pictured the DJI Osmo Pocket 3 for $378 ($121 off). Most items qualify for free shipping. Shop Now at B&H Photo V",
       "link": "https://www.dealnews.com/B-H-Photo-July-4-th-Deals-Up-to-50-off-free-shipping/21864381.html?iref=rss-c142",
@@ -111,7 +231,7 @@
       "date_display": "Jun 30, 01:35 PM"
     },
     {
-      "id": "DealNews Tools-075045",
+      "id": "DealNews Tools-270845",
       "title": "Automotive Filter Flex Funnel 2-Pack for $13 + free shipping w/ Prime",
       "description": "This filter flex funnel 2-pack is $12.74 at Amazon. That's a $5 savings and within a few cents of the best-ever price. Shipping is free for Prime members.\u00a0 Buy Now at Amazon      Features     2-pack (",
       "link": "https://www.dealnews.com/products/Automotive-Filter-Flex-Funnel-2-Pack/503436.html?iref=rss-c238",
@@ -123,7 +243,7 @@
       "date_display": "Jun 30, 01:19 PM"
     },
     {
-      "id": "DealNews Tools-196776",
+      "id": "DealNews Tools-349338",
       "title": "Degree 3-in-1 Antiperspirant Deodorant Sexy Intrigue 4-Pack for $14 + free shipping w/ Prime",
       "description": "This 4-pack of Degree 3-in-1 Antiperspirant Deodorant is $6 off its regular price. Each 2.6-oz. stick offers 72-hour sweat and odor protection and is formulated to resist white marks and yellow stains",
       "link": "https://www.dealnews.com/Degree-3-in-1-Antiperspirant-Deodorant-Sexy-Intrigue-4-Pack-for-14-free-shipping-w-Prime/21864364.html?iref=rss-c238",
@@ -135,7 +255,7 @@
       "date_display": "Jun 30, 12:23 PM"
     },
     {
-      "id": "DealNews-800045",
+      "id": "DealNews-006935",
       "title": "Sony 65\" BRAVIA 3 Class 4K UHD HDR LED Smart Google TV for $598 + free shipping",
       "description": "The Sony BRAVIA 3 is $202 off its regular price and still matching its Prime Day price from last week. The 65\" LED panel supports Dolby Vision HDR and Dolby Atmos, and runs Google TV with Google Assis",
       "link": "https://www.dealnews.com/products/Sony-Electronics/Sony-65-BRAVIA-3-Class-4-K-UHD-HDR-LED-Smart-Google-TV/471575.html?iref=rss-c142",
@@ -147,7 +267,7 @@
       "date_display": "Jun 30, 12:17 PM"
     },
     {
-      "id": "DealNews Tools-703945",
+      "id": "DealNews Tools-050949",
       "title": "Hat Storage & Display Hanger for $2 + free shipping w/ $25",
       "description": "This hat storage hanger is designed to store baseball caps, scarves, suspenders, and other accessories. Each account is limited to two and you'll need to add over $25 of total Amazon Haul items to get",
       "link": "https://www.dealnews.com/Hat-Storage-Display-Hanger-for-2-free-shipping-w-25/21864332.html?iref=rss-c238",
@@ -159,7 +279,7 @@
       "date_display": "Jun 30, 10:27 AM"
     },
     {
-      "id": "DealNews Tools-185823",
+      "id": "DealNews Tools-258427",
       "title": "4\" Self-Locking Nylon Cable Zip Ties 100-Pack for $1 + free shipping w/ $25",
       "description": "This 100-pack of nylon zip ties has a 50-lb. tensile strength and is rated for indoor and outdoor use. Each user is limited to two items in the Flash Sale section and must purchase $25 or Amazon Haul ",
       "link": "https://www.dealnews.com/4-Self-Locking-Nylon-Cable-Zip-Ties-100-Pack-for-1-free-shipping-w-25/21864331.html?iref=rss-c238",
@@ -171,7 +291,7 @@
       "date_display": "Jun 30, 10:25 AM"
     },
     {
-      "id": "DealNews-197231",
+      "id": "DealNews-154113",
       "title": "17\" Extension Cord Organizer Straps for $1 + free shipping w/ $25 order",
       "description": "For a limited time, this extension cord storage strap is less than a buck at Amazon Haul. You are limited to two items per user and will need to purchase over $25 of Amazon Haul items to get free ship",
       "link": "https://www.dealnews.com/17-Extension-Cord-Organizer-Straps-for-1-free-shipping-w-25-order/21864329.html?iref=rss-c142",
@@ -183,7 +303,7 @@
       "date_display": "Jun 30, 10:21 AM"
     },
     {
-      "id": "DealNews Tools-398649",
+      "id": "DealNews Tools-088276",
       "title": "Amazon $2 Flash Sale for $2 or less + free shipping w/ $25",
       "description": "Amazon's Limited-Time Flash Deals page features a rotating selection of household, kitchen, beauty, and accessories items starting around $0.50, with everything priced under $2. Shoppers are limited t",
       "link": "https://www.dealnews.com/Amazon-2-Flash-Sale-for-2-or-less-free-shipping-w-25/21864326.html?iref=rss-c238",
@@ -195,7 +315,7 @@
       "date_display": "Jun 30, 10:06 AM"
     },
     {
-      "id": "DealNews-922900",
+      "id": "DealNews-664590",
       "title": "Unlocked Samsung Galaxy S26 Ultra Android Smartphone:  $200 off, or up to extra $720 off w/ trade +  free shipping",
       "description": "Trade in an eligible device, and you can get up to $720 off, dropping starting prices to $580. Alternatively, those without a trade can get $200 off, plus get a $200 credit to use towards the purchase",
       "link": "https://www.dealnews.com/Unlocked-Samsung-Galaxy-S26-Ultra-Android-Smartphone-200-off-or-up-to-extra-720-off-w-trade-free-shipping/21864320.html?iref=rss-c142",
@@ -207,7 +327,7 @@
       "date_display": "Jun 30, 09:54 AM"
     },
     {
-      "id": "DealNews-010948",
+      "id": "DealNews-279063",
       "title": "SVS 4th of July Outlet Store Blowout: Up to 42% off + shipping varies",
       "description": "The SVS 4th of July Outlet Store Blowout takes up to 42% off speakers and subwoofers, with the Ultra Bookshelf at $350 each (down from $600), the PB-1000 Pro subwoofer at $750 (down from $850), and th",
       "link": "https://www.dealnews.com/SVS-4-th-of-July-Outlet-Store-Blowout-Up-to-42-off-shipping-varies/21864319.html?iref=rss-c142",
@@ -219,7 +339,7 @@
       "date_display": "Jun 30, 09:47 AM"
     },
     {
-      "id": "DealNews-805074",
+      "id": "DealNews-069746",
       "title": "NUU B30 5G Unlocked Android Smartphone for $150 + free shipping",
       "description": "Get the NUU B30 5G Unlocked Android Smartphone for $60 less than Amazon charges when you buy from Nuu Mobile direct. Shipping is free. Buy Now at Nuu Mobile",
       "link": "https://www.dealnews.com/NUU-B30-5-G-Unlocked-Android-Smartphone-for-150-free-shipping/21864297.html?iref=rss-c142",
@@ -231,7 +351,7 @@
       "date_display": "Jun 30, 08:50 AM"
     },
     {
-      "id": "DealNews-209113",
+      "id": "DealNews-472167",
       "title": "SoundPEATS PearlClip Pro Open Ear Clip-on Earbuds for $30 w/ Prime + free shipping",
       "description": "This price shows at the final stage of checkout. SoundPEATS PearlClip Pro are open-ear clip-on earbuds, meaning they sit on your ear rather than in it, which suits people who want to stay aware of the",
       "link": "https://www.dealnews.com/Sound-PEATS-Pearl-Clip-Pro-Open-Ear-Clip-on-Earbuds-for-30-w-Prime-free-shipping/21851439.html?iref=rss-c142",
@@ -243,7 +363,7 @@
       "date_display": "Jun 30, 06:37 AM"
     },
     {
-      "id": "DealNews-783002",
+      "id": "DealNews-743509",
       "title": "OtterBox USB-C 30W Charger w/ USB-C Cable  for  $10, 2-pack for $17, 3-pack for $22 + free shipping w/ Prime",
       "description": "At Woot, get this OtterBox USB-C 30W Charger w/ USB-C Cable for $9.99. You can also get a 2-pack for $16.99 or a 3-pack for $21.99. Shipping is free for Prime members. Buy Now at Woot! An Amazon Compa",
       "link": "https://www.dealnews.com/Otter-Box-USB-C-30-W-Charger-w-USB-C-Cable-for-10-2-pack-for-17-3-pack-for-22-free-shipping-w-Prime/21864269.html?iref=rss-c142",
@@ -255,7 +375,7 @@
       "date_display": "Jun 30, 05:58 AM"
     },
     {
-      "id": "DealNews Tools-481590",
+      "id": "DealNews Tools-971622",
       "title": "CAT C2.0 16\" Wiper Blades 2-Pack for $8 + free shipping w/ Prime",
       "description": "Amazon offers the CAT C2.0 16\" Wiper Blades 2-Pack for $8.49.\u00a0 You'd pay around double elsewhere.\u00a0 Shipping is free for Prime members. Buy Now at Amazon      Features     2-pack of 16\" wiper blades   ",
       "link": "https://www.dealnews.com/products/Caterpillar/CAT-C2-0-16-Wiper-Blades-2-Pack/503184.html?iref=rss-c238",
@@ -267,7 +387,7 @@
       "date_display": "Jun 29, 09:39 PM"
     },
     {
-      "id": "DealNews Tools-144377",
+      "id": "DealNews Tools-772875",
       "title": "2-Gallon Foldable Car Trash Can for $4 + free shipping w/ Prime",
       "description": "This 2-Gallon Foldable Car Trash Can is $3.99 at Amazon. That's a $4 savings. Shipping is free for Prime members.\u00a0 Buy Now at Amazon      Features     2-gallon capacity   Oxford cloth construction wit",
       "link": "https://www.dealnews.com/2-Gallon-Foldable-Car-Trash-Can-for-4-free-shipping-w-Prime/21862863.html?iref=rss-c238",
@@ -279,7 +399,7 @@
       "date_display": "Jun 29, 07:56 PM"
     },
     {
-      "id": "DealNews-657429",
+      "id": "DealNews-609404",
       "title": "3-In-1 Wireless Charging Station for $16 + free shipping w/ Prime",
       "description": "Amazon offers this 3-In-1 Wireless Charging Station for $16.11 in Black. That's a 30% savings. Shipping is free for Prime members.\u00a0 Buy Now at Amazon",
       "link": "https://www.dealnews.com/products/3-In-1-Wireless-Charging-Station/496783.html?iref=rss-c142",
@@ -291,7 +411,7 @@
       "date_display": "Jun 29, 07:09 PM"
     },
     {
-      "id": "DealNews-918363",
+      "id": "DealNews-678292",
       "title": "5-Foot Surge Protector Power Strip w/ 8 Outlets & 4 USB Ports for $10 + free shipping w/ Prime",
       "description": "This power strip is $9.99 at Amazon. That's a $3 savings. Shipping is free for Prime members.\u00a0 Buy Now at Amazon      Features     8 AC outlets with 1.8\" spacing between each   4 USB ports: 3x USB-A (",
       "link": "https://www.dealnews.com/5-Foot-Surge-Protector-Power-Strip-w-8-Outlets-4-USB-Ports-for-10-free-shipping-w-Prime/21862852.html?iref=rss-c142",
@@ -303,7 +423,7 @@
       "date_display": "Jun 29, 07:02 PM"
     },
     {
-      "id": "DealNews-568816",
+      "id": "DealNews-016900",
       "title": "Monster AC210 Open-Ear Bluetooth Headphones for $13 + free shipping w/ Prime",
       "description": "Amazon offers the Monster AC210 Open-Ear Bluetooth Headphones for $12.99.\u00a0 That's a $27 savings and its best-ever price.\u00a0 Shipping is free for Prime members. Buy Now at Amazon      Features     Blueto",
       "link": "https://www.dealnews.com/Monster-AC210-Open-Ear-Bluetooth-Headphones-for-13-free-shipping-w-Prime/21862847.html?iref=rss-c142",
@@ -315,55 +435,7 @@
       "date_display": "Jun 29, 06:34 PM"
     },
     {
-      "id": "DealNews-059312",
-      "title": "EcoFlow Prime Day Extended Deals: Up to 62% off + free shipping",
-      "description": "EcoFlow's Prime Day Extended Deals run through July 3rd, with discounts across portable power stations, solar generators, and whole-home backup systems.\u00a0 You can also earn a free solar panel with orde",
-      "link": "https://www.dealnews.com/Eco-Flow-Prime-Day-Extended-Deals-Up-to-62-off-free-shipping/21862831.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 62,
-      "date_iso": "2026-06-29T17:05:33-04:00",
-      "date_display": "Jun 29, 05:05 PM"
-    },
-    {
-      "id": "DealNews-655777",
-      "title": "Anker Summer Sale: Up to 41% off, more + free shipping",
-      "description": "The Anker Summer Sale runs through June 30th, with discounts up to 41% across chargers, power banks, docks, and cables.\u00a0 Blind boxes start at $19.99 and contain a random item valued at up to $2,499 wi",
-      "link": "https://www.dealnews.com/Anker-Summer-Sale-Up-to-41-off-more-free-shipping/21862827.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 41,
-      "date_iso": "2026-06-29T16:42:51-04:00",
-      "date_display": "Jun 29, 04:42 PM"
-    },
-    {
-      "id": "DealNews-906046",
-      "title": "Newegg 4th of July Sale: Up to 70% off + free shipping",
-      "description": "The Newegg 4th of July Sale includes laptops, GPUs, monitors, SSDs, and more across hundreds of items. We've pictured this 4-in-1 Wired Gaming Set for $29.99 ($20 off).\u00a0 Shipping is free on most items",
-      "link": "https://www.dealnews.com/Newegg-4-th-of-July-Sale-Up-to-70-off-free-shipping/21862811.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 70,
-      "date_iso": "2026-06-29T15:27:51-04:00",
-      "date_display": "Jun 29, 03:27 PM"
-    },
-    {
-      "id": "DealNews-056490",
-      "title": "Bluetooth Tracker Tags 4-Pack for $19 +  free shipping",
-      "description": "amazon offers this Bluetooth Tracker Tags 4-Pack for $19.  It's $5  under Walmart and the lowest price we we could find for a 4-pack of Apple Find My-compatible Bluetooth trackers. Shipping is free.  ",
-      "link": "https://www.dealnews.com/Bluetooth-Tracker-Tags-4-Pack-for-19-free-shipping/21862792.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-06-29T14:37:16-04:00",
-      "date_display": "Jun 29, 02:37 PM"
-    },
-    {
-      "id": "DealNews Tools-564003",
+      "id": "DealNews Tools-342369",
       "title": "Advance Auto Parts Independence Day Sale: Up to 80% off + free shipping w/ $35",
       "description": "Use promo code \"FIREWORK\" to save 15% on orders of $50 or more or 20% on orders of $100 or more.\u00a0 You'll also find up to 80% off clearance items, 20% off Carquest or PowerStop brakes, BOGO wash & wax ",
       "link": "https://www.dealnews.com/Advance-Auto-Parts-Independence-Day-Sale-Up-to-80-off-free-shipping-w-35/21862779.html?iref=rss-c238",
@@ -375,7 +447,7 @@
       "date_display": "Jun 29, 02:11 PM"
     },
     {
-      "id": "DealNews Tools-155687",
+      "id": "DealNews Tools-143323",
       "title": "Flashark Independence Day Sale: Up to 55% off + free shipping",
       "description": "Check in regularly for flash deals on auto parts marked up to 55% off in this Independence Day sale.\u00a0 Shipping is free.\u00a0 Deal ends July 13th. Shop Now at Flashark Racing",
       "link": "https://www.dealnews.com/Flashark-Independence-Day-Sale-Up-to-55-off-free-shipping/21862776.html?iref=rss-c238",
@@ -387,7 +459,7 @@
       "date_display": "Jun 29, 02:00 PM"
     },
     {
-      "id": "DealNews Tools-666631",
+      "id": "DealNews Tools-921204",
       "title": "DNA Motoring 1.5-Ton Scissor Jack w/ Ratchet Wrench for $18 + free shipping w/ Prime",
       "description": "At Amazon, get this DNA Motoring 1.5-Ton Scissor Jack for $18. It's the best deal Amazon has offered for this jack. The 1.5-ton (3,306-lb) capacity jack has a lifting range of 4\" to 15.2\" and includes",
       "link": "https://www.dealnews.com/DNA-Motoring-1-5-Ton-Scissor-Jack-w-Ratchet-Wrench-for-18-free-shipping-w-Prime/21862692.html?iref=rss-c238",
@@ -399,7 +471,19 @@
       "date_display": "Jun 29, 10:27 AM"
     },
     {
-      "id": "DealNews Tools-877909",
+      "id": "DealNews-863139",
+      "title": "Woot Extra Discounts Clearance Hub: Up to an extra 70% off + free shipping w/ Prime",
+      "description": "Woot\u2019s Discount Hub has several ways to stack savings through July 31. Buy seven or more toys to get 70% off, spend $50 on kitchen appliances and dining items and use code \u201cCHEFTEN\u201d for $10 off, buy t",
+      "link": "https://www.dealnews.com/Woot-Extra-Discounts-Clearance-Hub-Up-to-an-extra-70-off-free-shipping-w-Prime/21862595.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 70,
+      "date_iso": "2026-06-29T05:08:45-04:00",
+      "date_display": "Jun 29, 05:08 AM"
+    },
+    {
+      "id": "DealNews Tools-511534",
       "title": "Rosewill Vortex RS6C Cordless Tire Inflator for $50 + free shipping",
       "description": "At Best Buy, get the Rosewill Vortex RS6C Cordless Tire Inflator for $50. That's a savings of $90. Shipping is free. Buy Now at Best Buy      Features     7 preset modes",
       "link": "https://www.dealnews.com/Rosewill-Vortex-RS6-C-Cordless-Tire-Inflator-for-50-free-shipping/21862584.html?iref=rss-c238",
@@ -411,7 +495,7 @@
       "date_display": "Jun 29, 04:44 AM"
     },
     {
-      "id": "DealNews Tools-005687",
+      "id": "DealNews Tools-260677",
       "title": "Suds Lab XP 64-oz. High Foaming Exterior Car Wash Shampoo for $10 + free shipping w/ $35",
       "description": "Walmart offers the Suds Lab XP 64-oz. High Foaming Exterior Car Wash Shampoo for $9.97.\u00a0 That's a $15 savings.\u00a0 Choose pickup or spend $35 to avoid the $6.99 shipping charge. Buy Now at Walmart",
       "link": "https://www.dealnews.com/Suds-Lab-XP-64-oz-High-Foaming-Exterior-Car-Wash-Shampoo-for-10-free-shipping-w-35/21860735.html?iref=rss-c238",
@@ -423,7 +507,7 @@
       "date_display": "Jun 28, 09:41 PM"
     },
     {
-      "id": "DealNews Tools-843670",
+      "id": "DealNews Tools-015996",
       "title": "Motor Trend FlexTough All-Weather Car Mat Set w/ Cargo Liner for $14 + free shipping w/ Prime",
       "description": "This 4-piece set of Motor Trend car mats is 32% off its regular price and at Amazon's all-time low. The same color set costs $85 today at Walmart. It includes two front mats, one rear liner, and one c",
       "link": "https://www.dealnews.com/Motor-Trend-Flex-Tough-All-Weather-Car-Mat-Set-w-Cargo-Liner-for-14-free-shipping-w-Prime/21858032.html?iref=rss-c238",
@@ -435,7 +519,7 @@
       "date_display": "Jun 27, 04:26 AM"
     },
     {
-      "id": "DealNews Tools-970633",
+      "id": "DealNews Tools-319257",
       "title": "Chemical Guys Tire Kicker 16-oz. Extra Glossy Tire Shine Spray for $7.97 w/ Sub & Save for Prime + free shipping",
       "description": "Amazon offers Prime members the Chemical Guys Tire Kicker 16-oz. Extra Glossy Tire Shine Spray for $7.97 via Subscribe & Save. That's around $2 less than you'd pay elsewhere. Shipping is free.\u00a0 Buy No",
       "link": "https://www.dealnews.com/Chemical-Guys-Tire-Kicker-16-oz-Extra-Glossy-Tire-Shine-Spray-for-7-97-w-Sub-Save-for-Prime-free-shipping/21856159.html?iref=rss-c238",
@@ -447,7 +531,7 @@
       "date_display": "Jun 26, 02:56 PM"
     },
     {
-      "id": "DealNews Tools-313830",
+      "id": "DealNews Tools-466803",
       "title": "DNA Motoring 2-Ton Low Profile Hydraulic Floor Jack for $40 w/ Prime + free shipping",
       "description": "Amazon offers Prime members the DNA Motoring 2-Ton Low Profile Hydraulic Floor Jack for $40.26. That's an all-time low and around $13 less than other sellers charge. Shipping is free.\u00a0 Buy Now at Amaz",
       "link": "https://www.dealnews.com/products/DNA-Motoring/DNA-Motoring-2-Ton-Low-Profile-Hydraulic-Floor-Jack/502053.html?iref=rss-c238",
@@ -459,7 +543,7 @@
       "date_display": "Jun 26, 02:34 PM"
     },
     {
-      "id": "DealNews Tools-298791",
+      "id": "DealNews Tools-313547",
       "title": "Tevlaphee Heavy-Duty Steering Wheel Lock for $31 w/ Prime + free shipping w/ Prime",
       "description": "This steering wheel lock is at an all-time low on Amazon at $30.59 with Prime, undercutting the 90-day average of $36 and the current non-Prime price of $36. Shipping is free.\u00a0 Buy Now at Amazon      ",
       "link": "https://www.dealnews.com/products/Tevlaphee-Heavy-Duty-Steering-Wheel-Lock/502052.html?iref=rss-c238",
@@ -471,31 +555,7 @@
       "date_display": "Jun 26, 02:22 PM"
     },
     {
-      "id": "DealNews Tools-881107",
-      "title": "Motor Trend Pop-Up Auto Shade (Large) for $5 + free shipping w/ Prime",
-      "description": "At $5 (down from $6), this Motor Trend windshield sun shade in Large is at its Amazon all-time low. Shipping is free for Prime members. This item is Final Sale.\u00a0 Buy Now at Amazon      Features     68",
-      "link": "https://www.dealnews.com/products/Motor-Trend/Motor-Trend-Pop-Up-Auto-Shade/502051.html?iref=rss-c238",
-      "source": "DealNews Tools",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
-      "discount": null,
-      "date_iso": "2026-06-26T14:04:24-04:00",
-      "date_display": "Jun 26, 02:04 PM"
-    },
-    {
-      "id": "DealNews-819610",
-      "title": "Woot! Best of Woot! Sale: Up to 73% off + free shipping w/ Prime",
-      "description": "The Best of Woot! sale runs through July 4, with deals across electronics, apparel, home goods, and more. Standout offers include the Samsung Galaxy Buds 3 Pro AI Earbuds for $129.99, down from $249.9",
-      "link": "https://www.dealnews.com/Woot-Best-of-Woot-Sale-Up-to-73-off-free-shipping-w-Prime/21850917.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 73,
-      "date_iso": "2026-06-23T03:55:56-04:00",
-      "date_display": "Jun 23, 03:55 AM"
-    },
-    {
-      "id": "DealNews-693761",
+      "id": "DealNews-748329",
       "title": "Woot Summer Steals & Deals Clearance: Up to 64% off + free shipping w/ Prime",
       "description": "Woot\u2019s Summer Steals and Deals event runs through June 30, with major savings on home goods, kitchen items, tools, outdoor gear, clothing, and tech, including both new and refurbished items. Discounts",
       "link": "https://www.dealnews.com/Woot-Summer-Steals-Deals-Clearance-Up-to-64-off-free-shipping-w-Prime/21849175.html?iref=rss-c142",
