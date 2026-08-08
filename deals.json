@@ -1,9 +1,45 @@
 {
-  "updated": "2026-08-08 13:12 UTC",
-  "count": 42,
+  "updated": "2026-08-08 13:59 UTC",
+  "count": 45,
   "deals": [
     {
-      "id": "Slickdeals-842983",
+      "id": "Slickdeals-887947",
+      "title": "Select Amazon Household Items: Almay, Aquaphor, BIC, Colgate, Conair & More Spend $40 Get $10 Off",
+      "description": "* Almay \n* Aquaphor \n* BIC \n* Colgate \n* Conair \n* Coppertone \n* Eucerin \n* & More [amazon.com]",
+      "link": "https://slickdeals.net/f/19837173-buy-40-save-10-select-household-items?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 10,
+      "date_iso": "2026-08-08T13:39:52+00:00",
+      "date_display": "Aug 08, 01:39 PM"
+    },
+    {
+      "id": "Slickdeals-183875",
+      "title": "JBL Professional EON715 Powered PA Speaker $359 + Free S&H",
+      "description": "Amazon [amazon.com] has *JBL Professional EON715 Powered PA Speaker* for *$358.98*. *Shipping is free*. \n \namazon.com/dp/B09K4SJ3HK [amazon.com] \n \nPlease report the deal if expired (click report ->..",
+      "link": "https://slickdeals.net/f/19853484-new-358-98-jbl-professional-eon715-powered-pa-speaker-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-08-08T13:23:39+00:00",
+      "date_display": "Aug 08, 01:23 PM"
+    },
+    {
+      "id": "Slickdeals-537738",
+      "title": "3-Pc Ekouaer Women's Lounge Crop Top Shorts & Pants Set w/ Pockets (Various) $12",
+      "description": "Ekouaer Loungewear via Amazon [amazon.com] has Women's 3-Piece Lounge Set for $23.99 - 50% w/ code O35VAAEN = *$11.99. Free Shipping w/ Prime or orders $35+* \n \n*Note*: code applies to all asin",
+      "link": "https://slickdeals.net/f/19842711-ekouaer-women-s-3-piece-lounge-set-12-free-shipping-w-prime-or-orders-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Clothing & Shoes",
+      "discount": null,
+      "date_iso": "2026-08-08T13:13:22+00:00",
+      "date_display": "Aug 08, 01:13 PM"
+    },
+    {
+      "id": "Slickdeals-358365",
       "title": "3-Pk Wiaocit Samsung S26 Ultra Tempered Glass Screen Protector w/ Lens Protector $3",
       "description": "Wiaocit via Amazon [amazon.com] has *Samsung S26 Ultra 3-Pack Tempered Glass Screen Protector with 3 Pack Camera Lens Protector* for *$2.99*. \n*Shipping is free* with Prime or on $35+ orders. \n \n***..",
       "link": "https://slickdeals.net/f/19855776-2-99-samsung-s26-ultra-3-pack-tempered-glass-screen-protector-with-3-pack-camera-lens-protector-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -15,7 +51,7 @@
       "date_display": "Aug 08, 12:32 PM"
     },
     {
-      "id": "Slickdeals-746762",
+      "id": "Slickdeals-672085",
       "title": "4-Pk Bn-Link Outdoor Extension Cord Safety Cover (Black) $8",
       "description": "BN-LINK via Amazon [amazon.com] has *3-Pack Bn-Link Outdoor Extension Cord Safety Cover Black *on sale for *$6.99*. Shipping is free w/ Prime or on orders $35+. \n \nNote: Does not fit power strips,...",
       "link": "https://slickdeals.net/f/19853922-4-pk-bn-link-outdoor-extension-cord-safety-cover-black-8?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -27,7 +63,31 @@
       "date_display": "Aug 08, 09:59 AM"
     },
     {
-      "id": "Slickdeals-120951",
+      "id": "DealNews-510962",
+      "title": "Best Buy Outlet Clearance: Up to 95% off + free shipping",
+      "description": "You can take up to 95% off clearance, open-box, and refurbished items in the Best Buy Outlet today. Open-box appliances are discounted by up to 60%, TVs by up to 50%, and Android and Apple smartphones",
+      "link": "https://www.dealnews.com/Best-Buy-Outlet-Clearance-Up-to-95-off-free-shipping/21989180.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": 95,
+      "date_iso": "2026-08-08T09:46:07-04:00",
+      "date_display": "Aug 08, 09:46 AM"
+    },
+    {
+      "id": "DealNews-311877",
+      "title": "Open-Box Unlocked Cell Phones at Best Buy for Up to 40% off, Android phones from $41 + free shipping",
+      "description": "The price of open-box Android phones starts $41 and iPhones at $388 in the Best Buy Outlet. They're all brand-new but just won't ship in their original packaging. Warranty information is available on ",
+      "link": "https://www.dealnews.com/Open-Box-Unlocked-Cell-Phones-at-Best-Buy-for-Up-to-40-off-Android-phones-from-41-free-shipping/21975176.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": 40,
+      "date_iso": "2026-08-08T09:44:34-04:00",
+      "date_display": "Aug 08, 09:44 AM"
+    },
+    {
+      "id": "Slickdeals-921029",
       "title": "5-Pk BOOJO Men's Quick Dry Short Sleeve Compression Shirts (Various) from $12.75",
       "description": "BOJIU via Amazon [amazon.com] has *5-Pack BOOJO Men's Quick Dry Short Sleeve Compression Shirts* on sale *from $12.73* when you *apply corresponding promo code* at checkout. Shipping is free w/ Prime.",
       "link": "https://slickdeals.net/f/19854141-5-pack-boojo-men-s-quick-dry-short-sleeve-compression-shirts-size-s-xxl-various-colors-from-12-73-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -39,7 +99,19 @@
       "date_display": "Aug 08, 09:27 AM"
     },
     {
-      "id": "Slickdeals-543479",
+      "id": "DealNews-007366",
+      "title": "Best Buy Half-Price (or Better) Deals: At least 50% off everything + free shipping",
+      "description": "Best Buy's \"50% Off or More\" Sales Event covers thousands of items across electronics, gaming, and appliances. Highlights include Skullcandy Crusher Evo wireless headphones at $99.99 and Beats Studio ",
+      "link": "https://www.dealnews.com/Best-Buy-Half-Price-or-Better-Deals-At-least-50-off-everything-free-shipping/21989177.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": 50,
+      "date_iso": "2026-08-08T09:23:30-04:00",
+      "date_display": "Aug 08, 09:23 AM"
+    },
+    {
+      "id": "Slickdeals-395324",
       "title": "3-Pk 0.94\" x 60-Yds ScotchBlue Original Multi-Surface Painters Tape $8.40 w/ S&S",
       "description": "Amazon.com has ScotchBlue Original Multi-Surface Painters Tape, 1 Inch Wide (0.94 in. x 60 Yds), 3 Rolls, Blue, Paint Tape Protects and Removes Easily, Masking Tape for Indoor and Outdoor Use...",
       "link": "https://slickdeals.net/f/19855905-3-pk-0-94-in-x-60-yds-scotchblue-original-multi-surface-painters-tape-8-39-free-s-h-w-prime-or-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
@@ -51,7 +123,7 @@
       "date_display": "Aug 08, 08:56 AM"
     },
     {
-      "id": "DealNews-650379",
+      "id": "DealNews-522902",
       "title": "Open-Box Heyday 20,000mAh Power Bank w/ Screen for $20 + free shipping",
       "description": "This open-box power bank is being sold via Target's eBay Outlet without its original packaging, which is why you're getting such a good price. It's one of the cheapest 20,000mAh power banks we've seen",
       "link": "https://www.dealnews.com/Open-Box-Heyday-20-000-m-Ah-Power-Bank-w-Screen-for-20-free-shipping/21989166.html?iref=rss-c142",
@@ -63,7 +135,7 @@
       "date_display": "Aug 08, 08:32 AM"
     },
     {
-      "id": "DealNews-800983",
+      "id": "DealNews-532649",
       "title": "Target Outlet Deals at eBay: Up to 75% off + free shipping",
       "description": "At the Target Outlet on eBay, shoppers can save up to 75% off a range of items, including furniture, clothing, shoes, toys, music, and lots more, from brands big and small. Everything in here is from ",
       "link": "https://www.dealnews.com/Target-Outlet-Deals-at-eBay-Up-to-75-off-free-shipping/21989165.html?iref=rss-c142",
@@ -75,19 +147,7 @@
       "date_display": "Aug 08, 08:28 AM"
     },
     {
-      "id": "Slickdeals-370982",
-      "title": "ORICO 6-in-1 10Gbps Magnetic M.2 NVMe USB-C SSD Enclosure $33 + Free S&H",
-      "description": "ORICO Direct US Store via Amazon has for *Prime Members: ORICO 6-in-1 10Gbps Magnetic M.2 NVMe USB-C SSD Enclosure* (Blue) for $43.99 - $11 when you apply promo code ORICOAP80F at checkout =...",
-      "link": "https://slickdeals.net/f/19850769-orico-10gbps-magnetic-m-2-nvme-enclosure-with-card-reader-for-iphone-usb3-2-gen2-32-99?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-08-08T07:49:37+00:00",
-      "date_display": "Aug 08, 07:49 AM"
-    },
-    {
-      "id": "DealNews-272797",
+      "id": "DealNews-254514",
       "title": "Woot Open-Box Clearance Sale: Up to 84% off + free shipping w/ Prime",
       "description": "This Woot clearance sale includes everything from laptops and gaming gear to power tools, fragrances, and smart home devices, all significantly marked down due to their open-box, reconditioned, or scr",
       "link": "https://www.dealnews.com/Woot-Open-Box-Clearance-Sale-Up-to-84-off-free-shipping-w-Prime/21989159.html?iref=rss-c142",
@@ -99,7 +159,7 @@
       "date_display": "Aug 08, 07:39 AM"
     },
     {
-      "id": "DealNews-041295",
+      "id": "DealNews-434752",
       "title": "Anker Prime 220W 20,100mAh 3-Port Portable Power Bank for $110 + free shipping w/ Prime",
       "description": "This Anker Prime 20,100mAh Powerbank ships is new but will ship in bulk packaging, which is the reason you're getting it at an all-time low. You'd pay $150 for a new model at Amazon, so this is a grea",
       "link": "https://www.dealnews.com/Anker-Prime-220-W-20-100-m-Ah-3-Port-Portable-Power-Bank-for-110-free-shipping-w-Prime/21989151.html?iref=rss-c142",
@@ -111,7 +171,7 @@
       "date_display": "Aug 08, 07:00 AM"
     },
     {
-      "id": "DealNews-013954",
+      "id": "DealNews-374868",
       "title": "Superdanny 3-Foot Flat Power Strip w/  USB for $10 + free shipping w/ Prime",
       "description": "This Superdanny 3-Foot Flat Power Strip is $10, which is half its original price. It's also Amazon's best-ever deal for this 4-outlet and 4-USB model. Shipping is free for Prime members. It\u00a0uses a fla",
       "link": "https://www.dealnews.com/Superdanny-3-Foot-Flat-Power-Strip-w-USB-for-10-free-shipping-w-Prime/21989145.html?iref=rss-c142",
@@ -123,7 +183,7 @@
       "date_display": "Aug 08, 06:23 AM"
     },
     {
-      "id": "DealNews-644515",
+      "id": "DealNews-771422",
       "title": "Energy Take Classic 5.1 Channel Home Theater System for $299 + free shipping",
       "description": "This Energy Take Classic 5.1 Channel Home Theater System is now just $219 at Adorama when you apply the promo code \"JHCE5839\" at checkout. It's $80 cheaper than what you'd pay at Amazon. Plus, shippin",
       "link": "https://www.dealnews.com/Energy-Take-Classic-5-1-Channel-Home-Theater-System-for-299-free-shipping/21989141.html?iref=rss-c142",
@@ -135,7 +195,7 @@
       "date_display": "Aug 08, 06:08 AM"
     },
     {
-      "id": "DealNews-825986",
+      "id": "DealNews-058001",
       "title": "Ugreen Airplane Bluetooth 6.0 Transmitter Receiver for $18 + free shipping w/ Prime",
       "description": "This receiver has dropped by another buck since we last listed it to the best price we've ever seen.\u00a0It'll ship for free for Prime members, too. Buy Now at Amazon      Features     connect the device ",
       "link": "https://www.dealnews.com/products/UGREEN/UGREEN-Airplane-Bluetooth-6-0-Transmitter-Receiver/494629.html?iref=rss-c142",
@@ -147,7 +207,7 @@
       "date_display": "Aug 08, 05:42 AM"
     },
     {
-      "id": "DealNews-092536",
+      "id": "DealNews-389288",
       "title": "Segway Portable Power Station Cube 2000 for $500 + free shipping",
       "description": "You can get the Segway Cube 2000 at its best-ever price today at Amazon, as it's selling for $500. You'd pay as much as $1,700 for this elsewhere. The 2048Wh LiFePO4 battery supports 4,000+ charge cyc",
       "link": "https://www.dealnews.com/products/Segway/Segway-Portable-Power-Station-Cube-2000/496175.html?iref=rss-c142",
@@ -159,7 +219,7 @@
       "date_display": "Aug 08, 05:33 AM"
     },
     {
-      "id": "DealNews-704239",
+      "id": "DealNews-191657",
       "title": "TCL Daily Deals at Best Buy: Up to 46% off + free shipping",
       "description": "Best Buy's Deal of the Days is focused entirely on TCL today, with TVs, soundbars, and portable air conditioners on sale. The TCL 55\" S-Series 4K Smart TV drops to $199.99, down from $349.99, while th",
       "link": "https://www.dealnews.com/TCL-Daily-Deals-at-Best-Buy-Up-to-46-off-free-shipping/21989128.html?iref=rss-c142",
@@ -171,7 +231,7 @@
       "date_display": "Aug 08, 04:24 AM"
     },
     {
-      "id": "DealNews-385519",
+      "id": "DealNews-076119",
       "title": "Cillso Noise Cancelling Bluetooth Earbuds for $18 + free shipping w/ $35",
       "description": "These Cillso wireless earbuds are $17.99, down from $159.99 at Walmart. They include four ENC noise-cancelling microphones, an IP7 waterproof rating, and up to 40 hours of total playtime with the char",
       "link": "https://www.dealnews.com/Cillso-Noise-Cancelling-Bluetooth-Earbuds-for-18-free-shipping-w-35/21985568.html?iref=rss-c142",
@@ -183,7 +243,7 @@
       "date_display": "Aug 07, 07:58 PM"
     },
     {
-      "id": "DealNews Tools-714952",
+      "id": "DealNews Tools-787012",
       "title": "Fleximounts 17' x 8' Garage Floor Mat for $100 + free shipping",
       "description": "This Fleximounts garage floor mat is $40 off the regular price of $139.99. The mat measures 17' x 8' and comes with double-sided tape to keep it secured in place. It's made from oil- and water-absorbe",
       "link": "https://www.dealnews.com/Fleximounts-17-x-8-Garage-Floor-Mat-for-100-free-shipping/21985557.html?iref=rss-c238",
@@ -195,7 +255,7 @@
       "date_display": "Aug 07, 05:50 PM"
     },
     {
-      "id": "DealNews Tools-341667",
+      "id": "DealNews Tools-199036",
       "title": "Ottocast Mini Aura Wireless CarPlay / Android Auto Adapter Dongle for $15 + free shipping",
       "description": "This Ottocast Mini Aura wireless adapter drops to $12 with\u00a0 stacking coupon codes \"OTTOJULY26\" and \"NEWFINDS20\". That's $35 off and the lowest price we've ever seen.\u00a0 Shipping is free.\u00a0 Deal ends Augu",
       "link": "https://www.dealnews.com/Ottocast-Mini-Aura-Wireless-Car-Play-Android-Auto-Adapter-Dongle-for-15-free-shipping/21985553.html?iref=rss-c238",
@@ -207,7 +267,7 @@
       "date_display": "Aug 07, 05:43 PM"
     },
     {
-      "id": "DealNews Tools-745308",
+      "id": "DealNews Tools-724975",
       "title": "Gorilla 20-Count Lug Nuts & Key Set for $6 + free shipping w/ Prime",
       "description": "At $6, this Gorilla Automotive wheel lock set matches its all-time low price on Amazon and sits well below its recent 90-day average of $10.29. It's also down from the $8.46 list price. Prime members ",
       "link": "https://www.dealnews.com/products/Gorilla-Automotive/Gorilla-20-Count-Lug-Nuts-Key-Set/512088.html?iref=rss-c238",
@@ -219,7 +279,7 @@
       "date_display": "Aug 07, 05:37 PM"
     },
     {
-      "id": "DealNews Tools-958594",
+      "id": "DealNews Tools-060932",
       "title": "Tymate TM8 RV Tire Pressure Monitoring System w/ 4 Sensors for $34 + free shipping w/ Prime",
       "description": "The Tymate TM8 tire pressure monitoring system is $34, down from $45. It includes four sensors, solar and USB charging options, and a windshield-mounted color display with six alarm modes for pressure",
       "link": "https://www.dealnews.com/Tymate-TM8-RV-Tire-Pressure-Monitoring-System-w-4-Sensors-for-34-free-shipping-w-Prime/21985549.html?iref=rss-c238",
@@ -231,7 +291,7 @@
       "date_display": "Aug 07, 05:35 PM"
     },
     {
-      "id": "DealNews Tools-044882",
+      "id": "DealNews Tools-671576",
       "title": "60-Piece Tire Repair Rubber Nail Kit for $5 + free shipping w/ Prime",
       "description": "At Amazon, get this 60-Piece Tire Repair Rubber Nail Kit for $4.99. It's the best price Amazon has charged for this kit. It includes 60 plugs in two sizes to handle different puncture widths, plus a s",
       "link": "https://www.dealnews.com/60-Piece-Tire-Repair-Rubber-Nail-Kit-for-5-free-shipping-w-Prime/21985548.html?iref=rss-c238",
@@ -243,7 +303,7 @@
       "date_display": "Aug 07, 05:34 PM"
     },
     {
-      "id": "DealNews Tools-070997",
+      "id": "DealNews Tools-463915",
       "title": "Foldable Large Capacity SUV Trunk Organizer for $36 + free shipping",
       "description": "This trunk organizer is $35.99, down from $69.98 at Walmart. It holds 100 liters and includes 4 adjustable dividers to split the space into up to 4 sections, plus 2 detachable lids for privacy and ins",
       "link": "https://www.dealnews.com/Foldable-Large-Capacity-SUV-Trunk-Organizer-for-36-free-shipping/21985547.html?iref=rss-c238",
@@ -255,7 +315,7 @@
       "date_display": "Aug 07, 05:26 PM"
     },
     {
-      "id": "DealNews Tools-364742",
+      "id": "DealNews Tools-574518",
       "title": "Morsuma 9.61\" Buckle Extension Car Seat Belt Extender 2-Pack for $17 + free shipping w/ $35",
       "description": "This Morsuma seat belt extender 2-pack is $16.99, down from $25.99 at Walmart. It adds 9.61\" of length using a stainless steel tongue and polyester strap, and installs without tools by clicking direct",
       "link": "https://www.dealnews.com/Morsuma-9-61-Buckle-Extension-Car-Seat-Belt-Extender-2-Pack-for-17-free-shipping-w-35/21985546.html?iref=rss-c238",
@@ -267,7 +327,7 @@
       "date_display": "Aug 07, 05:25 PM"
     },
     {
-      "id": "DealNews Tools-076224",
+      "id": "DealNews Tools-985767",
       "title": "Workpro Garage Wall Car Door Bumper Guard 4-Pack for $17 + free shipping w/ Prime",
       "description": "Amazon offers the Workpro Garage Wall Car Door Bumper Guard 4-Pack for $17. That's $2 off and the lowest price we could find. This 4-pack of WorkPro garage wall protectors is made with 1.18\" thick NBR",
       "link": "https://www.dealnews.com/Workpro-Garage-Wall-Car-Door-Bumper-Guard-4-Pack-for-17-free-shipping-w-Prime/21985545.html?iref=rss-c238",
@@ -279,7 +339,7 @@
       "date_display": "Aug 07, 05:24 PM"
     },
     {
-      "id": "DealNews Tools-930731",
+      "id": "DealNews Tools-748479",
       "title": "47.2\" x 35.4\" Heavy Duty Cargo Net for Pickup Truck Bed for $16 + free shipping",
       "description": "This MORSUMA cargo net is $15.99, down from $17.99 at Walmart. It includes 12 rubber-capped hooks and a dense 18 by 12 grid designed to keep smaller items from slipping through while securing larger l",
       "link": "https://www.dealnews.com/47-2-x-35-4-Heavy-Duty-Cargo-Net-for-Pickup-Truck-Bed-for-16-free-shipping/21985544.html?iref=rss-c238",
@@ -291,7 +351,7 @@
       "date_display": "Aug 07, 05:22 PM"
     },
     {
-      "id": "DealNews-357605",
+      "id": "DealNews-235148",
       "title": "Yamaha HS4 Active 4.5\" Studio Monitors for $212 + free shipping",
       "description": "Amazon offers the Yamaha HS4 Active 4.5\" Studio Monitors for $212.49. It's $38 below the original price. Shipping is free.\u00a0 Buy Now at Amazon      Features     1\" dome tweeters with 4.5\" cone woofers ",
       "link": "https://www.dealnews.com/products/Yamaha/Yamaha-HS4-Active-4-5-Studio-Monitors/495792.html?iref=rss-c142",
@@ -303,7 +363,7 @@
       "date_display": "Aug 07, 05:13 PM"
     },
     {
-      "id": "DealNews Tools-022610",
+      "id": "DealNews Tools-218839",
       "title": "ATDIAG V321 OBD2 Scanner Diagnostic Tool for $24 + free shipping",
       "description": "At Amazon, clip the 40% off coupon on the product page to get the ATDIAG V321 scanner for $24. That's a savings of $16. It reads and clears check engine codes, checks battery health, and pulls live se",
       "link": "https://www.dealnews.com/ATDIAG-V321-OBD2-Scanner-Diagnostic-Tool-for-24-free-shipping/21985542.html?iref=rss-c238",
@@ -315,7 +375,7 @@
       "date_display": "Aug 07, 05:10 PM"
     },
     {
-      "id": "DealNews-930461",
+      "id": "DealNews-186027",
       "title": "Bestek 300W Pure Sine Wave Power Inverter Car Adapter for $38 + free shipping",
       "description": "This Bestek power inverter is $38.23, down from its $49.99 list price at Amazon and tied as its lowest price ever. It plugs into a vehicle's power socket and converts 12-17V DC into 120V AC, with comp",
       "link": "https://www.dealnews.com/Bestek-300-W-Pure-Sine-Wave-Power-Inverter-Car-Adapter-for-38-free-shipping/21985536.html?iref=rss-c142",
@@ -327,7 +387,7 @@
       "date_display": "Aug 07, 04:44 PM"
     },
     {
-      "id": "DealNews-202572",
+      "id": "DealNews-895295",
       "title": "Bose Solo Soundbar Series II for $140 + free shipping",
       "description": "This Bose Solo Soundbar Series II is $40 off the regular $179.99 price at Costco. Shipping is free. Offer ends August 23.\u00a0 Buy Now at Costco      Features     Dialogue Mode helps make speech easier to",
       "link": "https://www.dealnews.com/products/Bose/Bose-Solo-Soundbar-Series-II/515410.html?iref=rss-c142",
@@ -339,7 +399,7 @@
       "date_display": "Aug 07, 04:20 PM"
     },
     {
-      "id": "DealNews-599448",
+      "id": "DealNews-196171",
       "title": "Target Cell Phone Accessories Sale: 30% off + free shipping",
       "description": "Target is taking 30% off cell phone accessories, covering cases, grips, and screen protectors from brands like OtterBox, Kate Spade, Kendra Scott, and Velvet Caviar. We've pictured the dealworthy iPho",
       "link": "https://www.dealnews.com/Target-Cell-Phone-Accessories-Sale-30-off-free-shipping/21985517.html?iref=rss-c142",
@@ -351,7 +411,7 @@
       "date_display": "Aug 07, 03:06 PM"
     },
     {
-      "id": "DealNews-479186",
+      "id": "DealNews-662854",
       "title": "Walgreens Photo Prints, Posters & Enlargements Deals: From 29 cents + pickup",
       "description": "Walgreens Photo takes an extra 50% off prints, posters, and enlargements when you apply coupon code \"PRINTATHON\" at checkout. It's a great opportunity to print family photos, vacation memories, wall a",
       "link": "https://www.dealnews.com/Walgreens-Photo-Prints-Posters-Enlargements-Deals-From-29-cents-pickup/21985481.html?iref=rss-c142",
@@ -363,7 +423,7 @@
       "date_display": "Aug 07, 12:25 PM"
     },
     {
-      "id": "DealNews-869635",
+      "id": "DealNews-556660",
       "title": "Motorola Moto G Power 5G 128GB for Tracfone for $50 + free shipping",
       "description": "This Motorola Moto G Power is available with a 1-year Tracfone service plan for just $50 right now at Walmart. The service plan alone is valued at $125, so this is a great price. The plan\u00a0covers 1,500",
       "link": "https://www.dealnews.com/Motorola-Moto-G-Power-5-G-128-GB-for-Tracfone-for-50-free-shipping/21985451.html?iref=rss-c142",
@@ -375,7 +435,7 @@
       "date_display": "Aug 07, 11:08 AM"
     },
     {
-      "id": "DealNews-795407",
+      "id": "DealNews-145015",
       "title": "Bevigor 2,800mAh NiMH Rechargeable AA Batteries with Charger 10-Pack for $19 + free shipping w/ Prime",
       "description": "Rechargeable AA batteries suit anyone tired of buying disposables regularly, whether for remotes, flashlights, toys, or other high-drain devices. Apply coupon code \"4U3MBORO\" for a savings of $11. Buy",
       "link": "https://www.dealnews.com/products/Bevigor/Bevigor-2-800-m-Ah-Ni-MH-Rechargeable-AA-Batteries-with-Charger-10-Pack/515399.html?iref=rss-c142",
@@ -387,7 +447,7 @@
       "date_display": "Aug 07, 10:09 AM"
     },
     {
-      "id": "DealNews Tools-974367",
+      "id": "DealNews Tools-830176",
       "title": "Bracketron TripGrip Cup Holder Mount for $15 + free shipping",
       "description": "The Bracketron TripGrip Cup Holder Mount is now just $15 in Best Buy's clearance section. That's $9 cheaper than what you'd pay for the same, well-reviewed model at Amazon. My Best Buy members get fre",
       "link": "https://www.dealnews.com/Bracketron-Trip-Grip-Cup-Holder-Mount-for-15-free-shipping/21985340.html?iref=rss-c238",
@@ -399,7 +459,7 @@
       "date_display": "Aug 07, 05:42 AM"
     },
     {
-      "id": "DealNews Tools-379587",
+      "id": "DealNews Tools-373433",
       "title": "Leagend 1,000A Permanent Mount Super Capacitor Jump Starter for $120 + free shipping",
       "description": "A super capacitor jump starter draws energy from your car's existing battery rather than carrying its own stored charge, which means it won't go dead from sitting in your trunk for months the way a li",
       "link": "https://www.dealnews.com/Leagend-1-000-A-Permanent-Mount-Super-Capacitor-Jump-Starter-for-120-free-shipping/21985320.html?iref=rss-c238",
@@ -411,7 +471,7 @@
       "date_display": "Aug 07, 05:06 AM"
     },
     {
-      "id": "DealNews Tools-803228",
+      "id": "DealNews Tools-866263",
       "title": "5 PLUS 22\" All-Season Windshield Wiper Blades 2-Pack for $9.01 via Sub. & Save + free shipping w/ Prime",
       "description": "At Amazon, clip the on-page coupon and check out with Subscribe & Save to get these 5 PLUS 22\" All-Season Windshield Wiper Blades 2-Pack for $9.01. It's the best price Amazon has charged for this 2-pa",
       "link": "https://www.dealnews.com/5-PLUS-22-All-Season-Windshield-Wiper-Blades-2-Pack-for-9-01-via-Sub-Save-free-shipping-w-Prime/21985286.html?iref=rss-c238",
@@ -423,7 +483,7 @@
       "date_display": "Aug 07, 03:33 AM"
     },
     {
-      "id": "DealNews Tools-786844",
+      "id": "DealNews Tools-392216",
       "title": "Programmed TPMS Tire Pressure Sensor 4-Pack for $24 + free shipping w/ $35",
       "description": "This four-pack of TPMS sensors for select Chevy, GMC, and Cadillac vehicles is $24.29, down from $35.09. The sensors come pre-programmed for the vehicle's make, model, and year, so installation only r",
       "link": "https://www.dealnews.com/Programmed-TPMS-Tire-Pressure-Sensor-4-Pack-for-24-free-shipping-w-35/21980784.html?iref=rss-c238",
@@ -435,7 +495,7 @@
       "date_display": "Aug 06, 08:12 PM"
     },
     {
-      "id": "DealNews Tools-642771",
+      "id": "DealNews Tools-553803",
       "title": "Hyper Tough DC12V Standard Tire Inflator & Tire Pump for $20 + free shipping w/ $35",
       "description": "This Hyper Tough tire inflator is $5 off the regular price at Walmart, bringing it down to $19.97. It plugs into a 12V outlet, reaches up to 120 PSI, and includes a built-in gauge and LED light for ch",
       "link": "https://www.dealnews.com/Hyper-Tough-DC12-V-Standard-Tire-Inflator-Tire-Pump-for-20-free-shipping-w-35/21980783.html?iref=rss-c238",
@@ -447,7 +507,7 @@
       "date_display": "Aug 06, 08:06 PM"
     },
     {
-      "id": "DealNews Tools-024961",
+      "id": "DealNews Tools-087140",
       "title": "Armor All 22-oz. Extreme Tire Shine Spray for $4 + free shipping w/ $35",
       "description": "This Armor All Extreme Tire Shine Spray is $4.47 at Walmart, down from $10.23. The 22 fl. oz. bottle is formulated to add gloss and help protect tires from cracking and fading for weeks after applicat",
       "link": "https://www.dealnews.com/Armor-All-22-oz-Extreme-Tire-Shine-Spray-for-4-free-shipping-w-35/21980782.html?iref=rss-c238",
@@ -459,7 +519,7 @@
       "date_display": "Aug 06, 07:54 PM"
     },
     {
-      "id": "DealNews Tools-220420",
+      "id": "DealNews Tools-899088",
       "title": "Coverado Waterproof Faux Leather Front Car Seat Covers, 2-Pack for $93 + free shipping",
       "description": "These Coverado front seat covers are $92.60, down from $129.95. It's the lowest price ever on Amazon. The waterproof faux leather design protects against spills, stains, and pet hair while fitting mos",
       "link": "https://www.dealnews.com/Coverado-Waterproof-Faux-Leather-Front-Car-Seat-Covers-2-Pack-for-93-free-shipping/21980753.html?iref=rss-c238",
@@ -471,31 +531,7 @@
       "date_display": "Aug 06, 04:03 PM"
     },
     {
-      "id": "DealNews-319815",
-      "title": "Mint Mobile Plans for Get any plan for $15 per month",
-      "description": "Mint Mobile is offering any 3-, 6-, or 12-month phone plan for $15 per month, including its Unlimited plan (a 50% discount). All plans include unlimited talk and text, high-speed data, free mobile hot",
-      "link": "https://www.dealnews.com/Mint-Mobile-Plans-for-Get-any-plan-for-15-per-month/21938506.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 50,
-      "date_iso": "2026-07-30T00:01:00-04:00",
-      "date_display": "Jul 30, 12:01 AM"
-    },
-    {
-      "id": "DealNews-269778",
-      "title": "Woot Prime Leftovers Sale: Up to 87% off + free shipping w/ Prime",
-      "description": "This Woot Prime Leftovers clearance sale runs through July 6 and includes electronics, tools, pet supplies, apparel, and more, discounted as high as 81%. Highlights include the Shure Rycote Shoe Mount",
-      "link": "https://www.dealnews.com/Woot-Prime-Leftovers-Sale-Up-to-87-off-free-shipping-w-Prime/21871287.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 87,
-      "date_iso": "2026-07-03T03:30:22-04:00",
-      "date_display": "Jul 03, 03:30 AM"
-    },
-    {
-      "id": "DealNews Tools-902413",
+      "id": "DealNews Tools-803423",
       "title": "StarKnightMT Promo Code: 20% off sitewide + free shipping",
       "description": "StarKnightMT takes 20% off sitewide via promo code \"DN20\". Save on aftermarket UTV/ATV parts and accessories, including windshields, doors, seat covers, bumpers, storage boxes and bags, mirrors, mount",
       "link": "https://www.dealnews.com/Star-Knight-MT-Promo-Code-20-off-sitewide-free-shipping/21866635.html?iref=rss-c238",
