@@ -1,81 +1,93 @@
 {
-  "updated": "2026-08-29 22:31 UTC",
+  "updated": "2026-08-30 00:44 UTC",
   "count": 39,
   "deals": [
     {
-      "id": "Slickdeals-921699",
-      "title": "4-Ct 1-Oz Hidden Valley Original Ranch Seasoning Dressing & Recipe Mix $3.15 w/ S&S",
-      "description": "Amazon [amazon.com] has *4-Pack Hidden Valley Original Ranch Salad Dressing & Seasoning Mix* for $3.32 - 5% when you check out via Subscribe & Save = *$3.15*. \n*Shipping is free* with Prime or on...",
-      "link": "https://slickdeals.net/f/19940922-sns-3-15-4-pack-hidden-valley-original-ranch-salad-dressing-seasoning-mix-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Clothing & Shoes",
-      "discount": null,
-      "date_iso": "2026-08-29T22:18:33+00:00",
-      "date_display": "Aug 29, 10:18 PM"
-    },
-    {
-      "id": "Slickdeals-654668",
-      "title": "LEIPUT Rechargeable Ear Wax Removal Kit w/ 1080p Camera & Ear Cleaning Tools $6.50",
-      "description": "EarHeart via Amazon [amazon.com] has *LEIPUT Rechargeable Ear Wax Removal Kit w/ 1080P Camera & Ear Cleaning Tools (Black)* on sale for $12.99 - 50% off when you apply promo code ADHI4U4C at checkout.",
-      "link": "https://slickdeals.net/f/19928229-leiput-rechargeable-ear-wax-removal-kit-w-1080p-camera-ear-cleaning-tools-black-6-49-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-131254",
+      "title": "Hello Kitty Island Adventure Deluxe Edition Gift Box (Nintendo Switch) $30",
+      "description": "Amazon.com has Hello Kitty Island Adventure - Gift Box - Nintendo Switch for $29.99. \nShipping is free with Prime or on $35+ orders. \n \nhttps://www.amazon.com/dp/B0FHWW3MQL",
+      "link": "https://slickdeals.net/f/19941711-hello-kitty-island-adventure-gift-box-nintendo-switch-29-99-free-s-h-w-prime-or-35-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Amazon",
       "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-08-30T00:16:13+00:00",
+      "date_display": "Aug 30, 12:16 AM"
+    },
+    {
+      "id": "Slickdeals-437033",
+      "title": "34\" LG UltraGear 34GX900A-B 3440x1440 240Hz OLED Curved Monitor $640 + Free S&H",
+      "description": "Beach Camera Same Day Shipping via Amazon [amazon.com] has *34\" LG UltraGear 34GX900A-B 3440x1440 240Hz OLED Curved Monitor* for *$639.99*. \n*Shipping is free*. \n \nBeach Camera via Best Buy...",
+      "link": "https://slickdeals.net/f/19940904-639-99-34-lg-ultragear-34gx900a-b-3440x1440-240hz-oled-curved-monitor-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-08-30T00:12:01+00:00",
+      "date_display": "Aug 30, 12:12 AM"
+    },
+    {
+      "id": "Slickdeals-510242",
+      "title": "Kobalt 24V 8\" Brushless Electric Pole Saw Kit w/ 2.0Ah Battery $99 + Free S&H",
+      "description": "Lowe's has Kobalt 24-volt 8-in 2 Ah Electric Pole Saw Battery Included , Charger Included one_size in Blue | KPS 1024A-03 for $99. \nShipping is free. Deal for today only. \n...",
+      "link": "https://slickdeals.net/f/19940901-kobalt-24-volt-8-in-2-ah-electric-pole-saw-battery-charger-included-99-free-shipping-at-lowe-s?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Lowe",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-08-30T00:05:42+00:00",
+      "date_display": "Aug 30, 12:05 AM"
+    },
+    {
+      "id": "Slickdeals-903866",
+      "title": "Razor RSF650 36V 650W Electric Bike (220-Lbs Capacity, up to 17mph) $590 + Free S&H",
+      "description": "Razor RSF650 Electric Bike for Ages 16+ - 36V Rechargeable Battery, Up to 17 MPH and 50 mins of Ride... [amazon.com] $589.63",
+      "link": "https://slickdeals.net/f/19937466-razor-rsf650-ebike-electric-motorcycle-589-63?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Sporting Goods",
+      "discount": null,
+      "date_iso": "2026-08-29T23:47:10+00:00",
+      "date_display": "Aug 29, 11:47 PM"
+    },
+    {
+      "id": "Slickdeals-951446",
+      "title": "12\" Diablo 1/4\" Hex Shank Universal Drill Extension $8.55",
+      "description": "Amazon [amazon.com] has *12\" Diablo Universal Extension w/ 1/4\" Hex Shank for Impact & Drill Drivers* for *$8.53*. \n*Shipping is free* with Prime or on $35+ orders. \n \n*** Previous *Frontpage Deal*...",
+      "link": "https://slickdeals.net/f/19937691-8-53-12-diablo-universal-extension-w-1-4-hex-shank-for-impact-drill-drivers-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Tools & Hardware",
+      "discount": null,
+      "date_iso": "2026-08-29T23:12:07+00:00",
+      "date_display": "Aug 29, 11:12 PM"
+    },
+    {
+      "id": "Slickdeals-177454",
+      "title": "PINSPARK Men's Lightweight Pullover Hoodie Sweatshirt (Various) $7",
+      "description": "PINSPARK via Amazon [amazon.com] has PINSPARK Men's Lightweight Athletic Long Sleeve Pullover Hoodie (Various Colors) on sale for *$6.99* w/ code *ZXEE0Z9J* at checkout. Shipping is free with Prime...",
+      "link": "https://slickdeals.net/f/19934889-pinspark-men-s-lightweight-workout-hoodies-7-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Clothing & Shoes",
+      "discount": null,
+      "date_iso": "2026-08-29T23:01:51+00:00",
+      "date_display": "Aug 29, 11:01 PM"
+    },
+    {
+      "id": "Slickdeals-205793",
+      "title": "4-Pk Jusgym 10' Adjustable Metal String Light Poles w/ Fork Base $25 + Free S&H",
+      "description": "Jusgym Home via Amazon has the Jusgym 4-Pack 10' Adjustable Metal String Light Poles for $49.99. Apply promo code 3BFIPW52 at checkout for 50% off = $24.99. \n \nProduct Link:...",
+      "link": "https://slickdeals.net/f/19934157-amazon-jusgym-4-pack-10-adjustable-string-light-poles-24-99-w-code?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Sporting Goods",
       "discount": 50,
-      "date_iso": "2026-08-29T22:07:01+00:00",
-      "date_display": "Aug 29, 10:07 PM"
+      "date_iso": "2026-08-29T22:40:59+00:00",
+      "date_display": "Aug 29, 10:40 PM"
     },
     {
-      "id": "Slickdeals-502180",
-      "title": "ZITY Men's Short Sleeve Print Moisture-Wicking Golf Polo Shirt (Various) $10",
-      "description": "V VALANCH via Amazon [amazon.com] has *ZITY Men's Short Sleeve Print Moisture-Wicking Golf Polo Shirt (Viridescent Leaf)* on sale for $19.98 - 50% with promo code 4JIQFH5S = *$9.99*. Shipping is free.",
-      "link": "https://slickdeals.net/f/19929447-zity-men-s-short-sleeve-print-moisture-wicking-golf-polo-shirt-various-9-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Clothing & Shoes",
-      "discount": null,
-      "date_iso": "2026-08-29T22:01:38+00:00",
-      "date_display": "Aug 29, 10:01 PM"
-    },
-    {
-      "id": "Slickdeals-654551",
-      "title": "Prime: 48A WOLFBOX J1772 NEMA 14-50 Hardwired Level 2 EV Charger w/ App + RFID $216 + Free S&H",
-      "description": "deal [amazon.com] \n \n$216 + Free S/H  w/ code *8PROTECTIONS*",
-      "link": "https://slickdeals.net/f/19941444-prime-48a-wolfbox-j1772-nema-14-50-hardwired-level-2-ev-charger-w-app-rfid-216-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-08-29T21:50:23+00:00",
-      "date_display": "Aug 29, 09:50 PM"
-    },
-    {
-      "id": "Slickdeals-115696",
-      "title": "WIHOLL Women's Oversized Faux Leather Jacket (Various Colors) $16 + Free S&H",
-      "description": "WIHOLL FASHION via Amazon [amazon.com] has *WIHOLL Women\u2019s Oversized Faux Leather Moto Jacket* (XS\u2013XXL, Various Colors) for *$15.99 *when you enter promo code 9CT9M47J at checkout. Shipping is free...",
-      "link": "https://slickdeals.net/f/19938609-wiholl-women-s-oversized-faux-leather-moto-jacket-xs-xxl-various-colors-15-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Clothing & Shoes",
-      "discount": null,
-      "date_iso": "2026-08-29T20:49:01+00:00",
-      "date_display": "Aug 29, 08:49 PM"
-    },
-    {
-      "id": "Slickdeals-703146",
-      "title": "Prime: AstroAI Digital Tire 250 PSI Pressure Gauge w/ Inflator & Stainless Hose $19.95 + Free S&H",
-      "description": "AstroAI Direct via Amazon has AstroAI Digital Tire Pressure Gauge, Heavy Duty Tire Inflator Gauge 250PSI Air Chuck Compressor with Stainless Braided Hose for $19.99 when you use code *CXS2KNOD *at...",
-      "link": "https://slickdeals.net/f/19938435-astroai-digital-tire-pressure-gauge-heavy-duty-tire-inflator-gauge-250psi-air-chuck-compressor-accessories-with-stainless-braided-hose-19-97?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "source": "Slickdeals",
-      "retailer": "Amazon",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-08-29T20:15:39+00:00",
-      "date_display": "Aug 29, 08:15 PM"
-    },
-    {
-      "id": "DealNews-080405",
+      "id": "DealNews-488440",
       "title": "Eucos 62\" Magnetic Phone Tripod for $11 + free shipping w/ Prime",
       "description": "Anyone who films workouts, cooks along to recipe videos, or does remote presentations will get more use out of the extra height than a standard tabletop tripod offers, thanks to the 62\" extension and ",
       "link": "https://www.dealnews.com/Eucos-62-Magnetic-Phone-Tripod-for-11-free-shipping-w-Prime/22110022.html?iref=rss-c142",
@@ -87,7 +99,7 @@
       "date_display": "Aug 29, 04:17 PM"
     },
     {
-      "id": "DealNews-097683",
+      "id": "DealNews-766203",
       "title": "eufy Outlet Deals at eBay: Up to 60% off + free shipping",
       "description": "eBay's eufy brand outlet offers certified refurbished security cameras, video doorbells, and smart locks at up to 60% off. Options range from a SoloCam S3 solar security camera at $90 to a eufyCam 3 4",
       "link": "https://www.dealnews.com/eufy-Outlet-Deals-at-eBay-Up-to-60-off-free-shipping/22093469.html?iref=rss-c142",
@@ -99,7 +111,7 @@
       "date_display": "Aug 29, 01:10 PM"
     },
     {
-      "id": "DealNews-189220",
+      "id": "DealNews-185697",
       "title": "Woot Open Box Clearance Sale: Up to 85% off + free shipping w/ Prime",
       "description": "Woot just dropped a new \"Open Box: Too Many Boxes\" clearance event, which covers a wide mix of open box electronics and home goods, from iPads and MacBooks to Dyson and LG vacuums. Pricing varies wide",
       "link": "https://www.dealnews.com/Woot-Open-Box-Clearance-Sale-Up-to-85-off-free-shipping-w-Prime/22114547.html?iref=rss-c142",
@@ -111,7 +123,7 @@
       "date_display": "Aug 29, 12:45 PM"
     },
     {
-      "id": "DealNews-006248",
+      "id": "DealNews-472828",
       "title": "Refurb Cell Phone Deals at eBay: Up to 70% off + free shipping",
       "description": "eBay's refurbished phone selection covers a wide range of Apple and Samsung models, with savings reaching up to 70% off. For example, a refurbished Samsung Galaxy S21 Ultra is priced at $220, down fro",
       "link": "https://www.dealnews.com/Refurb-Cell-Phone-Deals-at-eBay-Up-to-70-off-free-shipping/22114538.html?iref=rss-c142",
@@ -123,7 +135,7 @@
       "date_display": "Aug 29, 12:20 PM"
     },
     {
-      "id": "DealNews-228578",
+      "id": "DealNews-408972",
       "title": "Koqeiey Aluminum Motorcycle Windshield Camera Mount for Insta360 for $15 + free shipping w/ Prime",
       "description": "This mount bolts to your windshield for handlebar-free footage, useful for riders who want stable point-of-view shots without cluttering their bars. Apply coupon code \"KG8OFL7C\" for a savings of $15. ",
       "link": "https://www.dealnews.com/Koqeiey-Aluminum-Motorcycle-Windshield-Camera-Mount-for-Insta360-for-15-free-shipping-w-Prime/22100094.html?iref=rss-c142",
@@ -135,7 +147,7 @@
       "date_display": "Aug 29, 11:56 AM"
     },
     {
-      "id": "DealNews-896380",
+      "id": "DealNews-584594",
       "title": "Eco-Worthy LiFePO4 Lithium Battery Deals at AliExpress: Up to 71% off + free shipping",
       "description": "For one last day, AliExpress has a wide range of Eco-Worthy LiFePO4 batteries on sale, with discounts as high as 71%. It includes small 10Ah packs up to massive 314Ah units built for home backup power",
       "link": "https://www.dealnews.com/Eco-Worthy-Li-Fe-PO4-Lithium-Battery-Deals-at-Ali-Express-Up-to-71-off-free-shipping/22114499.html?iref=rss-c142",
@@ -147,7 +159,7 @@
       "date_display": "Aug 29, 11:27 AM"
     },
     {
-      "id": "DealNews-397488",
+      "id": "DealNews-194165",
       "title": "Anker Outlet Deals at eBay: Up to 30% off + free shipping",
       "description": "eBay's Anker sale covers certified refurbished chargers, power banks, docking stations, and Soundcore audio gear, all with free shipping. Pricesstart around $13 for a USB-C charger pack and everything",
       "link": "https://www.dealnews.com/Anker-Outlet-Deals-at-eBay-Up-to-30-off-free-shipping/22114470.html?iref=rss-c142",
@@ -159,7 +171,7 @@
       "date_display": "Aug 29, 10:16 AM"
     },
     {
-      "id": "DealNews-107325",
+      "id": "DealNews-439288",
       "title": "Ryobi 18V ONE+ 150W Battery Inverter 2-Pack for $99 + free shipping",
       "description": "As one of its daily deals, Home Depot has this 2-pack of Ryobi 18V ONE+ battery inverters for just $99. That's a great deal, as you'd pay $41 more for two directly from Ryobi. These turn 18V ONE+ batt",
       "link": "https://www.dealnews.com/Ryobi-18-V-ONE-150-W-Battery-Inverter-2-Pack-for-99-free-shipping/22114415.html?iref=rss-c142",
@@ -171,7 +183,7 @@
       "date_display": "Aug 29, 08:51 AM"
     },
     {
-      "id": "DealNews-247144",
+      "id": "DealNews-587681",
       "title": "Best Buy Half-Price (or Better) Deals: At least 50% off everything + free shipping",
       "description": "Best Buy's \"50% Off or More\" Sales Event covers thousands of items across electronics, gaming, and appliances. Highlights include large TVs, noise cancelling headphones, and monitors that are all high",
       "link": "https://www.dealnews.com/Best-Buy-Half-Price-or-Better-Deals-At-least-50-off-everything-free-shipping/22105088.html?iref=rss-c142",
@@ -183,7 +195,7 @@
       "date_display": "Aug 29, 08:31 AM"
     },
     {
-      "id": "DealNews-075522",
+      "id": "DealNews-538001",
       "title": "Unlocked Samsung Galaxy S25 Edge 512GB Phone for $670 + free shipping w/ Prime",
       "description": "Woot has the 512GB version of the Samsung Galaxy S25 Edge for just $670 right now. That's the best price we've seen for this model and nearly half of what you'd still pay for this unlocked phone direc",
       "link": "https://www.dealnews.com/Unlocked-Samsung-Galaxy-S25-Edge-512-GB-Phone-for-670-free-shipping-w-Prime/22114271.html?iref=rss-c142",
@@ -195,7 +207,7 @@
       "date_display": "Aug 29, 05:51 AM"
     },
     {
-      "id": "DealNews-909725",
+      "id": "DealNews-827714",
       "title": "Samsung Brand Outlet Deals at eBay: Up to 50% off + free shipping",
       "description": "eBay is offering up to 50% off Samsung Galaxy phones, spanning models from the Galaxy S21 up through the newer S25 Ultra. A refurbished Samsung Galaxy S24 Ultra with 512GB storage is listed at $615.99",
       "link": "https://www.dealnews.com/Samsung-Brand-Outlet-Deals-at-eBay-Up-to-50-off-free-shipping/22110179.html?iref=rss-c142",
@@ -207,7 +219,7 @@
       "date_display": "Aug 28, 03:30 PM"
     },
     {
-      "id": "DealNews-796423",
+      "id": "DealNews-406625",
       "title": "Marshall Monitor II Bluetooth Over-Ear Headphones for $120 + free shipping",
       "description": "At $119.99, these Marshall Monitor II headphones are $200 off the regular price at B&H Photo Video and cheaper than Amazon's current $179.99 price. They offer up to 30 hours of playback with active no",
       "link": "https://www.dealnews.com/Marshall-Monitor-II-Bluetooth-Over-Ear-Headphones-for-120-free-shipping/22110141.html?iref=rss-c142",
@@ -219,7 +231,7 @@
       "date_display": "Aug 28, 02:46 PM"
     },
     {
-      "id": "DealNews-280580",
+      "id": "DealNews-247291",
       "title": "Amazon Resale Labor Day Electronics Deals: Up to an extra 30% off + free shipping",
       "description": "Shop a large selection of electronics, and more in Amazon's Resale section and get up to an extra 25% off your order at checkout. Shipping is free for Prime members. The amount of the discount is show",
       "link": "https://www.dealnews.com/Amazon-Resale-Labor-Day-Electronics-Deals-Up-to-an-extra-30-off-free-shipping/22109778.html?iref=rss-c142",
@@ -231,7 +243,7 @@
       "date_display": "Aug 28, 09:47 AM"
     },
     {
-      "id": "DealNews Tools-783425",
+      "id": "DealNews Tools-040812",
       "title": "Chevron Techron 12-oz. High Mileage Fuel System Cleaner 6-Pack for $45 + free shipping",
       "description": "At Amazon, get this Chevron Techron 12-oz. High Mileage Fuel System Cleaner 6-Pack for $45. It's the best price we could find by $17. Each 12-oz. bottle is formulated to remove fuel system deposits an",
       "link": "https://www.dealnews.com/products/Chevron/Chevron-Techron-12-oz-High-Mileage-Fuel-System-Cleaner-6-Pack/491750.html?iref=rss-c238",
@@ -243,7 +255,7 @@
       "date_display": "Aug 28, 07:10 AM"
     },
     {
-      "id": "DealNews Tools-701175",
+      "id": "DealNews Tools-140484",
       "title": "11.4\" Seat Belt Extender for Cars 2-Pack for $16 + free shipping w/ $35",
       "description": "That's $7 off, $8 each, and the best price we could find. This seat belt extender comes as a 2-pack, each measuring 11.42\" long with a 0.846\" tongue width to fit most vehicle buckles. It's built from ",
       "link": "https://www.dealnews.com/11-4-Seat-Belt-Extender-for-Cars-2-Pack-for-16-free-shipping-w-35/22105287.html?iref=rss-c238",
@@ -255,7 +267,7 @@
       "date_display": "Aug 27, 01:13 PM"
     },
     {
-      "id": "DealNews Tools-979140",
+      "id": "DealNews Tools-617346",
       "title": "Pelsee S1 Pro 4K Front and Rear Dash Cam with 128GB Card for $110 + free shipping",
       "description": "Anyone who wants documented proof after a fender bender will appreciate the 4K front and rear coverage, and with a 128GB card thrown in you won't need to buy separate storage right away. Amazon has it",
       "link": "https://www.dealnews.com/Pelsee-S1-Pro-4-K-Front-and-Rear-Dash-Cam-with-128-GB-Card-for-110-free-shipping/22104810.html?iref=rss-c238",
@@ -267,7 +279,7 @@
       "date_display": "Aug 27, 06:16 AM"
     },
     {
-      "id": "DealNews Tools-323297",
+      "id": "DealNews Tools-090004",
       "title": "Ottocast Mini 3.0 Wireless CarPlay and Android Auto Adapter for $36 + free shipping",
       "description": "Skips the annoying part of plugging in your phone every drive by converting wired CarPlay or Android Auto to wireless, which suits anyone with an older car that only supports the wired version. At $36",
       "link": "https://www.dealnews.com/Ottocast-Mini-3-0-Wireless-Car-Play-and-Android-Auto-Adapter-for-36-free-shipping/22104793.html?iref=rss-c238",
@@ -279,7 +291,7 @@
       "date_display": "Aug 27, 06:13 AM"
     },
     {
-      "id": "DealNews Tools-033872",
+      "id": "DealNews Tools-087343",
       "title": "AstroAI 26-Qt. Electric Cooler for $80 + free shipping",
       "description": "Walmart offers the AstroAI 26-Qt. Electric Cooler for $79.99.\u00a0 That's a $20 low.\u00a0 Shipping is free. Buy Now at Walmart      Features     Cools contents up to 32\u00b0F below outside temperature   Comes wit",
       "link": "https://www.dealnews.com/Astro-AI-26-Qt-Electric-Cooler-for-80-free-shipping/22100243.html?iref=rss-c238",
@@ -291,7 +303,7 @@
       "date_display": "Aug 26, 03:32 PM"
     },
     {
-      "id": "DealNews Tools-814363",
+      "id": "DealNews Tools-114909",
       "title": "Quadratec QRC Front Bumpers Sale: 20% off + shipping varies",
       "description": "Quadratec is offering 20% off its QRC Front Bumpers for Jeep Wrangler JL, JK, and Gladiator JT models through August 31st. The lineup includes both full-width and stubby styles, with winch-ready and n",
       "link": "https://www.dealnews.com/Quadratec-QRC-Front-Bumpers-Sale-20-off-shipping-varies/22100141.html?iref=rss-c238",
@@ -303,7 +315,7 @@
       "date_display": "Aug 26, 01:42 PM"
     },
     {
-      "id": "DealNews Tools-359293",
+      "id": "DealNews Tools-878971",
       "title": "Fix-a-Flat 16-oz. Sedan & Coupe Tire Inflator for $8 + free shipping w/ $35",
       "description": "This Fix-a-Flat tire inflator is $7.64 at Target. That's a buck below Walmart's price. Spend $35 for free shipping, or choose pickup to avoid the $5.99 shipping fee.\u00a0 Buy Now at Target      Features  ",
       "link": "https://www.dealnews.com/Fix-a-Flat-16-oz-Sedan-Coupe-Tire-Inflator-for-8-free-shipping-w-35/22100119.html?iref=rss-c238",
@@ -315,7 +327,7 @@
       "date_display": "Aug 26, 01:02 PM"
     },
     {
-      "id": "DealNews Tools-621845",
+      "id": "DealNews Tools-816666",
       "title": "Leather Mesh Car Seat Cover Full Set for $34 + free shipping w/ $35",
       "description": "This full seat cover set is $34.19 at Walmart. That's $12 below the original price. Orders of $35 or more ship free.\u00a0 Buy Now at Walmart      Features     Full set designed to fit most 5-seat cars, tr",
       "link": "https://www.dealnews.com/Leather-Mesh-Car-Seat-Cover-Full-Set-for-34-free-shipping-w-35/22100095.html?iref=rss-c238",
@@ -327,7 +339,7 @@
       "date_display": "Aug 26, 12:41 PM"
     },
     {
-      "id": "DealNews Tools-386408",
+      "id": "DealNews Tools-726866",
       "title": "BougeRV 12V Refrigerator for $152 + free shipping",
       "description": "This BougeRV 23-quart portable fridge is $38 off the regular price. It can cool from 77\u00b0F down to 32\u00b0F in just 15 minutes and runs on 12V or 24V DC power, making it usable in cars, trucks, RVs, or boa",
       "link": "https://www.dealnews.com/products/Bouge-RV/Bouge-RV-12-V-Refrigerator/490518.html?iref=rss-c238",
@@ -339,7 +351,7 @@
       "date_display": "Aug 26, 12:25 PM"
     },
     {
-      "id": "DealNews Tools-192756",
+      "id": "DealNews Tools-622063",
       "title": "TaskStar Grease Gun Coupler for $12 + free shipping",
       "description": "At Amazon, get this TaskStar Grease Gun Coupler for $12. It's the best price Amazon has charged for this model. It locks onto DIN and SAE fittings and is rated to handle up to 12,000 psi without leaki",
       "link": "https://www.dealnews.com/products/Task-Star-Grease-Gun-Coupler/498357.html?iref=rss-c238",
@@ -351,7 +363,7 @@
       "date_display": "Aug 26, 04:36 AM"
     },
     {
-      "id": "DealNews Tools-546281",
+      "id": "DealNews Tools-998106",
       "title": "MuzeFansi 35-oz. Rust Converter Paint for $15 + free shipping w/ Prime",
       "description": "Woot offers the MuzeFansi 35-oz. Rust Converter Paint for $14.99 for a $5 low.\u00a0 Shipping is free for Prime members.\u00a0 Deal ends September 1st. Buy Now at Woot! An Amazon Company      Features     Conve",
       "link": "https://www.dealnews.com/Muze-Fansi-35-oz-Rust-Converter-Paint-for-15-free-shipping-w-Prime/22094365.html?iref=rss-c238",
@@ -363,7 +375,7 @@
       "date_display": "Aug 25, 10:01 PM"
     },
     {
-      "id": "DealNews Tools-560596",
+      "id": "DealNews Tools-537905",
       "title": "Car Windscreen Star-Shaped Glass Repair Kit for $8.90 + free shipping",
       "description": "This windshield repair kit is $1.10 off the regular price at Walmart, bringing it to $8.90. It's designed for do-it-yourself use, letting you fill chips and cracks at home without visiting a repair sh",
       "link": "https://www.dealnews.com/Car-Windscreen-Star-Shaped-Glass-Repair-Kit-for-8-90-free-shipping/22094235.html?iref=rss-c238",
@@ -375,7 +387,7 @@
       "date_display": "Aug 25, 07:19 PM"
     },
     {
-      "id": "DealNews Tools-082159",
+      "id": "DealNews Tools-502214",
       "title": "Microfiber Car Wash Mitt 2-Pack for $9 + free shipping w/ Prime",
       "description": "This microfiber car wash mitt 2-pack is $1 off the regular price at Amazon. The mitts are double-sided and machine washable, and the elastic wrist cuff is designed to keep them secure during use. Ship",
       "link": "https://www.dealnews.com/Microfiber-Car-Wash-Mitt-2-Pack-for-9-free-shipping-w-Prime/22094234.html?iref=rss-c238",
@@ -387,7 +399,7 @@
       "date_display": "Aug 25, 07:17 PM"
     },
     {
-      "id": "DealNews Tools-242401",
+      "id": "DealNews Tools-208939",
       "title": "Valvoline Daily Protection 5-Quart 10W-30 Conventional Motor Oil for $23 + free shipping",
       "description": "This 5-quart jug of Valvoline Daily Protection 10W-30 is $22.96 at Walmart. You'd pay $9 more elsewhere. Shipping is free on orders of $35 or more, and pickup may also be available.\u00a0 Buy Now at Walmar",
       "link": "https://www.dealnews.com/Valvoline-Daily-Protection-5-Quart-10-W-30-Conventional-Motor-Oil-for-23-free-shipping/22094152.html?iref=rss-c238",
@@ -399,7 +411,7 @@
       "date_display": "Aug 25, 05:31 PM"
     },
     {
-      "id": "DealNews Tools-686435",
+      "id": "DealNews Tools-953367",
       "title": "Safescan OBD2 Enhanced Universal Car Diagnostic Tool for $20 + free shipping w/ Prime",
       "description": "This Safescan OBD2 scanner is $10 off, dropping to its all-time low price at Amazon. (It's $2 below our mention from a month ago.) It reads and clears engine codes, checks emissions readiness, and dis",
       "link": "https://www.dealnews.com/Safescan-OBD2-Enhanced-Universal-Car-Diagnostic-Tool-for-20-free-shipping-w-Prime/22094116.html?iref=rss-c238",
@@ -411,7 +423,7 @@
       "date_display": "Aug 25, 04:56 PM"
     },
     {
-      "id": "DealNews Tools-754790",
+      "id": "DealNews Tools-840625",
       "title": "CAR PASS Heavy Duty Rubber Car Floor Mats for $32 + free shipping",
       "description": "This CAR PASS 3-piece rubber floor mat set (in All Black) is $31.59, down from the $39.98 regular price. The mats are trim-to-fit, so they can be customized to fit most cars, trucks, vans, and SUVs, a",
       "link": "https://www.dealnews.com/CAR-PASS-Heavy-Duty-Rubber-Car-Floor-Mats-for-32-free-shipping/22088852.html?iref=rss-c238",
@@ -423,19 +435,7 @@
       "date_display": "Aug 24, 07:26 PM"
     },
     {
-      "id": "DealNews-089062",
-      "title": "Samsung Galaxy S26 Ultra 5G Android Phone for Mint Mobile for Up to $900 off + 1-year of Unlimited for $15/month + free shipping",
-      "description": "Mint Mobile offers the Samsung Galaxy S26 Ultra 5G Android Phone for Mint Mobile for $500 off, along with a year of Unlimited for $15 per month. The 256GB model is $800 (reduced from $1,300) and the 5",
-      "link": "https://www.dealnews.com/Samsung-Galaxy-S26-Ultra-5-G-Android-Phone-for-Mint-Mobile-for-Up-to-900-off-1-year-of-Unlimited-for-15-month-free-shipping/22058270.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 900,
-      "date_iso": "2026-08-19T03:30:38-04:00",
-      "date_display": "Aug 19, 03:30 AM"
-    },
-    {
-      "id": "DealNews-638958",
+      "id": "DealNews-427487",
       "title": "Debut Deals Sale at Woot: Up to 77% off + free shipping w/ Prime",
       "description": "Woot\u2019s Debut Deals sale features a broad mix of new markdowns across home, outdoor, pet, kids\u2019 toys, electronics, personal care, and more. Prices start under $10 for small accessories and climb to nea",
       "link": "https://www.dealnews.com/Debut-Deals-Sale-at-Woot-Up-to-77-off-free-shipping-w-Prime/22045461.html?iref=rss-c142",
@@ -447,7 +447,7 @@
       "date_display": "Aug 17, 07:24 AM"
     },
     {
-      "id": "DealNews-715794",
+      "id": "DealNews-542694",
       "title": "Woot Prime Leftovers Sale: Up to 87% off + free shipping w/ Prime",
       "description": "This Woot Prime Leftovers clearance sale runs through July 6 and includes electronics, tools, pet supplies, apparel, and more, discounted as high as 81%. Highlights include the Shure Rycote Shoe Mount",
       "link": "https://www.dealnews.com/Woot-Prime-Leftovers-Sale-Up-to-87-off-free-shipping-w-Prime/21871287.html?iref=rss-c142",
@@ -459,7 +459,7 @@
       "date_display": "Jul 03, 03:30 AM"
     },
     {
-      "id": "DealNews Tools-421743",
+      "id": "DealNews Tools-328978",
       "title": "StarKnightMT Promo Code: 20% off sitewide + free shipping",
       "description": "StarKnightMT takes 20% off sitewide via promo code \"DN20\". Save on aftermarket UTV/ATV parts and accessories, including windshields, doors, seat covers, bumpers, storage boxes and bags, mirrors, mount",
       "link": "https://www.dealnews.com/Star-Knight-MT-Promo-Code-20-off-sitewide-free-shipping/21866635.html?iref=rss-c238",
