@@ -1,93 +1,345 @@
 {
-  "updated": "2026-11-10 11:35 UTC",
-  "count": 50,
+  "updated": "2026-11-10 18:51 UTC",
+  "count": 56,
   "deals": [
     {
-      "id": "Slickdeals-701760",
-      "title": "Ozark Trail Portable Hard Arm Chair w/ Cup Holder $9.95",
-      "description": "Walmart [walmart.com] has *Ozark Trail Hard-Arm Folding Camping Chair w/ Cup Holder & Carry Bag (Dark Blue)* on sale for *$9.97*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or on.",
-      "link": "https://slickdeals.net/f/20282514-ozark-trail-hard-arm-folding-camping-chair-w-cup-holder-carry-bag-dark-blue-9-97-free-shipping-w-walmart-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-903776",
+      "title": "5-Pc Leking Kids' Bug Catcher and Observation Outdoor Explorer Kit $12.50",
+      "description": "ired via Amazon [amazon.com] has *5-Piece Leking Kids' Bug Catcher and Observation Outdoor Explorer Kit* for $24.99 - 50% = *$12.49* when you apply code 23FP63FW at checkout. Shipping is free w/...",
+      "link": "https://slickdeals.net/f/20278080-5-piece-leking-kids-bug-catcher-and-observation-outdoor-explorer-kit-12-49-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
-      "retailer": "Walmart",
+      "retailer": "Amazon",
       "category": "Outdoor & Lawn",
       "discount": null,
-      "date_iso": "2026-11-10T11:28:23+00:00",
-      "date_display": "Nov 10, 11:28 AM"
+      "date_iso": "2026-11-10T18:45:38+00:00",
+      "date_display": "Nov 10, 06:45 PM"
     },
     {
-      "id": "Slickdeals-178816",
-      "title": "262-Pc. CRAFTSMAN VERSASTACK Mechanics Tool Set w/ Hard Case $149 + Free S&H",
-      "description": "Lowe's [lowes.com] has *CRAFTSMAN VERSASTACK 262-Piece Mechanics Tool Set w/ Hard Case (CMMT45309)* on sale for *$149*. Select *free store pickup* where available, otherwise *shipping is free*. \n...",
-      "link": "https://slickdeals.net/f/20280261-craftsman-versastack-262-piece-mechanics-tool-set-w-hard-case-149-free-store-pickup-at-lowe-s-or-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-110925",
+      "title": "KIRUNDO Women's Satin Off-Shoulder Midi Dress (Various Colors) $20",
+      "description": "KIRUNDO via Amazon [amazon.com] has *KIRUNDO Women's Satin Off-Shoulder Midi Dress (various colors & sizes)* on sale for $49.99 - 50% off when you apply promo code J6RWFNOG at checkout - 10% off when.",
+      "link": "https://slickdeals.net/f/20267520-kirundo-women-s-satin-off-shoulder-midi-dress-various-19-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
-      "retailer": "Lowe",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-11-10T11:11:54+00:00",
-      "date_display": "Nov 10, 11:11 AM"
+      "retailer": "Amazon",
+      "category": "Clothing & Shoes",
+      "discount": 50,
+      "date_iso": "2026-11-10T18:11:50+00:00",
+      "date_display": "Nov 10, 06:11 PM"
     },
     {
-      "id": "Slickdeals-155864",
-      "title": "Hoto Smart Digital Food Scale w/ LED Screen & App Connectivity $10",
-      "description": "Hototools us via Amazon has *Hoto Smart Digital Food Scale w/ LED Screen & App Connectivity* (0.1g Precision, 3kg Max) on sale for $31.99 - $22 off when you apply promo code OU6SOQAU at checkout =...",
-      "link": "https://slickdeals.net/f/20281566-hoto-smart-digital-food-scale-w-led-screen-app-connectivity-10?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-833877",
+      "title": "26\"x15\" FJAU Electric Silicone Food Warming Mat w/ 7 Heat Levels (Blue) $15",
+      "description": "kaibei via Amazon [amazon.com] has *26\" x 15\" FJAU Electric Silicone Food Warming Mat w/ 7 Heat Levels & 8-Hour Timer (Blue)* on sale for $29.98 - 50% off when you apply promo code UT8CGYNI at...",
+      "link": "https://slickdeals.net/f/20266983-26-x-15-fjau-electric-silicone-food-warming-mat-w-7-heat-levels-8-hour-timer-blue-14-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Amazon",
       "category": "Tools & Hardware",
-      "discount": 22,
-      "date_iso": "2026-11-10T10:07:00+00:00",
-      "date_display": "Nov 10, 10:07 AM"
+      "discount": 50,
+      "date_iso": "2026-11-10T18:09:38+00:00",
+      "date_display": "Nov 10, 06:09 PM"
     },
     {
-      "id": "Slickdeals-702594",
-      "title": "MERACH T12 Series Incline Treadmill (up to 300-Lbs, 16.5\" x 42.5\" Pad) $190 + Free S&H",
-      "description": "MERACHFITNESS via Amazon has *MERACH T12 Series Incline Treadmill* (MR-T12) on sale for $329.99 - $140 when you apply promo code CBUIH3UE checkout = *$189.99*. *Shipping is free*.[LIST][*]Note: You...",
-      "link": "https://slickdeals.net/f/20278875-merach-300-lb-capacity-foldable-treadmill-w-6-manual-incline-189-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-174564",
+      "title": "G Gradual Men's Fleece-Lined Crewneck Pullover Sweatshirt (Various) $14",
+      "description": "G-GRADUAL via Amazon [amazon.com] has *G Gradual Men's Fleece-Lined Crewneck Pullover Sweatshirt (various colors & sizes)* on sale for $24.99 - $11 off when you apply promo code 547JSRVJ at checkout..",
+      "link": "https://slickdeals.net/f/20267418-g-gradual-men-s-fleece-lined-crewneck-pullover-sweatshirt-various-13-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Amazon",
-      "category": "Sporting Goods",
-      "discount": null,
-      "date_iso": "2026-11-10T09:09:29+00:00",
-      "date_display": "Nov 10, 09:09 AM"
+      "category": "Clothing & Shoes",
+      "discount": 11,
+      "date_iso": "2026-11-10T17:59:21+00:00",
+      "date_display": "Nov 10, 05:59 PM"
     },
     {
-      "id": "Slickdeals-629083",
-      "title": "Husky 1500-Lumens Rechargeable USB-C Flexible Work Light w/ Wearable Straps $20 + Free S&H",
-      "description": "Home Depot has HUSKY 1500 Lumens Rechargeable Flexible Work Light for $19.98. Store pickup is free.  \n  \n* 1500 Lumens of brightness \n* 300 rotating flexible design for versatility and convenience....",
-      "link": "https://slickdeals.net/f/20276148-19-98-pickup-husky-1500-lumens-rechargeable-flexible-work-light?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-666090",
+      "title": "GKBK Women's Ribbed Knit Slim Fit 3/4 Sleeve Scoop Neck Tee (Black or White) from $4.60",
+      "description": "GKBKshop via Amazon [amazon.com] has *GKBK Women's Ribbed Knit Slim Fit 3/4 Sleeve Scoop Neck T-Shirt (Black or White)* on sale for $8.32 - 45% off when you apply promo code 3E400GW7 at checkout =...",
+      "link": "https://slickdeals.net/f/20268663-gkbk-women-s-ribbed-knit-slim-fit-3-4-sleeve-scoop-neck-tee-black-or-white-from-4-58-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
-      "retailer": "Home Depot",
-      "category": "Tools & Hardware",
-      "discount": null,
-      "date_iso": "2026-11-10T08:06:45+00:00",
-      "date_display": "Nov 10, 08:06 AM"
+      "retailer": "Amazon",
+      "category": "Clothing & Shoes",
+      "discount": 45,
+      "date_iso": "2026-11-10T17:53:00+00:00",
+      "date_display": "Nov 10, 05:53 PM"
     },
     {
-      "id": "Slickdeals-700835",
-      "title": "Apple iPhone 17/17 Pro Silicone Case w/ MagSafe (Various) from $18",
-      "description": "Amazon [amazon.com] has *Apple iPhone 17 Silicone Case w/ MagSafe (Neon Yellow)* on sale for *$18*. Shipping is free w/ Prime or on orders $35+. \n \n*Available Deals*:[LIST][*]Neon Yellow (17)...",
-      "link": "https://slickdeals.net/f/20279859-apple-iphone-17-17-pro-silicone-case-w-magsafe-various-from-18?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-008990",
+      "title": "wegear WL500 Rechargeable Silent Wireless Mouse $7",
+      "description": "Lenovo Product Marketplace, Inc. via Amazon [amazon.com] has *wegear WL500 Rechargeable Silent 2.4G Wireless Mouse (Black)* on sale for $18.99 - $12 off when you apply promo code UQO9GYMR at checkout.",
+      "link": "https://slickdeals.net/f/20268123-wegear-wl500-rechargeable-silent-2-4g-wireless-mouse-black-6-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
       "retailer": "Amazon",
       "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-10T06:56:14+00:00",
-      "date_display": "Nov 10, 06:56 AM"
+      "discount": 12,
+      "date_iso": "2026-11-10T17:44:28+00:00",
+      "date_display": "Nov 10, 05:44 PM"
     },
     {
-      "id": "Slickdeals-496920",
-      "title": "Milwaukee M18 18-Volt Li-Ion Cordless Inflator w/ 2x 5.0Ah Batteries & Charger $199 + Free S&H",
-      "description": "Home Depot has *Milwaukee M18 18-Volt Lithium-Ion Cordless Inflator w/ 2x 5.0Ah Batteries & Charger* (2848-20-48-59-1852B) on sale for *$199*. *Shipping is free*. \n \nThanks to Community Member...",
-      "link": "https://slickdeals.net/f/20281128-199-fs-milwaukee-m18-18-volt-lithium-ion-cordless-inflator-with-2-5-0ah-batteries-and-charger-home-depot?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "id": "Slickdeals-032005",
+      "title": "wegear PIXIU 98 Key Gasket RGB Mechanical Keyboard (Cherry MX2A Linear or Tactile) $45 + Free S&H",
+      "description": "Lenovo Product Marketplace, Inc. via Amazon [amazon.com] has *wegear PIXIU 98 Tri-Mode Mechanical Gaming Keyboard w/ Cherry MX2A Brown Switches* on sale for $89.99 - $45 off when you apply promo code.",
+      "link": "https://slickdeals.net/f/20268144-wegear-pixiu-98-tri-mode-mechanical-gaming-keyboard-w-cherry-mx2a-red-or-brown-switches-44-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "source": "Slickdeals",
-      "retailer": "Home Depot",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 45,
+      "date_iso": "2026-11-10T17:42:42+00:00",
+      "date_display": "Nov 10, 05:42 PM"
+    },
+    {
+      "id": "Slickdeals-114842",
+      "title": "94-Key wegear Pastel Wireless Tri-Mode Gaming Keyboard w/ Media Knob $16",
+      "description": "Lenovo Product Marketplace, Inc. via Amazon [amazon.com] has wegear 94-Key Tri-Mode Wireless Backlit Keyboard w/ Media Knob (Blue or Pink) on sale for $24.99 - 36% off when you apply promo code...",
+      "link": "https://slickdeals.net/f/20279118-wegear-94-key-tri-mode-wireless-backlit-keyboard-w-media-knob-blue-or-pink-15-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 36,
+      "date_iso": "2026-11-10T16:59:47+00:00",
+      "date_display": "Nov 10, 04:59 PM"
+    },
+    {
+      "id": "Slickdeals-840464",
+      "title": "100' DegLasers Rechargeable Self Leveling Green Cross Line Laser Level w/ Tripod $22.50 + Free Shipping",
+      "description": "DEGLASERS via Amazon [amazon.com] has *100' DegLasers Rechargeable Self Leveling Green Cross Line Laser Level w/ Tripod* on sale for $44.99 - 50% with promo code ZXK7BP7S = *$22.49*. Shipping is free.",
+      "link": "https://slickdeals.net/f/20278977-100-deglasers-rechargeable-self-leveling-green-cross-line-laser-level-w-tripod-22-49-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
       "category": "Tools & Hardware",
       "discount": null,
-      "date_iso": "2026-11-10T06:22:21+00:00",
-      "date_display": "Nov 10, 06:22 AM"
+      "date_iso": "2026-11-10T16:58:35+00:00",
+      "date_display": "Nov 10, 04:58 PM"
     },
     {
-      "id": "DealNews-423698",
+      "id": "Slickdeals-460835",
+      "title": "3-Pc toolant 1/4\" Hex Magnetic Drill Bit Extension Set $8.45 & More",
+      "description": "toolant tools via Amazon [amazon.com] has *toolant Magnetic Drill Bit Extensions* on sale from $9.99 - 35% off when you apply promo code XKKEMK2J at checkout = *$6.49 *listed below. Shipping is free..",
+      "link": "https://slickdeals.net/f/20279364-3-piece-toolant-1-4-hex-magnetic-drill-bit-extension-set-w-anti-wobble-design-2-5-4-6-8-44-more-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Tools & Hardware",
+      "discount": 35,
+      "date_iso": "2026-11-10T16:52:13+00:00",
+      "date_display": "Nov 10, 04:52 PM"
+    },
+    {
+      "id": "Slickdeals-000987",
+      "title": "Glass Top Humidor Case w/ Cedar Lining, Humidifier & Hygrometer (Black) $17.40",
+      "description": "FAN KAI via Amazon [amazon.com] has *Glass Top Humidor Case w/ Cedar Lining, Humidifier & Hygrometer (Black)* on sale for $24.88 - 30% off when you apply promo code HZSIVVAD at checkout = *$17.42*....",
+      "link": "https://slickdeals.net/f/20281023-glass-top-humidor-case-w-cedar-lining-humidifier-hygrometer-black-17-42-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "source": "Slickdeals",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": 30,
+      "date_iso": "2026-11-10T16:40:41+00:00",
+      "date_display": "Nov 10, 04:40 PM"
+    },
+    {
+      "id": "DealNews-975406",
+      "title": "Adorama Unbeatable Holiday Sale: Up to 50% off + free shipping w/ $49",
+      "description": "Adorama's Unbeatable Holiday Sale spans cameras, lenses, drones, pro audio, video equipment, and musical instruments from brands like Canon, Nikon, Sony, Fujifilm, and more. Separate Bundle & Save and",
+      "link": "https://www.dealnews.com/Adorama-Unbeatable-Holiday-Sale-Up-to-50-off-free-shipping-w-49/22376074.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 50,
+      "date_iso": "2026-11-10T12:48:33-05:00",
+      "date_display": "Nov 10, 12:48 PM"
+    },
+    {
+      "id": "DealNews-243049",
+      "title": "Refurb Sony WH-1000XM6 Noise Canceling Headphones for $237 + free shipping",
+      "description": "At eBay, with promo code \"SHOPBRANDS20\", these Sony WH-1000XM6 headphones drop to $237, which is 20% off the $296 listed price. The seller is Sony authorized and the refurbished pair carries a two-yea",
+      "link": "https://www.dealnews.com/products/Sony-Electronics/Sony-WH-1000-XM6-Noise-Canceling-Headphones/490669.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 20,
+      "date_iso": "2026-11-10T12:47:17-05:00",
+      "date_display": "Nov 10, 12:47 PM"
+    },
+    {
+      "id": "DealNews-646039",
+      "title": "Smart Bluetooth Tracker Tags 4-Pack for $20 + free shipping w/ $35",
+      "description": "Keeping track of keys, bags, or luggage gets easier with this 4-pack, since each tag syncs with Apple's Find My network for real-time location tracking (iOS only).  Clip the coupon on the product page",
+      "link": "https://www.dealnews.com/Smart-Bluetooth-Tracker-Tags-4-Pack-for-20-free-shipping-w-35/22370571.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Walmart",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T11:23:05-05:00",
+      "date_display": "Nov 10, 11:23 AM"
+    },
+    {
+      "id": "DealNews-322494",
+      "title": "10,000mAh Magnetic Wireless Portable Charger for $20 + free shipping w/ $35",
+      "description": "Pocket-sized and snap-on for iPhones with MagSafe-style charging, so it's a solid pick for anyone who wants to top off their battery without carrying a cable. Apply coupon code \"6PV342HM\" for an extra",
+      "link": "https://www.dealnews.com/10-000-m-Ah-Magnetic-Wireless-Portable-Charger-for-20-free-shipping-w-35/22370569.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Walmart",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T10:49:39-05:00",
+      "date_display": "Nov 10, 10:49 AM"
+    },
+    {
+      "id": "DealNews-471464",
+      "title": "MagSafe Wallet w/ Find My Tracker for iPhone for $26 + free shipping w/ Prime",
+      "description": "At Amazon, this MagSafe Walletis 48% off. The built-in tracker works with Apple Find My and does not require a monthly fee, and the wallet also folds out into a stand for hands-free viewing. It's the ",
+      "link": "https://www.dealnews.com/Mag-Safe-Wallet-w-Find-My-Tracker-for-iPhone-for-26-free-shipping-w-Prime/22375907.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 48,
+      "date_iso": "2026-11-10T10:44:10-05:00",
+      "date_display": "Nov 10, 10:44 AM"
+    },
+    {
+      "id": "DealNews-450206",
+      "title": "Sony Bluetooth Wireless Noise-Canceling Headphones: 88 + free shipping",
+      "description": "Amazon offers these Sony noise-cancelling headphones for $88 in cart. That's half-price, and $6 under Amazon's 90-day average price of $94. Sony rates the battery at up to 35 hours, and the headphones",
+      "link": "https://www.dealnews.com/products/Sony-Electronics/Sony-Bluetooth-Wireless-Noise-Canceling-Headphones/439125.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T10:37:25-05:00",
+      "date_display": "Nov 10, 10:37 AM"
+    },
+    {
+      "id": "DealNews Tools-392385",
+      "title": "300A Manual Reset Circuit Breaker for $6 + free shipping w/ Prime",
+      "description": "At Amazon, get this 300A Manual Reset Circuit Breaker for $6.49. It's the best price Amazon has charged for this model. It covers 12V to 48V DC systems, including car audio, boats, RVs, trucks, and so",
+      "link": "https://www.dealnews.com/300-A-Manual-Reset-Circuit-Breaker-for-6-free-shipping-w-Prime/22375857.html?iref=rss-c238",
+      "source": "DealNews Tools",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": null,
+      "date_iso": "2026-11-10T10:13:44-05:00",
+      "date_display": "Nov 10, 10:13 AM"
+    },
+    {
+      "id": "DealNews Tools-543698",
+      "title": "Cordless Electric 3.2GPM Fuel Transfer Pump for $24 + free shipping w/ Prime",
+      "description": "At Amazon, get this Cordless Electric 3.2GPM Fuel Transfer Pump for $24. It's the best price Amazon has charged for this model. It runs on DeWalt 20V and Milwaukee M18 batteries, which are not include",
+      "link": "https://www.dealnews.com/Cordless-Electric-3-2-GPM-Fuel-Transfer-Pump-for-24-free-shipping-w-Prime/22375855.html?iref=rss-c238",
+      "source": "DealNews Tools",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": null,
+      "date_iso": "2026-11-10T10:05:33-05:00",
+      "date_display": "Nov 10, 10:05 AM"
+    },
+    {
+      "id": "DealNews-967831",
+      "title": "Bone Conduction Bluetooth Headphones for $24 + free shipping w/ $35",
+      "description": "Listen to music while staying aware of your surroundings during runs or workouts, with an open-ear design, IP67 water resistance, and up to 12 hours of playback. Apply coupon code \"GP52TQCQ\" for a tot",
+      "link": "https://www.dealnews.com/Bone-Conduction-Bluetooth-Headphones-for-24-free-shipping-w-35/22355809.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Walmart",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T09:57:25-05:00",
+      "date_display": "Nov 10, 09:57 AM"
+    },
+    {
+      "id": "DealNews-982504",
+      "title": "Samsung R84H Series MRN65R84HAFXZA 65\" 4K HDR OLED UHD Smart TV for $1,000 + free shipping",
+      "description": "As one of its Early Black Friday deals, Best Buy offers the Samsung R84H 65\" 4K TV for $999.99 down from $2,099.99. That's 52% off, and an $1,100 savings. My Best Buy members get free shipping on all ",
+      "link": "https://www.dealnews.com/Samsung-R84-H-Series-MRN65-R84-HAFXZA-65-4-K-HDR-OLED-UHD-Smart-TV-for-1-000-free-shipping/22375794.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": 52,
+      "date_iso": "2026-11-10T09:16:41-05:00",
+      "date_display": "Nov 10, 09:16 AM"
+    },
+    {
+      "id": "DealNews-181715",
+      "title": "LG B6 Series OLED48B6GUA 48\" 4K HDR OLED UHD Smart TV for $600 + free shipping",
+      "description": "As an Early Black Friday deal, Best Buy offers the LG B6 OLED 48\" TV for $600. That's half price, and $200 under our mention from September. The 48\" OLED panel supports a 120Hz refresh rate and a 0.1m",
+      "link": "https://www.dealnews.com/products/LG/LG-B6-Series-OLED48-B6-GUA-48-4-K-HDR-OLED-UHD-Smart-TV/538713.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T09:10:40-05:00",
+      "date_display": "Nov 10, 09:10 AM"
+    },
+    {
+      "id": "DealNews-989371",
+      "title": "Mint Mobile 5G Home MINTernet & Unlimited Premium Wireless 12-Month Bundle for $45/mo + free expedited shipping",
+      "description": "Mint Mobile's bundle of 12 months of 5G Home MINTernet plus 12 months of Unlimited wireless costs $45 per month, which is $300 off full-price plans. An upfront payment of $540 ($45 per month) is requi",
+      "link": "https://www.dealnews.com/Mint-Mobile-5-G-Home-MINTernet-Unlimited-Premium-Wireless-12-Month-Bundle-for-45-mo-free-expedited-shipping/22375766.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 300,
+      "date_iso": "2026-11-10T08:46:09-05:00",
+      "date_display": "Nov 10, 08:46 AM"
+    },
+    {
+      "id": "DealNews-355933",
+      "title": "Anker Solix C1000X Gen2 1,024Wh Portable Power Station for $500 + free shipping",
+      "description": "The Anker SOLIX C1000X Gen2 power station is $500 off at Best Buy, with the deal ending tonight. It delivers 2,000W of continuous output through 9 ports, and the battery holds at least 80% capacity af",
+      "link": "https://www.dealnews.com/products/Anker-Solix/Anker-Solix-C1000-X-Gen2-1-024-Wh-Portable-Power-Station/556536.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Best Buy",
+      "category": "Electronics & Tech",
+      "discount": 500,
+      "date_iso": "2026-11-10T08:41:25-05:00",
+      "date_display": "Nov 10, 08:41 AM"
+    },
+    {
+      "id": "DealNews-122360",
+      "title": "Aerivan W1 Wireless Indoor/Outdoor Weather Station for $75 + free shipping",
+      "description": "Tracking temperature, humidity, and wind conditions both inside and outside makes this a solid pick if you split time between house and yard projects, and Amazon has it at $35 off the usual price. Dea",
+      "link": "https://www.dealnews.com/Aerivan-W1-Wireless-Indoor-Outdoor-Weather-Station-for-75-free-shipping/22370461.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": 35,
+      "date_iso": "2026-11-10T08:37:57-05:00",
+      "date_display": "Nov 10, 08:37 AM"
+    },
+    {
+      "id": "DealNews Tools-386638",
+      "title": "44\" Extendable Snow Brush & Ice Scraper for $19 + free shipping w/ Prime",
+      "description": "At Amazon, get this 44\" Extendable Snow Brush & Ice Scraper for $19. It's the best price Amazon has charged for this snow brush. The brush head rotates 270\" and the handle separates into three pieces ",
+      "link": "https://www.dealnews.com/44-Extendable-Snow-Brush-Ice-Scraper-for-19-free-shipping-w-Prime/22375696.html?iref=rss-c238",
+      "source": "DealNews Tools",
+      "retailer": "Amazon",
+      "category": "Home & Garden",
+      "discount": null,
+      "date_iso": "2026-11-10T07:58:24-05:00",
+      "date_display": "Nov 10, 07:58 AM"
+    },
+    {
+      "id": "DealNews-462069",
+      "title": "Arduino Starter Kit for $77 + free shipping",
+      "description": "At Amazon, get this Arduino Starter Kit for $77. It's the best deal we could find by $33. The kit is the original model K000007 and includes an English projects book covering 12 projects. Shipping is ",
+      "link": "https://www.dealnews.com/Arduino-Starter-Kit-for-77-free-shipping/22375648.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Amazon",
+      "category": "Electronics & Tech",
+      "discount": null,
+      "date_iso": "2026-11-10T07:30:30-05:00",
+      "date_display": "Nov 10, 07:30 AM"
+    },
+    {
+      "id": "DealNews-507837",
+      "title": "Refurb Unlocked Motorola Moto G Stylus 5G 128GB Phone (2025) for $95 + free shipping",
+      "description": "At eBay, this refurbished Motorola Moto G Stylus 5G 2025 is $305 off the $400 list price. The seller notes LCD burn on the display. It includes a one-year Allstate warranty. Shipping is free. Buy Now ",
+      "link": "https://www.dealnews.com/Refurb-Unlocked-Motorola-Moto-G-Stylus-5-G-128-GB-Phone-2025-for-95-free-shipping/22375568.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 305,
+      "date_iso": "2026-11-10T06:26:22-05:00",
+      "date_display": "Nov 10, 06:26 AM"
+    },
+    {
+      "id": "DealNews-055279",
       "title": "Gifts for Techies at Woot: Up to 90% off + free shipping w/ Prime",
       "description": "Woot's Gifts for Techies event covers Amazon devices, monitors, webcams, speakers, chargers, and phone cases. The Amazon Echo (4th Gen) is $40, down from $100, and OtterBox cases for recent iPhone and",
       "link": "https://www.dealnews.com/Gifts-for-Techies-at-Woot-Up-to-90-off-free-shipping-w-Prime/22375511.html?iref=rss-c142",
@@ -99,7 +351,7 @@
       "date_display": "Nov 10, 05:32 AM"
     },
     {
-      "id": "DealNews-336308",
+      "id": "DealNews-737417",
       "title": "Amazon Devices Early Black Friday Deals: Up to 65% off + free shipping w/ Prime",
       "description": "As part of Amazon's Early Black Friday Sale, you can shop discounts of up to 65% off on a selection of Amazon devices. Select models are even at the best prices we've seen. Shipping is free for Prime ",
       "link": "https://www.dealnews.com/Amazon-Devices-Early-Black-Friday-Deals-Up-to-65-off-free-shipping-w-Prime/22375473.html?iref=rss-c142",
@@ -111,7 +363,7 @@
       "date_display": "Nov 10, 05:16 AM"
     },
     {
-      "id": "DealNews-939044",
+      "id": "DealNews-269183",
       "title": "Amazon Early Black Friday Sale: Up to 65% off + free shipping w/ Prime",
       "description": "Amazon's Black Friday sale is due to start on November 19, but in the meantime, you can find a large selection of early Black Friday deals spread across electronics, home, garden, apparel, and more. D",
       "link": "https://www.dealnews.com/Amazon-Early-Black-Friday-Sale-Up-to-65-off-free-shipping-w-Prime/22375466.html?iref=rss-c142",
@@ -123,7 +375,7 @@
       "date_display": "Nov 10, 05:13 AM"
     },
     {
-      "id": "DealNews-124040",
+      "id": "DealNews-479220",
       "title": "EPOS Gaming & More Headsets Deals at Woot: Up to 86% off + extra 20% off + free shipping w/ Prime",
       "description": "Woot is running an EPOS headset sale with a mix of gaming headsets, Xbox Edition models, and wireless earbuds, plus a Turtle Beach Stealth 600. Use promo code \"WOOTEPOS\" for an extra 20% off, valid th",
       "link": "https://www.dealnews.com/EPOS-Gaming-More-Headsets-Deals-at-Woot-Up-to-86-off-extra-20-off-free-shipping-w-Prime/22375461.html?iref=rss-c142",
@@ -135,7 +387,7 @@
       "date_display": "Nov 10, 05:05 AM"
     },
     {
-      "id": "DealNews-954384",
+      "id": "DealNews-413723",
       "title": "Random Tech Sale at Woot: Up to 81% off + free shipping w/ Prime",
       "description": "Woot's Random Tech sale bundles unrelated electronics, with dash cams, portable chargers, projectors, and headphones making up much of the lineup. The Pelsee S1 Pro dual 4K dash cam is $99.99, down fr",
       "link": "https://www.dealnews.com/Random-Tech-Sale-at-Woot-Up-to-81-off-free-shipping-w-Prime/22375443.html?iref=rss-c142",
@@ -147,7 +399,7 @@
       "date_display": "Nov 10, 04:56 AM"
     },
     {
-      "id": "DealNews-083246",
+      "id": "DealNews-674542",
       "title": "Xteink X4 Classic 4.3\" E-Ink eReader for $71 + free shipping",
       "description": "Amazon has the Xteink X4 Classic 4.3\" E-Ink eReader at $71 after clipping the on-page coupon, down from $89. The 4.3\" E-Ink screen has no notifications or ads, and files can be loaded through an app, ",
       "link": "https://www.dealnews.com/Xteink-X4-Classic-4-3-E-Ink-eReader-for-71-free-shipping/22375399.html?iref=rss-c142",
@@ -159,7 +411,7 @@
       "date_display": "Nov 10, 04:16 AM"
     },
     {
-      "id": "DealNews Tools-179434",
+      "id": "DealNews Tools-128208",
       "title": "Wire Tracer DC 6-42V Automotive Open & Short Circuit Finder for $28 + free shipping w/ Prime",
       "description": "At Amazon, clip the on-page coupon to get this Wire Tracer DC 6-42V Automotive Open & Short Circuit Finder for $28. It's the best price Amazon has charged for this kit. The kit includes a transmitter,",
       "link": "https://www.dealnews.com/Wire-Tracer-DC-6-42-V-Automotive-Open-Short-Circuit-Finder-for-28-free-shipping-w-Prime/22375355.html?iref=rss-c238",
@@ -171,7 +423,7 @@
       "date_display": "Nov 10, 03:46 AM"
     },
     {
-      "id": "DealNews Tools-872428",
+      "id": "DealNews Tools-218916",
       "title": "Heavy Duty Cargo Net for Pickup Truck Bed w/ 12 Hooks for $15 + free shipping w/ $35",
       "description": "This cargo net is $16 off at Walmart, down from $30.99. The 12 hooks included are more than the 8 found on several other cargo nets listed on the same page. Spend $35 for free shipping. Buy Now at Wal",
       "link": "https://www.dealnews.com/Heavy-Duty-Cargo-Net-for-Pickup-Truck-Bed-w-12-Hooks-for-15-free-shipping-w-35/22371132.html?iref=rss-c238",
@@ -183,7 +435,7 @@
       "date_display": "Nov 09, 07:34 PM"
     },
     {
-      "id": "DealNews-779232",
+      "id": "DealNews-204102",
       "title": "Crutchfield Black Friday Sale: Up to 50% off + free shipping",
       "description": "Shop deals on turntables, headphones, smart lighting, soundbars, car audio, amps, TVs, and more in this Black Friday sale.\u00a0 You'll find brands like Pioneer, LG, Sony, JBL, Klipsch, Sennheiser, and Phi",
       "link": "https://www.dealnews.com/Crutchfield-Black-Friday-Sale-Up-to-50-off-free-shipping/22371074.html?iref=rss-c142",
@@ -195,7 +447,7 @@
       "date_display": "Nov 09, 06:49 PM"
     },
     {
-      "id": "DealNews-338800",
+      "id": "DealNews-997185",
       "title": "Samsung M70H Series 65\" 4K Mini LED UHD Smart TV for $378 + free shipping w/ Prime",
       "description": "The page lists this Samsung M70H Series 65\" Mini LED TV at a crossed-out price of $428, with a 12% savings badge displayed. It is a 2026 model with Mini LED backlighting, HDR, and 120Hz motion process",
       "link": "https://www.dealnews.com/products/Samsung/Samsung-M70-H-Series-65-4-K-Mini-LED-UHD-Smart-TV/538868.html?iref=rss-c142",
@@ -207,7 +459,7 @@
       "date_display": "Nov 09, 04:08 PM"
     },
     {
-      "id": "DealNews-199013",
+      "id": "DealNews-828960",
       "title": "Unlocked Samsung Galaxy S26 Ultra 256GB Smartphone for $950 + free shipping",
       "description": "Amazon lists the unlocked Samsung Galaxy S26 Ultra at 32% off its $1,400 regular price. The phone has a 5,000mAh battery, wireless and reverse wireless charging, and a built-in stylus. Shipping is fre",
       "link": "https://www.dealnews.com/Unlocked-Samsung-Galaxy-S26-Ultra-256-GB-Smartphone-for-950-free-shipping/22370867.html?iref=rss-c142",
@@ -219,31 +471,7 @@
       "date_display": "Nov 09, 04:05 PM"
     },
     {
-      "id": "DealNews-367879",
-      "title": "Bone Conduction Bluetooth Headphones for $24 + free shipping w/ $35",
-      "description": "Listen to music while staying aware of your surroundings during runs or workouts, with an open-ear design, IP67 water resistance, and up to 12 hours of playback. Apply coupon code \"GP52TQCQ\" for a tot",
-      "link": "https://www.dealnews.com/Bone-Conduction-Bluetooth-Headphones-for-24-free-shipping-w-35/22355809.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Walmart",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T13:09:33-05:00",
-      "date_display": "Nov 09, 01:09 PM"
-    },
-    {
-      "id": "DealNews-322521",
-      "title": "Smart Bluetooth Tracker Tags 4-Pack for $20 + free shipping w/ $35",
-      "description": "Keeping track of keys, bags, or luggage gets easier with this 4-pack, since each tag syncs with Apple's Find My network for real-time location tracking (iOS only).  Clip the coupon on the product page",
-      "link": "https://www.dealnews.com/Smart-Bluetooth-Tracker-Tags-4-Pack-for-20-free-shipping-w-35/22370571.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Walmart",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T12:27:14-05:00",
-      "date_display": "Nov 09, 12:27 PM"
-    },
-    {
-      "id": "DealNews Tools-607856",
+      "id": "DealNews Tools-316835",
       "title": "Dollarfix OBD2 Scanner Diagnostic Tool for $80 + free shipping",
       "description": "Anyone who wants to pull their own check-engine codes instead of paying a shop diagnostic fee will get the most use out of this, and at $80, it's $140 off the $220 list price. Apply coupon code \"4O7U2",
       "link": "https://www.dealnews.com/products/Dollarfix/Dollarfix-OBD2-Scanner-Diagnostic-Tool/498465.html?iref=rss-c238",
@@ -255,127 +483,7 @@
       "date_display": "Nov 09, 12:24 PM"
     },
     {
-      "id": "DealNews-778395",
-      "title": "10,000mAh Magnetic Wireless Portable Charger for $20 + free shipping w/ $35",
-      "description": "Pocket-sized and snap-on for iPhones with MagSafe-style charging, so it's a solid pick for anyone who wants to top off their battery without carrying a cable. Apply coupon code \"6PV342HM\" for an extra",
-      "link": "https://www.dealnews.com/10-000-m-Ah-Magnetic-Wireless-Portable-Charger-for-20-free-shipping-w-35/22370569.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Walmart",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T12:18:05-05:00",
-      "date_display": "Nov 09, 12:18 PM"
-    },
-    {
-      "id": "DealNews-158680",
-      "title": "Certified Refurb Sony Truly Wireless Noise Cancelling Earbuds for $38 + free shipping",
-      "description": "With promo code \"SHOPBRANDS20\", these Sony Truly Wireless Noise Cancelling Earbuds drop to $38. A new pair costs $79 at Target. Shipping is free. A 2-year Allstate warranty is included. Deal ends Nove",
-      "link": "https://www.dealnews.com/Certified-Refurb-Sony-Truly-Wireless-Noise-Cancelling-Earbuds-for-38-free-shipping/22370535.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Target",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T11:51:25-05:00",
-      "date_display": "Nov 09, 11:51 AM"
-    },
-    {
-      "id": "DealNews-050480",
-      "title": "Anker Outlet Deals at eBay: Up to 60% off + extra 20% off + free shipping",
-      "description": "Here you'll find a large selection of Anker items, discounted up to 60% off. Even better, you can use promo code \"SHOPBRANDS20\" to get an extra 20% off. Shipping is free. Some exclusions may apply. De",
-      "link": "https://www.dealnews.com/Anker-Outlet-Deals-at-eBay-Up-to-60-off-extra-20-off-free-shipping/22370513.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 60,
-      "date_iso": "2026-11-09T11:45:01-05:00",
-      "date_display": "Nov 09, 11:45 AM"
-    },
-    {
-      "id": "DealNews-393695",
-      "title": "Bose Outlet Deals at eBay: Up to 40% off + extra 20% off + free shipping",
-      "description": "Here you'll find a selection of certified refurb Bose audio deals. Even better, use promo code \"SHOPBRANDS20\" to get an extra 20% off. Each refurb includes a 2-year Allstate warranty. This deal ends N",
-      "link": "https://www.dealnews.com/Bose-Outlet-Deals-at-eBay-Up-to-40-off-extra-20-off-free-shipping/22370485.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 40,
-      "date_iso": "2026-11-09T11:27:23-05:00",
-      "date_display": "Nov 09, 11:27 AM"
-    },
-    {
-      "id": "DealNews-947250",
-      "title": "Anker Nano 45W Foldable USB-C GaN Charger for $26 + free shipping",
-      "description": "At $26, this Anker Nano Smart Display charger matches its Amazon all-time low and sits below its 90-day average of $35. Shipping is free. Buy Now at Amazon      Features     smart display   smart iPho",
-      "link": "https://www.dealnews.com/products/Anker/Anker-Nano-45-W-Foldable-USB-C-Ga-N-Charger/504983.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T11:25:48-05:00",
-      "date_display": "Nov 09, 11:25 AM"
-    },
-    {
-      "id": "DealNews-932744",
-      "title": "Talix 20,000mAh 190W Laptop Power Bank for $45 w/ Prime + free shipping",
-      "description": "Good for keeping a laptop charged through a full travel day without hunting for an outlet, since 190W covers most laptop chargers rather than just phones and tablets. Apply coupon code \"GRR4RD8U\" for ",
-      "link": "https://www.dealnews.com/products/Talix/Talix-20-000-m-Ah-190-W-Laptop-Power-Bank/550101.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-09T11:12:09-05:00",
-      "date_display": "Nov 09, 11:12 AM"
-    },
-    {
-      "id": "DealNews-052750",
-      "title": "Aerivan W1 Wireless Indoor/Outdoor Weather Station for $75 + free shipping",
-      "description": "Tracking temperature, humidity, and wind conditions both inside and outside makes this a solid pick if you split time between house and yard projects, and Amazon has it at $35 off the usual price. Dea",
-      "link": "https://www.dealnews.com/Aerivan-W1-Wireless-Indoor-Outdoor-Weather-Station-for-75-free-shipping/22370461.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 35,
-      "date_iso": "2026-11-09T11:07:14-05:00",
-      "date_display": "Nov 09, 11:07 AM"
-    },
-    {
-      "id": "DealNews-739450",
-      "title": "1x4 4K HDMI Splitter for $8 + free shipping w/ Prime",
-      "description": "This 1x4 4K HDMI Splitter is 50% off at Amazon, dropping to $8. It's the best price Amazon has charged for this model. It mirrors one HDMI source to four displays at once and includes the USB-C power ",
-      "link": "https://www.dealnews.com/1-x4-4-K-HDMI-Splitter-for-8-free-shipping-w-Prime/22370290.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 50,
-      "date_iso": "2026-11-09T08:57:08-05:00",
-      "date_display": "Nov 09, 08:57 AM"
-    },
-    {
-      "id": "DealNews-215149",
-      "title": "TCL QM8L Series 65QM8L 65\" 4K QLED / Mini LED Google TV for $998 + free shipping",
-      "description": "This TCL 65QM8L 65\" Mini LED TV is 60% off at Amazon. It's the best deal we've seen for this model. The panel offers 4000+ dimming zones, up to 6,000 peak nits of brightness, and a 144Hz refresh rate ",
-      "link": "https://www.dealnews.com/TCL-QM8-L-Series-65-QM8-L-65-4-K-QLED-Mini-LED-Google-TV-for-998-free-shipping/22370287.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": 60,
-      "date_iso": "2026-11-09T08:53:23-05:00",
-      "date_display": "Nov 09, 08:53 AM"
-    },
-    {
-      "id": "DealNews-344224",
-      "title": "EcoFlow Portable Power Station Deals at eBay: Up to 58% off + Extra 20% off + free shipping",
-      "description": "Use promo code \"SHOPBRANDS20\" at eBay on select EcoFlow power stations, solar panels, and generators, in new, certified refurbished, and open-box condition. The $500 cap means the full discount applie",
-      "link": "https://www.dealnews.com/Eco-Flow-Portable-Power-Station-Deals-at-eBay-Up-to-58-off-Extra-20-off-free-shipping/22370268.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 58,
-      "date_iso": "2026-11-09T08:33:00-05:00",
-      "date_display": "Nov 09, 08:33 AM"
-    },
-    {
-      "id": "DealNews Tools-111394",
+      "id": "DealNews Tools-369937",
       "title": "Star Tron Quick Fix Fuel System & Injector Cleaner for $7 + free shipping w/ Prime",
       "description": "Amazon has this Star Tron Quick Fix fuel system and injector cleaner at $7. That's $7 less than the price Walmart charges. The formula pairs P.E.A. detergent with enzymes meant to help rough-running e",
       "link": "https://www.dealnews.com/Star-Tron-Quick-Fix-Fuel-System-Injector-Cleaner-for-7-free-shipping-w-Prime/22370196.html?iref=rss-c238",
@@ -387,7 +495,7 @@
       "date_display": "Nov 09, 07:42 AM"
     },
     {
-      "id": "DealNews Tools-066442",
+      "id": "DealNews Tools-478189",
       "title": "31-Piece Premium Bungee Cords Assortment Jar for $13 + free shipping w/ Prime",
       "description": "This HORUSDY bungee cord assortment is $3 off at Amazon, bringing the 31-piece jar to $13. The set covers five cord lengths from 10\" to 40\" and adds canopy ties and tarp clips, so it can handle a rang",
       "link": "https://www.dealnews.com/31-Piece-Premium-Bungee-Cords-Assortment-Jar-for-13-free-shipping-w-Prime/22370134.html?iref=rss-c238",
@@ -399,7 +507,7 @@
       "date_display": "Nov 09, 06:58 AM"
     },
     {
-      "id": "DealNews Tools-152235",
+      "id": "DealNews Tools-943002",
       "title": "Auto Accessories, Parts & More Deals at Woot: Up to 72% off + free shipping w/ Prime",
       "description": "Woot is running an Auto Accessories, Parts & More sale through November 23, with items spanning car care, replacement parts, and interior upgrades. Spark plugs from NGK and Motorcraft start at $3, and",
       "link": "https://www.dealnews.com/Auto-Accessories-Parts-More-Deals-at-Woot-Up-to-72-off-free-shipping-w-Prime/22370045.html?iref=rss-c238",
@@ -411,7 +519,7 @@
       "date_display": "Nov 09, 05:20 AM"
     },
     {
-      "id": "DealNews Tools-150858",
+      "id": "DealNews Tools-125624",
       "title": "3-Piece Electrical Connector Pliers Set for $7 + free shipping w/ Prime",
       "description": "At Amazon, get this 3-Piece Electrical Connector Pliers Set for $6.99. It's the best price Amazon has charged for this set. The kit covers push-tab style plugs on components such as fuel injectors, ig",
       "link": "https://www.dealnews.com/3-Piece-Electrical-Connector-Pliers-Set-for-7-free-shipping-w-Prime/22369959.html?iref=rss-c238",
@@ -423,7 +531,7 @@
       "date_display": "Nov 09, 02:45 AM"
     },
     {
-      "id": "DealNews Tools-808165",
+      "id": "DealNews Tools-885466",
       "title": "AFM/DFM Disabler for GM V6 & V8 Engines for $66 + free shipping",
       "description": "At Amazon, this AFM/DFM Disabler for GM V6 & V8 Engines for $66. It's the best price we could find by $2. It plugs into the OBD-II port and leaves the factory ECU programming unchanged, so unplugging ",
       "link": "https://www.dealnews.com/AFM-DFM-Disabler-for-GM-V6-V8-Engines-for-66-free-shipping/22324886.html?iref=rss-c238",
@@ -435,19 +543,7 @@
       "date_display": "Nov 08, 07:22 AM"
     },
     {
-      "id": "DealNews-369242",
-      "title": "Mint Mobile Premium Wireless for $15/mo. for up to 1 year + free shipping",
-      "description": "Mint Mobile is offering every phone plan, including unlimited data, for $15 a month for new customers. The unlimited plan normally costs $30 a month, so locking in a 3, 6, or 12-month term brings nota",
-      "link": "https://www.dealnews.com/Mint-Mobile-Premium-Wireless-for-15-mo-for-up-to-1-year-free-shipping/22355469.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Lowe",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-08T00:01:00-05:00",
-      "date_display": "Nov 08, 12:01 AM"
-    },
-    {
-      "id": "DealNews Tools-555521",
+      "id": "DealNews Tools-542301",
       "title": "Tire Thumper for $10 + free shipping w/ Prime",
       "description": "Amazon has this Felisbieti tire thumper for $10. It's the best price Amazon has charged for this tire thumper. The 16.5\" wooden tool is used to tap a tire and listen for a thump, helping you gauge whe",
       "link": "https://www.dealnews.com/Tire-Thumper-for-10-free-shipping-w-Prime/22327686.html?iref=rss-c238",
@@ -459,19 +555,7 @@
       "date_display": "Nov 07, 10:00 AM"
     },
     {
-      "id": "DealNews-353315",
-      "title": "VIPOutlet Clearance Sale at eBay: Up to 80% off + extra 8% off + shipping varies",
-      "description": "vipoutlet's eBay store has some of eBay's best deals on electronics, gaming gear, and home goods, especially since the promo code \"VIPTAKE8OCTOBER\" now takes an extra 8% off everything. Refurbs includ",
-      "link": "https://www.dealnews.com/VIPOutlet-Clearance-Sale-at-eBay-Up-to-80-off-extra-8-off-shipping-varies/22360429.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Various",
-      "category": "Electronics & Tech",
-      "discount": 80,
-      "date_iso": "2026-11-07T08:04:13-05:00",
-      "date_display": "Nov 07, 08:04 AM"
-    },
-    {
-      "id": "DealNews Tools-068397",
+      "id": "DealNews Tools-147612",
       "title": "Foxwell GT30 Full System Bi-Directional OBD2 Diagnostic Scan Tool for $206 + free shipping",
       "description": "This Foxwell full-system diagnostic scan tool is $173 off at Walmart. It combines code reading, live data, bi-directional component testing, and more than 35 reset services in one handheld unit with a",
       "link": "https://www.dealnews.com/Foxwell-GT30-Full-System-Bi-Directional-OBD2-Diagnostic-Scan-Tool-for-206-free-shipping/22355696.html?iref=rss-c238",
@@ -483,7 +567,7 @@
       "date_display": "Nov 06, 10:32 AM"
     },
     {
-      "id": "DealNews Tools-234559",
+      "id": "DealNews Tools-446198",
       "title": "2-in-1 Baby Car Camera and Wireless CarPlay Adapter for $60 + free shipping",
       "description": "Keeping an eye on a rear-facing infant while also upgrading your dash to wireless CarPlay is the dual purpose here, making it suited to parents who want both without running separate gadgets. It's $40",
       "link": "https://www.dealnews.com/2-in-1-Baby-Car-Camera-and-Wireless-Car-Play-Adapter-for-60-free-shipping/22351078.html?iref=rss-c238",
@@ -495,7 +579,7 @@
       "date_display": "Nov 05, 09:48 AM"
     },
     {
-      "id": "DealNews Tools-899043",
+      "id": "DealNews Tools-330438",
       "title": "TOPDON ArtiDiag900 Lite AD900 8\" Bidirectional OBD2 Scanner for $329 + free shipping",
       "description": "TopDon's ArtiDiag900 Lite scanner is $130 off at Amazon. It pairs an 8\" touchscreen with bidirectional controls and a wireless Bluetooth connector, and the listing states a 10,000mAh battery rated for",
       "link": "https://www.dealnews.com/TOPDON-Arti-Diag900-Lite-AD900-8-Bidirectional-OBD2-Scanner-for-329-free-shipping/22350734.html?iref=rss-c238",
@@ -507,7 +591,19 @@
       "date_display": "Nov 05, 05:37 AM"
     },
     {
-      "id": "DealNews-200416",
+      "id": "DealNews-808848",
+      "title": "Google Pixel 11 256GB Android Smartphone for Mint Mobile: Free w/ trade-in + free shipping",
+      "description": "Mint Mobile offers the Google Pixel 11 256GB Android Smartphone for $500 off and then free with an eligible trade-in when bundled with a 12-month Mint Mobile plan. An upfront payment of $180 for the p",
+      "link": "https://www.dealnews.com/Google-Pixel-11-256-GB-Android-Smartphone-for-Mint-Mobile-Free-w-trade-in-free-shipping/22350727.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 500,
+      "date_iso": "2026-11-05T05:29:54-05:00",
+      "date_display": "Nov 05, 05:29 AM"
+    },
+    {
+      "id": "DealNews-324478",
       "title": "Ultra Mobile by T-Mobile 4GB Plan for $6.50 per month + free shipping",
       "description": "Ultra Mobile's 12-month 4GB plan is 50% off for new customers, dropping to $6.50 per month. That adds up to $78 saved over the year compared with the regular $13 monthly rate. New customers pay $78 up",
       "link": "https://www.dealnews.com/Ultra-Mobile-by-T-Mobile-4-GB-Plan-for-6-50-per-month-free-shipping/22350724.html?iref=rss-c142",
@@ -519,19 +615,7 @@
       "date_display": "Nov 05, 05:24 AM"
     },
     {
-      "id": "DealNews-237668",
-      "title": "DJI Osmo Nano 64GB 4K Camera for $204 + free shipping",
-      "description": "At AliExpress, the DJI Osmo Nano Standard Combo is costs just $204 right now, thanks to the Singles' Day promo code \"DBDEAL40\". That's a great price, coming in at $185 less than Amazon's best deal. Th",
-      "link": "https://www.dealnews.com/DJI-Osmo-Nano-64-GB-4-K-Camera-for-204-free-shipping/22350685.html?iref=rss-c142",
-      "source": "DealNews",
-      "retailer": "Amazon",
-      "category": "Electronics & Tech",
-      "discount": null,
-      "date_iso": "2026-11-05T04:54:54-05:00",
-      "date_display": "Nov 05, 04:54 AM"
-    },
-    {
-      "id": "DealNews Tools-171961",
+      "id": "DealNews Tools-931936",
       "title": "Quadratec Jeep Interior Overstock & Closeout Deals for From $24 + free shipping",
       "description": "Quadratec is clearing warehouse space with overstock and closeout Jeep interior parts, including floor liners, cargo liners, seat covers, and replacement parts like heater cores and blower motor resis",
       "link": "https://www.dealnews.com/Quadratec-Jeep-Interior-Overstock-Closeout-Deals-for-From-24-free-shipping/22347117.html?iref=rss-c238",
@@ -543,7 +627,7 @@
       "date_display": "Nov 04, 06:38 PM"
     },
     {
-      "id": "DealNews Tools-926931",
+      "id": "DealNews Tools-943745",
       "title": "Extendable Snow Brush & Ice Scraper for $20 + free shipping",
       "description": "At Walmart, this Bocaoying 42\" snow brush and ice scraper is $3 off the regular price of $23. The pole adjusts from 36\" to 47\", and the kit comes with a waterproof fleece-lined mitt and an ice shovel.",
       "link": "https://www.dealnews.com/Extendable-Snow-Brush-Ice-Scraper-for-20-free-shipping/22346887.html?iref=rss-c238",
@@ -555,43 +639,31 @@
       "date_display": "Nov 04, 01:53 PM"
     },
     {
-      "id": "DealNews Tools-383641",
-      "title": "Goodyear Assurance RangeMax Winter 205/65R16 95H Passenger Tire for $59 + free shipping",
-      "description": "This Goodyear Assurance RangeMax Winter tire is $59 at Walmart; a savings of $36. Shipping is free. Buy Now at Walmart",
-      "link": "https://www.dealnews.com/Goodyear-Assurance-Range-Max-Winter-205-65-R16-95-H-Passenger-Tire-for-59-free-shipping/22346404.html?iref=rss-c238",
-      "source": "DealNews Tools",
-      "retailer": "Walmart",
-      "category": "Home & Garden",
+      "id": "DealNews-706667",
+      "title": "Mint Mobile Premium Wireless for $15/mo. for up to 1 year + free shipping",
+      "description": "Mint Mobile is offering every phone plan, including unlimited data, for $15 a month for new customers. The unlimited plan normally costs $30 a month, so locking in a 3, 6, or 12-month term brings nota",
+      "link": "https://www.dealnews.com/Mint-Mobile-Premium-Wireless-for-15-mo-for-up-to-1-year-free-shipping/22346298.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Lowe",
+      "category": "Electronics & Tech",
       "discount": null,
-      "date_iso": "2026-11-04T07:34:15-05:00",
-      "date_display": "Nov 04, 07:34 AM"
+      "date_iso": "2026-11-04T06:18:58-05:00",
+      "date_display": "Nov 04, 06:18 AM"
     },
     {
-      "id": "DealNews Tools-111491",
-      "title": "Gorilla-Lift 2-Sided Tailgate Lift Assist for $161 + free shipping",
-      "description": "Clip the on-page coupon to get the Gorilla-Lift 2-Sided Tailgate Lift Assist for $161. That's a savings of $29. Shipping is free. Buy Now at Amazon      Features     Fits open utility trailers with si",
-      "link": "https://www.dealnews.com/products/Gorilla/Gorilla-Lift-2-Sided-Tailgate-Lift-Assist/521389.html?iref=rss-c238",
-      "source": "DealNews Tools",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
-      "discount": null,
-      "date_iso": "2026-11-04T04:39:22-05:00",
-      "date_display": "Nov 04, 04:39 AM"
+      "id": "DealNews-734629",
+      "title": "Ultra Mobile Ultra-Early Access Savings for 50% off plans, from $6.50/mo.",
+      "description": "Ultra Mobile's best deal ever is back with 50% off all its plans with prices starting at $6.50 per month for the 4GB 12-Month Plan ($78 billed upfront). This is the best deal they've offered since las",
+      "link": "https://www.dealnews.com/Ultra-Mobile-Ultra-Early-Access-Savings-for-50-off-plans-from-6-50-mo/22336409.html?iref=rss-c142",
+      "source": "DealNews",
+      "retailer": "Various",
+      "category": "Electronics & Tech",
+      "discount": 50,
+      "date_iso": "2026-11-02T08:54:29-05:00",
+      "date_display": "Nov 02, 08:54 AM"
     },
     {
-      "id": "DealNews Tools-287520",
-      "title": "Car Pass Heavy Duty All-Weather Universal Trim-to-Fit Car Floor Mats for $34 + free shipping",
-      "description": "Update: The price has changed to $33.95 since this was originally published.  These rubber floor mats are $8 off at Amazon, which matches their Amazon all-time low. The set is trimmable to fit cars, S",
-      "link": "https://www.dealnews.com/Car-Pass-Heavy-Duty-All-Weather-Universal-Trim-to-Fit-Car-Floor-Mats-for-34-free-shipping/22342414.html?iref=rss-c238",
-      "source": "DealNews Tools",
-      "retailer": "Amazon",
-      "category": "Home & Garden",
-      "discount": 8,
-      "date_iso": "2026-11-03T16:41:01-05:00",
-      "date_display": "Nov 03, 04:41 PM"
-    },
-    {
-      "id": "DealNews-059005",
+      "id": "DealNews-960026",
       "title": "AliExpress Singles Day Sale: Up to 77% off + extra $3 to $155 off + free shipping",
       "description": "AliExpress is running its Singles Day Sale with markdowns of up to 77% off. This is AliExpress's biggest sale event of the year, so you're gonna find the best deals in months at the store right now, e",
       "link": "https://www.dealnews.com/Ali-Express-Singles-Day-Sale-Up-to-77-off-extra-3-to-155-off-free-shipping/22333033.html?iref=rss-c142",
